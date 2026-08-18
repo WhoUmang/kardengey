@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const services = [
@@ -46,100 +46,6 @@ const services = [
   },
 ];
 
-function ServiceVisual({ active }) {
-  return (
-    <div className="relative flex h-full min-h-[460px] items-center justify-center overflow-hidden rounded-[32px] border border-white/10 bg-[#090909]">
-
-      {/* Ambient glow */}
-
-      <motion.div
-        animate={{
-          scale: active === 5 ? 1.35 : 1,
-          opacity: active === 5 ? 0.28 : 0.12,
-        }}
-        transition={{ duration: 0.6 }}
-        className="absolute h-72 w-72 rounded-full bg-blue-600 blur-[100px]"
-      />
-
-      {/* Grid */}
-
-      <div className="absolute inset-0 opacity-20">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)",
-            backgroundSize: "50px 50px",
-          }}
-        />
-      </div>
-
-      {/* Central system */}
-
-      <motion.div
-        animate={{
-          rotate: active === 5 ? 180 : active * 18,
-          scale: active === 5 ? 1.15 : 1,
-        }}
-        transition={{
-          duration: 0.8,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-        className="relative z-10 flex h-48 w-48 items-center justify-center"
-      >
-        <div className="absolute inset-0 rounded-full border border-blue-500/30" />
-
-        <div className="absolute inset-4 rounded-full border border-white/10" />
-
-        <div className="absolute inset-10 rounded-full bg-blue-600/20 blur-xl" />
-
-        <div className="relative flex h-20 w-20 items-center justify-center rounded-2xl border border-blue-400/40 bg-[#0c1630] shadow-[0_0_70px_rgba(37,99,235,.25)]">
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-blue-300">
-            {services[active].number}
-          </span>
-        </div>
-
-        {/* Orbit dots */}
-
-        {[0, 1, 2, 3].map((dot) => (
-          <motion.span
-            key={dot}
-            animate={{
-              rotate: active * 40 + dot * 90,
-            }}
-            transition={{
-              duration: 0.8,
-            }}
-            className="absolute left-1/2 top-1/2 h-2 w-2 rounded-full bg-blue-400"
-            style={{
-              transformOrigin: "0 0",
-              transform: `rotate(${dot * 90}deg) translateX(112px)`,
-            }}
-          />
-        ))}
-      </motion.div>
-
-      {/* Service name */}
-
-      <div className="absolute bottom-8 left-8 right-8 flex items-end justify-between">
-        <div>
-          <p className="text-[9px] uppercase tracking-[0.4em] text-neutral-600">
-            Capability
-          </p>
-
-          <p className="mt-2 text-sm font-semibold text-neutral-300">
-            {services[active].title}
-          </p>
-        </div>
-
-        <span className="text-[10px] text-neutral-700">
-          0{active + 1} / 06
-        </span>
-      </div>
-    </div>
-  );
-}
-
 export default function Services() {
   const [active, setActive] = useState(5);
 
@@ -150,129 +56,254 @@ export default function Services() {
     >
       <div className="mx-auto max-w-[1500px]">
 
-        {/* Header */}
+        {/* HEADER */}
 
-        <div className="mb-20">
+        <div className="mb-20 flex flex-col justify-between gap-10 md:flex-row md:items-end">
+
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-xs uppercase tracking-[0.45em] text-neutral-600"
+            >
+              What we do
+            </motion.p>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.9,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="mt-6 text-[clamp(4rem,8vw,8rem)] font-black uppercase leading-[0.8] tracking-[-0.07em]"
+            >
+              BUILT
+              <br />
+              <span className="text-neutral-600">TO MOVE.</span>
+            </motion.h2>
+          </div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-xs uppercase tracking-[0.45em] text-neutral-600"
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="max-w-sm text-sm leading-7 text-neutral-500 md:pb-2"
           >
-            What we do
+            We bring strategy, creativity, technology, marketing and AI under
+            one roof — so every part of your growth works together.
           </motion.p>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9 }}
-            className="mt-6 max-w-5xl text-[clamp(3.5rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-[-0.065em]"
-          >
-            Built around
-            <br />
-            <span className="text-neutral-600">growth.</span>
-          </motion.h2>
 
         </div>
 
-        {/* Main layout */}
+        {/* SERVICE CATALOGUE */}
 
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="border-t border-white/10">
 
-          {/* Services list */}
+          {services.map((service, index) => {
+            const isActive = active === index;
 
-          <div className="border-t border-white/10">
+            return (
+              <motion.button
+                key={service.number}
+                type="button"
+                onMouseEnter={() => setActive(index)}
+                onFocus={() => setActive(index)}
+                onClick={() => setActive(index)}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.05,
+                }}
+                className="group relative block w-full border-b border-white/10 text-left"
+              >
 
-            {services.map((service, index) => {
-              const isActive = active === index;
+                {/* BLUE BACKGROUND */}
 
-              return (
-                <motion.button
-                  key={service.number}
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.06,
+                <motion.div
+                  initial={false}
+                  animate={{
+                    opacity: isActive ? 1 : 0,
+                    scaleX: isActive ? 1 : 0,
                   }}
-                  onMouseEnter={() => setActive(index)}
-                  onFocus={() => setActive(index)}
-                  className={`group flex w-full items-center gap-5 border-b border-white/10 py-7 text-left transition-all duration-300 ${
-                    isActive ? "pl-4" : ""
-                  }`}
-                >
-                  <span
-                    className={`text-[10px] tracking-[0.2em] transition-colors ${
+                  transition={{
+                    duration: 0.5,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                  className="absolute inset-0 origin-left bg-blue-600"
+                />
+
+                {/* CONTENT */}
+
+                <div
+                  className={`
+                    relative z-10
+                    flex
+                    min-h-[120px]
+                    items-center
+                    gap-5
+                    px-2
+                    py-7
+                    transition-all
+                    duration-500
+                    md:min-h-[145px]
+                    md:gap-8
+                    md:px-4
+                    ${
                       isActive
-                        ? "text-blue-500"
-                        : "text-neutral-700"
-                    }`}
+                        ? "text-black md:px-8"
+                        : "text-white"
+                    }
+                  `}
+                >
+
+                  {/* NUMBER */}
+
+                  <span
+                    className={`
+                      w-10
+                      shrink-0
+                      text-[10px]
+                      font-medium
+                      tracking-[0.25em]
+                      transition-colors
+                      duration-300
+                      md:w-14
+                      ${
+                        isActive
+                          ? "text-black/50"
+                          : "text-neutral-700"
+                      }
+                    `}
                   >
                     {service.number}
                   </span>
 
+                  {/* TITLE */}
+
                   <span
-                    className={`text-2xl font-semibold tracking-tight transition-colors md:text-3xl ${
-                      isActive
-                        ? "text-white"
-                        : "text-neutral-500 group-hover:text-neutral-300"
-                    }`}
+                    className={`
+                      flex-1
+                      text-[clamp(2rem,4vw,4.5rem)]
+                      font-black
+                      uppercase
+                      leading-none
+                      tracking-[-0.055em]
+                      transition-transform
+                      duration-500
+                      ${
+                        isActive
+                          ? "translate-x-2"
+                          : "group-hover:translate-x-2"
+                      }
+                    `}
                   >
                     {service.title}
                   </span>
 
+                  {/* ARROW */}
+
                   <span
-                    className={`ml-auto text-xl transition-all duration-300 ${
-                      isActive
-                        ? "translate-x-0 text-blue-500 opacity-100"
-                        : "-translate-x-3 opacity-0"
-                    }`}
+                    className={`
+                      flex
+                      h-10
+                      w-10
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-full
+                      border
+                      text-lg
+                      transition-all
+                      duration-500
+                      md:h-14
+                      md:w-14
+                      ${
+                        isActive
+                          ? "rotate-45 border-black/20 text-black"
+                          : "border-white/10 text-neutral-600 group-hover:rotate-45 group-hover:border-white/30 group-hover:text-white"
+                      }
+                    `}
                   >
-                    →
+                    ↗
                   </span>
-                </motion.button>
-              );
-            })}
 
-          </div>
+                </div>
 
-          {/* Interactive visual */}
+                {/* EXPANDED INFORMATION */}
 
-          <div className="lg:sticky lg:top-32 lg:h-fit">
-            <ServiceVisual active={active} />
+                <AnimatePresence initial={false}>
+                  {isActive && (
+                    <motion.div
+                      initial={{
+                        height: 0,
+                        opacity: 0,
+                      }}
+                      animate={{
+                        height: "auto",
+                        opacity: 1,
+                      }}
+                      exit={{
+                        height: 0,
+                        opacity: 0,
+                      }}
+                      transition={{
+                        duration: 0.4,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="relative z-10 overflow-hidden bg-blue-600"
+                    >
+                      <div className="grid gap-6 px-16 pb-8 md:grid-cols-[1fr_0.6fr] md:px-24">
 
-            <motion.div
-              key={active}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="mt-6 flex flex-wrap gap-2"
-            >
-              {services[active].keywords.map((keyword) => (
-                <span
-                  key={keyword}
-                  className="rounded-full border border-white/10 px-4 py-2 text-[10px] uppercase tracking-[0.15em] text-neutral-500"
-                >
-                  {keyword}
-                </span>
-              ))}
-            </motion.div>
+                        <p className="max-w-xl text-sm leading-7 text-black/70 md:text-base">
+                          {service.description}
+                        </p>
 
-            <motion.p
-              key={`description-${active}`}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="mt-6 max-w-lg text-sm leading-7 text-neutral-500"
-            >
-              {services[active].description}
-            </motion.p>
-          </div>
+                        <div className="flex flex-wrap content-start gap-2 md:justify-end">
+                          {service.keywords.map((keyword) => (
+                            <span
+                              key={keyword}
+                              className="rounded-full border border-black/15 px-4 py-2 text-[9px] uppercase tracking-[0.2em] text-black/60"
+                            >
+                              {keyword}
+                            </span>
+                          ))}
+                        </div>
+
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+              </motion.button>
+            );
+          })}
 
         </div>
+
+        {/* BOTTOM NOTE */}
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="mt-8 flex items-center justify-between"
+        >
+          <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+            Capabilities / 06
+          </span>
+
+          <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+            Strategy × Creativity × Technology
+          </span>
+        </motion.div>
+
       </div>
     </section>
   );

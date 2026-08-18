@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const steps = [
@@ -39,115 +39,10 @@ const steps = [
   },
 ];
 
-function ProcessCore({ active }) {
-  return (
-    <div className="relative flex h-[420px] items-center justify-center overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#080808] md:h-[520px]">
-
-      {/* Ambient blue field */}
-
-      <motion.div
-        animate={{
-          scale: 1 + active * 0.08,
-          opacity: 0.08 + active * 0.025,
-        }}
-        transition={{ duration: 0.8 }}
-        className="absolute h-72 w-72 rounded-full bg-blue-600 blur-[110px]"
-      />
-
-      {/* Technical grid */}
-
-      <div
-        className="absolute inset-0 opacity-[0.12]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)",
-          backgroundSize: "55px 55px",
-        }}
-      />
-
-      {/* Outer rings */}
-
-      <motion.div
-        animate={{ rotate: active * 18 }}
-        transition={{ duration: 1 }}
-        className="absolute h-72 w-72 rounded-full border border-blue-500/20"
-      />
-
-      <motion.div
-        animate={{
-          rotate: active * -25,
-          scale: 0.78 + active * 0.035,
-        }}
-        transition={{ duration: 1 }}
-        className="absolute h-52 w-52 rounded-full border border-white/10"
-      />
-
-      {/* Core */}
-
-      <motion.div
-        key={active}
-        initial={{ scale: 0.75, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{
-          duration: 0.7,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-        className="relative z-10 flex h-32 w-32 items-center justify-center rounded-full border border-blue-400/30 bg-[#07122b] shadow-[0_0_100px_rgba(37,99,235,.2)]"
-      >
-        <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/10 bg-[#0b0b0b]">
-          <span className="text-xs font-bold tracking-[0.25em] text-blue-400">
-            {steps[active].number}
-          </span>
-        </div>
-      </motion.div>
-
-      {/* Orbit nodes */}
-
-      {[0, 1, 2, 3, 4].map((node) => (
-        <motion.div
-          key={node}
-          animate={{
-            rotate: active * 22,
-          }}
-          transition={{ duration: 0.8 }}
-          className="absolute left-1/2 top-1/2 h-3 w-3 rounded-full bg-white shadow-[0_0_20px_rgba(255,255,255,.4)]"
-          style={{
-            transformOrigin: "0 0",
-            transform: `rotate(${node * 72}deg) translateX(145px)`,
-          }}
-        />
-      ))}
-
-      {/* Current label */}
-
-      <div className="absolute bottom-7 left-7 right-7 flex items-end justify-between">
-
-        <div>
-          <p className="text-[9px] uppercase tracking-[0.4em] text-neutral-600">
-            Current phase
-          </p>
-
-          <motion.p
-            key={active}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-300"
-          >
-            {steps[active].label}
-          </motion.p>
-        </div>
-
-        <span className="text-[10px] text-neutral-700">
-          {steps[active].number} / 05
-        </span>
-
-      </div>
-    </div>
-  );
-}
-
 export default function Process() {
   const [active, setActive] = useState(0);
+
+  const progress = (active / (steps.length - 1)) * 100;
 
   return (
     <section
@@ -156,137 +51,320 @@ export default function Process() {
     >
       <div className="mx-auto max-w-[1500px]">
 
-        {/* Heading */}
+        {/* HEADER */}
 
-        <div className="mb-20">
+        <div className="grid gap-10 md:grid-cols-[1fr_0.45fr] md:items-end">
+
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-xs uppercase tracking-[0.45em] text-neutral-600"
+            >
+              How we work
+            </motion.p>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.9,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="mt-6 text-[clamp(4rem,8vw,8rem)] font-black uppercase leading-[0.8] tracking-[-0.07em]"
+            >
+              FROM IDEA
+              <br />
+              <span className="text-neutral-600">
+                TO IMPACT.
+              </span>
+            </motion.h2>
+          </div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-xs uppercase tracking-[0.45em] text-neutral-600"
-          >
-            How we work
-          </motion.p>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{
-              duration: 0.9,
-              ease: [0.22, 1, 0.36, 1],
+              duration: 0.7,
+              delay: 0.2,
             }}
-            className="mt-6 max-w-5xl text-[clamp(3.5rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-[-0.065em]"
+            className="max-w-sm text-sm leading-7 text-neutral-500 md:pb-2"
           >
-            FROM SIGNAL
-            <br />
-            <span className="text-neutral-600">TO SCALE.</span>
-          </motion.h2>
+            A simple process built to keep ideas moving — from the first
+            question to measurable growth.
+          </motion.p>
 
         </div>
 
-        {/* Main process */}
+        {/* PROCESS JOURNEY */}
 
-        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="mt-24 md:mt-32">
 
-          {/* Steps */}
+          {/* Desktop timeline */}
 
-          <div className="border-t border-white/10">
+          <div className="relative hidden md:block">
+
+            {/* Base line */}
+
+            <div className="absolute left-0 right-0 top-[27px] h-px bg-white/10" />
+
+            {/* Progress line */}
+
+            <motion.div
+              className="absolute left-0 top-[27px] h-px bg-blue-500"
+              animate={{ width: `${progress}%` }}
+              transition={{
+                duration: 0.7,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            />
+
+            {/* Steps */}
+
+            <div className="relative grid grid-cols-5">
+
+              {steps.map((step, index) => {
+                const isActive = active === index;
+                const isPassed = index <= active;
+
+                return (
+                  <button
+                    key={step.number}
+                    type="button"
+                    onMouseEnter={() => setActive(index)}
+                    onFocus={() => setActive(index)}
+                    onClick={() => setActive(index)}
+                    className="group text-left"
+                  >
+
+                    {/* Node */}
+
+                    <div className="relative flex h-14 items-start">
+
+                      <motion.div
+                        animate={{
+                          scale: isActive ? 1.35 : 1,
+                          backgroundColor: isPassed
+                            ? "rgb(37 99 235)"
+                            : "rgb(20 20 20)",
+                          borderColor: isPassed
+                            ? "rgb(59 130 246)"
+                            : "rgba(255,255,255,0.15)",
+                        }}
+                        transition={{ duration: 0.3 }}
+                        className="relative z-10 h-4 w-4 rounded-full border"
+                      />
+
+                      {isActive && (
+                        <motion.span
+                          layoutId="process-pulse"
+                          className="absolute -left-2 -top-2 h-8 w-8 rounded-full border border-blue-500/30"
+                        />
+                      )}
+
+                    </div>
+
+                    {/* Number */}
+
+                    <p
+                      className={`text-[10px] tracking-[0.25em] transition-colors duration-300 ${
+                        isActive
+                          ? "text-blue-500"
+                          : "text-neutral-700"
+                      }`}
+                    >
+                      {step.number}
+                    </p>
+
+                    {/* Title */}
+
+                    <p
+                      className={`mt-3 text-xl font-semibold tracking-tight transition-all duration-300 lg:text-2xl ${
+                        isActive
+                          ? "translate-x-1 text-white"
+                          : "text-neutral-600 group-hover:text-neutral-300"
+                      }`}
+                    >
+                      {step.title}
+                    </p>
+
+                  </button>
+                );
+              })}
+
+            </div>
+          </div>
+
+          {/* Active step */}
+
+          <div className="mt-14 border-t border-white/10 pt-10 md:mt-20 md:pt-14">
+
+            <AnimatePresence mode="wait">
+
+              <motion.div
+                key={active}
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  y: -15,
+                }}
+                transition={{
+                  duration: 0.4,
+                }}
+                className="hidden gap-10 md:grid md:grid-cols-[0.7fr_1.3fr]"
+              >
+
+                {/* Step identity */}
+
+                <div>
+
+                  <p className="text-[10px] uppercase tracking-[0.35em] text-blue-500">
+                    {steps[active].number} — {steps[active].label}
+                  </p>
+
+                  <h3 className="mt-5 text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.8] tracking-[-0.06em] text-white">
+                    {steps[active].title}
+                  </h3>
+
+                </div>
+
+                {/* Description */}
+
+                <div className="flex flex-col justify-end md:pb-2">
+
+                  <p className="max-w-2xl text-base leading-8 text-neutral-500 md:text-lg">
+                    {steps[active].description}
+                  </p>
+
+                  <div className="mt-8 flex items-center gap-4">
+
+                    <span className="h-px w-12 bg-blue-500" />
+
+                    <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+                      Kardengey / Process
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </motion.div>
+
+            </AnimatePresence>
+
+          </div>
+
+          {/* Mobile timeline */}
+
+          <div className="mt-10 md:hidden">
 
             {steps.map((step, index) => {
               const isActive = active === index;
 
               return (
-                <motion.button
+                <div
                   key={step.number}
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.07,
-                  }}
-                  onMouseEnter={() => setActive(index)}
-                  onFocus={() => setActive(index)}
-                  className={`group flex w-full items-center gap-5 border-b border-white/10 py-7 text-left transition-all duration-300 ${
-                    isActive ? "pl-4" : ""
-                  }`}
+                  className="relative border-l border-white/10 pl-8"
                 >
 
-                  <span
-                    className={`text-[10px] tracking-[0.2em] ${
-                      isActive
-                        ? "text-blue-500"
-                        : "text-neutral-700"
-                    }`}
-                  >
-                    {step.number}
-                  </span>
+                  {/* Node */}
 
-                  <span
-                    className={`text-2xl font-semibold tracking-tight md:text-3xl ${
-                      isActive
-                        ? "text-white"
-                        : "text-neutral-500 group-hover:text-neutral-300"
-                    }`}
+                  <button
+                    type="button"
+                    onClick={() => setActive(index)}
+                    className="absolute -left-[7px] top-1"
                   >
-                    {step.title}
-                  </span>
+                    <span
+                      className={`block h-3 w-3 rounded-full border transition-all duration-300 ${
+                        isActive
+                          ? "border-blue-500 bg-blue-500 shadow-[0_0_20px_rgba(37,99,235,0.6)]"
+                          : "border-white/20 bg-[#050505]"
+                      }`}
+                    />
+                  </button>
 
-                  <span
-                    className={`ml-auto transition-all duration-300 ${
-                      isActive
-                        ? "translate-x-0 text-blue-500 opacity-100"
-                        : "-translate-x-3 opacity-0"
-                    }`}
+                  {/* Step */}
+
+                  <button
+                    type="button"
+                    onClick={() => setActive(index)}
+                    className="mb-10 block w-full text-left"
                   >
-                    →
-                  </span>
+                    <p
+                      className={`text-[9px] tracking-[0.25em] ${
+                        isActive
+                          ? "text-blue-500"
+                          : "text-neutral-700"
+                      }`}
+                    >
+                      {step.number}
+                    </p>
 
-                </motion.button>
+                    <h3
+                      className={`mt-2 text-3xl font-bold tracking-tight ${
+                        isActive
+                          ? "text-white"
+                          : "text-neutral-600"
+                      }`}
+                    >
+                      {step.title}
+                    </h3>
+
+                    <AnimatePresence initial={false}>
+                      {isActive && (
+                        <motion.div
+                          initial={{
+                            opacity: 0,
+                            height: 0,
+                          }}
+                          animate={{
+                            opacity: 1,
+                            height: "auto",
+                          }}
+                          exit={{
+                            opacity: 0,
+                            height: 0,
+                          }}
+                          className="overflow-hidden"
+                        >
+                          <p className="mt-4 max-w-md text-sm leading-7 text-neutral-500">
+                            {step.description}
+                          </p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+
+                  </button>
+
+                </div>
               );
             })}
 
           </div>
 
-          {/* Visual */}
+        </div>
 
-          <div className="lg:sticky lg:top-32 lg:h-fit">
+        {/* FOOTER LINE */}
 
-            <ProcessCore active={active} />
+        <div className="mt-16 flex items-center justify-between border-t border-white/10 pt-6">
 
-            <motion.div
-              key={active}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="mt-7"
-            >
-              <div className="flex items-start justify-between gap-8">
+          <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+            01 — 05
+          </span>
 
-                <div>
-                  <p className="text-[9px] uppercase tracking-[0.35em] text-blue-500">
-                    {steps[active].number} — {steps[active].label}
-                  </p>
-
-                  <h3 className="mt-3 text-3xl font-bold tracking-tight text-white">
-                    {steps[active].title}
-                  </h3>
-                </div>
-
-                <span className="hidden text-[9px] uppercase tracking-[0.3em] text-neutral-700 md:block">
-                  Kardengey process
-                </span>
-
-              </div>
-
-              <p className="mt-5 max-w-xl text-sm leading-7 text-neutral-500">
-                {steps[active].description}
-              </p>
-            </motion.div>
-
-          </div>
+          <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+            Discover / Define / Create / Launch / Grow
+          </span>
 
         </div>
 
