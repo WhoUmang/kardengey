@@ -50,7 +50,7 @@ export default function Footer() {
           className="mt-20 overflow-hidden"
         >
           <a
-            href="#home"
+            href="/"
             className="block text-[clamp(4rem,15vw,15rem)] font-black leading-[0.72] tracking-[-0.09em] text-white transition-colors duration-500 hover:text-blue-500"
           >
             kardengey

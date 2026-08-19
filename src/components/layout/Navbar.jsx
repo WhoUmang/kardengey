@@ -1,17 +1,26 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", type: "section", target: "work" },
+  { label: "Services", type: "section", target: "services" },
+  { label: "Process", type: "section", target: "process" },
+  { label: "About", type: "section", target: "about" },
+  { label: "Insights", type: "page", target: "/insights" },
+  { label: "Contact", type: "section", target: "contact" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  /* =========================================================
+     SCROLL STATE
+  ========================================================= */
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +38,10 @@ export default function Navbar() {
     };
   }, []);
 
-  // Prevent background scrolling while mobile menu is open
+  /* =========================================================
+     PREVENT BODY SCROLL WHEN MOBILE MENU IS OPEN
+  ========================================================= */
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
 
@@ -38,13 +50,117 @@ export default function Navbar() {
     };
   }, [menuOpen]);
 
+  /* =========================================================
+     CLOSE MENU
+  ========================================================= */
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
+  /* =========================================================
+     LOGO
+  ========================================================= */
+
+  const handleLogoClick = () => {
+    closeMenu();
+
+    if (location.pathname === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      navigate("/");
+    }
+  };
+
+  /* =========================================================
+     SECTION NAVIGATION
+  ========================================================= */
+
+  const handleSectionClick = (sectionId) => {
+    closeMenu();
+
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+
+      return;
+    }
+
+    /*
+      If we're on Insights or an article,
+      go back to homepage first.
+    */
+
+    navigate("/");
+
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 300);
+  };
+
+  /* =========================================================
+     GENERAL NAVIGATION
+  ========================================================= */
+
+  const handleNavigation = (link) => {
+    if (link.type === "page") {
+      closeMenu();
+      navigate(link.target);
+      return;
+    }
+
+    handleSectionClick(link.target);
+  };
+
+  /* =========================================================
+     SHARED NAV ITEM STYLE
+
+     Every item uses the SAME button element and SAME classes.
+  ========================================================= */
+
+  const navItemClasses = `
+    group
+    relative
+    inline-flex
+    items-center
+    justify-center
+    border-0
+    bg-transparent
+    p-0
+    m-0
+    font-medium
+    text-[11px]
+    uppercase
+    tracking-[0.25em]
+    leading-none
+    text-neutral-400
+    transition-colors
+    duration-300
+    hover:text-white
+    focus:outline-none
+  `;
+
   return (
     <>
-      {/* NAVBAR */}
+      {/* =====================================================
+          NAVBAR
+      ===================================================== */}
 
       <motion.header
         initial={{ y: -40, opacity: 0 }}
@@ -74,40 +190,47 @@ export default function Navbar() {
           `}
         >
 
-          {/* LOGO */}
+          {/* =================================================
+              LOGO
+          ================================================= */}
 
-          <a
-            href="#home"
-            onClick={closeMenu}
-            className="text-2xl font-black tracking-[-0.04em] text-white"
-          >
-            kardengey
-          </a>
+          <button
+  type="button"
+  onClick={handleLogoClick}
+  style={{
+    fontSize: "24px",
+    fontWeight: 900,
+    lineHeight: 1,
+    letterSpacing: "-0.055em",
+    color: "#ffffff",
+  }}
+  className="border-0 bg-transparent p-0 focus:outline-none"
+>
+  kardengey
+</button>
 
-          {/* DESKTOP NAVIGATION */}
+          {/* =================================================
+              DESKTOP NAVIGATION
+          ================================================= */}
 
-          <nav className="hidden items-center gap-10 lg:flex">
+          <nav className="hidden items-center gap-8 lg:flex">
+
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.label}
-                href={link.href}
-                className="
-                  group
-                  relative
-                  text-[11px]
-                  font-medium
-                  uppercase
-                  tracking-[0.25em]
-                  text-neutral-400
-                  transition-colors
-                  duration-300
-                  hover:text-white
-                "
+                type="button"
+                onClick={() => handleNavigation(link)}
+                className={navItemClasses}
               >
-                {link.label}
+                <span>
+                  {link.label}
+                </span>
+
+                {/* Hover underline */}
 
                 <span
                   className="
+                    pointer-events-none
                     absolute
                     -bottom-2
                     left-0
@@ -119,18 +242,24 @@ export default function Navbar() {
                     group-hover:w-full
                   "
                 />
-              </a>
+              </button>
             ))}
+
           </nav>
 
-          {/* RIGHT SIDE */}
+          {/* =================================================
+              RIGHT SIDE
+          ================================================= */}
 
           <div className="flex items-center gap-3">
 
-            {/* DESKTOP CTA */}
+            {/* =================================================
+                DESKTOP CTA
+            ================================================= */}
 
-            <a
-              href="#contact"
+            <button
+              type="button"
+              onClick={() => handleSectionClick("contact")}
               className="
                 group
                 relative
@@ -139,6 +268,7 @@ export default function Navbar() {
                 items-center
                 overflow-hidden
                 rounded-full
+                border-0
                 bg-white
                 px-6
                 text-xs
@@ -183,24 +313,26 @@ export default function Navbar() {
                   flex
                   items-center
                   gap-2
-                  !text-black
+                  text-black
                   transition-colors
                   duration-300
-                  group-hover:!text-white
+                  group-hover:text-white
                 "
               >
-                <span className="!text-black group-hover:!text-white">
+                <span className="text-black group-hover:text-white">
                   Let's Talk
                 </span>
 
-                <span className="!text-black transition-transform duration-300 group-hover:translate-x-1 group-hover:!text-white">
+                <span className="text-black transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white">
                   ↗
                 </span>
               </span>
 
-            </a>
+            </button>
 
-            {/* MOBILE MENU BUTTON */}
+            {/* =================================================
+                MOBILE MENU BUTTON
+            ================================================= */}
 
             <button
               type="button"
@@ -282,10 +414,13 @@ export default function Navbar() {
             </button>
 
           </div>
+
         </div>
       </motion.header>
 
-      {/* MOBILE MENU */}
+      {/* =====================================================
+          MOBILE MENU
+      ===================================================== */}
 
       <AnimatePresence>
         {menuOpen && (
@@ -305,7 +440,17 @@ export default function Navbar() {
 
             {/* Ambient glow */}
 
-            <div className="pointer-events-none absolute right-[-20%] top-[20%] h-80 w-80 rounded-full bg-blue-600/[0.12] blur-[120px]" />
+            <div className="
+              pointer-events-none
+              absolute
+              right-[-20%]
+              top-[20%]
+              h-80
+              w-80
+              rounded-full
+              bg-blue-600/[0.12]
+              blur-[120px]
+            " />
 
             {/* Grid */}
 
@@ -318,23 +463,38 @@ export default function Navbar() {
               }}
             />
 
-            {/* Menu content */}
+            {/* Menu */}
 
-            <div className="relative flex h-full flex-col justify-between px-[7vw] pb-10 pt-32">
+            <div className="
+              relative
+              flex
+              h-full
+              flex-col
+              justify-between
+              px-[7vw]
+              pb-10
+              pt-32
+            ">
 
               <div>
 
-                <p className="mb-10 text-[9px] uppercase tracking-[0.45em] text-neutral-600">
+                <p className="
+                  mb-10
+                  text-[9px]
+                  uppercase
+                  tracking-[0.45em]
+                  text-neutral-600
+                ">
                   Navigation
                 </p>
 
                 <nav className="flex flex-col">
 
                   {navLinks.map((link, index) => (
-                    <motion.a
+                    <motion.button
                       key={link.label}
-                      href={link.href}
-                      onClick={closeMenu}
+                      type="button"
+                      onClick={() => handleNavigation(link)}
                       initial={{ opacity: 0, x: -30 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{
@@ -345,11 +505,15 @@ export default function Navbar() {
                       className="
                         group
                         flex
+                        w-full
                         items-center
                         justify-between
+                        border-0
                         border-b
                         border-white/10
+                        bg-transparent
                         py-5
+                        text-left
                         text-[clamp(2.5rem,10vw,4rem)]
                         font-black
                         uppercase
@@ -359,21 +523,37 @@ export default function Navbar() {
                         transition-colors
                         duration-300
                         hover:text-white
+                        focus:outline-none
                       "
                     >
-                      <span>{link.label}</span>
 
-                      <span className="text-lg font-normal text-blue-500 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">
+                      <span>
+                        {link.label}
+                      </span>
+
+                      <span className="
+                        text-lg
+                        font-normal
+                        text-blue-500
+                        opacity-0
+                        transition-all
+                        duration-300
+                        group-hover:translate-x-1
+                        group-hover:opacity-100
+                      ">
                         ↗
                       </span>
-                    </motion.a>
+
+                    </motion.button>
                   ))}
 
                 </nav>
 
               </div>
 
-              {/* Bottom */}
+              {/* =================================================
+                  MOBILE BOTTOM
+              ================================================= */}
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -382,28 +562,48 @@ export default function Navbar() {
                   duration: 0.5,
                   delay: 0.5,
                 }}
-                className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between"
+                className="
+                  flex
+                  flex-col
+                  items-start
+                  gap-6
+                  sm:flex-row
+                  sm:items-end
+                  sm:justify-between
+                "
               >
 
                 <div>
-                  <p className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
+
+                  <p className="
+                    text-[9px]
+                    uppercase
+                    tracking-[0.35em]
+                    text-neutral-700
+                  ">
                     Digital Growth Studio
                   </p>
 
-                  <p className="mt-2 text-xs text-neutral-600">
+                  <p className="
+                    mt-2
+                    text-xs
+                    text-neutral-600
+                  ">
                     India / Worldwide
                   </p>
+
                 </div>
 
-                <a
-                  href="#contact"
-                  onClick={closeMenu}
+                <button
+                  type="button"
+                  onClick={() => handleSectionClick("contact")}
                   className="
                     group
                     inline-flex
                     items-center
                     gap-3
                     rounded-full
+                    border-0
                     bg-white
                     px-5
                     py-3
@@ -411,21 +611,29 @@ export default function Navbar() {
                     font-bold
                     uppercase
                     tracking-[0.15em]
-                    !text-black
+                    text-black
                   "
                 >
-                  <span className="!text-black">
+
+                  <span className="text-black">
                     Let's Talk
                   </span>
 
-                  <span className="!text-black transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="
+                    text-black
+                    transition-transform
+                    duration-300
+                    group-hover:translate-x-1
+                  ">
                     ↗
                   </span>
-                </a>
+
+                </button>
 
               </motion.div>
 
             </div>
+
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,3 +1,6 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+import LatestReads from "./components/insights/LatestReads";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
 import FeaturedWork from "./components/work/FeaturedWork";
@@ -10,21 +13,93 @@ import Contact from "./components/contact/Contact";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Footer from "./components/layout/Footer";
 
-function App() {
+import Insights from "./components/insights/Insights";
+import InsightArticle from "./components/insights/InsightArticle";
+
+function Home() {
   return (
     <main className="w-full bg-[#050505]">
       <Navbar />
+
       <Hero />
+
       <FeaturedWork />
+
       <Services />
+
       <Process />
+
       <About />
+
       <AIGrowth />
+
       <Founder />
+
+      <LatestReads />
+
       <Contact />
+
       <WhatsAppButton />
-      <Footer />   
+
+      <Footer />
     </main>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+
+        {/* =====================================================
+            HOME
+        ===================================================== */}
+
+        <Route path="/" element={<Home />} />
+
+        {/* =====================================================
+            INSIGHTS
+        ===================================================== */}
+
+        <Route
+          path="/insights"
+          element={
+            <>
+              <Navbar />
+              <Insights />
+              <WhatsAppButton />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* =====================================================
+            INDIVIDUAL ARTICLE
+        ===================================================== */}
+
+        <Route
+          path="/insights/:slug"
+          element={
+            <>
+              <Navbar />
+              <InsightArticle />
+              <WhatsAppButton />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* =====================================================
+            FALLBACK
+        ===================================================== */}
+
+        <Route
+          path="*"
+          element={<Navigate to="/" replace />}
+        />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
