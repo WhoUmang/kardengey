@@ -1,52 +1,82 @@
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import articles from "../../data/articles";
+import SEO from "../../components/SEO";
+import { getArticleSEO } from "../../seo/articleSEO";
 
 export default function InsightArticle() {
   const { slug } = useParams();
 
-  const article = articles.find((item) => item.slug === slug);
+  const article = articles.find(
+    (item) => item.slug === slug
+  );
+
+  /* =========================================================
+     ARTICLE NOT FOUND
+  ========================================================= */
 
   if (!article) {
     return (
-      <section className="min-h-screen bg-[#050505] px-[6vw] py-40 text-white">
-        <div className="mx-auto max-w-[1200px]">
-          <p className="text-xs uppercase tracking-[0.4em] text-blue-500">
-            Kardengey / Insights
-          </p>
+      <>
+        <SEO
+          title="Article Not Found"
+          description="The Kardengey Insights article you're looking for could not be found."
+          canonical="https://kardengey.com/insights"
+        />
 
-          <h1 className="mt-8 max-w-4xl text-[clamp(3rem,7vw,7rem)] font-black uppercase leading-[0.85] tracking-[-0.07em]">
-            Article
-            <br />
-            <span className="text-neutral-600">
-              not found.
-            </span>
-          </h1>
+        <section className="min-h-screen bg-[#050505] px-[6vw] py-40 text-white">
+          <div className="mx-auto max-w-[1200px]">
 
-          <Link
-            to="/insights"
-            className="group mt-10 inline-flex items-center gap-3 rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.2em] text-neutral-400 transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
-          >
-            <span className="transition-transform duration-300 group-hover:-translate-x-1">
-              ←
-            </span>
+            <p className="text-xs uppercase tracking-[0.4em] text-blue-500">
+              Kardengey / Insights
+            </p>
 
-            Back to insights
-          </Link>
-        </div>
-      </section>
+            <h1 className="mt-8 text-5xl font-black uppercase tracking-[-0.05em] md:text-7xl">
+              Article not found.
+            </h1>
+
+            <Link
+              to="/insights"
+              className="mt-10 inline-flex items-center gap-3 rounded-full border border-white/10 px-6 py-3 text-xs uppercase tracking-[0.2em] text-neutral-400 transition-all hover:border-blue-500 hover:text-white"
+            >
+              ← Back to insights
+            </Link>
+
+          </div>
+        </section>
+      </>
     );
   }
 
+  /* =========================================================
+     ARTICLE SEO
+  ========================================================= */
+
+  const seo = getArticleSEO(article);
+
   return (
-    <article className="relative overflow-hidden bg-[#050505] text-white">
+    <article className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
 
       {/* =====================================================
-          ARTICLE HEADER
+          SEO
       ===================================================== */}
 
-      <section className="px-[6vw] pb-24 pt-32 md:pb-32 md:pt-44">
-        <div className="mx-auto max-w-[1400px]">
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
+        type={seo.type}
+        publishedAt={seo.publishedAt}
+        author={seo.author}
+      />
+
+      {/* =====================================================
+          HEADER
+      ===================================================== */}
+
+      <section className="px-[6vw] pb-20 pt-32 md:pb-28 md:pt-40">
+
+        <div className="mx-auto max-w-[1200px]">
 
           {/* Breadcrumb */}
 
@@ -57,45 +87,37 @@ export default function InsightArticle() {
           >
             <Link
               to="/insights"
-              className="group inline-flex items-center gap-3 text-[9px] uppercase tracking-[0.35em] text-neutral-700 transition-colors duration-300 hover:text-white"
+              className="text-[9px] uppercase tracking-[0.35em] text-neutral-700 transition-colors hover:text-blue-500"
             >
-              <span className="transition-transform duration-300 group-hover:-translate-x-1">
-                ←
-              </span>
-
               Kardengey / Insights
             </Link>
           </motion.div>
 
           {/* Category */}
 
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.7,
               delay: 0.1,
             }}
-            className="mt-20 flex items-center gap-4"
+            className="mt-16 text-[10px] uppercase tracking-[0.4em] text-blue-500"
           >
-            <span className="h-px w-10 bg-blue-500" />
-
-            <span className="text-[10px] uppercase tracking-[0.4em] text-blue-500">
-              {article.number} — {article.category}
-            </span>
-          </motion.div>
+            {article.category}
+          </motion.p>
 
           {/* Title */}
 
           <motion.h1
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
+              duration: 0.9,
               delay: 0.15,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="mt-8 max-w-[1250px] text-[clamp(3.2rem,7vw,8rem)] font-black uppercase leading-[0.84] tracking-[-0.075em]"
+            className="mt-7 max-w-6xl text-[clamp(3.5rem,8vw,8rem)] font-black uppercase leading-[0.82] tracking-[-0.075em]"
           >
             {article.title}
           </motion.h1>
@@ -106,10 +128,10 @@ export default function InsightArticle() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 0.8,
-              delay: 0.3,
+              duration: 0.7,
+              delay: 0.25,
             }}
-            className="mt-10 max-w-2xl text-base leading-8 text-neutral-500 md:text-xl md:leading-9"
+            className="mt-10 max-w-2xl text-base leading-8 text-neutral-500 md:text-xl"
           >
             {article.description}
           </motion.p>
@@ -121,9 +143,9 @@ export default function InsightArticle() {
             animate={{ opacity: 1 }}
             transition={{
               duration: 0.7,
-              delay: 0.4,
+              delay: 0.35,
             }}
-            className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-white/10 pt-6 text-[9px] uppercase tracking-[0.25em] text-neutral-700"
+            className="mt-10 flex flex-wrap items-center gap-4 border-t border-white/10 pt-6 text-[9px] uppercase tracking-[0.25em] text-neutral-700"
           >
             <span>{article.date}</span>
 
@@ -133,7 +155,7 @@ export default function InsightArticle() {
 
             <span>/</span>
 
-            <span>{article.author || "Kardengey"}</span>
+            <span>{article.author}</span>
           </motion.div>
 
         </div>
@@ -144,11 +166,13 @@ export default function InsightArticle() {
       ===================================================== */}
 
       <section className="border-t border-white/10 px-[6vw]">
+
         <div className="mx-auto grid max-w-[1200px] gap-16 py-20 md:grid-cols-[180px_1fr] md:py-28">
 
-          {/* Sidebar */}
+          {/* Side label */}
 
           <aside className="hidden md:block">
+
             <div className="sticky top-32">
 
               <p className="text-[9px] uppercase tracking-[0.35em] text-neutral-700">
@@ -161,34 +185,29 @@ export default function InsightArticle() {
 
               <div className="mt-8 h-px w-12 bg-blue-500" />
 
-              <p className="mt-6 text-[9px] uppercase leading-6 tracking-[0.2em] text-neutral-700">
-                Marketing
+              <p className="mt-6 text-[9px] uppercase leading-5 tracking-[0.2em] text-neutral-700">
+                Strategy
+                <br />
+                Creativity
                 <br />
                 Technology
                 <br />
                 AI
-                <br />
-                Growth
               </p>
 
             </div>
+
           </aside>
 
-          {/* Main content */}
+          {/* Content */}
 
           <div className="max-w-3xl">
 
-            {/* Opening marker */}
+            {article.content.map((block, index) => {
 
-            <div className="mb-12 flex items-center gap-4">
-              <span className="text-[9px] uppercase tracking-[0.3em] text-blue-500">
-                Start here
-              </span>
-
-              <span className="h-px w-16 bg-white/10" />
-            </div>
-
-            {article.content?.map((block, index) => {
+              /* =================================================
+                 HEADING
+              ================================================= */
 
               if (block.type === "heading") {
                 return (
@@ -200,34 +219,39 @@ export default function InsightArticle() {
                       once: true,
                       amount: 0.3,
                     }}
-                    transition={{
-                      duration: 0.7,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                    className="mb-7 mt-16 text-3xl font-bold uppercase leading-[0.95] tracking-[-0.05em] text-white md:text-4xl"
+                    transition={{ duration: 0.7 }}
+                    className="mb-7 mt-16 text-3xl font-bold uppercase leading-tight tracking-[-0.04em] text-white md:text-4xl"
                   >
                     {block.text}
                   </motion.h2>
                 );
               }
 
+              /* =================================================
+                 QUOTE
+              ================================================= */
+
               if (block.type === "quote") {
                 return (
                   <motion.blockquote
                     key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{
                       once: true,
                       amount: 0.3,
                     }}
                     transition={{ duration: 0.7 }}
-                    className="my-14 border-l-2 border-blue-500 py-2 pl-6 text-2xl font-medium leading-9 text-neutral-300 md:text-3xl md:leading-10"
+                    className="my-12 border-l-2 border-blue-500 py-2 pl-6 text-xl font-medium leading-8 text-neutral-300 md:text-2xl md:leading-9"
                   >
-                    {block.text}
+                    “{block.text}”
                   </motion.blockquote>
                 );
               }
+
+              /* =================================================
+                 PARAGRAPH
+              ================================================= */
 
               return (
                 <motion.p
@@ -238,10 +262,7 @@ export default function InsightArticle() {
                     once: true,
                     amount: 0.3,
                   }}
-                  transition={{
-                    duration: 0.7,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
+                  transition={{ duration: 0.7 }}
                   className="mb-7 text-base leading-8 text-neutral-400 md:text-lg md:leading-9"
                 >
                   {block.text}
@@ -249,45 +270,34 @@ export default function InsightArticle() {
               );
             })}
 
-            {/* End marker */}
-
-            <div className="mt-20 flex items-center gap-4 border-t border-white/10 pt-8">
-              <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-700">
-                End of article
-              </span>
-
-              <span className="h-px flex-1 bg-white/10" />
-
-              <span className="text-[9px] uppercase tracking-[0.3em] text-blue-500">
-                Kardengey
-              </span>
-            </div>
-
           </div>
+
         </div>
+
       </section>
 
       {/* =====================================================
-          CONTINUE READING
+          ARTICLE FOOTER
       ===================================================== */}
 
-      <section className="border-t border-white/10 px-[6vw] py-24 md:py-32">
+      <section className="border-t border-white/10 px-[6vw] py-20 md:py-28">
+
         <div className="mx-auto max-w-[1200px]">
 
-          <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
 
             <div>
+
               <p className="text-[9px] uppercase tracking-[0.35em] text-blue-500">
                 Continue exploring
               </p>
 
-              <h2 className="mt-5 max-w-xl text-[clamp(2.8rem,5vw,5rem)] font-black uppercase leading-[0.85] tracking-[-0.06em]">
+              <h2 className="mt-4 text-3xl font-black uppercase tracking-[-0.04em] text-white md:text-5xl">
                 More ideas.
                 <br />
-                <span className="text-neutral-600">
-                  More movement.
-                </span>
+                More movement.
               </h2>
+
             </div>
 
             <Link
@@ -304,6 +314,7 @@ export default function InsightArticle() {
           </div>
 
         </div>
+
       </section>
 
     </article>

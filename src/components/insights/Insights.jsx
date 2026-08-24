@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import articles from "../../data/articles";
+import SEO from "../../components/SEO";
 
 const categories = [
   "ALL",
@@ -40,6 +41,8 @@ function ArticleRow({ article, index, featured = false }) {
               : "py-10 md:py-12 md:grid-cols-[80px_180px_1fr_80px]"
           }`}
         >
+          {/* Number */}
+
           <div>
             <span
               className={`tracking-[0.2em] ${
@@ -58,11 +61,15 @@ function ArticleRow({ article, index, featured = false }) {
             )}
           </div>
 
+          {/* Category */}
+
           <div>
             <span className="text-[9px] uppercase tracking-[0.25em] text-blue-500">
               {article.category}
             </span>
           </div>
+
+          {/* Content */}
 
           <div>
             <h2
@@ -92,6 +99,8 @@ function ArticleRow({ article, index, featured = false }) {
             </div>
           </div>
 
+          {/* Arrow */}
+
           <div className="hidden justify-end md:flex">
             <span
               className={`transition-all duration-300 ${
@@ -112,6 +121,11 @@ function ArticleRow({ article, index, featured = false }) {
 export default function Insights() {
   const [activeCategory, setActiveCategory] = useState("ALL");
 
+  /* =========================================================
+     SORT ARTICLES
+     Newest article always appears first.
+  ========================================================= */
+
   const sortedArticles = useMemo(() => {
     return [...articles].sort(
       (a, b) =>
@@ -119,6 +133,10 @@ export default function Insights() {
         new Date(a.publishedAt).getTime()
     );
   }, []);
+
+  /* =========================================================
+     FILTER ARTICLES
+  ========================================================= */
 
   const filteredArticles = useMemo(() => {
     if (activeCategory === "ALL") {
@@ -134,157 +152,205 @@ export default function Insights() {
   const remainingArticles = filteredArticles.slice(1);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#050505] px-[6vw] pb-32 pt-32 md:pt-40">
-      <div className="mx-auto max-w-[1500px]">
+    <>
+      {/* =====================================================
+          SEO
+      ===================================================== */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.9,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
-          <p className="text-xs uppercase tracking-[0.45em] text-blue-500">
-            Kardengey / Insights
-          </p>
+      <SEO
+        title="Insights"
+        description="Thinking about marketing, technology, AI, branding and the systems helping modern businesses grow."
+        canonical="https://kardengey.com/insights"
+      />
 
-          <h1 className="mt-7 max-w-6xl text-[clamp(4rem,9vw,9rem)] font-black uppercase leading-[0.8] tracking-[-0.075em]">
-            Ideas that
-            <br />
-            <span className="text-neutral-600">
-              move.
-            </span>
-          </h1>
+      {/* =====================================================
+          PAGE
+      ===================================================== */}
 
-          <p className="mt-10 max-w-xl text-sm leading-7 text-neutral-500 md:text-base">
-            Thinking about marketing, technology, AI, branding and the
-            systems helping modern businesses grow.
-          </p>
-        </motion.div>
+      <section className="relative min-h-screen overflow-hidden bg-[#050505] px-[6vw] pb-32 pt-32 md:pt-40">
+        <div className="mx-auto max-w-[1500px]">
 
-        <div className="relative mt-20 overflow-hidden border-y border-white/10 py-4">
+          {/* =================================================
+              HEADER
+          ================================================= */}
+
           <motion.div
-            animate={{ x: ["0%", "-50%"] }}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 22,
-              repeat: Infinity,
-              ease: "linear",
+              duration: 0.9,
+              ease: [0.22, 1, 0.36, 1],
             }}
-            className="flex w-max"
           >
-            {[...Array(2)].map((_, group) => (
-              <div
-                key={group}
-                className="flex items-center whitespace-nowrap"
-              >
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-600">
-                  ● Latest thinking
-                </span>
-
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
-                  AI & Automation
-                </span>
-
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
-                  Marketing
-                </span>
-
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
-                  Technology
-                </span>
-
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
-                  SEO
-                </span>
-
-                <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
-                  Growth
-                </span>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-
-        <div className="mt-12 flex flex-wrap gap-2">
-          {categories.map((category) => {
-            const isActive = activeCategory === category;
-
-            return (
-              <button
-                key={category}
-                type="button"
-                onClick={() => setActiveCategory(category)}
-                className={`rounded-full border px-4 py-2 text-[9px] uppercase tracking-[0.2em] transition-all duration-300 ${
-                  isActive
-                    ? "border-blue-500 bg-blue-600 text-white"
-                    : "border-white/10 text-neutral-600 hover:border-white/30 hover:text-white"
-                }`}
-              >
-                {category}
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="mt-10 flex items-center justify-between border-b border-white/10 pb-5">
-          <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-700">
-            {activeCategory === "ALL"
-              ? "Latest thinking"
-              : `${activeCategory} / Selected`}
-          </span>
-
-          <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-700">
-            {filteredArticles.length
-              .toString()
-              .padStart(2, "0")}{" "}
-            {filteredArticles.length === 1
-              ? "Article"
-              : "Articles"}
-          </span>
-        </div>
-
-        {featuredArticle && (
-          <ArticleRow
-            article={featuredArticle}
-            index={0}
-            featured
-          />
-        )}
-
-        {remainingArticles.map((article, index) => (
-          <ArticleRow
-            key={article.slug}
-            article={article}
-            index={index + 1}
-          />
-        ))}
-
-        {!featuredArticle && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="border-b border-white/10 py-24"
-          >
-            <p className="text-3xl font-bold uppercase tracking-tight text-neutral-700">
-              Nothing here yet.
+            <p className="text-xs uppercase tracking-[0.45em] text-blue-500">
+              Kardengey / Insights
             </p>
 
-            <p className="mt-4 text-sm text-neutral-600">
-              We're working on something for this category.
+            <h1 className="mt-7 max-w-6xl text-[clamp(4rem,9vw,9rem)] font-black uppercase leading-[0.8] tracking-[-0.075em]">
+              Ideas that
+              <br />
+              <span className="text-neutral-600">
+                move.
+              </span>
+            </h1>
+
+            <p className="mt-10 max-w-xl text-sm leading-7 text-neutral-500 md:text-base">
+              Thinking about marketing, technology, AI, branding and the
+              systems helping modern businesses grow.
             </p>
           </motion.div>
-        )}
 
-        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-[9px] uppercase tracking-[0.3em] text-neutral-700 md:flex-row md:justify-between">
-          <span>Kardengey / Insights</span>
+          {/* =================================================
+              MOVING TICKER
+          ================================================= */}
 
-          <span>
-            Strategy × Creativity × Technology × AI
-          </span>
+          <div className="relative mt-20 overflow-hidden border-y border-white/10 py-4">
+            <motion.div
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{
+                duration: 22,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              className="flex w-max"
+            >
+              {[...Array(2)].map((_, group) => (
+                <div
+                  key={group}
+                  className="flex items-center whitespace-nowrap"
+                >
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-600">
+                    ● Latest thinking
+                  </span>
+
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
+                    AI & Automation
+                  </span>
+
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
+                    Marketing
+                  </span>
+
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
+                    Technology
+                  </span>
+
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
+                    SEO
+                  </span>
+
+                  <span className="mx-8 text-[10px] uppercase tracking-[0.4em] text-neutral-700">
+                    Growth
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+
+          {/* =================================================
+              FILTERS
+          ================================================= */}
+
+          <div className="mt-12 flex flex-wrap gap-2">
+            {categories.map((category) => {
+              const isActive = activeCategory === category;
+
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  onClick={() => setActiveCategory(category)}
+                  className={`rounded-full border px-4 py-2 text-[9px] uppercase tracking-[0.2em] transition-all duration-300 ${
+                    isActive
+                      ? "border-blue-500 bg-blue-600 text-white"
+                      : "border-white/10 text-neutral-600 hover:border-white/30 hover:text-white"
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* =================================================
+              RESULTS INFO
+          ================================================= */}
+
+          <div className="mt-10 flex items-center justify-between border-b border-white/10 pb-5">
+            <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-700">
+              {activeCategory === "ALL"
+                ? "Latest thinking"
+                : `${activeCategory} / Selected`}
+            </span>
+
+            <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-700">
+              {filteredArticles.length
+                .toString()
+                .padStart(2, "0")}{" "}
+              {filteredArticles.length === 1
+                ? "Article"
+                : "Articles"}
+            </span>
+          </div>
+
+          {/* =================================================
+              FEATURED / LATEST ARTICLE
+          ================================================= */}
+
+          {featuredArticle && (
+            <ArticleRow
+              article={featuredArticle}
+              index={0}
+              featured
+            />
+          )}
+
+          {/* =================================================
+              REMAINING ARTICLES
+          ================================================= */}
+
+          {remainingArticles.map((article, index) => (
+            <ArticleRow
+              key={article.slug}
+              article={article}
+              index={index + 1}
+            />
+          ))}
+
+          {/* =================================================
+              EMPTY STATE
+          ================================================= */}
+
+          {!featuredArticle && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="border-b border-white/10 py-24"
+            >
+              <p className="text-3xl font-bold uppercase tracking-tight text-neutral-700">
+                Nothing here yet.
+              </p>
+
+              <p className="mt-4 text-sm text-neutral-600">
+                We're working on something for this category.
+              </p>
+            </motion.div>
+          )}
+
+          {/* =================================================
+              FOOTER
+          ================================================= */}
+
+          <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-[9px] uppercase tracking-[0.3em] text-neutral-700 md:flex-row md:justify-between">
+            <span>Kardengey / Insights</span>
+
+            <span>
+              Strategy × Creativity × Technology × AI
+            </span>
+          </div>
+
         </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

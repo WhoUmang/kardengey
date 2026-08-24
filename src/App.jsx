@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LatestReads from "./components/insights/LatestReads";
 import Navbar from "./components/layout/Navbar";
@@ -15,6 +15,7 @@ import Footer from "./components/layout/Footer";
 
 import Insights from "./components/insights/Insights";
 import InsightArticle from "./components/insights/InsightArticle";
+import NotFound from "./components/common/NotFound";
 
 function Home() {
   return (
@@ -55,7 +56,10 @@ function App() {
             HOME
         ===================================================== */}
 
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
         {/* =====================================================
             INSIGHTS
@@ -90,12 +94,12 @@ function App() {
         />
 
         {/* =====================================================
-            FALLBACK
+            404
         ===================================================== */}
 
         <Route
           path="*"
-          element={<Navigate to="/" replace />}
+          element={<NotFound />}
         />
 
       </Routes>
