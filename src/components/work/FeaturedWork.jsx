@@ -64,16 +64,16 @@ function ProjectVisual({ type, product }) {
       <div className="relative h-full w-full overflow-hidden bg-[#e8e2d6]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(255,255,255,.85),transparent_32%)]" />
 
-        <div className="absolute left-[10%] top-[10%] text-[9px] uppercase tracking-[0.45em] text-neutral-500">
+        <div className="absolute left-[19%] top-[10%] max-w-[70%] truncate text-[8px] uppercase tracking-[0.45em] text-neutral-500 md:left-[9%] md:max-w-none md:text-[9px]">
           PREMIUM DAIRY
         </div>
 
         <div className="absolute left-[12%] top-[22%]">
-          <span className="block text-[clamp(3rem,6vw,6rem)] font-black tracking-[-0.08em] text-black">
+          <span className="block text-[clamp(2.5rem,6vw,6rem)] font-black tracking-[-0.08em] text-black">
             A2
           </span>
 
-          <span className="mt-1 block text-[8px] uppercase tracking-[0.4em] text-neutral-500">
+          <span className="mt-1 block text-[7px] uppercase tracking-[0.4em] text-neutral-500 md:text-[8px]">
             COW MILK
           </span>
         </div>
@@ -81,17 +81,17 @@ function ProjectVisual({ type, product }) {
         <div className="absolute bottom-[-8%] right-[8%] h-[78%] w-[35%] rotate-[8deg] rounded-[42%] bg-[#f8f4eb] shadow-[25px_30px_70px_rgba(0,0,0,.18)]" />
 
         <div className="absolute bottom-[16%] left-[12%]">
-          <p className="text-4xl font-black tracking-[-0.06em] text-black">
+          <p className="text-3xl font-black tracking-[-0.06em] text-black sm:text-4xl">
             GAUSHREE
           </p>
 
-          <p className="mt-2 text-[8px] uppercase tracking-[0.35em] text-neutral-500">
+          <p className="mt-2 text-[7px] uppercase tracking-[0.35em] text-neutral-500 md:text-[8px]">
             Pure by nature
           </p>
         </div>
 
-        <div className="absolute right-[12%] top-[14%] h-24 w-24 rounded-full border border-black/10" />
-        <div className="absolute right-[15%] top-[17%] h-16 w-16 rounded-full border border-black/10" />
+        <div className="absolute right-[12%] top-[14%] h-20 w-20 rounded-full border border-black/10 sm:h-24 sm:w-24" />
+        <div className="absolute right-[15%] top-[17%] h-14 w-14 rounded-full border border-black/10 sm:h-16 sm:w-16" />
       </div>
     );
   }
@@ -103,29 +103,29 @@ function ProjectVisual({ type, product }) {
 
         <div className="absolute -right-[15%] top-[-10%] h-[130%] w-[75%] rotate-[14deg] bg-[#202020]" />
 
-        <div className="absolute left-[9%] top-[10%] text-[8px] uppercase tracking-[0.45em] text-neutral-500">
+        <div className="absolute left-[19%] top-[10%] max-w-[70%] truncate text-[7px] uppercase tracking-[0.45em] text-neutral-500 md:left-[9%] md:max-w-none md:text-[8px]">
           LIVESTOCK NUTRITION
         </div>
 
         <div className="absolute left-[9%] top-[25%]">
-          <h3 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-white">
+          <h3 className="text-[clamp(2.5rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-white">
             CATTLE
             <br />
             MAX
           </h3>
 
-          <div className="mt-7 h-[3px] w-16 bg-blue-500" />
+          <div className="mt-6 h-[3px] w-14 bg-blue-500 md:mt-7 md:w-16" />
         </div>
 
-        <div className="absolute bottom-[12%] left-[9%]">
-          <p className="text-[8px] uppercase tracking-[0.4em] text-neutral-400">
+        <div className="absolute bottom-[11%] left-[9%] max-w-[75%]">
+          <p className="text-[7px] uppercase tracking-[0.35em] text-neutral-400 md:text-[8px] md:tracking-[0.4em]">
             PREMIUM CATTLE FEED
           </p>
         </div>
 
         <div className="absolute bottom-[-15%] right-[2%] h-[72%] w-[48%] rounded-[45%] bg-gradient-to-br from-neutral-500 via-neutral-800 to-black opacity-80" />
 
-        <div className="absolute right-[10%] top-[12%] text-[7px] uppercase tracking-[0.35em] text-neutral-600">
+        <div className="absolute right-[10%] top-[12%] text-[6px] uppercase tracking-[0.35em] text-neutral-600 md:text-[7px]">
           PERFORMANCE
         </div>
       </div>
@@ -137,33 +137,32 @@ function ProjectVisual({ type, product }) {
       <div className="relative h-full w-full overflow-hidden bg-[#050b18]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(37,99,235,.22),transparent_48%)]" />
 
-        <div className="absolute left-1/2 top-[12%] -translate-x-1/2 text-[8px] uppercase tracking-[0.5em] text-blue-300">
+        <div className="absolute left-1/2 top-[12%] -translate-x-1/2 text-[7px] uppercase tracking-[0.45em] text-blue-300 md:text-[8px] md:tracking-[0.5em]">
           BEVERAGE BRAND
         </div>
 
         <div className="absolute left-1/2 top-[22%] -translate-x-1/2 text-center">
-          <h3 className="text-[clamp(3rem,6vw,6rem)] font-black tracking-[-0.08em] text-white">
+          <h3 className="text-[clamp(2.7rem,6vw,6rem)] font-black tracking-[-0.08em] text-white">
             DRISCO
           </h3>
 
-          <p className="mt-2 text-[9px] uppercase tracking-[0.5em] text-blue-300">
+          <p className="mt-2 text-[8px] uppercase tracking-[0.45em] text-blue-300 md:text-[9px] md:tracking-[0.5em]">
             {product}
           </p>
         </div>
 
         <div className="absolute bottom-[8%] left-1/2 h-[56%] w-[25%] -translate-x-1/2 rounded-[30px] border border-blue-400/20 bg-gradient-to-br from-blue-950 via-[#071630] to-black shadow-[0_0_100px_rgba(37,99,235,.2)]">
-
           <div className="absolute inset-x-0 top-[20%] text-center">
-            <p className="text-2xl font-black tracking-[-0.05em] text-white">
+            <p className="text-xl font-black tracking-[-0.05em] text-white sm:text-2xl">
               SUZO
             </p>
 
-            <p className="mt-2 text-[6px] uppercase tracking-[0.45em] text-blue-300">
+            <p className="mt-2 text-[6px] uppercase tracking-[0.4em] text-blue-300">
               ENERGY DRINK
             </p>
           </div>
 
-          <div className="absolute bottom-[15%] left-1/2 h-10 w-10 -translate-x-1/2 rounded-full border border-blue-400/30" />
+          <div className="absolute bottom-[15%] left-1/2 h-8 w-8 -translate-x-1/2 rounded-full border border-blue-400/30 sm:h-10 sm:w-10" />
         </div>
 
         <div className="absolute left-[14%] top-[32%] h-2 w-2 rounded-full bg-white shadow-[0_0_25px_white]" />
@@ -177,30 +176,34 @@ function ProjectVisual({ type, product }) {
       <div className="relative h-full w-full overflow-hidden bg-[#101010]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_35%,rgba(37,99,235,.18),transparent_38%)]" />
 
-        <div className="absolute left-[9%] top-[10%] text-[8px] uppercase tracking-[0.45em] text-neutral-500">
-          FINANCIAL INTELLIGENCE
-        </div>
+        <div className="absolute left-[19%] top-[10%] max-w-[70%] truncate text-[7px] uppercase tracking-[0.35em] text-neutral-500 md:left-[9%] md:max-w-none md:text-[8px] md:tracking-[0.45em]">
+  FINANCIAL INTELLIGENCE
+</div>
 
         <div className="absolute left-[9%] top-[25%]">
-          <h3 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-white">
+          <h3 className="text-[clamp(2.7rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-white">
             MONEY
             <br />
             WISE
           </h3>
         </div>
 
-        <div className="absolute bottom-[17%] left-[9%] h-px w-[70%] bg-neutral-700" />
+        {/* Decorative line — kept higher on mobile to create separation */}
+        <div className="absolute bottom-[20%] left-[9%] h-px w-[70%] bg-neutral-700 md:bottom-[17%]" />
 
-        <div className="absolute bottom-[17%] left-[9%] h-px w-[46%] origin-left rotate-[-24deg] bg-blue-500" />
+        <div className="absolute bottom-[20%] left-[9%] h-px w-[46%] origin-left rotate-[-24deg] bg-blue-500 md:bottom-[17%]" />
 
-        <div className="absolute right-[14%] top-[28%] flex h-20 w-20 items-center justify-center rounded-full border border-blue-500/40 bg-blue-500/10 shadow-[0_0_70px_rgba(37,99,235,.2)]">
-          <span className="text-[8px] uppercase tracking-[0.2em] text-blue-300">
+        <div className="absolute right-[12%] top-[27%] flex h-16 w-16 items-center justify-center rounded-full border border-blue-500/40 bg-blue-500/10 shadow-[0_0_70px_rgba(37,99,235,.2)] sm:h-20 sm:w-20 md:right-[14%] md:top-[28%]">
+          <span className="text-[7px] uppercase tracking-[0.2em] text-blue-300 md:text-[8px]">
             GROW
           </span>
         </div>
 
-        <div className="absolute bottom-[9%] right-[10%] text-[7px] uppercase tracking-[0.35em] text-neutral-600">
-          DATA / STRATEGY / GROWTH
+        {/* Bottom metadata */}
+        <div className="absolute bottom-[7%] right-[8%] max-w-[45%] text-right md:bottom-[9%] md:right-[10%] md:max-w-none">
+          <p className="text-[6px] uppercase tracking-[0.25em] text-neutral-600 md:text-[7px] md:tracking-[0.35em]">
+            DATA / STRATEGY / GROWTH
+          </p>
         </div>
       </div>
     );
@@ -211,26 +214,28 @@ function ProjectVisual({ type, product }) {
       <div className="relative h-full w-full overflow-hidden bg-[#f2f0ea]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_25%,rgba(37,99,235,.15),transparent_35%)]" />
 
-        <div className="absolute left-[9%] top-[10%] text-[8px] uppercase tracking-[0.45em] text-neutral-500">
+        <div className="absolute left-[19%] top-[10%] max-w-[70%] truncate text-[7px] uppercase tracking-[0.4em] text-neutral-500 md:left-[9%] md:max-w-none md:text-[8px] md:tracking-[0.45em]">
           DIGITAL GROWTH
         </div>
 
         <div className="absolute left-[9%] top-[25%]">
-          <h3 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-black">
+          <h3 className="text-[clamp(2.7rem,6vw,6rem)] font-black uppercase leading-[0.78] tracking-[-0.08em] text-black">
             LIBELLA
             <br />
             LINK
           </h3>
         </div>
 
-        <div className="absolute bottom-[13%] left-[9%] h-20 w-20 rounded-full border-[11px] border-black" />
+        <div className="absolute bottom-[13%] left-[9%] h-16 w-16 rounded-full border-[9px] border-black sm:h-20 sm:w-20 md:h-20 md:w-20 md:border-[11px]" />
 
-        <div className="absolute bottom-[20%] left-[28%] h-11 w-11 rounded-full bg-blue-600" />
+        <div className="absolute bottom-[20%] left-[28%] h-9 w-9 rounded-full bg-blue-600 sm:h-11 sm:w-11" />
 
-        <div className="absolute right-[10%] top-[15%] h-44 w-44 rounded-full border border-black/10" />
+        <div className="absolute right-[10%] top-[15%] h-32 w-32 rounded-full border border-black/10 sm:h-44 sm:w-44" />
 
-        <div className="absolute bottom-[10%] right-[10%] text-[7px] uppercase tracking-[0.35em] text-neutral-500">
-          SOCIAL / CREATIVE / PERFORMANCE
+        <div className="absolute bottom-[8%] right-[8%] max-w-[48%] text-right md:bottom-[10%] md:right-[10%] md:max-w-none">
+          <p className="text-[6px] uppercase tracking-[0.25em] text-neutral-500 md:text-[7px] md:tracking-[0.35em]">
+            SOCIAL / CREATIVE / PERFORMANCE
+          </p>
         </div>
       </div>
     );
@@ -240,12 +245,12 @@ function ProjectVisual({ type, product }) {
     <div className="relative h-full w-full overflow-hidden bg-[#111]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(37,99,235,.14),transparent_38%)]" />
 
-      <div className="absolute left-[9%] top-[10%] text-[8px] uppercase tracking-[0.45em] text-neutral-500">
+      <div className="absolute left-[19%] top-[10%] max-w-[70%] truncate text-[7px] uppercase tracking-[0.4em] text-neutral-500 md:left-[9%] md:max-w-none md:text-[8px] md:tracking-[0.45em]">
         FASHION / DIGITAL
       </div>
 
       <div className="absolute left-[9%] top-[24%]">
-        <h3 className="text-[clamp(3rem,6vw,6rem)] font-black uppercase leading-[0.75] tracking-[-0.08em] text-white">
+        <h3 className="text-[clamp(2.7rem,6vw,6rem)] font-black uppercase leading-[0.75] tracking-[-0.08em] text-white">
           THE
           <br />
           LOOSEFIT
@@ -254,13 +259,13 @@ function ProjectVisual({ type, product }) {
 
       <div className="absolute bottom-[7%] right-[8%] h-[67%] w-[38%] rotate-[8deg] rounded-[35%] border border-white/10 bg-gradient-to-br from-neutral-700 via-neutral-900 to-black shadow-[0_30px_80px_rgba(0,0,0,.5)]" />
 
-      <div className="absolute bottom-[13%] left-[9%]">
-        <p className="text-[8px] uppercase tracking-[0.4em] text-neutral-500">
+      <div className="absolute bottom-[12%] left-[9%] max-w-[55%] md:bottom-[13%] md:max-w-none">
+        <p className="text-[7px] uppercase tracking-[0.35em] text-neutral-500 md:text-[8px] md:tracking-[0.4em]">
           DESIGNED FOR PEOPLE
         </p>
       </div>
 
-      <div className="absolute right-[10%] top-[13%] text-[7px] uppercase tracking-[0.35em] text-neutral-700">
+      <div className="absolute right-[10%] top-[13%] text-[6px] uppercase tracking-[0.3em] text-neutral-700 md:text-[7px] md:tracking-[0.35em]">
         COMMERCE
       </div>
     </div>
@@ -283,9 +288,7 @@ function ProjectCard({ project, index }) {
       }`}
     >
       {/* Visual */}
-
-      <div className="relative aspect-[4/3] overflow-hidden rounded-[30px] border border-white/[0.08] bg-neutral-900">
-
+      <div className="relative aspect-[4/3] overflow-hidden rounded-[30px] border border-white/[0.08] bg-neutral-900 sm:aspect-[4/3]">
         <motion.div
           className="h-full w-full"
           whileHover={{ scale: 1.035 }}
@@ -301,58 +304,34 @@ function ProjectCard({ project, index }) {
         </motion.div>
 
         {/* Hover overlay */}
-
         <div className="absolute inset-0 bg-blue-600/0 transition-all duration-500 group-hover:bg-blue-600/[0.08]" />
 
         {/* Number */}
-
-        <div className="absolute left-5 top-5 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/20 text-[10px] text-white backdrop-blur-md">
+        <div className="absolute left-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/20 text-[10px] text-white backdrop-blur-md sm:left-5 sm:top-5">
           {project.number}
         </div>
 
         {/* View button */}
-
-        <motion.div
-          className="absolute bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black opacity-0"
-          initial={false}
-          whileHover={{ scale: 1.05 }}
-          animate={{
-            opacity: 0,
-            rotate: 0,
-          }}
-          variants={{
-            hover: {
-              opacity: 1,
-              rotate: 45,
-            },
-          }}
-        >
-          ↗
-        </motion.div>
-
-        <div className="absolute bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black opacity-0 transition-all duration-500 group-hover:rotate-45 group-hover:opacity-100">
+        <div className="absolute bottom-4 right-4 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-white text-black opacity-0 transition-all duration-500 group-hover:rotate-45 group-hover:opacity-100 sm:bottom-5 sm:right-5 sm:h-12 sm:w-12">
           ↗
         </div>
 
         {/* Project label */}
-
-        <div className="absolute bottom-5 left-5 rounded-full border border-white/10 bg-black/30 px-3 py-2 backdrop-blur-md">
-          <span className="text-[8px] uppercase tracking-[0.3em] text-white/70">
+        <div className="absolute bottom-4 left-4 z-20 max-w-[70%] rounded-full border border-white/10 bg-black/30 px-3 py-2 backdrop-blur-md sm:bottom-5 sm:left-5 sm:max-w-none">
+          <span className="block truncate text-[7px] uppercase tracking-[0.25em] text-white/70 sm:text-[8px] sm:tracking-[0.3em]">
             {project.category}
           </span>
         </div>
       </div>
 
       {/* Details */}
-
       <div className="mt-6">
-
-        <div className="mb-3 flex items-center justify-between">
-          <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-600">
+        <div className="mb-3 flex items-center justify-between gap-4">
+          <span className="min-w-0 truncate text-[8px] uppercase tracking-[0.25em] text-neutral-600 sm:text-[9px] sm:tracking-[0.3em]">
             {project.category}
           </span>
 
-          <span className="text-[9px] text-neutral-700">
+          <span className="shrink-0 text-[9px] text-neutral-700">
             {project.number}
           </span>
         </div>
@@ -380,7 +359,6 @@ function ProjectCard({ project, index }) {
         </p>
 
         {/* Tags */}
-
         <div className="mt-5 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <span
@@ -403,15 +381,11 @@ export default function FeaturedWork() {
       className="relative overflow-hidden bg-[#050505] px-[6vw] py-32 md:py-44"
     >
       {/* Ambient background */}
-
       <div className="pointer-events-none absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-blue-600/[0.035] blur-[160px]" />
 
       <div className="relative z-10 mx-auto max-w-[1500px]">
-
         {/* Header */}
-
         <div className="mb-20 flex flex-col justify-between gap-8 md:flex-row md:items-end">
-
           <div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -457,9 +431,7 @@ export default function FeaturedWork() {
         </div>
 
         {/* Project Grid */}
-
         <div className="grid gap-x-6 gap-y-20 md:grid-cols-2">
-
           {projects.map((project, index) => (
             <ProjectCard
               key={project.number}
@@ -467,11 +439,9 @@ export default function FeaturedWork() {
               index={index}
             />
           ))}
-
         </div>
 
         {/* Bottom CTA */}
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -503,7 +473,6 @@ export default function FeaturedWork() {
             </span>
           </a>
         </motion.div>
-
       </div>
     </section>
   );
