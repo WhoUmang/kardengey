@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/common/ScrollToTop";
+
 import LatestReads from "./components/insights/LatestReads";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
@@ -21,27 +23,16 @@ function Home() {
   return (
     <main className="w-full bg-[#050505]">
       <Navbar />
-
       <Hero />
-
       <FeaturedWork />
-
       <Services />
-
       <Process />
-
       <About />
-
       <AIGrowth />
-
       <Founder />
-
       <LatestReads />
-
       <Contact />
-
       <WhatsAppButton />
-
       <Footer />
     </main>
   );
@@ -50,21 +41,19 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+
+      {/* Reset scroll position whenever the route changes */}
+      <ScrollToTop />
+
       <Routes>
 
-        {/* =====================================================
-            HOME
-        ===================================================== */}
-
+        {/* HOME */}
         <Route
           path="/"
           element={<Home />}
         />
 
-        {/* =====================================================
-            INSIGHTS
-        ===================================================== */}
-
+        {/* INSIGHTS */}
         <Route
           path="/insights"
           element={
@@ -77,10 +66,7 @@ function App() {
           }
         />
 
-        {/* =====================================================
-            INDIVIDUAL ARTICLE
-        ===================================================== */}
-
+        {/* INDIVIDUAL ARTICLE */}
         <Route
           path="/insights/:slug"
           element={
@@ -93,16 +79,14 @@ function App() {
           }
         />
 
-        {/* =====================================================
-            404
-        ===================================================== */}
-
+        {/* 404 */}
         <Route
           path="*"
           element={<NotFound />}
         />
 
       </Routes>
+
     </BrowserRouter>
   );
 }
