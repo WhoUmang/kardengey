@@ -274,7 +274,9 @@ function ProjectVisual({ type, product }) {
 
 function ProjectCard({ project, index }) {
   return (
-    <motion.article
+    <motion.a
+      href="#contact"
+      aria-label={`Discuss the ${project.title} project with kardengey`}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
@@ -312,7 +314,7 @@ function ProjectCard({ project, index }) {
         </div>
 
         {/* View button */}
-        <div className="absolute bottom-4 right-4 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-white text-black opacity-0 transition-all duration-500 group-hover:rotate-45 group-hover:opacity-100 sm:bottom-5 sm:right-5 sm:h-12 sm:w-12">
+        <div className="absolute bottom-4 right-4 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black transition-all duration-500 group-hover:rotate-45 group-hover:bg-blue-500 group-hover:text-white sm:bottom-5 sm:right-5 sm:h-13 sm:w-13">
           ↗
         </div>
 
@@ -349,8 +351,8 @@ function ProjectCard({ project, index }) {
             )}
           </div>
 
-          <span className="hidden text-[10px] uppercase tracking-[0.25em] text-neutral-700 transition-colors duration-300 group-hover:text-blue-500 md:block">
-            View
+          <span className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 transition-colors duration-300 group-hover:text-blue-500">
+            Discuss project ↗
           </span>
         </div>
 
@@ -370,7 +372,7 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
       </div>
-    </motion.article>
+    </motion.a>
   );
 }
 

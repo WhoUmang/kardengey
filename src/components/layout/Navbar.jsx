@@ -14,6 +14,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -37,6 +38,34 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  /* =========================================================
+     ACTIVE SECTION
+  ========================================================= */
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      return undefined;
+    }
+
+    const sections = navLinks
+      .filter((link) => link.type === "section")
+      .map((link) => document.getElementById(link.target))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible[0]) setActiveSection(visible[0].target.id);
+      },
+      { rootMargin: "-25% 0px -55% 0px", threshold: [0, 0.1, 0.25, 0.5] }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [location.pathname]);
 
   /* =========================================================
      PREVENT BODY SCROLL WHEN MOBILE MENU IS OPEN
@@ -90,6 +119,7 @@ export default function Navbar() {
           behavior: "smooth",
           block: "start",
         });
+        setActiveSection(sectionId);
       }
 
       return;
@@ -133,6 +163,8 @@ export default function Navbar() {
 
      Every item uses the SAME button element and SAME classes.
   ========================================================= */
+
+  const routeActiveSection = location.pathname === "/insights" || location.pathname.startsWith("/insights/") ? "insights" : activeSection;
 
   const navItemClasses = `
     group
@@ -220,7 +252,8 @@ export default function Navbar() {
                 key={link.label}
                 type="button"
                 onClick={() => handleNavigation(link)}
-                className={navItemClasses}
+                className={`${navItemClasses} ${routeActiveSection === (link.type === "page" ? "insights" : link.target) ? "text-white" : ""}`}
+                aria-current={routeActiveSection === (link.type === "page" ? "insights" : link.target) ? "page" : undefined}
               >
                 <span>
                   {link.label}
@@ -229,18 +262,11 @@ export default function Navbar() {
                 {/* Hover underline */}
 
                 <span
-                  className="
-                    pointer-events-none
-                    absolute
-                    -bottom-2
-                    left-0
-                    h-px
-                    w-0
-                    bg-blue-500
-                    transition-all
-                    duration-300
-                    group-hover:w-full
-                  "
+                  className={`pointer-events-none absolute -bottom-2 left-0 h-px bg-blue-500 transition-all duration-300 ${
+                    routeActiveSection === (link.type === "page" ? "insights" : link.target)
+                      ? "w-full"
+                      : "w-0"
+                  } group-hover:w-full`}
                 />
               </button>
             ))}

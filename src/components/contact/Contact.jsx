@@ -15,6 +15,7 @@ const initialForm = {
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState("idle");
+  const [errors, setErrors] = useState({});
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,10 +24,36 @@ export default function Contact() {
       ...current,
       [name]: value,
     }));
+
+    if (errors[name]) {
+      setErrors((current) => {
+        const next = { ...current };
+        delete next[name];
+        return next;
+      });
+    }
+
+    if (status === "error") setStatus("idle");
+  };
+
+  const validate = () => {
+    const next = {};
+    if (!form.name.trim()) next.name = "Please enter your name.";
+    if (!form.email.trim()) next.email = "Please enter your work email.";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = "Please enter a valid email address.";
+    if (form.phone.trim() && !/^[+()\d\s-]{7,20}$/.test(form.phone.trim())) next.phone = "Please enter a valid phone / WhatsApp number.";
+    if (!form.service) next.service = "Please select a service.";
+    if (!form.message.trim()) next.message = "Please tell us about your project.";
+    setErrors(next);
+    return Object.keys(next).length === 0;
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!validate()) {
+      setStatus("idle");
+      return;
+    }
     setStatus("sending");
 
     try {
@@ -53,6 +80,7 @@ export default function Contact() {
 
   const resetForm = () => {
     setForm(initialForm);
+    setErrors({});
     setStatus("idle");
   };
 
@@ -226,8 +254,11 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         placeholder="Your name"
-                        className={fieldClass}
+                        className={`${fieldClass} ${errors.name ? "border-red-500" : ""}`}
+                      aria-invalid={Boolean(errors.name)}
+                      aria-describedby={errors.name ? "name-error" : undefined}
                       />
+                      {errors.name && <p id="name-error" className="mt-2 text-xs text-red-400">{errors.name}</p>}
                     </div>
 
                     <div>
@@ -245,8 +276,11 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         placeholder="you@company.com"
-                        className={fieldClass}
+                        className={`${fieldClass} ${errors.email ? "border-red-500" : ""}`}
+                        aria-invalid={Boolean(errors.email)}
+                        aria-describedby={errors.email ? "email-error" : undefined}
                       />
+                      {errors.email && <p id="email-error" className="mt-2 text-xs text-red-400">{errors.email}</p>}
                     </div>
 
                     <div>
@@ -281,8 +315,11 @@ export default function Contact() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="+91"
-                        className={fieldClass}
+                        className={`${fieldClass} ${errors.phone ? "border-red-500" : ""}`}
+                        aria-invalid={Boolean(errors.phone)}
+                        aria-describedby={errors.phone ? "phone-error" : undefined}
                       />
+                      {errors.phone && <p id="phone-error" className="mt-2 text-xs text-red-400">{errors.phone}</p>}
                     </div>
 
                     <CustomSelect
@@ -333,8 +370,11 @@ export default function Contact() {
                         required
                         rows={5}
                         placeholder="Tell us what you're building, what you're trying to solve, or where you need help."
-                        className={fieldClass + " resize-none leading-7"}
+                        className={`${fieldClass} resize-none leading-7 ${errors.message ? "border-red-500" : ""}`}
+                        aria-invalid={Boolean(errors.message)}
+                        aria-describedby={errors.message ? "message-error" : undefined}
                       />
+                      {errors.message && <p id="message-error" className="mt-2 text-xs text-red-400">{errors.message}</p>}
                     </div>
                   </div>
 

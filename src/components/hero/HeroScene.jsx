@@ -74,7 +74,7 @@ function GrowthNodes() {
           Math.sin(angle) * radius,
         ],
         scale:
-          0.035 + Math.random() * 0.045,
+          0.035 + (((Math.sin(i * 12.9898) + 1) / 2) * 0.045),
       };
     });
   }, []);
@@ -265,14 +265,14 @@ function ParticleField() {
     const data = new Float32Array(count * 3);
 
     for (let i = 0; i < count; i++) {
-      const radius = 4 + Math.random() * 6;
-      const angle = Math.random() * Math.PI * 2;
+      const radius = 4 + ((Math.sin(i * 7.123) + 1) / 2) * 6;
+      const angle = ((Math.sin(i * 11.371) + 1) / 2) * Math.PI * 2;
 
       data[i * 3] =
         Math.cos(angle) * radius;
 
       data[i * 3 + 1] =
-        (Math.random() - 0.5) * 5;
+        (((Math.sin(i * 17.917) + 1) / 2) - 0.5) * 5;
 
       data[i * 3 + 2] =
         Math.sin(angle) * radius;

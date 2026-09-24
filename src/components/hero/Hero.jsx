@@ -36,7 +36,7 @@ export default function Hero() {
 
       {/* Bottom indicator */}
 
-      <div className="absolute bottom-8 left-[6vw] z-20 flex items-center gap-4 text-[10px] uppercase tracking-[0.35em] text-neutral-600">
+      <div className="absolute bottom-5 left-[6vw] z-20 flex items-center gap-4 pb-1 text-[10px] uppercase tracking-[0.35em] text-neutral-500 sm:bottom-8">
         <span className="h-px w-12 bg-neutral-700" />
         Scroll to explore
       </div>

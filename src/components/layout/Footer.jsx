@@ -1,14 +1,30 @@
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const links = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
+  { label: "Insights", href: "/insights" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSection = (target) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      window.setTimeout(() => {
+        document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+      return;
+    }
+    document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <footer className="relative overflow-hidden border-t border-white/[0.08] bg-[#050505] px-[6vw] pb-8 pt-24 md:pt-32">
       <div className="mx-auto max-w-[1500px]">
@@ -79,17 +95,26 @@ export default function Footer() {
 
             <div className="flex flex-col items-start gap-3">
               {links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="group flex items-center gap-2 text-sm text-neutral-500 transition-colors duration-300 hover:text-white"
-                >
-                  <span>{link.label}</span>
-
-                  <span className="translate-x-[-4px] text-blue-500 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                    ↗
-                  </span>
-                </a>
+                link.href === "/insights" ? (
+                  <a
+                    key={link.label}
+                    href="/insights"
+                    className="group flex min-h-11 items-center gap-2 text-sm text-neutral-500 transition-colors duration-300 hover:text-white"
+                  >
+                    <span>{link.label}</span>
+                    <span className="translate-x-[-4px] text-blue-500 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">↗</span>
+                  </a>
+                ) : (
+                  <button
+                    key={link.label}
+                    type="button"
+                    onClick={() => handleSection(link.href.slice(1))}
+                    className="group flex min-h-11 items-center gap-2 border-0 bg-transparent p-0 text-left text-sm text-neutral-500 transition-colors duration-300 hover:text-white"
+                  >
+                    <span>{link.label}</span>
+                    <span className="translate-x-[-4px] text-blue-500 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">↗</span>
+                  </button>
+                )
               ))}
             </div>
           </div>

@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://kardengey.com";
 const SITE_NAME = "kardengey";
 
 export default function SEO({

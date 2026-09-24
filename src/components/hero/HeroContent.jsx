@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function HeroContent() {
   return (
-    <div className="relative z-10 flex min-h-screen w-full items-center px-[6vw] pt-24">
+    <div className="relative z-10 flex min-h-screen w-full items-center px-[6vw] pb-24 pt-24 sm:pb-28">
       <div className="max-w-[900px]">
 
         {/* Eyebrow */}
