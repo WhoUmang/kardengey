@@ -1,4 +1,259 @@
 const articles = [
+    {
+    category: "MARKETING",
+    filter: "MARKETING",
+
+    title: "How Much Does Digital Marketing Cost in India in 2026?",
+
+    slug: "digital-marketing-cost-india-2026",
+
+    description:
+      "A practical guide to digital marketing costs in India in 2026, including SEO, paid ads, social media, agency fees and realistic marketing budgets.",
+
+    date: "27 SEP 2026",
+
+    publishedAt: "2026-09-27",
+
+    read: "9 MIN READ",
+
+    author: "Kardengey",
+
+    content: [
+      {
+        type: "paragraph",
+        text:
+          "One of the first questions businesses ask before starting digital marketing is simple: how much will it cost?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "The difficult part is that there is no single price. Digital marketing can mean SEO, paid advertising, social media, content, websites, email, conversion optimization or a combination of several channels. The right budget depends on what the business is trying to achieve, how competitive the market is and how much work needs to be done.",
+      },
+
+      {
+        type: "heading",
+        text: "There is no single digital marketing price.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "A freelancer managing one social media account and an agency running SEO, Google Ads, Meta Ads, content and conversion campaigns are both providing digital marketing. Comparing their prices without comparing the scope can be misleading.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Current pricing published by Indian agencies and marketing providers shows a wide range across services and business sizes. That variation is largely driven by scope, experience, competition and the amount of execution involved.",
+      },
+
+      {
+        type: "heading",
+        text: "The first thing to separate: marketing fees and ad spend.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "This is one of the most important distinctions for a business owner. If an agency manages Google Ads or Meta Ads, there are usually two separate costs: the advertising budget paid to the platform and the fee paid for strategy, setup, management, optimization and reporting.",
+      },
+
+      {
+        type: "quote",
+        text:
+          "Your advertising budget buys distribution. The management fee pays for the work required to turn that distribution into a campaign.",
+      },
+
+      {
+        type: "heading",
+        text: "How much does SEO cost in India?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "SEO pricing varies significantly depending on the competition, website size, technical condition, content requirements and whether the work includes authority building.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "For smaller businesses, monthly SEO engagements can start in the lower five-figure range, while more comprehensive agency programs can move into much higher budgets. The important question is not simply how much the retainer costs, but what technical, content and strategic work is actually included.",
+      },
+
+      {
+        type: "heading",
+        text: "How much does Google Ads management cost?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Google Ads management is commonly priced either as a flat monthly fee or as a percentage of advertising spend. Published 2026 pricing guides show management fees ranging from roughly ₹10,000 to ₹50,000 or more per month depending on account complexity and spend, with percentage-based models also used by some providers.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "The management fee is separate from the money you actually spend on Google Ads.",
+      },
+
+      {
+        type: "heading",
+        text: "How much does Meta Ads management cost?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Meta Ads management follows a similar model. Businesses may pay a fixed management fee, a percentage of ad spend or a combination depending on the engagement.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "The actual cost depends heavily on campaign complexity, creative requirements, audience size, number of campaigns and how frequently campaigns need to be tested and optimized.",
+      },
+
+      {
+        type: "heading",
+        text: "What about social media marketing?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Social media management can range from basic publishing and scheduling to a much larger system involving strategy, copywriting, design, short-form video, community management, analytics and paid campaigns.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "This is why two businesses can receive completely different quotes for something described as 'social media marketing'. Always compare the actual deliverables rather than the label.",
+      },
+
+      {
+        type: "heading",
+        text: "How much should a small business budget?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "A small business does not necessarily need to run every marketing channel at once. A better starting point is to identify the channel closest to the customer's buying journey and build from there.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "For example, a local service business may benefit from search visibility and lead generation, while an ecommerce brand may prioritize Meta Ads, Google Ads, creative testing and conversion optimization.",
+      },
+
+      {
+        type: "heading",
+        text: "Freelancer vs agency vs in-house.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Freelancers can be useful when the business needs focused execution in a specific area. Agencies can provide a wider combination of strategy, creative, media buying, technology and reporting. An in-house team provides direct control but comes with hiring and management costs.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "The right option depends on the complexity of the marketing system you need, not simply which option has the lowest monthly price.",
+      },
+
+      {
+        type: "heading",
+        text: "What should you ask before hiring a marketing agency?",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Before signing an agreement, ask exactly what is included, who controls the advertising accounts, whether ad spend is separate, how reporting works, what creative production is included and how success will be measured.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "A clear scope makes it much easier to compare proposals from different providers.",
+      },
+
+      {
+        type: "heading",
+        text: "The real question isn't how cheap marketing can be.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "The better question is whether the investment is connected to a measurable business outcome.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "A ₹20,000 marketing budget that produces no meaningful business result is expensive. A larger investment that consistently produces profitable customers can be far more valuable.",
+      },
+
+      {
+        type: "quote",
+        text:
+          "Marketing should be measured by the business it creates, not simply by the amount of activity it produces.",
+      },
+
+      {
+        type: "heading",
+        text: "Frequently asked questions.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "How much does digital marketing cost in India? There is no fixed price. Costs vary according to the channels, scope, competition and level of execution required.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Is ad spend included in agency fees? Usually, advertising spend and agency management fees are separate. Always confirm this before starting a campaign.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "How much should a small business spend on marketing? Start with a budget that is sustainable and connected to a measurable objective, then increase investment as the business establishes a reliable acquisition channel.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Should I hire a freelancer or an agency? It depends on the scope. A focused requirement may work well with a freelancer, while businesses needing several connected marketing functions may prefer an agency.",
+      },
+
+      {
+        type: "heading",
+        text: "Final thought.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Digital marketing is not one service with one price. It is a collection of systems that can help a business become discoverable, attract the right audience and convert attention into customers.",
+      },
+
+      {
+        type: "paragraph",
+        text:
+          "Before choosing a provider, understand what you actually need, what you are paying for and how the investment will be measured. That will tell you far more than a package price ever could.",
+      },
+    ],
+  },
   {
     category: "AI / AUTOMATION",
     filter: "AI",
