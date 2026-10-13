@@ -18,6 +18,7 @@ import Footer from "./components/layout/Footer";
 import Insights from "./components/insights/Insights";
 import InsightArticle from "./components/insights/InsightArticle";
 import NotFound from "./components/common/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function Home() {
   return (
@@ -74,6 +75,18 @@ function App() {
               <Navbar />
               <InsightArticle />
               <WhatsAppButton />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* PRIVACY POLICY */}
+        <Route
+          path="/privacy-policy"
+          element={
+            <>
+              <Navbar />
+              <PrivacyPolicy />
               <Footer />
             </>
           }
