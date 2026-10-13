@@ -186,6 +186,13 @@ export default function Footer() {
             India / Worldwide
           </span>
 
+          <a
+            href="/privacy-policy"
+            className="transition-colors hover:text-white"
+          >
+            Privacy Policy
+          </a>
+
           <span className="text-neutral-600">
             Built to move.
           </span>
