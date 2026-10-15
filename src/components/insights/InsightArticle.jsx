@@ -277,6 +277,32 @@ export default function InsightArticle() {
       </section>
 
       {/* =====================================================
+          RELATED TOOL CTA
+      ===================================================== */}
+
+      <section className="border-t border-white/10 px-[6vw] py-16 md:py-20">
+        <div className="mx-auto flex max-w-[1200px] flex-col gap-8 rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:flex-row md:items-center md:justify-between md:p-12">
+          <div className="max-w-2xl">
+            <p className="text-[9px] uppercase tracking-[0.35em] text-blue-500">
+              Free marketing tool
+            </p>
+            <h2 className="mt-4 text-2xl font-black uppercase leading-tight tracking-[-0.04em] text-white md:text-4xl">
+              Calculate your marketing ROI.
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-neutral-500 md:text-base">
+              Estimate revenue, return on ad spend, cost per lead and customer acquisition cost using your own campaign numbers.
+            </p>
+          </div>
+          <Link
+            to="/tools/marketing-roi-calculator"
+            className="inline-flex w-fit shrink-0 items-center gap-3 rounded-full border border-blue-500/50 bg-blue-600 px-6 py-4 text-[10px] uppercase tracking-[0.2em] text-white transition-colors hover:bg-blue-500"
+          >
+            Open ROI calculator <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* =====================================================
           ARTICLE FOOTER
       ===================================================== */}
 
