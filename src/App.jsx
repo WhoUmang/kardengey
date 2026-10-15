@@ -19,6 +19,7 @@ import Insights from "./components/insights/Insights";
 import InsightArticle from "./components/insights/InsightArticle";
 import NotFound from "./components/common/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import MarketingROICalculator from "./pages/MarketingROICalculator";
 
 function Home() {
   return (
@@ -74,6 +75,19 @@ function App() {
             <>
               <Navbar />
               <InsightArticle />
+              <WhatsAppButton />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* MARKETING ROI CALCULATOR */}
+        <Route
+          path="/tools/marketing-roi-calculator"
+          element={
+            <>
+              <Navbar />
+              <MarketingROICalculator />
               <WhatsAppButton />
               <Footer />
             </>
