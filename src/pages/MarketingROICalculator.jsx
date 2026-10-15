@@ -83,11 +83,11 @@ export default function MarketingROICalculator() {
             </div>
 
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
-              <Input label="Ad spend" value={values.adSpend} onChange={update("adSpend")} />
-              <Input label="Other marketing cost" value={values.otherMarketingCost} onChange={update("otherMarketingCost")} />
-              <Input label="Expected leads / orders" value={values.leads} onChange={update("leads")} />
+              <Input label="Ad spend" value={values.adSpend} onChange={update("adSpend")} currency />
+              <Input label="Other marketing cost" value={values.otherMarketingCost} onChange={update("otherMarketingCost")} currency />
+              <Input label="Expected leads" value={values.leads} onChange={update("leads")} />
               <Input label="Expected customers" value={values.customers} onChange={update("customers")} />
-              <Input label="Revenue per customer" value={values.revenuePerCustomer} onChange={update("revenuePerCustomer")} className="sm:col-span-2" />
+              <Input label="Revenue per customer" value={values.revenuePerCustomer} onChange={update("revenuePerCustomer")} currency className="sm:col-span-2" />
             </div>
 
             <div className="mt-7 rounded-2xl border border-blue-500/10 bg-blue-500/[0.04] p-5">
@@ -161,13 +161,13 @@ export default function MarketingROICalculator() {
   );
 }
 
-function Input({ label, value, onChange, className = "" }) {
+function Input({ label, value, onChange, currency = false, className = "" }) {
   return (
     <label className={`block ${className}`}>
       <span className="text-[10px] uppercase tracking-[0.18em] text-neutral-500">{label}</span>
       <div className="mt-2 flex items-center rounded-xl border border-white/[0.09] bg-black/30 focus-within:border-blue-500/50">
-        <span className="pl-4 text-sm text-neutral-600">₹</span>
-        <input type="number" min="0" step="1" inputMode="decimal" value={value} onChange={onChange} className="w-full bg-transparent px-3 py-3 text-sm text-white outline-none" />
+        {currency && <span className="pl-4 text-sm text-neutral-600">₹</span>}
+        <input type="number" min="0" step="1" inputMode="decimal" value={value} onChange={onChange} className={`w-full bg-transparent ${currency ? "px-3" : "px-4"} py-3 text-sm text-white outline-none`} />
       </div>
     </label>
   );
