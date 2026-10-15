@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Process", type: "section", target: "process" },
   { label: "About", type: "section", target: "about" },
   { label: "Insights", type: "page", target: "/insights" },
+  { label: "Tools", type: "page", target: "/tools/marketing-roi-calculator" },
   { label: "Contact", type: "section", target: "contact" },
 ];
 
@@ -164,7 +165,7 @@ export default function Navbar() {
      Every item uses the SAME button element and SAME classes.
   ========================================================= */
 
-  const routeActiveSection = location.pathname === "/insights" || location.pathname.startsWith("/insights/") ? "insights" : activeSection;
+  const routeActiveSection = location.pathname === "/insights" || location.pathname.startsWith("/insights/") ? "insights" : location.pathname.startsWith("/tools/") ? "tools" : activeSection;
 
   const navItemClasses = `
     group
@@ -252,7 +253,7 @@ export default function Navbar() {
                 key={link.label}
                 type="button"
                 onClick={() => handleNavigation(link)}
-                className={`${navItemClasses} ${routeActiveSection === (link.type === "page" ? "insights" : link.target) ? "text-white" : ""}`}
+                className={`${navItemClasses} ${routeActiveSection === (link.type === "page" ? (link.target === "/insights" ? "insights" : "tools") : link.target) ? "text-white" : ""}`}
                 aria-current={routeActiveSection === (link.type === "page" ? "insights" : link.target) ? "page" : undefined}
               >
                 <span>
