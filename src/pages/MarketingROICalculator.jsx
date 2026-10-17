@@ -1,4 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 const DEFAULTS = {
   adSpend: 50000,
@@ -26,6 +28,29 @@ const Metric = ({ label, value, note }) => (
 export default function MarketingROICalculator() {
   const [values, setValues] = useState(DEFAULTS);
 
+  useEffect(() => {
+    const data = {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Marketing ROI Calculator",
+      url: "https://kardengey.com/tools/marketing-roi-calculator",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      description: "Free marketing ROI calculator for estimating ROI, ROAS, cost per lead and customer acquisition cost.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      provider: { "@type": "Organization", name: "kardengey", url: "https://kardengey.com" },
+    };
+    let script = document.head.querySelector('script[data-seo="marketing-roi-calculator"]');
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.dataset.seo = "marketing-roi-calculator";
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(data);
+    return () => script?.remove();
+  }, []);
+
   const update = (key) => (event) => {
     const next = Number(event.target.value);
     setValues((current) => ({
@@ -51,6 +76,11 @@ export default function MarketingROICalculator() {
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <SEO
+        title="Marketing ROI Calculator | Free ROI & ROAS Tool"
+        description="Use this free marketing ROI calculator to estimate ROI, ROAS, cost per lead, CAC and lead-to-customer conversion for your marketing campaigns."
+        canonical="https://kardengey.com/tools/marketing-roi-calculator"
+      />
       <section className="relative overflow-hidden px-[6vw] pb-16 pt-32 lg:pb-24 lg:pt-40">
         <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-600/[0.08] blur-[130px]" />
         <div className="relative mx-auto max-w-6xl">
@@ -61,9 +91,33 @@ export default function MarketingROICalculator() {
             Calculator.
           </h1>
           <p className="mt-7 max-w-2xl text-base leading-7 text-neutral-400 lg:text-lg">
-            Estimate your marketing ROI, ROAS, cost per lead and customer acquisition cost
-            before you increase your budget.
+            Calculate marketing ROI, ROAS, cost per lead and customer acquisition cost before you increase your budget. Use your ad spend, marketing costs, leads, customers and average revenue to estimate campaign performance.
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-white/[0.07] px-[6vw] py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400">Marketing ROI explained</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight sm:text-4xl">How to calculate marketing ROI</h2>
+          <div className="mt-6 max-w-4xl space-y-5 text-sm leading-7 text-neutral-400">
+            <p>Marketing ROI measures the return generated from a marketing investment compared with the total marketing cost. The basic formula is (revenue − total marketing cost) ÷ total marketing cost × 100.</p>
+            <p>ROAS measures revenue generated for each rupee spent on advertising. CAC estimates the total marketing cost required to acquire one customer, while cost per lead measures the advertising cost required to generate a lead.</p>
+            <p>These metrics work best together. A campaign can produce inexpensive leads but still have a poor return if those leads rarely become customers. Use the calculator above to test different budget and conversion assumptions before scaling.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-white/[0.07] px-[6vw] py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400">Common questions</p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Marketing ROI calculator FAQs</h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-2">
+            <div><h3 className="font-semibold text-white">What is a good marketing ROI?</h3><p className="mt-2 text-sm leading-7 text-neutral-500">There is no universal target. Compare ROI with your margins, customer value, sales cycle and the full cost of acquiring customers.</p></div>
+            <div><h3 className="font-semibold text-white">What is the difference between ROI and ROAS?</h3><p className="mt-2 text-sm leading-7 text-neutral-500">ROAS focuses on revenue generated from advertising spend. ROI can include broader marketing costs, making it a wider measure of marketing efficiency.</p></div>
+            <div><h3 className="font-semibold text-white">How do I calculate customer acquisition cost?</h3><p className="mt-2 text-sm leading-7 text-neutral-500">Divide your total marketing cost by the number of customers acquired during the same measurement period.</p></div>
+            <div><h3 className="font-semibold text-white">Can I use this calculator for Indian campaigns?</h3><p className="mt-2 text-sm leading-7 text-neutral-500">Yes. The calculator uses Indian rupee formatting and can be used for Google Ads, Meta Ads, lead generation and other marketing campaigns.</p></div>
+          </div>
         </div>
       </section>
 
@@ -152,9 +206,14 @@ export default function MarketingROICalculator() {
           <p className="mt-4 max-w-2xl text-sm leading-6 text-neutral-500">
             Read our latest thinking on digital marketing costs, websites, SEO and growth strategy.
           </p>
-          <a href="/insights" className="mt-7 inline-flex rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-black transition hover:-translate-y-0.5">
-            Explore Insights ↗
-          </a>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link to="/insights/how-to-calculate-marketing-roi" className="inline-flex rounded-full border border-white/10 px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:border-blue-500 hover:text-blue-400">
+              Read the ROI guide ↗
+            </Link>
+            <Link to="/insights" className="inline-flex rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.16em] text-black transition hover:-translate-y-0.5">
+              Explore Insights ↗
+            </Link>
+          </div>
         </div>
       </section>
     </main>
