@@ -359,45 +359,34 @@ const articles = [
     author: "Kardengey",
 
     content: [
-      {
-        type: "paragraph",
-        text:
-          "Marketing has never had more channels. It has also never been easier to disappear inside them.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "Brands can publish every day, run campaigns across multiple platforms and generate content at enormous speed. But more content does not automatically create more attention.",
-      },
-
-      {
-        type: "heading",
-        text: "Attention is becoming expensive.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "The internet is crowded with businesses saying similar things, using similar formats and targeting similar audiences.",
-      },
-
-      {
-        type: "quote",
-        text:
-          "A generic strategy might produce activity. A distinctive strategy creates recognition.",
-      },
-
-      {
-        type: "heading",
-        text: "Strategy needs a point of view.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "The strongest brands are not trying to appeal to everyone. They understand what they believe, who they are speaking to and why someone should care.",
-      },
+      { type: "paragraph", text: "Marketing has never had more channels. It has also never been easier to disappear inside them. Brands can publish every day, run campaigns across several platforms and produce content quickly, yet still struggle to give customers a clear reason to choose them." },
+      { type: "paragraph", text: "The problem is not that every business needs a completely original idea. It is that a strategy built from copied formats, broad audiences and vague promises rarely explains why a particular customer should care. Activity can keep a team busy without making the business more memorable or more profitable." },
+      { type: "heading", text: "Attention is not the same as demand" },
+      { type: "paragraph", text: "Views, likes and impressions can help diagnose distribution, but they are not business outcomes by themselves. A campaign may reach many people who will never need the offer. Another may reach a smaller group with a real problem and generate qualified enquiries. The right measurement depends on the job the campaign is supposed to do." },
+      { type: "paragraph", text: "Before choosing a platform or content format, define the business objective. Are you trying to create awareness in a new market, generate enquiries, increase online purchases, improve repeat buying or help prospects understand a complex service? Different objectives require different messages, offers and measurement." },
+      { type: "heading", text: "Start with a specific customer" },
+      { type: "paragraph", text: "A useful strategy identifies a real group of people, the situation they are in and the problem they want solved. 'Small businesses' is usually too broad to guide a campaign. A more useful starting point might be local clinics that need more appointment enquiries, or growing ecommerce brands that want to improve the profitability of paid acquisition." },
+      { type: "paragraph", text: "Talk to customers and sales teams. Review common objections, questions asked before purchase, reasons deals are lost and the language customers use to describe their problem. These details can reveal what the audience values more clearly than a list of marketing trends." },
+      { type: "heading", text: "Give the brand a clear point of view" },
+      { type: "paragraph", text: "Positioning is the answer to a practical question: why should the right customer consider this business instead of the alternatives? The answer should connect a customer need with a credible strength. It might be a narrower specialization, a more transparent process, faster implementation, stronger support or a better fit for a particular type of customer." },
+      { type: "paragraph", text: "Avoid claims such as 'best quality', 'innovative solutions' or 'results-driven service' unless you explain what they mean. Specific proof is more persuasive: show the process, explain the trade-off, demonstrate the product or share a properly substantiated example. Do not invent testimonials, results or customer stories to make a position sound stronger." },
+      { type: "heading", text: "Connect the message to the buying journey" },
+      { type: "paragraph", text: "People at different stages need different information. Someone who has only noticed a problem may need a clear explanation. Someone comparing providers may need pricing context, a comparison or a demonstration. Someone ready to buy may need a simple enquiry process, transparent scope and confidence that the business can deliver." },
+      { type: "paragraph", text: "Build content around those needs instead of posting disconnected topics. A practical sequence could be: explain the problem, compare possible approaches, answer common objections, demonstrate the service and make the next step clear. Link related pages so a visitor can move naturally from learning to evaluating to contacting you." },
+      { type: "heading", text: "Choose channels based on customer behaviour" },
+      { type: "paragraph", text: "Do not choose a platform just because competitors are active there or a format is trending. Consider where customers research, what kind of attention the platform supports and whether the team can consistently create something useful for that environment. Search may be valuable when people actively look for a solution. Short-form video may help demonstrate a product. Email can support ongoing relationships with people who have already opted in." },
+      { type: "paragraph", text: "A business does not need to be everywhere at once. It is often more effective to establish a repeatable approach on one or two relevant channels, learn from the results and expand only when the team has a clear reason to do so." },
+      { type: "heading", text: "Make testing part of the strategy" },
+      { type: "paragraph", text: "A strategy should include assumptions that can be tested. For example: a more specific landing-page headline will increase qualified enquiries; a demonstration video will help prospects understand the product; or a shorter form will improve completion without reducing lead quality. Change one important variable at a time where practical and measure the result over a meaningful period." },
+      { type: "paragraph", text: "Choose metrics that match the objective. For lead generation, track qualified leads, cost per qualified lead, sales conversion and customer acquisition cost—not just form submissions. For ecommerce, look at purchases, revenue, contribution margin and repeat behaviour alongside advertising efficiency. For awareness campaigns, reach and attention may be useful early indicators, but should not be mistaken for proof of revenue." },
+      { type: "heading", text: "A simple strategy worksheet" },
+      { type: "paragraph", text: "Write down five things before launching a campaign: the customer you want to reach; the problem or desire that matters to them; the reason your offer is a credible fit; the action you want them to take; and the evidence you will use to judge success. If any answer is vague, the campaign will probably be difficult to evaluate." },
+      { type: "paragraph", text: "Then create a small set of connected assets: a clear landing page, useful supporting content, a relevant offer and a measurement plan. Make sure the promise in an ad matches what people see after they click. Misalignment can waste budget even when the creative attracts attention." },
+      { type: "heading", text: "What to do when a campaign underperforms" },
+      { type: "paragraph", text: "Do not immediately assume the answer is to post more or increase spend. Check whether the right people are seeing the message, whether the offer is relevant, whether the landing page builds trust, whether tracking works and whether sales follow-up is timely. Diagnose the weakest step before making a large change." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "A strong marketing strategy is not a calendar full of content or a list of platforms. It is a connected set of decisions about whom the business serves, what it can credibly offer, how customers discover and evaluate it, and how the team will learn from results." },
+      { type: "paragraph", text: "Specificity creates direction. Evidence creates trust. Consistent measurement helps the business improve. Start with those fundamentals, and choose tactics that serve the strategy rather than letting trends choose it for you." }
     ],
   },
 
@@ -421,45 +410,35 @@ const articles = [
     author: "Kardengey",
 
     content: [
-      {
-        type: "paragraph",
-        text:
-          "A business website is often treated as a final deliverable. Something that gets designed, developed and launched before everyone moves on to the next project.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "That approach misses what a website can actually become.",
-      },
-
-      {
-        type: "heading",
-        text: "Your website is part of the business.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "A modern website should explain what a business does, establish trust, create demand and make it easy for the right people to take the next step.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "It should also work with the rest of the growth system — content, search, advertising, analytics, CRM and conversion.",
-      },
-
-      {
-        type: "heading",
-        text: "Build for the journey.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "The best website isn't necessarily the one with the most animations. It is the one that understands what a visitor needs at every stage of their decision.",
-      },
+      { type: "paragraph", text: "A business website is often treated as a final deliverable: design it, develop it, launch it and move on. But a website is not simply a digital brochure. It can help potential customers understand an offer, evaluate whether a business is credible, find answers and take the next step." },
+      { type: "paragraph", text: "A modern website should support the business goal it was built for. For one company that may mean qualified enquiries. For an ecommerce brand it may mean completed purchases. For a professional service it may mean explaining expertise and helping the right prospects book a conversation. The design and features should follow that purpose." },
+      { type: "heading", text: "1. Explain what the business does" },
+      { type: "paragraph", text: "Visitors should not have to decode a slogan to understand the offer. The first screen should communicate what the business provides, who it helps and what problem it solves. A concise headline, supporting explanation and clear next step are usually more useful than a clever statement that says little about the service." },
+      { type: "paragraph", text: "Use the language customers understand. Internal jargon may be familiar to the team but confusing to a first-time visitor. If the service is complex, explain the outcome first and provide the technical detail further down the page." },
+      { type: "heading", text: "2. Build trust with useful evidence" },
+      { type: "paragraph", text: "A polished visual identity can make a website feel professional, but trust also depends on substance. Explain the process, show relevant work where you have permission, introduce the people behind the business and provide accurate contact information. Case studies should state what was done and what can reasonably be supported; do not imply guaranteed outcomes or publish client information without approval." },
+      { type: "paragraph", text: "Useful details reduce uncertainty. Depending on the business, visitors may need to understand service scope, timelines, pricing factors, delivery areas, support arrangements or what happens after they submit an enquiry. Answering these questions can improve the quality of conversations that reach the team." },
+      { type: "heading", text: "3. Make the next step obvious" },
+      { type: "paragraph", text: "Every important page should have a sensible next action. That could be requesting a quote, booking a consultation, viewing a relevant case study, using a tool or buying a product. The action should match the visitor's level of readiness. Someone reading an introductory guide may not be ready for a sales call, but they may appreciate a related resource." },
+      { type: "paragraph", text: "Keep forms proportionate to the task. Ask only for information the team genuinely needs at that stage, explain what happens after submission and make error messages clear. Test the form on mobile and confirm that submissions reach the right person. A beautiful form that silently fails is a business problem, not a design detail." },
+      { type: "heading", text: "4. Treat mobile experience as a core requirement" },
+      { type: "paragraph", text: "People may arrive from search, social media, messaging apps or an advertisement on a phone. Text should be readable without zooming, navigation should be usable, buttons should be easy to tap and key content should not disappear on smaller screens. Check the real page on several screen sizes rather than assuming that a responsive layout is automatically a good mobile experience." },
+      { type: "paragraph", text: "Performance matters too. Oversized images, unnecessary scripts and heavy animation can make pages feel slow. Compress images, load only the assets a page needs and test performance with real-world tools. Google's Core Web Vitals are useful measurements, but they should be considered alongside usability and the complete page experience." },
+      { type: "heading", text: "5. Make the site discoverable" },
+      { type: "paragraph", text: "Search visibility begins with accessible, useful pages. Give each important page a clear purpose, a descriptive title, a meaningful main heading and original content that answers a real question. Use internal links to connect related services, guides and tools. Avoid creating many nearly identical pages simply to target small variations of the same keyword." },
+      { type: "paragraph", text: "Make sure important URLs can be crawled and return the expected response. Check canonical tags, robots directives and the XML sitemap. Google Search Console can help identify whether a URL is indexed and which queries are generating impressions and clicks. Indexing is not guaranteed, and requesting indexing does not guarantee rankings." },
+      { type: "heading", text: "6. Measure what happens after a visit" },
+      { type: "paragraph", text: "A website should help the business learn. Set up appropriate analytics and conversion tracking for meaningful actions such as successful form submissions, purchases or booked appointments. Define conversions carefully so that clicks on a button are not automatically counted as completed leads if the form fails." },
+      { type: "paragraph", text: "Review the journey from landing page to outcome. If a page receives visits but few people continue, the message or next step may need work. If enquiries arrive but are poorly qualified, clarify the offer and who it is for. If the team receives good leads but fails to close them, the problem may sit in the sales process rather than the website alone." },
+      { type: "heading", text: "7. Keep content and information current" },
+      { type: "paragraph", text: "A website is not finished forever after launch. Review service details, prices where shown, contact information, policies and important content periodically. Remove broken links, fix outdated information and update guides when the underlying advice changes. A maintenance routine is more reliable than waiting for a visitor to report a problem." },
+      { type: "paragraph", text: "Make ownership clear. Someone should know how deployments are handled, where backups live, how forms are tested and who is responsible for updates. Security updates and reliable backups are part of running the site, not optional extras." },
+      { type: "heading", text: "A practical website review checklist" },
+      { type: "paragraph", text: "Ask a new visitor to answer these questions: Can I tell what the business offers within a few seconds? Do I know whether it is right for me? Can I find proof and answers to common concerns? Is the next step obvious? Does the site work comfortably on a phone? Are forms and tracking working? Can search engines access the important pages? Is the information accurate and maintained?" },
+      { type: "paragraph", text: "Prioritize the issues that block understanding, trust or conversion before adding decorative features. A new animation or redesign will not compensate for an unclear offer, a broken enquiry form or missing information." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "A modern business website should be a useful part of the growth system: clear enough to explain the offer, credible enough to reduce uncertainty, accessible enough to be discovered and measured well enough to improve. Its success is not defined by how impressive it looks in a screenshot, but by how well it serves visitors and the business." },
+      { type: "paragraph", text: "Start with the customer's questions and the action the business needs them to take. Build around those needs, measure what happens and keep improving the experience." }
     ],
   },
 
@@ -483,39 +462,30 @@ const articles = [
     author: "Kardengey",
 
     content: [
-      {
-        type: "paragraph",
-        text:
-          "Search is no longer limited to ten blue links and a search box.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "People are increasingly discovering information through AI interfaces, social platforms, maps, communities and recommendation systems.",
-      },
-
-      {
-        type: "heading",
-        text: "Search behaviour is expanding.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "Traditional SEO still matters, but businesses need to think beyond rankings. Being discoverable means creating useful information that machines and people can understand.",
-      },
-
-      {
-        type: "heading",
-        text: "Visibility is becoming a system.",
-      },
-
-      {
-        type: "paragraph",
-        text:
-          "Content, technical foundations, authority, brand recognition and useful experiences all contribute to how a business gets discovered.",
-      },
+      { type: "paragraph", text: "Search is no longer limited to ten blue links and a search box. People discover businesses through traditional search results, maps, video platforms, online communities, social networks and AI-powered answers. For a business, that means visibility is becoming broader—but the fundamentals of being useful, clear and trustworthy still matter." },
+      { type: "paragraph", text: "This does not mean search engine optimization is dead. Search engines still need to discover pages, understand what they cover and decide which results best help a person. What is changing is the range of places where discovery happens and the kinds of questions people ask before choosing a product or service." },
+      { type: "heading", text: "Search behaviour is expanding" },
+      { type: "paragraph", text: "A person looking for a nearby dentist may use Maps and reviews. Someone comparing accounting software may read detailed guides, watch demonstrations and ask an AI assistant to summarize the options. A shopper may discover a brand on social media and search for it later. These journeys are different, so a business should not judge all visibility by one keyword ranking." },
+      { type: "paragraph", text: "Traditional organic search remains important, especially when people have a clear question or are researching a purchase. Local search, useful video, credible reviews and brand searches can support that journey too. The right mix depends on how customers actually research and buy in your category." },
+      { type: "heading", text: "What does this mean for SEO?" },
+      { type: "paragraph", text: "Start with the questions your customers ask before they contact you. These may include price, suitability, comparisons, common mistakes, implementation, timelines and after-sales support. Create pages that answer those questions directly, with specific explanations rather than generic claims that could belong to any competitor." },
+      { type: "paragraph", text: "Make each page easy to understand. Use a descriptive page title, a clear main heading, meaningful subheadings, concise paragraphs and examples where they help. Explain unfamiliar terms. If you make a claim about results, pricing or performance, show the context and evidence behind it. A useful page should satisfy the visitor without forcing them to search again for the basic answer." },
+      { type: "heading", text: "Build a stronger foundation before chasing trends" },
+      { type: "paragraph", text: "Technical accessibility still matters. Important pages should return a successful response, be reachable through ordinary links, work on mobile devices and avoid accidental noindex directives. Use a sensible URL structure, unique page titles and canonical URLs where appropriate. Submit an accurate XML sitemap in Google Search Console, then inspect important URLs to see whether Google can crawl and index them." },
+      { type: "paragraph", text: "Internal links help visitors and search engines discover related content. Link from broad guides to relevant service pages, tools and deeper explanations. Use descriptive link text so people know what they will find. Do not add links merely to repeat keywords; add them when they help someone take the next useful step." },
+      { type: "heading", text: "Create information that deserves to be referenced" },
+      { type: "paragraph", text: "A business can stand out by sharing details that competitors cannot easily copy: original project lessons, clearly explained processes, anonymized case studies with permission, product demonstrations, expert commentary, or a calculator that helps a visitor make a decision. Avoid presenting invented statistics or unsourced industry averages as facts. If you use external data, identify the source and explain what it does—and does not—show." },
+      { type: "paragraph", text: "Reviews and business details can also influence discovery, particularly for local businesses. Keep your business name, contact details and service information accurate across important profiles. Ask genuine customers for honest reviews without offering rewards for positive ratings, and respond professionally to feedback." },
+      { type: "heading", text: "How to measure visibility beyond rankings" },
+      { type: "paragraph", text: "Use Google Search Console to review impressions, clicks, click-through rate, average position, queries and landing pages. Use analytics to understand what visitors do after they arrive: read another page, use a tool, submit an enquiry or leave. Where possible, connect enquiries to qualified opportunities and sales. A high ranking is useful, but it is not the final business outcome." },
+      { type: "paragraph", text: "Review performance over a consistent period and compare similar pages or queries. A new page may take time to be crawled, indexed and tested in search results. Requesting indexing does not guarantee inclusion or a particular ranking. If a page is not indexed, check its URL Inspection details, canonical, internal links and whether it provides enough distinct value before repeatedly requesting indexing." },
+      { type: "heading", text: "A practical 30-day starting plan" },
+      { type: "paragraph", text: "Week one: list the questions customers ask and check the pages already answering them. Week two: improve the most important page with clearer explanations, examples and a relevant next step. Week three: fix obvious crawlability, mobile and internal-linking issues. Week four: review Search Console and analytics data, note what changed and choose the next improvement based on evidence. This is a prioritization framework, not a promise of rankings within 30 days." },
+      { type: "heading", text: "Where AI-powered discovery fits" },
+      { type: "paragraph", text: "There is no reliable shortcut that guarantees inclusion in AI-generated answers. Clear information, crawlable pages, useful original material and a credible brand provide a sensible foundation for many forms of discovery. Avoid publishing large volumes of near-identical pages simply to target every phrase; that can create a weak experience rather than genuine value." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "The future of search is not a reason to abandon SEO. It is a reason to make your website more useful and your business easier to understand wherever customers discover it. Answer real questions, maintain strong technical foundations, connect related resources and measure whether visibility leads to meaningful action." },
+      { type: "paragraph", text: "For a business, the objective is not to appear everywhere at any cost. It is to be discoverable in the places that matter, provide a trustworthy answer and make the next step clear." }
     ],
   },
 
