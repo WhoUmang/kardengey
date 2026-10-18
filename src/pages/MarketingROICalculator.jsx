@@ -8,6 +8,7 @@ const DEFAULTS = {
   leads: 250,
   customers: 20,
   revenuePerCustomer: 15000,
+  grossMarginPercent: 60,
 };
 
 const formatINR = (value) =>
@@ -62,14 +63,15 @@ export default function MarketingROICalculator() {
   const results = useMemo(() => {
     const totalMarketingCost = values.adSpend + values.otherMarketingCost;
     const revenue = values.customers * values.revenuePerCustomer;
-    const profit = revenue - totalMarketingCost;
+    const estimatedContribution = revenue * (values.grossMarginPercent / 100);
+    const profit = estimatedContribution - totalMarketingCost;
     const roi = totalMarketingCost > 0 ? (profit / totalMarketingCost) * 100 : 0;
     const roas = values.adSpend > 0 ? revenue / values.adSpend : 0;
     const cpl = values.leads > 0 ? values.adSpend / values.leads : 0;
     const cac = values.customers > 0 ? totalMarketingCost / values.customers : 0;
     const leadToCustomer = values.leads > 0 ? (values.customers / values.leads) * 100 : 0;
 
-    return { totalMarketingCost, revenue, profit, roi, roas, cpl, cac, leadToCustomer };
+    return { totalMarketingCost, revenue, estimatedContribution, profit, roi, roas, cpl, cac, leadToCustomer };
   }, [values]);
 
   const reset = () => setValues(DEFAULTS);
@@ -101,7 +103,7 @@ export default function MarketingROICalculator() {
           <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400">Marketing ROI explained</p>
           <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight sm:text-4xl">How to calculate marketing ROI</h2>
           <div className="mt-6 max-w-4xl space-y-5 text-sm leading-7 text-neutral-400">
-            <p>Marketing ROI measures the return generated from a marketing investment compared with the total marketing cost. The basic formula is (revenue − total marketing cost) ÷ total marketing cost × 100.</p>
+            <p>For a more useful profit-aware estimate, this calculator applies your gross margin to revenue to estimate contribution before marketing, then subtracts total marketing cost. Estimated marketing ROI = (estimated contribution − total marketing cost) ÷ total marketing cost × 100. ROAS remains revenue divided by ad spend.</p>
             <p>ROAS measures revenue generated for each rupee spent on advertising. CAC estimates the total marketing cost required to acquire one customer, while cost per lead measures the advertising cost required to generate a lead.</p>
             <p>These metrics work best together. A campaign can produce inexpensive leads but still have a poor return if those leads rarely become customers. Use the calculator above to test different budget and conversion assumptions before scaling.</p>
           </div>
@@ -141,14 +143,15 @@ export default function MarketingROICalculator() {
               <Input label="Other marketing cost" value={values.otherMarketingCost} onChange={update("otherMarketingCost")} currency />
               <Input label="Expected leads" value={values.leads} onChange={update("leads")} />
               <Input label="Expected customers" value={values.customers} onChange={update("customers")} />
-              <Input label="Revenue per customer" value={values.revenuePerCustomer} onChange={update("revenuePerCustomer")} currency className="sm:col-span-2" />
+              <Input label="Revenue per customer" value={values.revenuePerCustomer} onChange={update("revenuePerCustomer")} currency />
+              <Input label="Gross margin (%)" value={values.grossMarginPercent} onChange={update("grossMarginPercent")} className="sm:col-span-2" />
             </div>
 
             <div className="mt-7 rounded-2xl border border-blue-500/10 bg-blue-500/[0.04] p-5">
               <p className="text-xs font-medium text-blue-300">Quick interpretation</p>
               <p className="mt-2 text-sm leading-6 text-neutral-400">
-                A positive ROI means the estimated revenue exceeds the marketing costs entered above.
-                For lead-generation campaigns, use the average value of a converted customer for revenue per customer.
+                A positive estimated ROI means the contribution implied by your gross-margin assumption exceeds the marketing costs entered above.
+                For lead-generation campaigns, use the average revenue per converted customer and a realistic gross margin.
               </p>
             </div>
           </div>
@@ -157,7 +160,7 @@ export default function MarketingROICalculator() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white">Estimated results</p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <Metric label="Estimated revenue" value={formatINR(results.revenue)} />
-              <Metric label="Marketing ROI" value={`${results.roi.toFixed(1)}%`} note="(Revenue − total marketing cost) ÷ total marketing cost" />
+              <Metric label="Marketing ROI" value={`${results.roi.toFixed(1)}%`} note="(Estimated contribution − total marketing cost) ÷ total marketing cost" />
               <Metric label="ROAS" value={`${results.roas.toFixed(2)}×`} note="Revenue generated per ₹1 of ad spend" />
               <Metric label="Cost per lead" value={formatINR(results.cpl)} />
               <Metric label="Customer acquisition cost" value={formatINR(results.cac)} />
@@ -165,7 +168,7 @@ export default function MarketingROICalculator() {
             </div>
 
             <div className={`mt-4 rounded-2xl border p-5 ${results.profit >= 0 ? "border-emerald-500/20 bg-emerald-500/[0.05]" : "border-red-500/20 bg-red-500/[0.05]"}`}>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500">Estimated return after marketing costs</p>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500">Estimated contribution after marketing costs</p>
               <p className="mt-2 text-2xl font-semibold text-white">{formatINR(results.profit)}</p>
             </div>
           </div>
@@ -181,7 +184,7 @@ export default function MarketingROICalculator() {
           <div className="space-y-7 text-sm leading-7 text-neutral-400">
             <div>
               <h3 className="font-semibold text-white">Marketing ROI</h3>
-              <p className="mt-1">(Revenue − total marketing cost) ÷ total marketing cost × 100.</p>
+              <p className="mt-1">(Estimated contribution − total marketing cost) ÷ total marketing cost × 100. Estimated contribution is revenue multiplied by your gross-margin percentage.</p>
             </div>
             <div>
               <h3 className="font-semibold text-white">ROAS</h3>
@@ -193,7 +196,7 @@ export default function MarketingROICalculator() {
             </div>
             <div>
               <h3 className="font-semibold text-white">Use estimates carefully</h3>
-              <p className="mt-1">This calculator is a planning tool, not a forecast. Real results depend on your channel, audience, offer, conversion rate, margins and attribution model.</p>
+              <p className="mt-1">This calculator is a planning tool, not a forecast. ROI depends on the gross-margin assumption you enter and does not include fixed overhead or all possible sales costs. ROAS uses revenue and is not the same as profit or ROI. Real results depend on your channel, audience, offer, conversion rate, margins and attribution model.</p>
             </div>
           </div>
         </div>
