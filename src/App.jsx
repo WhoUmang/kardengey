@@ -20,6 +20,7 @@ import InsightArticle from "./components/insights/InsightArticle";
 import NotFound from "./components/common/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import MarketingROICalculator from "./pages/MarketingROICalculator";
+import AboutEditorialStandards from "./pages/AboutEditorialStandards";
 
 function Home() {
   return (
@@ -88,6 +89,19 @@ function App() {
             <>
               <Navbar />
               <MarketingROICalculator />
+              <WhatsAppButton />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* ABOUT & EDITORIAL STANDARDS */}
+        <Route
+          path="/about-editorial-standards"
+          element={
+            <>
+              <Navbar />
+              <AboutEditorialStandards />
               <WhatsAppButton />
               <Footer />
             </>
