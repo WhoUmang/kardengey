@@ -56,7 +56,9 @@ export default function MarketingROICalculator() {
     const next = Number(event.target.value);
     setValues((current) => ({
       ...current,
-      [key]: Number.isFinite(next) && next >= 0 ? next : 0,
+      [key]: Number.isFinite(next) && next >= 0
+        ? key === "grossMarginPercent" ? Math.min(next, 100) : next
+        : 0,
     }));
   };
 
@@ -229,7 +231,7 @@ function Input({ label, value, onChange, currency = false, className = "" }) {
       <span className="text-[10px] uppercase tracking-[0.18em] text-neutral-500">{label}</span>
       <div className="mt-2 flex items-center rounded-xl border border-white/[0.09] bg-black/30 focus-within:border-blue-500/50">
         {currency && <span className="pl-4 text-sm text-neutral-600">₹</span>}
-        <input type="number" min="0" step="1" inputMode="decimal" value={value} onChange={onChange} className={`w-full bg-transparent ${currency ? "px-3" : "px-4"} py-3 text-sm text-white outline-none`} />
+        <input type="number" min="0" max={label === "Gross margin (%)" ? 100 : undefined} step="1" inputMode="decimal" value={value} onChange={onChange} className={`w-full bg-transparent ${currency ? "px-3" : "px-4"} py-3 text-sm text-white outline-none`} />
       </div>
     </label>
   );
