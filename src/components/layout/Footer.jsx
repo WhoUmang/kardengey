@@ -7,6 +7,7 @@ const links = [
   { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
   { label: "Insights", href: "/insights" },
+  { label: "Editorial standards", href: "/about-editorial-standards" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -95,10 +96,10 @@ export default function Footer() {
 
             <div className="flex flex-col items-start gap-3">
               {links.map((link) => (
-                link.href === "/insights" ? (
+                link.href.startsWith("/") ? (
                   <a
                     key={link.label}
-                    href="/insights"
+                    href={link.href}
                     className="group flex min-h-11 items-center gap-2 text-sm text-neutral-500 transition-colors duration-300 hover:text-white"
                   >
                     <span>{link.label}</span>
