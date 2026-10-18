@@ -774,6 +774,141 @@ const articles = [
     ],
   },
 
+
+  {
+    category: "MARKETING",
+    filter: "MARKETING",
+    title: "What Is a Good Cost Per Lead in India? (2026 Guide)",
+    slug: "good-cost-per-lead-india-2026",
+    description: "Learn how to calculate cost per lead in India, compare campaign performance fairly, assess lead quality and decide whether your marketing spend is working.",
+    date: "19 OCT 2026",
+    publishedAt: "2026-10-19",
+    read: "8 MIN READ",
+    author: "Kardengey",
+    content: [
+      {
+        type: "paragraph",
+        text: "If you are running Google Ads, Meta Ads or another lead-generation campaign, cost per lead (CPL) is one of the first numbers you will see. It is useful, but it does not tell the whole story. A low-cost lead that never responds can be less valuable than a more expensive lead who becomes a customer."
+      },
+      {
+        type: "paragraph",
+        text: "There is no single cost per lead that is good for every Indian business. The right number depends on your industry, location, offer, competition, audience, campaign objective and the way your team qualifies and follows up with enquiries. Use CPL as a comparison metric—not as a universal benchmark."
+      },
+      {
+        type: "heading",
+        text: "What is cost per lead (CPL)?"
+      },
+      {
+        type: "paragraph",
+        text: "Cost per lead is the amount spent to generate one lead during a defined period. A lead might be a form submission, phone call, WhatsApp enquiry, demo request or another action that shows potential interest. Decide what counts as a lead before comparing campaigns, and use the same definition throughout your reporting."
+      },
+      {
+        type: "heading",
+        text: "How to calculate cost per lead"
+      },
+      {
+        type: "paragraph",
+        text: "The basic formula is: Cost per lead = advertising spend ÷ number of leads generated. For example, if a campaign spends ₹12,000 and generates 80 leads, the CPL is ₹150 (₹12,000 ÷ 80). This is a simple example to demonstrate the calculation, not an industry benchmark."
+      },
+      {
+        type: "paragraph",
+        text: "For a fuller picture, calculate both ad-only CPL and an all-in acquisition view. Ad-only CPL uses media spend. A broader measure can include relevant creative, agency, landing-page and campaign costs. Keep these definitions separate and label them clearly so you do not compare one campaign's media-only cost with another campaign's fully loaded cost."
+      },
+      {
+        type: "heading",
+        text: "What is a good CPL in India in 2026?"
+      },
+      {
+        type: "paragraph",
+        text: "A good CPL is one that can produce customers at an acceptable acquisition cost and margin. It is not possible to give one reliable number for all Indian businesses: a local service, an ecommerce brand, a B2B software company and a high-consideration professional service have different customer values, sales cycles and qualification needs."
+      },
+      {
+        type: "paragraph",
+        text: "Instead of relying on a generic online range, establish a baseline from your own campaign data. Separate results by channel, campaign objective, geography, audience and lead type. Compare like with like over a consistent period, and avoid making a decision from a handful of leads."
+      },
+      {
+        type: "heading",
+        text: "Why CPL varies between businesses"
+      },
+      {
+        type: "paragraph",
+        text: "Industry and customer value matter. A business selling a low-priced product usually has less room to pay for a lead than a business with a high-value contract. The acceptable CPL also depends on the percentage of leads that become paying customers and the gross margin earned from those customers."
+      },
+      {
+        type: "paragraph",
+        text: "Location and competition matter too. A campaign targeting a small local service area may behave differently from one targeting several major cities. Audience intent, offer clarity, creative quality, landing-page experience, seasonality and the bidding environment can all affect the cost and volume of enquiries."
+      },
+      {
+        type: "heading",
+        text: "CPL is only the first step: measure lead quality"
+      },
+      {
+        type: "paragraph",
+        text: "Track what happens after the lead arrives. Are the contact details valid? Does the person respond? Do they meet your target criteria? Do they book a call, request a quote or become a customer? Without this information, a campaign can look efficient on the advertising dashboard while producing little business value."
+      },
+      {
+        type: "paragraph",
+        text: "A useful report connects ad spend to qualified leads, sales conversations and customers. If possible, pass qualified-lead and sales outcomes back into your analytics or ad platforms, while following applicable privacy and consent requirements."
+      },
+      {
+        type: "heading",
+        text: "Calculate the customer acquisition cost too"
+      },
+      {
+        type: "paragraph",
+        text: "Customer acquisition cost (CAC) measures the cost of acquiring a customer, not just a lead. A simplified marketing CAC is total marketing cost divided by the number of customers acquired during the same period. For a more complete business view, companies may also include sales-team and other acquisition costs. State which costs are included."
+      },
+      {
+        type: "paragraph",
+        text: "For example, if 100 leads generate 5 customers, the lead-to-customer conversion rate is 5%. If the campaign spend was ₹20,000, media CPL is ₹200 and media cost per acquired customer is ₹4,000. These example figures show why lead volume alone cannot tell you whether a campaign is working."
+      },
+      {
+        type: "heading",
+        text: "How to improve CPL without sacrificing quality"
+      },
+      {
+        type: "paragraph",
+        text: "Start by checking tracking and lead definitions. Make sure duplicate submissions, spam and irrelevant enquiries are not counted as genuine leads. Then review the search terms or audience, geographic targeting, ad promise, landing-page message and form experience to identify avoidable friction."
+      },
+      {
+        type: "paragraph",
+        text: "Test one meaningful change at a time where practical. Improve the relevance between the ad and landing page, make the next step clear, remove unnecessary form fields and respond to new enquiries quickly. For lead generation, use qualified-lead rate and customer conversion alongside CPL when judging the impact of a change."
+      },
+      {
+        type: "paragraph",
+        text: "Do not automatically cut a campaign because CPL increased, or scale it just because CPL fell. Check lead quality, conversion rate, sales capacity, customer value and the time required for a lead to convert. The aim is sustainable customer acquisition, not simply the cheapest possible enquiry."
+      },
+      {
+        type: "heading",
+        text: "A simple CPL review checklist"
+      },
+      {
+        type: "paragraph",
+        text: "Before changing your budget, ask: Are conversions tracked correctly? Are we counting qualified leads consistently? Which channel, campaign and geography generate the strongest leads? What percentage of leads become customers? What is the cost per acquired customer? Does the resulting customer value justify that cost?"
+      },
+      {
+        type: "paragraph",
+        text: "Use the same reporting window when comparing spend and outcomes, and allow for your normal sales cycle. For a business with a long buying journey, the newest leads may not have had enough time to convert yet."
+      },
+      {
+        type: "heading",
+        text: "Use the numbers to make a better marketing decision"
+      },
+      {
+        type: "paragraph",
+        text: "The Kardengey Marketing ROI Calculator can help estimate cost per lead, customer acquisition cost, ROAS and marketing ROI using your own assumptions. Treat the outputs as planning estimates, then compare them with actual campaign and sales data."
+      },
+      {
+        type: "heading",
+        text: "Final thought"
+      },
+      {
+        type: "paragraph",
+        text: "A good cost per lead is not a number copied from another business. It is a cost your business can sustain while generating leads that turn into profitable customers. Track the full journey from spend to sale, improve the weakest step and scale only when the results support it."
+      }
+    ]
+  },
+
 ];
 
 export default articles;
