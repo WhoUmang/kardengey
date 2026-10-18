@@ -117,7 +117,7 @@ export default function InsightArticle() {
               delay: 0.15,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="mt-7 max-w-6xl text-[clamp(3.5rem,8vw,8rem)] font-black uppercase leading-[0.82] tracking-[-0.075em]"
+            className={`mt-7 font-black uppercase tracking-[-0.075em] ${article.slug === "good-cost-per-lead-india-2026" ? "max-w-5xl text-[clamp(3rem,6.2vw,6.5rem)] leading-[0.88]" : "max-w-6xl text-[clamp(3.5rem,8vw,8rem)] leading-[0.82]"}`}
           >
             {article.title}
           </motion.h1>
@@ -167,7 +167,7 @@ export default function InsightArticle() {
 
       <section className="border-t border-white/10 px-[6vw]">
 
-        <div className="mx-auto grid max-w-[1200px] gap-16 py-20 md:grid-cols-[180px_1fr] md:py-28">
+        <div className="mx-auto grid max-w-[1200px] gap-10 py-16 md:grid-cols-[180px_minmax(0,1fr)] md:gap-16 md:py-24">
 
           {/* Side label */}
 
@@ -201,7 +201,19 @@ export default function InsightArticle() {
 
           {/* Content */}
 
-          <div className="max-w-3xl">
+          <div className={article.slug === "good-cost-per-lead-india-2026" ? "max-w-4xl" : "max-w-3xl"}>
+
+            {article.slug === "good-cost-per-lead-india-2026" && (
+              <div className="mb-12 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:p-8">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-400">The short answer</p>
+                <p className="mt-4 text-lg leading-8 text-neutral-200 md:text-xl md:leading-9">
+                  A good cost per lead is one your business can afford while consistently generating qualified leads and profitable customers. There is no single reliable CPL benchmark for every Indian business—measure lead quality, customer conversion and acquisition cost together.
+                </p>
+                <Link to="/tools/marketing-roi-calculator" className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-blue-400 transition-colors hover:text-white">
+                  Calculate your marketing ROI <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            )}
 
             {article.content.map((block, index) => {
 
@@ -275,6 +287,17 @@ export default function InsightArticle() {
         </div>
 
       </section>
+
+      {article.slug === "good-cost-per-lead-india-2026" && (
+        <div className="border-t border-white/10 px-[6vw] py-8">
+          <p className="mx-auto max-w-[1200px] text-sm leading-7 text-neutral-500">
+            Want help improving lead quality or campaign performance?{" "}
+            <Link to="/#contact" className="text-white underline decoration-blue-500 underline-offset-4 transition-colors hover:text-blue-400">
+              Talk to kardengey about your marketing goals.
+            </Link>
+          </p>
+        </div>
+      )}
 
       {/* =====================================================
           RELATED TOOL CTA
