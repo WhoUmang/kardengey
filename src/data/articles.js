@@ -14,7 +14,7 @@ const articles = [
 
     publishedAt: "2026-09-27",
 
-    read: "9 MIN READ",
+    read: "10 MIN READ",
 
     author: "Kardengey",
 
