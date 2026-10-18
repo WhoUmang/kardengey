@@ -209,6 +209,41 @@ const articles = [
 
       {
         type: "heading",
+        text: "How to build a realistic marketing budget",
+      },
+
+      {
+        type: "paragraph",
+        text: "Treat any price range in this guide as an illustrative starting point, not a guaranteed quote or an official industry average. Actual fees depend on deliverables, market competition, account complexity, creative requirements, reporting and the experience of the provider. Ask for a written scope before comparing prices.",
+      },
+
+      {
+        type: "paragraph",
+        text: "Separate your budget into three parts: the agency or freelancer's service fee, the advertising money paid to platforms such as Google or Meta, and any additional costs for creative production, landing pages, website work, tracking tools or taxes. Confirm who pays each cost and whose account owns the advertising data.",
+      },
+
+      {
+        type: "paragraph",
+        text: "For a local service business, a practical first budget might focus on one service area, one clear offer, a simple landing page or lead form, reliable conversion tracking and a controlled test budget. For ecommerce, account for product margins, average order value, shipping, returns, creative production and the cost of converting traffic into profitable orders. These are planning examples, not universal budget recommendations.",
+      },
+
+      {
+        type: "heading",
+        text: "Compare marketing proposals fairly",
+      },
+
+      {
+        type: "paragraph",
+        text: "Before choosing a provider, compare the same items in every proposal: channels and campaigns included, number and type of creative assets, landing-page work, tracking setup, reporting frequency, optimisation responsibilities, account ownership, minimum commitment, cancellation terms, taxes and whether ad spend is included. A lower headline fee may cover a much smaller scope.",
+      },
+
+      {
+        type: "paragraph",
+        text: "Use official Google Ads Help and Meta Business Help documentation to understand platform billing, budgets and campaign settings. These resources explain the advertising platforms; they do not establish a universal or official agency-management fee. Judge a proposal against your own goals, margins, sales process and measurement plan.",
+      },
+
+      {
+        type: "heading",
         text: "Frequently asked questions.",
       },
 
