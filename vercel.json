@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
+      "destination": "/insights",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
