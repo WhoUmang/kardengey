@@ -203,6 +203,24 @@ export default function InsightArticle() {
 
           <div className={article.slug === "good-cost-per-lead-india-2026" ? "max-w-4xl" : "max-w-3xl"}>
 
+            {article.slug === "website-cost-india-2026" && (
+              <div className="mb-10 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:mb-12 md:p-8">
+                <p className="text-[9px] font-semibold uppercase tracking-[0.3em] text-blue-400">Planning your website?</p>
+                <h2 className="mt-4 text-xl font-black uppercase leading-tight tracking-[-0.04em] text-white md:text-2xl">
+                  Let’s build a website that works for your business.
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-neutral-400 md:text-base">
+                  Tell us what you need, and we’ll discuss the right scope for your goals.
+                </p>
+                <Link
+                  to="/#contact"
+                  className="mt-6 inline-flex w-fit items-center justify-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
+                >
+                  Discuss your website <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            )}
+
             {article.slug === "how-to-calculate-marketing-roi" && (
               <div className="mb-12 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:p-8">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-400">Put the formula to work</p>
@@ -309,28 +327,6 @@ export default function InsightArticle() {
             </Link>
           </p>
         </div>
-      )}
-
-      {article.slug === "website-cost-india-2026" && (
-        <section className="border-t border-white/10 px-[6vw] py-12 md:py-16">
-          <div className="mx-auto flex max-w-[1200px] flex-col gap-6 rounded-3xl border border-blue-500/30 bg-blue-500/[0.06] p-8 md:flex-row md:items-center md:justify-between md:p-10">
-            <div className="max-w-2xl">
-              <p className="text-[9px] font-semibold uppercase tracking-[0.3em] text-blue-400">Planning your website?</p>
-              <h2 className="mt-4 text-2xl font-black uppercase leading-tight tracking-[-0.04em] text-white md:text-3xl">
-                Let’s build a website that works for your business.
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-neutral-400 md:text-base">
-                Tell us what you need, and we’ll discuss the right scope for your goals.
-              </p>
-            </div>
-            <Link
-              to="/#contact"
-              className="inline-flex w-fit shrink-0 items-center justify-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
-            >
-              Discuss your website <span aria-hidden="true">↗</span>
-            </Link>
-          </div>
-        </section>
       )}
 
       {/* =====================================================
