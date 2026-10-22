@@ -9,6 +9,11 @@
       "source": "/blog.html",
       "destination": "/insights",
       "permanent": true
+    },
+    {
+      "source": "/insights/modern-website",
+      "destination": "/insights/what-a-modern-business-website-should-actually-do",
+      "permanent": true
     }
   ],
   "rewrites": [
