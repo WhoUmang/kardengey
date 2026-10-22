@@ -286,6 +286,49 @@ export default function Services() {
 
         </div>
 
+        {/* CONVERSION CTA */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-14 flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/[0.025] p-7 sm:p-9 md:flex-row md:items-center md:justify-between md:p-12"
+        >
+          <div className="max-w-2xl">
+            <p className="text-[9px] font-semibold uppercase tracking-[0.3em] text-blue-400">
+              Have a project in mind?
+            </p>
+            <h3 className="mt-4 text-2xl font-black uppercase leading-tight tracking-[-0.05em] text-white sm:text-3xl md:text-4xl">
+              Let’s turn your next idea into progress.
+            </h3>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-neutral-500">
+              Tell us what you’re working towards. We’ll discuss your goals and the right next step.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              const serviceByIndex = [
+                "Branding",
+                "Website / Technology",
+                "Digital Marketing",
+                "Branding",
+                "SEO",
+                "AI / Automation",
+              ];
+              window.dispatchEvent(
+                new CustomEvent("kardengey:open-contact", {
+                  detail: { service: serviceByIndex[active] || "Something else" },
+                })
+              );
+            }}
+            className="inline-flex w-fit shrink-0 items-center justify-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
+          >
+            Discuss a project <span aria-hidden="true">↗</span>
+          </button>
+        </motion.div>
+
         {/* BOTTOM NOTE */}
 
         <motion.div
