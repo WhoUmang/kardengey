@@ -12,6 +12,7 @@ import About from "./components/about/About";
 import AIGrowth from "./components/ai/AIGrowth";
 import Founder from "./components/founder/Founder";
 import Contact from "./components/contact/Contact";
+import ContactModal from "./components/contact/ContactModal";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Footer from "./components/layout/Footer";
 
@@ -128,6 +129,7 @@ function App() {
 
       </Routes>
 
+      <ContactModal />
     </BrowserRouter>
   );
 }
