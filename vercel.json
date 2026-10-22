@@ -14,6 +14,11 @@
       "source": "/insights/modern-website",
       "destination": "/insights/what-a-modern-business-website-should-actually-do",
       "permanent": true
+    },
+    {
+      "source": "/insights/cost-per-lead",
+      "destination": "/insights/good-cost-per-lead-india-2026",
+      "permanent": true
     }
   ],
   "rewrites": [
