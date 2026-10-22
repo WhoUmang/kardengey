@@ -212,12 +212,13 @@ export default function InsightArticle() {
                 <p className="mt-3 text-sm leading-7 text-neutral-400 md:text-base">
                   Tell us what you need, and we’ll discuss the right scope for your goals.
                 </p>
-                <Link
-                  to="/#contact"
+                <button
+                  type="button"
+                  onClick={() => window.dispatchEvent(new CustomEvent("kardengey:open-contact", { detail: { service: "Website / Technology" } }))}
                   className="mt-6 inline-flex w-fit items-center justify-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
                 >
                   Discuss your website <span aria-hidden="true">↗</span>
-                </Link>
+                </button>
               </div>
             )}
 
@@ -341,12 +342,13 @@ export default function InsightArticle() {
                 Tell us what you need, and we’ll discuss the right scope for your goals.
               </p>
             </div>
-            <Link
-              to="/#contact"
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("kardengey:open-contact", { detail: { service: "Website / Technology" } }))}
               className="inline-flex w-fit shrink-0 items-center justify-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
             >
               Discuss your website <span aria-hidden="true">↗</span>
-            </Link>
+            </button>
           </div>
         </section>
       )}
