@@ -956,6 +956,52 @@ const articles = [
     ]
   },
 
+
+  {
+    category: "SEO",
+    filter: "SEO",
+    title: "How to Optimise Your Google Business Profile for Local SEO in India",
+    slug: "google-business-profile-local-seo-india",
+    description: "A practical guide to improving your Google Business Profile, local search visibility, business details, reviews and enquiries without paying for SEO tools.",
+    date: "22 OCT 2026",
+    publishedAt: "2026-10-22",
+    read: "8 MIN READ",
+    author: "Kardengey",
+    content: [
+      { type: "paragraph", text: "When someone searches for a service near them, they may see local business listings before they visit a website. For a business that serves a specific city or area, a well-maintained Google Business Profile can help customers discover accurate information, compare options and contact the business. It does not guarantee a higher ranking, but it gives Google and potential customers clearer information about the business." },
+      { type: "paragraph", text: "This guide is for local service providers, shops, clinics, studios, restaurants and other eligible businesses in India. The steps below focus on useful, accurate information—not shortcuts or ranking guarantees." },
+      { type: "heading", text: "1. Claim and verify the right profile" },
+      { type: "paragraph", text: "Use Google's official Business Profile process to claim or create a profile for an eligible business you represent, then complete the verification method Google offers. Before creating another listing, search for the business name and address to check whether a profile already exists. Duplicate profiles can confuse customers and should be resolved rather than multiplied." },
+      { type: "paragraph", text: "Represent the business accurately. A business that serves customers at their locations may qualify as a service-area business; do not show a private residential address to the public if customers are not served there. Follow Google's current eligibility and address rules, because not every online-only business qualifies for a Business Profile." },
+      { type: "heading", text: "2. Use your real-world business name and the best category" },
+      { type: "paragraph", text: "Enter the business name as it is used in the real world on signage, the website and customer-facing materials. Do not add extra keywords, locations, phone numbers or promotional claims to the name unless they are genuinely part of the real-world name. Keyword stuffing can lead to profile edits or suspension." },
+      { type: "paragraph", text: "Choose the most specific primary category that accurately describes the main business. Add only relevant secondary categories. Categories help describe what the business does; they are not a place to list every service or keyword you want to rank for." },
+      { type: "heading", text: "3. Complete every important business detail" },
+      { type: "paragraph", text: "Check the address or service area, phone number, website, opening hours, holiday hours and available services. Make sure these details are current and consistent with the business's actual operations. If customers need an appointment, explain how to book. If hours change seasonally, update them rather than leaving outdated information in place." },
+      { type: "paragraph", text: "Use a phone number that customers can reach and a website URL that opens correctly on mobile. If you use tracking parameters to measure profile visits, keep the destination functional and make sure the link still points to the correct business page." },
+      { type: "heading", text: "4. Write a useful description and list real services" },
+      { type: "paragraph", text: "Describe what the business offers, whom it serves and what customers can expect. Keep the language natural and specific. Avoid all-caps sales copy, repeated keywords, unverifiable superlatives and claims that the business cannot substantiate. Add services or products where the profile supports them, using clear names and accurate descriptions." },
+      { type: "heading", text: "5. Add genuine, current photos" },
+      { type: "paragraph", text: "Upload clear photos that help a customer recognise the business and understand what it offers. Depending on the business, useful images may include the storefront, interior, team, products, completed work or service environment. Use authentic images, avoid misleading edits and remove outdated pictures when they no longer represent the business." },
+      { type: "paragraph", text: "Photos support customer confidence, but do not assume that uploading a particular number of images guarantees a ranking improvement. Prioritise accuracy, quality and regular maintenance over arbitrary posting targets." },
+      { type: "heading", text: "6. Ask for honest reviews and respond professionally" },
+      { type: "paragraph", text: "Invite real customers to leave an honest review after a genuine interaction. You can make the process easy by sharing the review link, but do not buy reviews, offer incentives in exchange for positive reviews, or ask only customers you expect to be happy to post publicly. These practices can violate platform policies and undermine trust." },
+      { type: "paragraph", text: "Reply to reviews calmly and specifically. Thank customers for useful feedback, address concerns without exposing private information, and take detailed disputes offline when appropriate. Never post customer contact details, order information or sensitive personal data in a public reply." },
+      { type: "heading", text: "7. Make your website support local discovery" },
+      { type: "paragraph", text: "Your Business Profile and website should reinforce each other. Put your actual services, service area, contact information and opening details on the website where relevant. Make the phone number easy to tap on mobile, provide a clear enquiry path and create genuinely useful pages for the locations you serve. Do not create dozens of near-identical city pages with only the place name changed." },
+      { type: "paragraph", text: "A profile is not a substitute for a useful website. Customers who click through should quickly understand the offer, see credible information and know what to do next. The website should load reliably on mobile and match the information shown in the profile." },
+      { type: "heading", text: "8. Track calls, website visits and real enquiries" },
+      { type: "paragraph", text: "Review the performance information available in your Business Profile and compare it with website analytics and actual enquiries. Track meaningful outcomes such as qualified calls, booking requests, direction requests where relevant and sales—not just views. Use consistent definitions and time periods so comparisons are useful." },
+      { type: "paragraph", text: "If you add tracking parameters to your website link, use a consistent naming convention and test the final URL. Do not count every click as a customer. A profile can attract attention without generating a qualified enquiry, so look at what happens after the visit." },
+      { type: "heading", text: "A simple monthly local SEO checklist" },
+      { type: "paragraph", text: "Once a month, check that the profile is verified and accurate, hours and contact details are current, the website link works, services and photos remain relevant, new reviews receive thoughtful replies, and performance data is reviewed alongside real enquiries. Recheck important details whenever the business moves, changes phone numbers or changes its hours." },
+      { type: "heading", text: "Common mistakes to avoid" },
+      { type: "paragraph", text: "Avoid keyword-stuffing the business name, creating duplicate profiles, using a virtual office or address that does not meet eligibility rules, buying reviews, publishing misleading information and building fake location pages. There is no legitimate setting that guarantees a number-one local ranking. Local results can depend on relevance, distance and prominence, as well as competition and the searcher's context." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "Local SEO starts with making the business easy to understand, verify and contact. Keep the profile accurate, earn genuine customer trust, maintain a useful website and measure actual enquiries. These steps do not guarantee rankings, but they build a stronger foundation for local discovery without requiring paid SEO software." }
+    ]
+  },
+
 ];
 
 export default articles;
