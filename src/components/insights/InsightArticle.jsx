@@ -215,7 +215,18 @@ export default function InsightArticle() {
               </div>
             )}
 
-            {article.slug === "good-cost-per-lead-india-2026" && (
+            {article.slug === "website-cost-india-2026" && (
+        <div className="border-t border-white/10 px-[6vw] py-8">
+          <p className="mx-auto max-w-[1200px] text-sm leading-7 text-neutral-500">
+            Planning a new website for your business?{" "}
+            <Link to="/#contact" className="text-white underline decoration-blue-500 underline-offset-4 transition-colors hover:text-blue-400">
+              Talk to kardengey about your website goals.
+            </Link>
+          </p>
+        </div>
+      )}
+
+      {article.slug === "good-cost-per-lead-india-2026" && (
               <div className="mb-12 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:p-8">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-400">The short answer</p>
                 <p className="mt-4 text-lg leading-8 text-neutral-200 md:text-xl md:leading-9">
