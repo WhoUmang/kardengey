@@ -1002,6 +1002,55 @@ const articles = [
     ]
   },
 
+
+  {
+    category: "WEB DEVELOPMENT",
+    filter: "WEB DEVELOPMENT",
+    title: "How Much Does a Website Cost in India in 2026?",
+    slug: "website-cost-india-2026",
+    description: "Understand website development costs in India in 2026, from landing pages and small-business websites to ecommerce, ongoing costs and how to compare quotes.",
+    date: "22 OCT 2026",
+    publishedAt: "2026-10-22",
+    read: "9 MIN READ",
+    author: "Kardengey",
+    content: [
+      { type: "paragraph", text: "If you are planning a website for your business, one of the first questions is usually: how much will it cost? In India, the answer can range from a few thousand rupees for a simple template-based page to several lakhs for a custom ecommerce store or web application. The difference is not just the design. It is the scope, content, functionality, integrations, testing and support included in the project." },
+      { type: "paragraph", text: "This guide gives you practical planning ranges and a way to compare proposals. These figures are indicative estimates, not official industry averages or a quote for your project. Published provider prices vary widely, and the final cost depends on what you actually need built." },
+      { type: "heading", text: "Website development cost in India: a practical estimate" },
+      { type: "paragraph", text: "For early budgeting in 2026, a basic template-led landing page may fall around ₹5,000–₹20,000; a small business website of roughly 5–10 pages may fall around ₹15,000–₹60,000; a more customised business website with additional pages, content support, tracking or integrations may range from ₹40,000 to ₹1,50,000 or more; and ecommerce projects often start around ₹50,000 and can rise into several lakhs as catalogue size, design and operations become more complex. These bands overlap because different providers include different deliverables. They are a starting point for asking better questions, not a promise that every project in that category should cost the same." },
+      { type: "paragraph", text: "A custom web application with user accounts, dashboards, booking logic, payments or other business-specific workflows should be scoped separately. It is software development rather than a standard brochure website, so a fixed price should follow a clear requirements list and acceptance criteria." },
+      { type: "heading", text: "What kind of website does your business need?" },
+      { type: "paragraph", text: "A landing page is designed around one offer or action, such as booking a consultation or requesting a quote. It can be a sensible option when you need to validate an offer or run a focused campaign, provided the page explains the offer clearly and tracks enquiries." },
+      { type: "paragraph", text: "A small business website usually explains the company, services, proof of work, frequently asked questions and contact options. A good version helps visitors understand what you do and what to do next. More pages are not automatically better; each page should answer a distinct customer question or support a real business goal." },
+      { type: "paragraph", text: "A content-led or SEO-focused website adds a manageable publishing structure, useful service pages, metadata, internal links and a technical foundation that search engines can crawl. SEO-friendly structure does not guarantee rankings. Useful content, competition, site quality and ongoing work all influence organic performance." },
+      { type: "paragraph", text: "An ecommerce store needs product pages, category navigation, cart and checkout, payment configuration, shipping rules, order notifications and appropriate policies. Inventory, discount logic, marketplace connections, subscriptions or custom checkout requirements add complexity. Product photography and catalogue entry may also be separate costs." },
+      { type: "heading", text: "Why do website quotes vary so much?" },
+      { type: "paragraph", text: "First, compare design scope. A provider may configure a ready-made theme while another creates a custom visual system, responsive layouts and page-specific interactions. Both can be valid choices, but they are not equivalent deliverables." },
+      { type: "paragraph", text: "Second, compare page count and content. Ten pages built from one repeatable layout may require less work than five pages with distinct layouts, research and original copy. Ask whether writing, image sourcing, migration and revisions are included." },
+      { type: "paragraph", text: "Third, check functionality. Contact forms, booking systems, payments, customer logins, CRM connections, multilingual content and custom calculators require implementation and testing. Do not assume a feature is included because it was mentioned during an initial conversation; have it listed in the proposal." },
+      { type: "paragraph", text: "Fourth, understand the technology and editing model. A content management system can let your team update pages without a developer, but it may require setup, maintenance and extensions. A custom-coded site can offer control and performance advantages for some projects, but routine content changes may need developer involvement unless an editing system is included. Choose based on the people who will operate the site, not the popularity of a framework." },
+      { type: "heading", text: "The costs that can continue after launch" },
+      { type: "paragraph", text: "The development quote is not always the full cost of owning a website. Budget separately for domain renewal, hosting, business email if needed, paid themes or plugins, payment gateway fees, maintenance, backups, security updates, content production and future improvements. Some projects need very little ongoing support; others depend on frequent catalogue, content or software updates." },
+      { type: "paragraph", text: "Ask who owns the domain, hosting account, analytics property, source code and third-party licences. Prefer accounts registered to your business, with the developer given appropriate access. Confirm what happens to access, code and data if you change providers." },
+      { type: "heading", text: "What should a professional website quote include?" },
+      { type: "paragraph", text: "Ask for a written scope that names the page types and approximate page count, design approach, mobile responsiveness, forms and integrations, content responsibilities, basic on-page SEO, analytics setup, testing, launch support, revision limits and handover. It should also state the timeline, payment milestones, exclusions, applicable taxes and the rate or process for out-of-scope work." },
+      { type: "paragraph", text: "Clarify what 'SEO included' means. It may cover technical basics such as indexable pages, titles and descriptions, heading structure, sitemap and redirects, but not months of content production, digital PR or guaranteed rankings. Similarly, 'fast website' should be supported by sensible implementation and testing rather than an absolute performance promise." },
+      { type: "heading", text: "How to compare three website proposals fairly" },
+      { type: "paragraph", text: "Give each provider the same brief: the business goal, audience, required pages, reference sites, content readiness, required integrations and launch date. Then compare the same deliverables line by line. A lower quote may be a good fit if the scope is simple; it is a problem only when important work is missing or the provider's assumptions are unclear." },
+      { type: "paragraph", text: "Ask to see relevant live examples, how mobile layouts are handled, what testing is performed and how changes are requested after launch. Check that you will be able to access your own accounts and receive the agreed handover. Avoid choosing solely on a low headline price or a promise of first-page rankings." },
+      { type: "heading", text: "A simple way to set your website budget" },
+      { type: "paragraph", text: "Start with the outcome. If you need enquiries, define the service, target customer, proof points and contact path before adding decorative features. If you need online sales, map the product catalogue, checkout and fulfilment requirements. If you need to publish regularly, decide who will create and update content after launch." },
+      { type: "paragraph", text: "Separate essential launch requirements from later improvements. A focused first version can establish the core pages, reliable mobile experience, working enquiry flow and measurement. Add complex animations, advanced integrations or secondary features only when they support a clear need and fit the budget." },
+      { type: "heading", text: "Frequently asked questions" },
+      { type: "paragraph", text: "Can I get a business website for ₹10,000? It may be possible for a very simple template-led site or limited scope. Confirm the page count, content, domain and hosting, mobile behaviour, forms, revisions and handover before comparing it with a larger proposal." },
+      { type: "paragraph", text: "Is WordPress cheaper than a custom-coded website? It can be for many standard content websites, but total cost depends on design, plugins, custom features, maintenance and the team's editing needs. Neither approach is automatically best for every project." },
+      { type: "paragraph", text: "Does website development include SEO? Not always. Ask which technical and on-page SEO tasks are explicitly included and which ongoing activities are excluded. No responsible provider can guarantee a particular Google ranking." },
+      { type: "paragraph", text: "Should hosting and domain be included in the development price? They can be purchased or managed in different ways. Make sure renewal prices, account ownership and ongoing responsibilities are clear, regardless of who pays the initial invoice." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "The right website budget is the one that funds the scope your business actually needs and leaves you with a site you can operate, measure and improve. Compare deliverables, recurring costs and ownership—not just the first number on a quote. A well-scoped, useful website is a business asset; an oversized build or an unclear cheap package can both become expensive mistakes." }
+    ]
+  },
+
 ];
 
 export default articles;
