@@ -354,6 +354,64 @@ export default function InsightArticle() {
       )}
 
       {/* =====================================================
+          RELATED ARTICLES
+      ===================================================== */}
+
+      {(() => {
+        const relatedBySlug = {
+          "website-cost-india-2026": [
+            { slug: "what-a-modern-business-website-should-actually-do", title: "What a Modern Business Website Should Actually Do", description: "See which pages and features help a business website do its job." },
+            { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Understand the costs of attracting customers after your website is live." },
+            { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve how local customers discover your business online." },
+          ],
+          "what-a-modern-business-website-should-actually-do": [
+            { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Plan a realistic budget and compare website proposals." },
+            { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Connect your website with local discovery." },
+            { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Explore the marketing channels that can bring visitors to your site." },
+          ],
+          "digital-marketing-cost-india-2026": [
+            { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Understand the website investment behind your marketing." },
+            { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Measure returns using your own campaign numbers." },
+            { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost Per Lead in India?", description: "Put lead costs in context with quality and acquisition cost." },
+          ],
+          "google-business-profile-local-seo-india": [
+            { slug: "what-a-modern-business-website-should-actually-do", title: "What a Modern Business Website Should Actually Do", description: "Make sure local visitors have a clear next step when they reach your site." },
+            { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Plan the right website scope for your business." },
+            { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Compare the wider options for attracting customers." },
+          ],
+          "how-to-calculate-marketing-roi": [
+            { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost Per Lead in India?", description: "Connect lead costs to lead quality and customer acquisition." },
+            { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Understand the fees and costs behind marketing campaigns." },
+            { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Consider the website and landing-page costs behind conversion." },
+          ],
+          "good-cost-per-lead-india-2026": [
+            { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Measure whether leads turn into profitable business." },
+            { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Review the costs that shape your acquisition budget." },
+            { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Explore a practical way local businesses can improve discovery." },
+          ],
+        };
+        const related = relatedBySlug[article.slug] || [];
+        return related.length > 0 ? (
+          <section className="border-t border-white/10 px-[6vw] py-16 md:py-20">
+            <div className="mx-auto max-w-[1200px]">
+              <p className="text-[9px] uppercase tracking-[0.35em] text-blue-500">Keep exploring</p>
+              <h2 className="mt-4 text-2xl font-black uppercase tracking-[-0.04em] text-white md:text-4xl">Related insights.</h2>
+              <div className="mt-8 grid gap-4 md:grid-cols-3">
+                {related.map((item) => (
+                  <Link key={item.slug} to={`/insights/${item.slug}`} className="group rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-blue-500/50 hover:bg-blue-500/[0.04]">
+                    <p className="text-[9px] uppercase tracking-[0.25em] text-blue-400">Kardengey Insights</p>
+                    <h3 className="mt-4 text-lg font-bold leading-7 text-white transition-colors group-hover:text-blue-300">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-neutral-500">{item.description}</p>
+                    <span className="mt-6 inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-neutral-300">Read article <span aria-hidden="true">↗</span></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null;
+      })()}
+
+      {/* =====================================================
           RELATED TOOL CTA
       ===================================================== */}
 
