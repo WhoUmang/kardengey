@@ -575,7 +575,7 @@ const articles = [
     slug: "how-to-calculate-marketing-roi",
 
     description:
-      "Learn how to calculate marketing ROI, understand ROAS, CAC and conversion rates, and use the numbers to make better marketing decisions.",
+      "Learn the marketing ROI formula, how to calculate marketing ROI step by step, see a worked example, and compare ROI with ROAS using a free calculator.",
 
     date: "16 OCT 2026",
 
@@ -589,13 +589,13 @@ const articles = [
       {
         type: "paragraph",
         text:
-          "Marketing becomes much easier to manage when you can connect what you spend with what the business gets back. That is the purpose of marketing ROI: to understand whether an investment in marketing is creating enough revenue to justify the cost.",
+          "The marketing ROI formula is: Marketing ROI (%) = ((Marketing Return − Total Marketing Cost) ÷ Total Marketing Cost) × 100. For a more realistic profitability estimate, define marketing return as the contribution earned from attributable revenue after direct product or service costs—not simply total revenue. This guide explains how to calculate marketing ROI step by step, with a worked example.",
       },
 
       {
         type: "paragraph",
         text:
-          "The calculation itself is simple. The difficult part is choosing the right numbers and understanding what they actually tell you. Revenue, ad spend, agency fees, leads, customers and customer value all play different roles.",
+          "Example: if a campaign produces ₹2,00,000 in attributable revenue at a 40% gross margin, its estimated contribution is ₹80,000. After ₹50,000 in total marketing costs, ₹30,000 remains. Estimated ROI on contribution is ((₹80,000 − ₹50,000) ÷ ₹50,000) × 100 = 60%. This is an illustrative calculation, not a benchmark or guarantee; other business expenses may still apply.",
       },
 
       {
