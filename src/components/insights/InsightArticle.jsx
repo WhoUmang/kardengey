@@ -203,6 +203,18 @@ export default function InsightArticle() {
 
           <div className={article.slug === "good-cost-per-lead-india-2026" ? "max-w-4xl" : "max-w-3xl"}>
 
+            {article.slug === "how-to-calculate-marketing-roi" && (
+              <div className="mb-12 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:p-8">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-400">Put the formula to work</p>
+                <p className="mt-4 text-lg leading-8 text-neutral-200 md:text-xl md:leading-9">
+                  Use your own marketing costs, revenue, gross margin and lead figures to estimate ROI, ROAS, cost per lead and customer acquisition cost.
+                </p>
+                <Link to="/tools/marketing-roi-calculator" className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-blue-400 transition-colors hover:text-white">
+                  Open the free marketing ROI calculator <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            )}
+
             {article.slug === "good-cost-per-lead-india-2026" && (
               <div className="mb-12 rounded-2xl border border-blue-500/30 bg-blue-500/[0.06] p-6 md:p-8">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-400">The short answer</p>
