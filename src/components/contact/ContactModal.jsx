@@ -152,24 +152,24 @@ export default function ContactModal() {
                   </label>
                   <label className="block text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                     Service *
-                    <select className={fieldClass + " mt-2"} name="service" value={form.service} onChange={update} required>
-                      <option>Branding</option>
-                      <option>Website / Technology</option>
-                      <option>Digital Marketing</option>
-                      <option>SEO</option>
-                      <option>AI / Automation</option>
-                      <option>Something else</option>
+                    <select className={fieldClass + " mt-2 [color-scheme:dark]"} name="service" value={form.service} onChange={update} required>
+                      <option className="bg-[#171b22] text-white">Branding</option>
+                      <option className="bg-[#171b22] text-white">Website / Technology</option>
+                      <option className="bg-[#171b22] text-white">Digital Marketing</option>
+                      <option className="bg-[#171b22] text-white">SEO</option>
+                      <option className="bg-[#171b22] text-white">AI / Automation</option>
+                      <option className="bg-[#171b22] text-white">Something else</option>
                     </select>
                   </label>
                   <label className="block text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                     Approx. budget
-                    <select className={fieldClass + " mt-2"} name="budget" value={form.budget} onChange={update}>
-                      <option value="">Prefer to discuss</option>
-                      <option>Under ₹25K</option>
-                      <option>₹25K – ₹50K</option>
-                      <option>₹50K – ₹1L</option>
-                      <option>₹1L – ₹3L</option>
-                      <option>₹3L+</option>
+                    <select className={fieldClass + " mt-2 [color-scheme:dark]"} name="budget" value={form.budget} onChange={update}>
+                      <option className="bg-[#171b22] text-white" value="">Prefer to discuss</option>
+                      <option className="bg-[#171b22] text-white">Under ₹25K</option>
+                      <option className="bg-[#171b22] text-white">₹25K – ₹50K</option>
+                      <option className="bg-[#171b22] text-white">₹50K – ₹1L</option>
+                      <option className="bg-[#171b22] text-white">₹1L – ₹3L</option>
+                      <option className="bg-[#171b22] text-white">₹3L+</option>
                     </select>
                   </label>
                 </div>
