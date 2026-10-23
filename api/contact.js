@@ -30,17 +30,25 @@ export default async function handler(req, res) {
       message,
     } = req.body || {};
 
-    if (!name || !email || !service || !message) {
+    if (!name || !email || !service || !message || !phone) {
       return res.status(400).json({
         success: false,
         message: "Please complete all required fields.",
       });
     }
 
+    const normalizedPhone = String(phone).trim();
+    if (!/^\\d{10}$/.test(normalizedPhone)) {
+      return res.status(400).json({
+        success: false,
+        message: "Please enter a valid 10-digit mobile number without a country code.",
+      });
+    }
+
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
     const safeCompany = escapeHtml(company || "Not provided");
-    const safePhone = escapeHtml(phone || "Not provided");
+    const safePhone = escapeHtml(normalizedPhone);
     const safeService = escapeHtml(service);
     const safeBudget = escapeHtml(budget || "Not provided");
     const safeMessage = escapeHtml(message);
