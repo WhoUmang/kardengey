@@ -14,6 +14,11 @@ const initialForm = {
 const fieldClass =
   "w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-blue-500";
 
+function trackAnalyticsEvent(eventName, parameters = {}) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: eventName, ...parameters });
+}
+
 export default function ContactModal() {
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState(initialForm);
@@ -26,6 +31,7 @@ export default function ContactModal() {
         setForm((current) => ({ ...current, service: event.detail.service }));
       }
       setError("");
+      trackAnalyticsEvent("contact_form_open");
       setOpen(true);
     };
     window.addEventListener("kardengey:open-contact", openModal);
@@ -65,6 +71,10 @@ export default function ContactModal() {
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.message || "Unable to send your enquiry.");
+      trackAnalyticsEvent("generate_lead", {
+        service: form.service,
+        budget: form.budget || "prefer_to_discuss",
+      });
       setStatus("success");
     } catch {
       setStatus("error");
