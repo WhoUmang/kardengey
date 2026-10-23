@@ -53,7 +53,10 @@ export default function ContactModal() {
   }, [open, status]);
 
   const update = (event) => {
-    const { name, value } = event.target;
+    const { name } = event.target;
+    const value = name === "phone"
+      ? event.target.value.replace(/\\D/g, "").slice(0, 10)
+      : event.target.value;
     setForm((current) => ({ ...current, [name]: value }));
     if (status !== "idle") setStatus("idle");
     setError("");
@@ -158,7 +161,7 @@ export default function ContactModal() {
                   </label>
                   <label className="block text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                     Phone / WhatsApp
-                    <input className={fieldClass + " mt-2 normal-case tracking-normal"} name="phone" type="tel" value={form.phone} onChange={update} placeholder="+91" autoComplete="tel" />
+                    <input className={fieldClass + " mt-2 normal-case tracking-normal"} name="phone" type="tel" inputMode="numeric" pattern="[0-9]{10}" minLength={10} maxLength={10} value={form.phone} onChange={update} placeholder="10-digit mobile number" autoComplete="tel" required title="Enter exactly 10 digits, without +91 or spaces." />
                   </label>
                   <label className="block text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                     Service *
