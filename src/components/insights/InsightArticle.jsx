@@ -369,10 +369,11 @@ export default function InsightArticle() {
             { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost per Lead in India?", description: "Connect acquisition costs to lead quality." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve your local organic visibility." },
           ],
-          "website-cost-india-2026":
+          "website-cost-india-2026": [
             { slug: "what-a-modern-business-website-should-actually-do", title: "What a Modern Business Website Should Actually Do", description: "See which pages and features help a business website do its job." },
             { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Understand the costs of attracting customers after your website is live." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve how local customers discover your business online." },
+          ],
           ],
           "what-a-modern-business-website-should-actually-do": [
             { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Plan a realistic budget and compare website proposals." },
