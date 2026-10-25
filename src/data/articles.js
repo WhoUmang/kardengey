@@ -1051,6 +1051,82 @@ const articles = [
     ]
   },
 
+
+  {
+    category: "DIGITAL MARKETING",
+    filter: "MARKETING",
+    title: "How to Choose a Digital Marketing Agency in India (2026 Checklist)",
+    slug: "how-to-choose-digital-marketing-agency-india",
+    description: "Learn how to choose a digital marketing agency in India, compare proposals, check reporting, understand fees and avoid red flags before signing.",
+    date: "26 OCT 2026",
+    publishedAt: "2026-10-26",
+    read: "8 MIN READ",
+    author: "Kardengey",
+    content: [
+      { type: "paragraph", text: "Choosing a digital marketing agency in India is not just a price comparison. Two agencies can quote different fees because they offer different channels, deliverables, senior involvement and reporting. The useful question is whether a provider understands your business goal and can show how its work will be measured." },
+      { type: "heading", text: "Start with the business outcome, not the package" },
+      { type: "paragraph", text: "Before contacting agencies, write down the result you need: qualified enquiries, online sales, store visits, better local visibility or a more useful website. Define the audience, service area, average order value or customer value where relevant, and the actions that count as a lead. A goal such as 'get more customers' needs to become a measurable plan before a proposal can be evaluated." },
+      { type: "heading", text: "Check whether the agency understands your type of business" },
+      { type: "paragraph", text: "Ask how the agency would approach your category, customer journey and competition. Experience in a similar business can be useful, but it is not proof by itself. Request a clear explanation of the problem, work completed, timeframe and measurable outcome behind any case study. Be cautious if a provider cannot explain what it personally delivered." },
+      { type: "heading", text: "Ask for a written scope of work" },
+      { type: "paragraph", text: "A useful proposal should state which channels are included, what will be delivered each month, who is responsible, how often work is reviewed and what is excluded. For SEO, ask about technical checks, content, local SEO and reporting. For paid campaigns, clarify setup, optimisation, creative production, landing pages and conversion tracking. For social media, define the number and format of assets, publishing responsibilities and community management." },
+      { type: "heading", text: "Separate agency fees from advertising spend" },
+      { type: "paragraph", text: "When an agency runs Google Ads or Meta Ads, the management fee and the money paid to the advertising platform are usually separate costs. Ask who pays the platform, whether taxes or creative production are extra, and whether any third-party tools are required. For more context, read our guide to digital marketing costs in India and compare proposals with the same scope." },
+      { type: "heading", text: "Make reporting about leads and revenue—not activity alone" },
+      { type: "paragraph", text: "Impressions, clicks, followers and published posts can help explain activity, but they do not prove business impact by themselves. Ask what will be reported, how leads are defined, how calls or form submissions are tracked and how the team will distinguish qualified enquiries from irrelevant ones. Your business should retain access to its own Google Analytics, Search Console, advertising accounts and lead data." },
+      { type: "heading", text: "Red flags to watch for" },
+      { type: "paragraph", text: "Be careful with guaranteed first-page rankings, guaranteed sales without a proper assessment, vague deliverables, unexplained fees, refusal to share account access, fabricated-looking case studies or pressure to sign a long contract before the work is clear. No agency can responsibly guarantee a specific organic ranking because search results depend on many factors outside its control." },
+      { type: "heading", text: "A simple agency comparison checklist" },
+      { type: "paragraph", text: "Score each shortlisted provider against the same questions: Do they understand the goal? Is the scope specific? Can they explain the strategy? Are reporting and success metrics clear? Do you own your accounts and data? Are fees, ad spend and taxes separated? Are contract length, cancellation terms and responsibilities written down? Choose the proposal that best fits the business need—not automatically the cheapest or the most polished." },
+      { type: "heading", text: "What should a small business do first?" },
+      { type: "paragraph", text: "Start with one clear priority rather than trying every channel at once. A local service company may need a complete website, an accurate Google Business Profile and local search visibility. An ecommerce business may need product pages, creative testing and a measured acquisition plan. If the website itself is unclear or difficult to use, address that before scaling traffic. Our guides to website costs and Google Business Profile optimisation can help you plan those foundations." },
+      { type: "heading", text: "Frequently asked questions" },
+      { type: "paragraph", text: "How do I choose a digital marketing agency in India? Define the business outcome, compare written scopes, verify relevant work, check reporting and retain ownership of your accounts and data." },
+      { type: "paragraph", text: "Should I choose the cheapest agency? Not automatically. Compare deliverables, expertise, reporting and exclusions on an equivalent scope before comparing price." },
+      { type: "paragraph", text: "Can an agency guarantee Google rankings? No. A provider can explain its process and report progress, but it cannot guarantee a specific organic position." },
+      { type: "paragraph", text: "How long should I sign a contract for? Terms vary. Understand the minimum commitment, cancellation conditions, renewal and what happens to accounts and assets if you leave before signing." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "The right digital marketing partner should make the work, costs, ownership and measurement clear. Use a written scope and business outcomes to make the decision—and treat confident promises without evidence as a reason to ask more questions." }
+    ]
+  },
+  {
+    category: "SEO",
+    filter: "SEO",
+    title: "SEO vs Google Ads for Small Businesses in India: Which Should You Choose?",
+    slug: "seo-vs-google-ads-small-business-india",
+    description: "SEO vs Google Ads for small businesses in India: compare cost, speed, intent and long-term value to decide which channel fits your goals.",
+    date: "26 OCT 2026",
+    publishedAt: "2026-10-26",
+    read: "8 MIN READ",
+    author: "Kardengey",
+    content: [
+      { type: "paragraph", text: "If you run a small business in India, should your next marketing effort go into SEO or Google Ads? The answer depends on how quickly you need enquiries, whether customers are already searching for your service, how competitive the market is and whether your website can convert visitors. Neither channel is automatically best for every business." },
+      { type: "heading", text: "The main difference between SEO and Google Ads" },
+      { type: "paragraph", text: "SEO improves your chances of appearing in unpaid search results by making your website useful, accessible and relevant to searches your customers make. Google Ads lets you pay to enter eligible ad auctions for selected searches. Ads can generate visibility after a campaign is approved and configured, while SEO usually requires sustained work before competitive queries produce meaningful traffic. Organic ranking is not purchased through Google Ads." },
+      { type: "heading", text: "SEO vs Google Ads at a glance" },
+      { type: "paragraph", text: "Speed: Google Ads can start attracting clicks soon after launch, subject to approval, demand and campaign quality; SEO is generally a longer-term investment. Cost: Ads involve platform spend and may also involve management fees; SEO involves time, content, technical work and possibly agency or staff costs. Duration: paid traffic depends on continued budget, while useful organic pages can continue attracting visitors but need maintenance and do not guarantee rankings. Control: Ads offer campaign controls over bids, targeting and messaging; organic search visibility is determined by Google's systems." },
+      { type: "heading", text: "When SEO may be the better first priority" },
+      { type: "paragraph", text: "SEO can make sense when customers regularly research your service, you can wait for visibility to build and you want to develop useful pages that answer specific questions over time. Local businesses should also check their website information and Google Business Profile. SEO is not free in effort: content quality, technical maintenance and ongoing improvements still require resources." },
+      { type: "heading", text: "When Google Ads may be the better first priority" },
+      { type: "paragraph", text: "Google Ads may fit when you need to test demand quickly, have a time-sensitive offer or want to reach people searching with strong purchase intent. Before spending, calculate how much a qualified lead or customer can be worth, build a relevant landing page and set up conversion tracking. A campaign can spend money without producing profitable leads if the offer, keywords, landing page or follow-up process is weak." },
+      { type: "heading", text: "Which is cheaper?" },
+      { type: "paragraph", text: "There is no universal winner. Ads create a direct media cost for clicks or other billed actions, and competition affects auction costs. SEO avoids a per-click media charge for organic visits but still requires skilled work and time. Compare the total cost of each channel with qualified enquiries, customer conversion rate, margins and revenue—not clicks alone. Our marketing ROI calculator can help you work through your own assumptions." },
+      { type: "heading", text: "A practical example for a local service business" },
+      { type: "paragraph", text: "Imagine a local service company wants more enquiries in a defined area. It could improve service pages, contact details and local search information while testing a narrowly targeted Google Ads campaign for high-intent searches. Track calls and form submissions separately. If ads produce irrelevant enquiries, refine search terms and landing pages; if organic pages begin earning impressions, improve the pages that attract the most relevant queries. This is an example of a test plan, not a promise of results." },
+      { type: "heading", text: "Can you use SEO and Google Ads together?" },
+      { type: "paragraph", text: "Yes, if resources allow and each channel has a clear role. Ads can test which search terms and offers attract enquiries while SEO develops durable coverage for relevant questions and services. Use consistent conversion definitions and avoid assuming that an ad click caused an organic ranking improvement. Paid and organic search are separate systems." },
+      { type: "heading", text: "A decision checklist before you spend" },
+      { type: "paragraph", text: "Ask yourself: Do people already search for my service? Do I need leads immediately or can I build over time? Is my website ready to convert visitors? Can I afford a test without relying on guaranteed sales? Can I track qualified enquiries and sales? If you cannot measure outcomes yet, improve the conversion path and tracking before increasing traffic." },
+      { type: "heading", text: "Frequently asked questions" },
+      { type: "paragraph", text: "Does Google Ads improve SEO rankings? Paying for ads does not directly improve organic rankings; paid and organic results are separate." },
+      { type: "paragraph", text: "How long does SEO take? It varies with competition, site condition, content quality and other factors. Meaningful progress can take months, and no timeline or position is guaranteed." },
+      { type: "paragraph", text: "Should a small business choose only one channel? If resources are limited, start with the channel that best fits the urgency and buying journey, then measure results before expanding." },
+      { type: "paragraph", text: "What should I measure? Track qualified leads, conversion rate, customer acquisition cost and revenue where possible, alongside supporting metrics such as impressions and clicks." },
+      { type: "heading", text: "Final thought" },
+      { type: "paragraph", text: "Choose based on your customers and your timeline, not on a claim that one channel always wins. A clear offer, a useful website and reliable conversion tracking make both SEO and Google Ads easier to evaluate." }
+    ]
+  },
+
 ];
 
 export default articles;
