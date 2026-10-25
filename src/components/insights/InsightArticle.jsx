@@ -374,7 +374,6 @@ export default function InsightArticle() {
             { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Understand the costs of attracting customers after your website is live." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve how local customers discover your business online." },
           ],
-          ],
           "what-a-modern-business-website-should-actually-do": [
             { slug: "website-cost-india-2026", title: "How Much Does a Website Cost in India in 2026?", description: "Plan a realistic budget and compare website proposals." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Connect your website with local discovery." },
