@@ -359,7 +359,17 @@ export default function InsightArticle() {
 
       {(() => {
         const relatedBySlug = {
-          "website-cost-india-2026": [
+          "how-to-choose-digital-marketing-agency-india": [
+            { slug: "digital-marketing-cost-india-2026", title: "Digital Marketing Costs in India", description: "Compare service fees, advertising budgets and scope." },
+            { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Build local search visibility for your business." },
+            { slug: "website-cost-india-2026", title: "Website Costs in India", description: "Plan your website scope before hiring a provider." },
+          ],
+          "seo-vs-google-ads-small-business-india": [
+            { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Measure campaign performance using your own numbers." },
+            { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost per Lead in India?", description: "Connect acquisition costs to lead quality." },
+            { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve your local organic visibility." },
+          ],
+          "website-cost-india-2026":
             { slug: "what-a-modern-business-website-should-actually-do", title: "What a Modern Business Website Should Actually Do", description: "See which pages and features help a business website do its job." },
             { slug: "digital-marketing-cost-india-2026", title: "How Much Does Digital Marketing Cost in India in 2026?", description: "Understand the costs of attracting customers after your website is live." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Improve how local customers discover your business online." },
