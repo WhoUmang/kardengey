@@ -161,6 +161,7 @@ export default function Insights() {
         title="Insights"
         description="Thinking about marketing, technology, AI, branding and the systems helping modern businesses grow."
         canonical="https://kardengey.com/insights"
+        amphtml="https://kardengey.com/amp/insights/"
       />
 
       {/* =====================================================
