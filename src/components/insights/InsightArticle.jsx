@@ -364,6 +364,11 @@ export default function InsightArticle() {
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Build local search visibility for your business." },
             { slug: "website-cost-india-2026", title: "Website Costs in India", description: "Plan your website scope before hiring a provider." },
           ],
+          "website-getting-traffic-no-leads": [
+            { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Measure the business outcomes behind your marketing." },
+            { slug: "website-cost-india-2026", title: "Website Costs in India", description: "Plan the right scope for a business website." },
+            { slug: "seo-vs-google-ads-small-business-india", title: "SEO vs Google Ads", description: "Choose a traffic channel based on your goals." },
+          ],
           "seo-vs-google-ads-small-business-india": [
             { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Measure campaign performance using your own numbers." },
             { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost per Lead in India?", description: "Connect acquisition costs to lead quality." },
