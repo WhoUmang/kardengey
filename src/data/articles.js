@@ -1127,6 +1127,52 @@ const articles = [
     ]
   },
 
+  {
+    category: "MARKETING",
+    filter: "MARKETING",
+    title: "Website Getting Traffic but No Leads? 9 Fixes for Indian Businesses",
+    slug: "website-getting-traffic-no-leads",
+    description: "Website visitors but no enquiries? Learn 9 practical fixes for Indian businesses, from clearer CTAs and mobile forms to trust signals and lead tracking.",
+    date: "26 OCT 2026",
+    publishedAt: "2026-10-26",
+    read: "8 MIN READ",
+    author: "Kardengey",
+    content: [
+      { type: "paragraph", text: "Your website may be getting visitors without generating calls, WhatsApp messages or enquiry forms. Before spending more on ads or publishing more content, check whether the website gives the right visitors a clear reason and an easy way to contact you. A traffic problem and a conversion problem are different—and they need different fixes." },
+      { type: "heading", text: "First, find out where the lead journey breaks" },
+      { type: "paragraph", text: "Review three basic numbers if you have analytics: relevant visits, meaningful contact actions and qualified enquiries. If hardly anyone reaches the site, investigate search visibility, targeting and referral sources. If people arrive but do not contact you, review the page, offer, trust signals and contact path. If enquiries arrive but do not become customers, the issue may be lead quality, pricing, response time or sales follow-up." },
+      { type: "heading", text: "1. Explain what you do in the first screen" },
+      { type: "paragraph", text: "A visitor should quickly understand what you offer, who you help and what to do next. Replace vague headlines such as “Quality solutions for every need” with a specific description of the service and customer. If you serve a particular city or industry, say so where it is accurate. Do not claim locations, clients or results that you cannot substantiate." },
+      { type: "heading", text: "2. Give each important page one clear next step" },
+      { type: "paragraph", text: "Use a relevant call to action such as “Request a quote”, “Book a consultation” or “Ask about this service”. Put it where visitors can find it without hunting, and repeat it after useful sections on longer pages. Avoid presenting several equally prominent actions that compete for attention. The button should lead to the promised next step, not a generic or broken destination." },
+      { type: "heading", text: "3. Make contacting you easy on mobile" },
+      { type: "paragraph", text: "Open your website on a phone and test every contact route. Phone links should dial, WhatsApp links should open the right conversation, and forms should be comfortable to complete on a small screen. Keep forms limited to information genuinely needed to respond. Explain what happens after submission and show a useful confirmation instead of leaving visitors unsure whether it worked." },
+      { type: "heading", text: "4. Add specific trust signals—never invented ones" },
+      { type: "paragraph", text: "People may hesitate to share their details with a business they have just discovered. Show genuine testimonials with permission, relevant work samples, clear service descriptions, a real business identity and accurate contact details. Explain your process and what is included. Do not fabricate reviews, client logos, certifications, awards or performance numbers; misleading proof can damage trust." },
+      { type: "heading", text: "5. Match the page to the search or ad" },
+      { type: "paragraph", text: "A visitor searching for website redesign pricing should not land on a page that only talks about your agency story. Make the headline, page content and offer match the intent that brought the person there. For paid campaigns, use a focused landing page when appropriate and check the actual search terms or audience sources. For organic search, build useful service pages that answer the questions prospective customers ask before contacting you." },
+      { type: "heading", text: "6. Improve speed and remove mobile friction" },
+      { type: "paragraph", text: "Large images, unnecessary animations, intrusive pop-ups and layout shifts can make a site frustrating, especially on slower connections. Test key pages on mobile, compress oversized media, remove scripts that do not serve a clear purpose and check Google's PageSpeed Insights for specific opportunities. A performance score is a diagnostic—not a guarantee of rankings or leads." },
+      { type: "heading", text: "7. Answer the questions that block a decision" },
+      { type: "paragraph", text: "Visitors may leave because they cannot find pricing guidance, timelines, deliverables, service-area information or what happens after they enquire. Add honest answers to the questions you hear in sales conversations. Where a price depends on scope, explain the main factors rather than publishing a misleading one-size-fits-all figure. Helpful detail can qualify leads as well as attract them." },
+      { type: "heading", text: "8. Measure leads, not just clicks" },
+      { type: "paragraph", text: "Set up tracking for successful form submissions, calls or other meaningful actions where technically possible and lawful. Distinguish a button click from a completed enquiry. Review lead quality and eventual sales alongside sessions, impressions and click-through rate. If you use analytics, avoid sending personal details such as names, email addresses or phone numbers in event parameters." },
+      { type: "heading", text: "9. Follow up promptly and consistently" },
+      { type: "paragraph", text: "A well-designed website cannot compensate for enquiries that go unanswered. Decide who owns new leads, how quickly the team aims to respond and what happens if the first contact fails. Record the source, enquiry type, follow-up status and outcome in a simple system. Use consent-based communications and respect requests not to be contacted." },
+      { type: "heading", text: "A simple 7-day website lead audit" },
+      { type: "paragraph", text: "Day 1: test the site on a phone and submit each form yourself. Day 2: rewrite the main headline and primary call to action for clarity. Day 3: test phone, email and WhatsApp links. Day 4: add genuine proof and answer the three most common sales questions. Day 5: review page speed and remove obvious friction. Day 6: check analytics and conversion tracking. Day 7: record a baseline and choose one change to test next. This is a prioritisation checklist, not a promise of a particular increase in enquiries." },
+      { type: "heading", text: "Should you buy more traffic?" },
+      { type: "paragraph", text: "Only after you have a reasonable understanding of what happens to current visitors. More traffic can help when the audience is relevant and the page converts; it can also amplify waste when the offer or contact journey is broken. If you are comparing channels, read our guide to SEO vs Google Ads for small businesses. If you need to plan your site before making changes, our guide to website costs in India explains the scope factors to discuss with a provider." },
+      { type: "heading", text: "Frequently asked questions" },
+      { type: "paragraph", text: "Why is my website getting traffic but no enquiries? Common causes include unclear messaging, an irrelevant audience, weak calls to action, difficult forms, missing trust information or a slow mobile experience. Use analytics and real user testing to identify the actual issue." },
+      { type: "paragraph", text: "Should I redesign my website to get more leads? Not always. Fix contact links, copy, forms and page friction first if those are the main problems. A redesign may be justified when the site has deeper usability, technical or content-structure issues." },
+      { type: "paragraph", text: "How many fields should a lead form have? Ask only for information needed to respond or qualify the enquiry at that stage. The right number depends on the service and sales process; test a shorter form rather than assuming one layout works for every business." },
+      { type: "paragraph", text: "Can SEO alone generate leads? SEO can attract relevant visitors, but results depend on demand, competition, the quality of the pages and whether the website makes the next step clear. Rankings and enquiry volumes cannot be guaranteed." },
+      { type: "heading", text: "The takeaway" },
+      { type: "paragraph", text: "A website should help a suitable visitor move from a question to a confident next step. Start by clarifying the offer, making contact effortless, proving credibility honestly and measuring completed enquiries. Fix the biggest leak you can verify before increasing the traffic budget." }
+    ]
+  },
+
 ];
 
 export default articles;
