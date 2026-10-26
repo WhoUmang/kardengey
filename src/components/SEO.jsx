@@ -9,6 +9,7 @@ export default function SEO({
   type = "website",
   publishedAt,
   author,
+  amphtml,
 }) {
   useEffect(() => {
     const fullTitle =
@@ -39,6 +40,7 @@ export default function SEO({
     }
 
     setCanonical(canonical);
+    setAmphtml(amphtml);
   }, [
     title,
     description,
@@ -46,6 +48,7 @@ export default function SEO({
     type,
     publishedAt,
     author,
+    amphtml,
   ]);
 
   return null;
@@ -75,6 +78,25 @@ function setCanonical(url) {
   if (!link) {
     link = document.createElement("link");
     link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+
+  link.setAttribute("href", url);
+}
+
+function setAmphtml(url) {
+  let link = document.head.querySelector(
+    'link[rel="amphtml"]'
+  );
+
+  if (!url) {
+    link?.remove();
+    return;
+  }
+
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "amphtml");
     document.head.appendChild(link);
   }
 
