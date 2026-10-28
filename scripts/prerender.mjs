@@ -235,8 +235,6 @@ const sitemapEntries = [
   { url: site + "/about-editorial-standards", priority: "0.5", changefreq: "yearly" },
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
-  { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
-  { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
   ...articles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
 ];
 const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
