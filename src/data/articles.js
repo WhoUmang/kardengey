@@ -969,7 +969,7 @@ const articles = [
       {
         type: "paragraph",
         text: "A good cost per lead is not a number copied from another business. It is a cost your business can sustain while generating leads that turn into profitable customers. Track the full journey from spend to sale, improve the weakest step and scale only when the results support it."
-      }
+      },
     
       {
         type: "heading",
@@ -1120,7 +1120,7 @@ const articles = [
       { type: "paragraph", text: "Can an agency guarantee Google rankings? No. A provider can explain its process and report progress, but it cannot guarantee a specific organic position." },
       { type: "paragraph", text: "How long should I sign a contract for? Terms vary. Understand the minimum commitment, cancellation conditions, renewal and what happens to accounts and assets if you leave before signing." },
       { type: "heading", text: "Final thought" },
-      { type: "paragraph", text: "The right digital marketing partner should make the work, costs, ownership and measurement clear. Use a written scope and business outcomes to make the decision—and treat confident promises without evidence as a reason to ask more questions." }
+      { type: "paragraph", text: "The right digital marketing partner should make the work, costs, ownership and measurement clear. Use a written scope and business outcomes to make the decision—and treat confident promises without evidence as a reason to ask more questions." },
     
       {
         type: "heading",
@@ -1220,7 +1220,7 @@ const articles = [
       { type: "paragraph", text: "How many fields should a lead form have? Ask only for information needed to respond or qualify the enquiry at that stage. The right number depends on the service and sales process; test a shorter form rather than assuming one layout works for every business." },
       { type: "paragraph", text: "Can SEO alone generate leads? SEO can attract relevant visitors, but results depend on demand, competition, the quality of the pages and whether the website makes the next step clear. Rankings and enquiry volumes cannot be guaranteed." },
       { type: "heading", text: "The takeaway" },
-      { type: "paragraph", text: "A website should help a suitable visitor move from a question to a confident next step. Start by clarifying the offer, making contact effortless, proving credibility honestly and measuring completed enquiries. Fix the biggest leak you can verify before increasing the traffic budget." }
+      { type: "paragraph", text: "A website should help a suitable visitor move from a question to a confident next step. Start by clarifying the offer, making contact effortless, proving credibility honestly and measuring completed enquiries. Fix the biggest leak you can verify before increasing the traffic budget." },
     
       {
         type: "heading",
