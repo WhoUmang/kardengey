@@ -153,4 +153,17 @@ const home = shell({
 });
 await writeFile(path.join(dist, "index.html"), home);
 
+const sitemapEntries = [
+  { url: site + "/", priority: "1.0", changefreq: "weekly" },
+  { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
+  { url: site + "/about-editorial-standards", priority: "0.5", changefreq: "yearly" },
+  { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
+  { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
+  ...articles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
+];
+const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
+  '\n</urlset>\n';
+await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
 console.log(`Prerendered homepage, insights index, and ${articles.length} article pages.`);
