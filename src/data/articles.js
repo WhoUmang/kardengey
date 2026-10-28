@@ -818,6 +818,23 @@ const articles = [
         text:
           "When you know what each rupee of marketing is expected to produce, scaling becomes a much more informed decision.",
       },
+    
+      {
+        type: "heading",
+        text: "Worked example: separate revenue from contribution",
+      },
+      {
+        type: "paragraph",
+        text: "Consider an illustrative campaign with ₹50,000 in ad spend and ₹10,000 in other marketing costs. It generates 250 leads and 20 customers, each producing ₹15,000 in revenue. Revenue is ₹3,00,000. At a 60% gross margin, estimated contribution before marketing is ₹1,80,000. Subtract ₹60,000 in total marketing cost and estimated contribution after marketing is ₹1,20,000. ROI on this contribution basis is 200%, while ROAS is 6.0× because ₹3,00,000 revenue is divided by ₹50,000 ad spend. These are sample assumptions, not a reported Kardengey client result.",
+      },
+      {
+        type: "heading",
+        text: "A measurement checklist before trusting the result",
+      },
+      {
+        type: "paragraph",
+        text: "Use the same start and end dates for spend, leads and customers; define whether revenue is booked, paid or net of refunds; use gross margin rather than revenue alone when assessing profitability; include agency, creative and landing-page costs in the broader marketing cost; and compare platform-reported conversions with CRM or sales records. If the sales cycle is long, label the result preliminary until leads have had time to convert.",
+      },
     ],
   },
 
@@ -953,6 +970,23 @@ const articles = [
         type: "paragraph",
         text: "A good cost per lead is not a number copied from another business. It is a cost your business can sustain while generating leads that turn into profitable customers. Track the full journey from spend to sale, improve the weakest step and scale only when the results support it."
       }
+    
+      {
+        type: "heading",
+        text: "Worked example: a cheaper lead can be more expensive",
+      },
+      {
+        type: "paragraph",
+        text: "Imagine two campaigns with ₹20,000 in ad spend each. Campaign A produces 100 leads, so its cost per lead is ₹200; 4 become customers, making ad-only acquisition cost ₹5,000 per customer. Campaign B produces 50 leads, so its cost per lead is ₹400; 10 become customers, making ad-only acquisition cost ₹2,000 per customer. In this illustrative comparison, Campaign B has a higher CPL but a lower cost per acquired customer. It is not a benchmark: use your own lead quality, margins and sales data.",
+      },
+      {
+        type: "heading",
+        text: "Record these fields together",
+      },
+      {
+        type: "paragraph",
+        text: "For each campaign, record spend, leads, qualified leads, contacted leads, appointments or demos, customers, revenue and gross margin over the same cohort period. Add a note about how a qualified lead is defined. This helps distinguish a real change in lead quality from a tracking issue, delayed follow-up or a different mix of audiences.",
+      },
     ]
   },
 
@@ -1087,6 +1121,23 @@ const articles = [
       { type: "paragraph", text: "How long should I sign a contract for? Terms vary. Understand the minimum commitment, cancellation conditions, renewal and what happens to accounts and assets if you leave before signing." },
       { type: "heading", text: "Final thought" },
       { type: "paragraph", text: "The right digital marketing partner should make the work, costs, ownership and measurement clear. Use a written scope and business outcomes to make the decision—and treat confident promises without evidence as a reason to ask more questions." }
+    
+      {
+        type: "heading",
+        text: "A practical way to compare proposals",
+      },
+      {
+        type: "paragraph",
+        text: "Put each proposal into the same comparison sheet with six columns: business goal, exact deliverables, work cadence, reporting and access, total fees including taxes, and client responsibilities. Mark any item as unclear if it uses phrases such as 'complete growth', 'guaranteed leads' or 'full SEO' without defining what will actually be done. Ask every shortlisted provider the same questions so a polished presentation does not outweigh a clearer scope.",
+      },
+      {
+        type: "heading",
+        text: "Questions worth asking before signing",
+      },
+      {
+        type: "paragraph",
+        text: "Ask who will do the work, which account will own ad campaigns and analytics, how often performance will be reviewed, what happens if tracking breaks, which costs are excluded, how creative revisions are handled, and how either side can end the engagement. Request a sample report with sensitive client details removed. A responsible provider should explain uncertainty and measurement limitations rather than promise a specific ranking or sales outcome.",
+      },
     ]
   },
   {
@@ -1170,6 +1221,23 @@ const articles = [
       { type: "paragraph", text: "Can SEO alone generate leads? SEO can attract relevant visitors, but results depend on demand, competition, the quality of the pages and whether the website makes the next step clear. Rankings and enquiry volumes cannot be guaranteed." },
       { type: "heading", text: "The takeaway" },
       { type: "paragraph", text: "A website should help a suitable visitor move from a question to a confident next step. Start by clarifying the offer, making contact effortless, proving credibility honestly and measuring completed enquiries. Fix the biggest leak you can verify before increasing the traffic budget." }
+    
+      {
+        type: "heading",
+        text: "A simple funnel audit using your own data",
+      },
+      {
+        type: "paragraph",
+        text: "Start with a defined period and write down four counts: relevant landing-page sessions, completed enquiries, qualified enquiries and customers. For example, if 1,000 relevant sessions produce 10 enquiries, the session-to-enquiry rate is 1%. If 6 enquiries are qualified and 2 become customers, those later-stage rates are 60% and about 33% respectively. These numbers are only a worked example, not a recommended benchmark. They show where to investigate: low enquiry volume points toward relevance, offer clarity or form friction; weak qualification points toward targeting or messaging; poor close rates point toward sales follow-up, pricing or fit.",
+      },
+      {
+        type: "heading",
+        text: "Change one major variable at a time",
+      },
+      {
+        type: "paragraph",
+        text: "Before redesigning the entire website, check analytics events, mobile form completion, call and WhatsApp links, page speed on a real phone, and whether the landing page matches the ad or search query that brought the visitor. Then choose one measurable change—such as shortening a form or making the next step clearer—and compare similar traffic sources over a comparable period. Keep a short change log so improvements can be connected to evidence rather than guesswork.",
+      },
     ]
   },
 
