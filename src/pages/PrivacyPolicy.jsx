@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
             <br />
             <span className="text-neutral-600">Policy.</span>
           </h1>
-          <p className="mt-8 text-sm text-neutral-500">Last updated: 19 October 2026</p>
+          <p className="mt-8 text-sm text-neutral-500">Last updated: 28 October 2026</p>
           <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-400 md:text-lg">
             This policy explains how kardengey handles information when you visit
             kardengey.com, contact us, or interact with analytics and advertising
