@@ -129,6 +129,7 @@ export default function Footer() {
 
             <a
               href="https://wa.me/7666459165"
+              onClick={() => window.gtag?.("event", "whatsapp_click", { link_location: "footer" })}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
