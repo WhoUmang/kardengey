@@ -994,9 +994,9 @@ const articles = [
   {
     category: "SEO",
     filter: "SEO",
-    title: "How to Optimise Your Google Business Profile for Local SEO in India",
+    title: "Google Business Profile SEO in India: Optimisation Guide",
     slug: "google-business-profile-local-seo-india",
-    description: "A practical guide to improving your Google Business Profile, local search visibility, business details, reviews and enquiries without paying for SEO tools.",
+    description: "Learn how to optimise your Google Business Profile in India, improve local SEO visibility, keep business details accurate, earn reviews and generate more enquiries.",
     date: "22 OCT 2026",
     publishedAt: "2026-10-22",
     read: "8 MIN READ",
