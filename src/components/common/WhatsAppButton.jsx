@@ -4,6 +4,7 @@ export default function WhatsAppButton() {
   return (
     <motion.a
       href="https://wa.me/7666459165"
+      onClick={() => window.gtag?.("event", "whatsapp_click", { link_location: "floating_button" })}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Kardengey on WhatsApp"
