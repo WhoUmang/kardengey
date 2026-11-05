@@ -570,12 +570,12 @@ const articles = [
     category: "MARKETING",
     filter: "MARKETING",
 
-    title: "How to Calculate Marketing ROI: A Simple Guide for Businesses",
+    title: "Marketing ROI Calculation: Formula, Examples & Free Calculator",
 
     slug: "how-to-calculate-marketing-roi",
 
     description:
-      "Learn the marketing ROI formula, how to calculate marketing ROI step by step, see a worked example, and compare ROI with ROAS using a free calculator.",
+      "Learn marketing ROI calculation with a clear formula, worked examples in rupees, the difference between ROI and ROAS, and a free marketing ROI calculator.",
 
     date: "16 OCT 2026",
 
