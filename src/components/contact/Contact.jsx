@@ -71,6 +71,11 @@ export default function Contact() {
         throw new Error(data.message || "Unable to send enquiry.");
       }
 
+      window.gtag?.("event", "generate_lead", {
+        form_location: "contact_section",
+        service: form.service,
+        budget: form.budget || "prefer_to_discuss",
+      });
       setStatus("success");
     } catch (error) {
       console.error(error);
@@ -185,6 +190,7 @@ export default function Contact() {
               {/* WhatsApp CTA */}
               <motion.a
                 href="https://wa.me/7666459165"
+                onClick={() => window.gtag?.("event", "whatsapp_click", { link_location: "contact_section_primary" })}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with Kardengey on WhatsApp"
@@ -609,6 +615,7 @@ export default function Contact() {
 
               <a
                 href="https://wa.me/7666459165"
+                onClick={() => window.gtag?.("event", "whatsapp_click", { link_location: "contact_section_details" })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors duration-300 hover:text-white"
