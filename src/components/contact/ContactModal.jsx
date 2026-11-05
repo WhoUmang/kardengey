@@ -15,8 +15,9 @@ const fieldClass =
   "w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-blue-500";
 
 function trackAnalyticsEvent(eventName, parameters = {}) {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: eventName, ...parameters });
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, parameters);
+  }
 }
 
 export default function ContactModal() {
@@ -77,6 +78,7 @@ export default function ContactModal() {
       trackAnalyticsEvent("generate_lead", {
         service: form.service,
         budget: form.budget || "prefer_to_discuss",
+        form_location: "contact_modal",
       });
       setStatus("success");
     } catch {
