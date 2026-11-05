@@ -44,6 +44,22 @@ function shell({ title, description, canonical, content, type = "website", publi
   if (publishedAt) meta("article:published_time", publishedAt, "property");
   if (author) meta("article:author", author, "property");
 
+  if (type === "article" && publishedAt) {
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title,
+      description,
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+      url: canonical,
+      datePublished: publishedAt,
+      author: { "@type": "Organization", name: author || "Kardengey" },
+      publisher: { "@type": "Organization", name: "Kardengey", url: site },
+    };
+    const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
+  }
+
   const canonicalTag = `<link rel="canonical" href="${escapeHtml(canonical)}" />`;
   if (/<link\s+rel=["']canonical["'][^>]*>/i.test(html)) {
     html = html.replace(/<link\s+rel=["']canonical["'][^>]*>/i, canonicalTag);
