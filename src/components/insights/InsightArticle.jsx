@@ -271,6 +271,43 @@ export default function InsightArticle() {
               }
 
               /* =================================================
+                 LINK
+              ================================================= */
+
+              if (block.type === "link") {
+                const external = /^https:\/\//i.test(block.href || "");
+
+                return (
+                  <motion.p
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7 }}
+                    className="mb-7 text-base leading-8 text-neutral-400 md:text-lg md:leading-9"
+                  >
+                    {external ? (
+                      <a
+                        href={block.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 underline decoration-blue-500/40 underline-offset-4 transition-colors hover:text-white"
+                      >
+                        {block.text} ↗
+                      </a>
+                    ) : (
+                      <Link
+                        to={block.href}
+                        className="text-blue-400 underline decoration-blue-500/40 underline-offset-4 transition-colors hover:text-white"
+                      >
+                        {block.text} ↗
+                      </Link>
+                    )}
+                  </motion.p>
+                );
+              }
+
+              /* =================================================
                  QUOTE
               ================================================= */
 
@@ -359,6 +396,11 @@ export default function InsightArticle() {
 
       {(() => {
         const relatedBySlug = {
+          "how-to-track-whatsapp-leads-small-business-india": [
+            { slug: "website-getting-traffic-no-leads", title: "Website Traffic but No Leads?", description: "Improve the journey from a visit to a real enquiry." },
+            { slug: "good-cost-per-lead-india-2026", title: "What Is a Good Cost Per Lead?", description: "Measure lead quality and acquisition cost." },
+            { slug: "how-to-calculate-marketing-roi", title: "How to Calculate Marketing ROI", description: "Connect campaign spend with business outcomes." },
+          ],
           "how-to-choose-digital-marketing-agency-india": [
             { slug: "digital-marketing-cost-india-2026", title: "Digital Marketing Costs in India", description: "Compare service fees, advertising budgets and scope." },
             { slug: "google-business-profile-local-seo-india", title: "Google Business Profile for Local SEO", description: "Build local search visibility for your business." },

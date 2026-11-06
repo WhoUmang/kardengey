@@ -1,4 +1,302 @@
 const articles = [
+{
+  "category": "MARKETING",
+  "filter": "MARKETING",
+  "title": "How to Track WhatsApp Leads for Small Businesses in India",
+  "slug": "how-to-track-whatsapp-leads-small-business-india",
+  "description": "Learn how to track WhatsApp enquiries with UTMs, GA4 click events and a simple lead register—so Indian small businesses can measure qualified leads and sales.",
+  "date": "06 NOV 2026",
+  "publishedAt": "2026-11-06",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "For many Indian small businesses, WhatsApp is where a website visit, Instagram post, Google search or paid advertisement turns into a conversation. A customer taps a button, asks about a service or product, shares a requirement and expects a quick answer. It is convenient—but it can leave the business owner with one important question: which marketing activity actually brought that customer?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If every channel points to the same WhatsApp number and every enquiry stays inside one inbox, it becomes difficult to separate a curious click from a genuine prospect, or a good campaign from one that merely creates activity. You do not need an expensive CRM to improve this. You need a consistent way to identify the source, record the conversation and follow its outcome."
+    },
+    {
+      "type": "quote",
+      "text": "A WhatsApp click is a signal of intent. It is not proof that a lead was received, qualified or converted."
+    },
+    {
+      "type": "heading",
+      "text": "First, decide what counts as a WhatsApp lead."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the same stages across your website, advertising accounts and sales register. A practical small-business funnel has five stages: a WhatsApp click, a conversation received, a qualified enquiry, a proposal or quotation sent, and a sale or confirmed booking. These stages describe different actions; do not combine them into one number."
+    },
+    {
+      "type": "paragraph",
+      "text": "A click happens when someone taps a WhatsApp link. A conversation begins only when an inbound message actually arrives. A qualified enquiry is a conversation that matches your service area, product, budget range, requirement and timing. A sale is the commercial outcome you care about—such as a paid order, deposit or signed agreement. Decide how you will handle spam, duplicate messages, existing customers and support requests so they do not inflate new-lead totals."
+    },
+    {
+      "type": "paragraph",
+      "text": "This distinction matters because a browser can record a click that opens WhatsApp even if the person never sends a message. Analytics on your website cannot automatically know whether the customer completed the message, whether your team replied, or whether a purchase followed."
+    },
+    {
+      "type": "heading",
+      "text": "Step 1: Give every marketing channel its own source."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by listing the places where customers can discover you: Instagram bio, Instagram ads, Facebook ads, Google Ads, organic Google search, Google Business Profile, email, referrals, printed flyers, QR codes and your website. Do not use one indistinguishable link everywhere if you want to compare these sources."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a campaign sends people to a page on your website, add UTM parameters to that landing-page URL. Google Analytics uses campaign parameters such as utm_source, utm_medium and utm_campaign to identify the source, medium and campaign in acquisition reporting. Keep the naming consistent: values are case-sensitive, so Instagram, instagram and INSTAGRAM can fragment reporting into separate entries."
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative tagged landing-page URL: https://example.com/services?utm_source=instagram&utm_medium=paid_social&utm_campaign=nov_2026_leads&utm_content=reel_a. Replace the domain and campaign values with your own. Use a simple naming rule—lowercase source names, a consistent medium, and one campaign name shared by everyone who creates links."
+    },
+    {
+      "type": "paragraph",
+      "text": "If an advertisement or social profile links directly to WhatsApp instead of your website, website UTMs cannot identify a landing-page session that never happened. Create distinct click-to-chat links for important sources, use a short source-specific prompt such as “I found you through Instagram”, or ask one brief source question when the conversation begins. Treat a prefilled message as a helpful clue, not guaranteed attribution: a customer can edit or delete it."
+    },
+    {
+      "type": "paragraph",
+      "text": "For Google Ads, keep the account's auto-tagging and conversion setup intact where applicable. Do not casually replace an existing auto-tagging arrangement with hand-written UTMs; check the platform integration and reporting configuration before changing it."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: URL builders and campaign parameters",
+      "href": "https://support.google.com/analytics/answer/10917952",
+      "external": true
+    },
+    {
+      "type": "heading",
+      "text": "Step 2: Measure WhatsApp button clicks on your website."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a visitor reaches your website and taps a WhatsApp button, record that interaction as a click event. Google Analytics 4 enhanced measurement can collect outbound clicks to other domains and include details such as the destination URL. This is useful as a baseline, but a general outbound-click event may also include email, map or other external links."
+    },
+    {
+      "type": "paragraph",
+      "text": "For clearer reporting, ask your developer to send a dedicated event such as whatsapp_click when a WhatsApp link is tapped. Add non-personal parameters that explain where the button appeared—for example, link_location with values such as header, service_page, floating_button or footer. Keep the naming consistent across the site. If you use Google Tag Manager or a direct Google tag, make sure the event is sent once rather than being duplicated by two tracking rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test the event before relying on it. Open the website in a test session, tap each important WhatsApp button and confirm that the event appears in GA4 DebugView or Realtime. Check that the page and button-location information are useful, and test on both mobile and desktop. A click count is a website interaction metric; it is not a conversation count."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not fire generate_lead simply because someone clicked the WhatsApp button. Google recommends generate_lead for a form submission or request for information, and documents additional lead-stage events such as qualify_lead, working_lead and close_convert_lead. Use an event only when the action it describes has genuinely happened. If you cannot reliably observe a WhatsApp message arriving, record the conversation in your lead register instead of treating the click as a confirmed lead."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: recommended events for lead generation",
+      "href": "https://support.google.com/analytics/answer/9267735",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: enhanced measurement and outbound clicks",
+      "href": "https://support.google.com/analytics/answer/9216061",
+      "external": true
+    },
+    {
+      "type": "heading",
+      "text": "Step 3: Use WhatsApp Business as an inbox, not your only database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Complete your WhatsApp Business profile with an accurate business name, description, category, hours, address where relevant, website and contact details. If you sell products or defined services, keep the catalogue or service information current. These details help a customer understand who they are contacting before they start a conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set a simple status for each new conversation. For example: New, Awaiting Details, Qualified, Quote Sent, Follow-up Due, Won, Lost or Support. Use the organisation tools available in your version of WhatsApp Business, or maintain the statuses in a shared spreadsheet. Agree on what each status means so two team members do not classify the same enquiry differently."
+    },
+    {
+      "type": "paragraph",
+      "text": "Prepare a few useful quick replies for opening hours, service areas, pricing context, delivery information and the next step. They should make responses faster without making every conversation sound automated. Assign an owner to each enquiry and record when a follow-up is due; an unread chat is not a sales process."
+    },
+    {
+      "type": "link",
+      "text": "WhatsApp Help Center: About WhatsApp Business",
+      "href": "https://faq.whatsapp.com/641572844337957",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "WhatsApp Help Center: About your business profile",
+      "href": "https://faq.whatsapp.com/577829787429875",
+      "external": true
+    },
+    {
+      "type": "heading",
+      "text": "Step 4: Keep a simple lead register."
+    },
+    {
+      "type": "paragraph",
+      "text": "A spreadsheet is enough to start if it is updated consistently. Give every enquiry a unique lead ID and record the date received, first known source, campaign, landing page or source prompt, product or service requested, current status, qualification decision, quotation value, sale outcome and revenue where relevant. Add a next-action date so follow-ups do not disappear in the inbox."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep first-touch source and the campaign that prompted the enquiry as separate fields when you can identify both. For example, someone may first discover your business through an organic Google search, return later through an Instagram advertisement and then message you. Recording only the latest touch can hide the earlier discovery; recording only the first touch can hide the campaign that prompted action. You do not need a complex attribution model at the beginning—just avoid overwriting the information you have."
+    },
+    {
+      "type": "paragraph",
+      "text": "Store customer contact details only where your team needs them to handle the enquiry, and restrict access to the people who need that information. Do not send names, phone numbers, email addresses, WhatsApp IDs or the text of private messages to GA4 as event parameters. Google explicitly requires Analytics implementations to avoid collecting personally identifiable information. Use an internal lead ID for reconciliation instead of a customer's phone number."
+    },
+    {
+      "type": "heading",
+      "text": "Step 5: Report the numbers that connect marketing to sales."
+    },
+    {
+      "type": "paragraph",
+      "text": "Review the same stages every week: website WhatsApp clicks, inbound conversations received, qualified enquiries, quotations sent, customers won and revenue recorded. Compare the counts by source and campaign where the data is reliable. A channel that creates fewer conversations may still be more valuable if those conversations match your offer and turn into customers more often."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use simple formulas. Click-to-conversation rate = conversations received ÷ WhatsApp clicks × 100. Qualification rate = qualified enquiries ÷ conversations received × 100. Cost per qualified lead = campaign spend ÷ qualified enquiries. Customer acquisition cost for the campaign = campaign spend ÷ customers won. If you track revenue, return on ad spend (ROAS) = attributable revenue ÷ advertising spend. Define the date range and attribution rule before comparing campaigns."
+    },
+    {
+      "type": "paragraph",
+      "text": "These ratios answer different questions. Cost per lead does not tell you whether a lead can afford the service. ROAS compares revenue with advertising spend; it is not profit or full marketing ROI. For a fuller view, account for product or service delivery costs, discounts, taxes, agency fees, refunds and other relevant expenses."
+    },
+    {
+      "type": "link",
+      "text": "Read: What Is a Good Cost Per Lead in India?",
+      "href": "/insights/good-cost-per-lead-india-2026"
+    },
+    {
+      "type": "link",
+      "text": "Read: How to Calculate Marketing ROI",
+      "href": "/insights/how-to-calculate-marketing-roi"
+    },
+    {
+      "type": "link",
+      "text": "Use the free Marketing ROI Calculator",
+      "href": "/tools/marketing-roi-calculator"
+    },
+    {
+      "type": "heading",
+      "text": "An illustrative example: from clicks to customers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following numbers are hypothetical and are included only to demonstrate the calculations. They are not Kardengey client results, an industry benchmark or a promise of campaign performance. Imagine a business spends ₹6,000 on one campaign and records 80 WhatsApp button clicks, 32 inbound conversations, 18 qualified enquiries, 4 customers and ₹48,000 in attributable revenue."
+    },
+    {
+      "type": "paragraph",
+      "text": "The click-to-conversation rate is 32 ÷ 80 = 40%. The qualification rate is 18 ÷ 32 = 56.25%. Cost per qualified enquiry is ₹6,000 ÷ 18 = about ₹333. Customer acquisition cost on this simplified campaign-spend basis is ₹6,000 ÷ 4 = ₹1,500. ROAS is ₹48,000 ÷ ₹6,000 = 8.0x."
+    },
+    {
+      "type": "paragraph",
+      "text": "An 8.0x ROAS does not mean an 8.0x profit. The example excludes fulfilment, salaries, discounts, taxes, agency fees, returns and other costs. Its purpose is to show why recording the steps after the click gives a more useful picture than reporting 80 clicks as 80 leads."
+    },
+    {
+      "type": "heading",
+      "text": "Step 6: Make the review a weekly habit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose one fixed time each week to reconcile the website or ad-platform click data with the conversations that actually arrived. Remove duplicates, classify new enquiries, update quotations and sales, and check that every open prospect has an owner and next action. Review source and campaign names for spelling differences before drawing conclusions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look for patterns rather than reacting to one day of data. If one campaign produces many clicks but few conversations, check the landing page, audience, offer and link behaviour. If conversations arrive but few qualify, the targeting or message may be attracting the wrong requirement. If qualified leads receive quotations but do not buy, review pricing clarity, proof, follow-up and the sales conversation. These are diagnostic questions, not automatic explanations."
+    },
+    {
+      "type": "heading",
+      "text": "Common WhatsApp tracking mistakes to avoid."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common mistakes are counting every button tap as a lead, using the same direct WhatsApp link across every channel, changing UTM spelling between campaigns, failing to record the source when a message arrives, leaving enquiry statuses untouched, and measuring clicks without checking customer outcomes. Another avoidable mistake is sending customer details or private chat text into analytics tools."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also test your links after every website or campaign change. Check that the correct number opens, the prefilled message is readable, the landing page keeps its campaign parameters and the GA4 event fires once. A tracking plan that has never been tested is only an assumption."
+    },
+    {
+      "type": "heading",
+      "text": "A practical setup checklist for a small business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with one primary WhatsApp call to action and list every place it appears. Create consistent UTM links for website-bound campaigns and distinct source identifiers for direct-to-WhatsApp channels. Configure a whatsapp_click event for website buttons, with a button-location parameter, and verify it in GA4 DebugView or Realtime. Count inbound messages separately in WhatsApp Business or your lead register."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a shared lead register with a unique ID, source, campaign, service or product, status, next action and outcome. Train whoever handles the inbox to update it when a real conversation arrives and when its status changes. Mark actual form submissions as generate_lead; record qualification and sales milestones only when they occur. Keep personal information out of analytics event parameters, then review the complete funnel once a week."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are not ready for event setup, begin with distinct source links and the lead register. A consistent manual process is more useful than a sophisticated dashboard filled with unverified clicks. You can add CRM integration and deeper attribution once enquiry volume and team capacity justify the extra work."
+    },
+    {
+      "type": "heading",
+      "text": "Turn WhatsApp activity into a measurable growth process."
+    },
+    {
+      "type": "paragraph",
+      "text": "WhatsApp can make it easy for customers to contact a business, but the inbox alone cannot tell you which marketing investment is working. Connect the source of the visit to the conversation, record whether the enquiry is a fit, and follow it through to a commercial outcome. That gives you a practical basis for improving your website, campaigns and sales process."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your website receives visitors but the enquiry journey is unclear, start with the message, landing page and next step. Our guide explains the areas to review before spending more on traffic."
+    },
+    {
+      "type": "link",
+      "text": "Read: Website Getting Traffic but No Leads? 9 Fixes for Indian Businesses",
+      "href": "/insights/website-getting-traffic-no-leads"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kardengey helps businesses plan and improve websites, search visibility and performance marketing. If you need help connecting campaign links, conversion events and lead reporting, describe your current setup and the outcome you want to measure. No tracking tool can guarantee sales; the goal is to make decisions with cleaner evidence."
+    },
+    {
+      "type": "link",
+      "text": "Talk to Kardengey about your website and marketing goals",
+      "href": "/#contact"
+    },
+    {
+      "type": "heading",
+      "text": "Official documentation and further reading."
+    },
+    {
+      "type": "paragraph",
+      "text": "Platform documentation explains how the tools work; it does not guarantee that every implementation is correct for every website. Check the current settings in your own Analytics and WhatsApp Business accounts before making changes."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help — recommended events",
+      "href": "https://support.google.com/analytics/answer/9267735",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help — URL builders and campaign parameters",
+      "href": "https://support.google.com/analytics/answer/10917952",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help — enhanced measurement events and privacy requirements",
+      "href": "https://support.google.com/analytics/answer/9216061",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "WhatsApp Help Center — WhatsApp Business features",
+      "href": "https://faq.whatsapp.com/641572844337957",
+      "external": true
+    },
+    {
+      "type": "link",
+      "text": "WhatsApp Help Center — business profile information",
+      "href": "https://faq.whatsapp.com/577829787429875",
+      "external": true
+    }
+  ]
+},
     {
     category: "MARKETING",
     filter: "MARKETING",

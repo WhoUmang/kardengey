@@ -19,6 +19,11 @@ function textBlock(block) {
   const text = escapeHtml(block.text || "");
   if (block.type === "heading") return `<h2>${text}</h2>`;
   if (block.type === "quote") return `<blockquote><p>${text}</p></blockquote>`;
+  if (block.type === "link") {
+    const href = escapeHtml(block.href || "");
+    const external = /^https:\/\//i.test(block.href || "");
+    return `<p><a href="${href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${text}</a></p>`;
+  }
   return `<p>${text}</p>`;
 }
 
