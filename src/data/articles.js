@@ -1,5 +1,359 @@
 const articles = [
 {
+  "category": "ECOMMERCE / GROWTH",
+  "filter": "GROWTH",
+  "title": "Google Merchant Center in India: A Setup Guide for D2C Brands",
+  "slug": "google-merchant-center-india-d2c-setup-guide",
+  "description": "A practical guide for Indian D2C brands to set up Google Merchant Center, prepare product feeds, match GST-inclusive prices and improve product listing eligibility.",
+  "date": "07 NOV 2026",
+  "publishedAt": "2026-11-07",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "If you sell products through your own website, Google Merchant Center can help shoppers discover your catalogue across Google. It is especially useful for Indian direct-to-consumer (D2C) brands that already have product pages but have not yet organised their product information for Google Shopping surfaces. The setup is not simply a matter of uploading a spreadsheet: your feed, product pages, prices, stock, shipping information and business details need to agree."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide explains how to prepare a store, create a Merchant Center account, choose a product data source, structure product variants and check common listing problems. It focuses on practical setup for an Indian online retailer, not on running paid Shopping campaigns."
+    },
+    {
+      "type": "quote",
+      "text": "Think of Merchant Center as a product-data bridge between your store and Google—not as a replacement for your ecommerce website."
+    },
+    {
+      "type": "heading",
+      "text": "What Google Merchant Center does—and what it does not do"
+    },
+    {
+      "type": "paragraph",
+      "text": "Merchant Center is Google's product information platform for retailers. You provide details such as product names, descriptions, images, prices and availability. Once products are reviewed and confirmed as eligible, they may appear on Google surfaces such as Search, the Shopping tab, Images, Maps and YouTube. Google describes Merchant Center account creation and showing eligible products as free of cost in India."
+    },
+    {
+      "type": "paragraph",
+      "text": "Free listings are not the same as paid Shopping ads. You do not need to start an advertising campaign just to create a Merchant Center account or submit products for free listings. Paid campaigns are an optional way to promote products. Approval does not guarantee that every product will appear for every search, earn impressions or generate sales; eligibility and visibility depend on Google's systems, policies, data quality and user context."
+    },
+    {
+      "type": "link",
+      "text": "Google for Retail India: Merchant Center overview and FAQs",
+      "href": "https://business.google.com/in/merchant-center/"
+    },
+    {
+      "type": "heading",
+      "text": "Who should set it up?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Merchant Center is worth evaluating if you sell physical products online, maintain a catalogue and can send shoppers to accurate product pages. It can suit apparel, accessories, home products, beauty products and many other retail categories, subject to Google's product and destination policies. A store with a physical location may also have relevant local options, depending on its setup."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your entire catalogue exists only in Instagram posts, a WhatsApp catalogue or a marketplace listing, pause before building a feed. For the website product-listing route, you need a stable product landing page on a domain you control and can verify. The page should show the item, its current price and whether it can actually be purchased. A feed cannot fix a missing or misleading storefront."
+    },
+    {
+      "type": "heading",
+      "text": "Prepare your website before creating the account"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with a storefront review. Make the business name and contact information easy to find. Give shoppers clear information about payment, delivery, shipping charges, returns, refunds and customer support. Make sure the checkout works on a phone, the website uses HTTPS and the product pages do not hide important conditions until after a customer commits to buying."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are practical trust and readiness checks, not a claim that every business must publish an identical set of policy pages. Your information must accurately describe how your business operates. Google's Misrepresentation policy prohibits misleading details about a business or product, false identity or contact information, and offers for products that the merchant cannot deliver. Do not invent a warehouse address, stock position, delivery promise, certification or return offer to make the store look more established."
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center policy: Misrepresentation",
+      "href": "https://support.google.com/merchants/answer/6150127?hl=en-IN"
+    },
+    {
+      "type": "heading",
+      "text": "Step 1: Create Merchant Center and confirm your business details"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sign in with a Google account that the business can continue to access. Open Merchant Center, enter the business details requested, choose India as the country where you sell, and select the checkout method that reflects the real customer journey. Use a consistent business name and website address. Complete the website verification and claiming steps shown in the account before relying on product submissions. Choose the country and business address carefully: Google's current setup guide says the country selected during initial account setup cannot be changed later."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep account ownership with the business rather than a temporary freelancer or agency login. Add the people who need access with appropriate permissions, and store recovery details securely. If an agency helps with setup, the retailer should retain control of the Merchant Center account, domain and product catalogue."
+    },
+    {
+      "type": "link",
+      "text": "Google Help: Get started with Merchant Center",
+      "href": "https://support.google.com/merchants/answer/12159157"
+    },
+    {
+      "type": "heading",
+      "text": "Step 2: Choose how product information will reach Google"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a store on a supported ecommerce platform, check whether its official Google integration can connect the catalogue and keep products synchronised. Google lists platforms such as Shopify, WooCommerce and PrestaShop among the types of systems that can connect to Merchant Center. Review the integration's settings carefully: confirm which products are included, which country and language are targeted, and whether stock and price changes are sent automatically."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you manage the catalogue yourself, you can create a product data file. Google's current help documentation supports tab-delimited text or TSV and XML product files, with options to upload a file once or provide a hosted file URL. A small catalogue can begin with a carefully maintained spreadsheet exported in the correct format. A larger or frequently changing catalogue usually benefits from a scheduled feed or platform integration so that price and stock do not drift out of date."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not maintain two competing sources without a clear owner. If your ecommerce platform, a feed app and a manually uploaded file all send product data, decide which one is authoritative. Otherwise, one source may overwrite changes made in another."
+    },
+    {
+      "type": "link",
+      "text": "Google Help: Create a product file for Merchant Center",
+      "href": "https://support.google.com/merchants/answer/12631822?hl=en-IN"
+    },
+    {
+      "type": "link",
+      "text": "Google for Retail: How Merchant Center works with ecommerce platforms",
+      "href": "https://business.google.com/in/merchant-center/how-merchant-center-works/"
+    },
+    {
+      "type": "heading",
+      "text": "Step 3: Build a clean product feed"
+    },
+    {
+      "type": "paragraph",
+      "text": "A product feed is a structured list of items and their attributes. Google's product data specification marks core attributes such as id, title, description, link, image_link, availability, price and condition as required for standard product submissions. The exact requirements can vary by product type, destination and country, so use the current specification rather than copying a random feed template from an old tutorial."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a unique, stable id for every product or sellable variant. A SKU is often a sensible identifier. Keep that ID unchanged when you update the same item. Write a descriptive title that matches the product page; include useful distinguishing details such as brand, product type, colour or size where relevant. Avoid promotional slogans, unnecessary capital letters and claims that are not part of the product name."
+    },
+    {
+      "type": "paragraph",
+      "text": "Descriptions should explain the item itself: material, fit, dimensions, key features, care instructions or compatibility where applicable. Do not turn the description field into an advertisement for unrelated products or add claims that the landing page cannot support. The link should take shoppers directly to the relevant product page on your verified domain, not to the homepage or a generic category when an individual product page exists."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the supported availability values—such as in_stock, out_of_stock, preorder or backorder—and keep them aligned with the product page and checkout. Submit the actual price and currency in the required format. Add brand, GTIN or MPN information when it applies to the item and the specification requires or recommends it. Never invent a barcode or use a placeholder GTIN just to make a row look complete; check the identifier with the manufacturer or supplier."
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center: Product data specification",
+      "href": "https://support.google.com/merchants/answer/7052112?hl=en-IN"
+    },
+    {
+      "type": "heading",
+      "text": "Step 4: Treat sizes and colours as real product variants"
+    },
+    {
+      "type": "paragraph",
+      "text": "Apparel and accessories often have several sizes or colours. Do not collapse separate sellable options into one vague feed row if the shopper chooses a specific variant. Give each variant its own stable ID and make the selected option clear on the landing page. Use the variant attributes that apply, such as size, colour, material or pattern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's current specification marks item_group_id as required for free listings for all product variants. Use the same parent group ID for the variants of one product, while keeping each variant's own id unique. For example, an illustrative T-shirt catalogue might use a group ID of TEE-001 for black and white versions in sizes M, L and XL. Each size-and-colour combination would have a distinct item ID, its own availability and the correct variant details. These IDs are sample values, not a required naming convention."
+    },
+    {
+      "type": "paragraph",
+      "text": "Where possible, make the product URL open with the relevant size or colour selected. A shopper should not click a black, medium listing and land on a page that defaults to a different colour or an unavailable size. Check that the stock shown in the feed is for that exact variant, not just the parent product."
+    },
+    {
+      "type": "heading",
+      "text": "Step 5: Match price, GST and stock across every system"
+    },
+    {
+      "type": "paragraph",
+      "text": "Price mismatches are avoidable but common. The price in Merchant Center should match the product landing page, structured data and checkout. Google's current product data specification says that, outside the United States and Canada, VAT or GST should be included in the submitted price. For an India-targeted product, prepare the feed price on that basis and make sure the price a customer sees and pays is consistent. If your tax treatment or display rules are complicated, confirm the correct treatment with your tax adviser before uploading."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you run a sale, keep the regular price and sale price fields correct and make the offer visible on the landing page for the period submitted. Do not leave an expired sale price in the feed. If stock changes after a sale, the website, feed and checkout should update together. A product marked in stock in Merchant Center but unavailable when the customer reaches checkout creates a poor experience and can lead to product issues."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also check shipping charges, delivery regions and estimated handling or transit times. Set them to match what your fulfilment operation can actually provide. If delivery is free only above a minimum order value or in selected PIN codes, explain that condition clearly instead of labelling every product as free shipping."
+    },
+    {
+      "type": "heading",
+      "text": "Step 6: Prepare product images for the next specification change"
+    },
+    {
+      "type": "paragraph",
+      "text": "The main product image should show the actual item clearly, load from a crawlable HTTPS URL and use a supported image format. Avoid thumbnails, generic placeholders, watermarks, borders and promotional text on the main image. For apparel, use clear front and back views where useful, accurate colour representation and additional images that help a shopper understand the fit and finish."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is also a near-term requirement to plan for. Google's current product data specification says it has announced a minimum image size of 500 × 500 pixels for all product images, with enforcement beginning on 31 January 2027. As of 7 November 2026, that date is still ahead, so it is sensible to audit your catalogue now rather than wait for image-related disapprovals. Do not enlarge a tiny thumbnail to meet the number; use a genuine higher-resolution product image."
+    },
+    {
+      "type": "link",
+      "text": "Google's image requirements and 31 January 2027 enforcement date",
+      "href": "https://support.google.com/merchants/answer/7052112?hl=en-IN"
+    },
+    {
+      "type": "heading",
+      "text": "Step 7: Configure shipping, returns and customer expectations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review the shipping and returns settings in Merchant Center and compare them with the policy pages on your website. Define the destinations you actually serve, the delivery services available, charges, handling times and realistic delivery estimates. Make your return and refund terms easy to find before checkout. If a product is non-returnable or has a special condition, communicate it clearly and make sure the account settings do not promise something different."
+    },
+    {
+      "type": "paragraph",
+      "text": "The goal is consistency, not the most attractive-looking promise. A delivery estimate that your team cannot meet or a return policy that differs between the account and the website can damage trust. Update these details when your courier coverage, fulfilment location or operating process changes."
+    },
+    {
+      "type": "heading",
+      "text": "Step 8: Add Product structured data to product pages"
+    },
+    {
+      "type": "paragraph",
+      "text": "A product feed is one way to share catalogue information. Product structured data is another: it helps search engines interpret details such as the product name, offer price, currency and availability on the page itself. For ecommerce product pages, Google documents Merchant listing structured data using Product and Offer. Depending on the properties supplied and the page's eligibility, this can support richer shopping experiences that show details such as price, availability, shipping or return information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep the markup honest and in sync with the visible page. If the page shows a different price, currency, variant or stock status from the structured data, correct the source rather than trying to make the markup look better. Google recommends using both product structured data and a Merchant Center feed where possible because the two sources can help Google understand and verify product information."
+    },
+    {
+      "type": "paragraph",
+      "text": "After implementation, test representative product pages with Google's Rich Results Test and review the Merchant listings report in Search Console after Google has crawled the pages. Structured data creates eligibility; it does not guarantee a rich result or a particular ranking."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Merchant listing structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
+    },
+    {
+      "type": "link",
+      "text": "Google Rich Results Test",
+      "href": "https://search.google.com/test/rich-results"
+    },
+    {
+      "type": "heading",
+      "text": "Step 9: Submit products and work through diagnostics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Once your website, account and data source are ready, submit a small representative set first if your platform allows it. Review product-level and account-level diagnostics in Merchant Center. Open each issue, identify whether it relates to missing data, a mismatch, a policy concern or a crawl problem, and fix the underlying source. Then allow the feed or integration to refresh and confirm that the status changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Prioritise problems that affect many items: a broken image host, incorrect country settings, a bad price rule or a variant mapping error can affect a large part of the catalogue. For isolated items, inspect the exact landing page and submitted row. Do not repeatedly delete and recreate products or accounts as a substitute for understanding the issue; preserve a clear record of what changed."
+    },
+    {
+      "type": "heading",
+      "text": "A practical launch example for an Indian apparel store"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative only: imagine a small clothing brand has 30 styles, with each style available in three sizes and two colours. Before submission, the team checks that every sellable combination has a unique SKU, that related combinations share the right item_group_id, and that the page can open the selected variant. The team checks that the INR price includes GST as required by Google's product data specification, that the same amount appears on the product page and checkout, and that stock is updated for each size and colour."
+    },
+    {
+      "type": "paragraph",
+      "text": "The team then replaces low-resolution thumbnails with genuine product images at least 500 × 500 pixels, checks the shipping and return information, and tests Product markup on a few representative pages. After the feed is submitted, it reviews diagnostics and corrects any item-level errors before expanding to the rest of the catalogue. This is a workflow example, not a claim about a real Kardengey client or a guarantee of approval."
+    },
+    {
+      "type": "heading",
+      "text": "Common Merchant Center mistakes to avoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "The problems worth checking first are: product titles that do not match the page; prices that differ between feed, product page and checkout; GST handled inconsistently; out-of-stock variants marked as available; duplicate or unstable IDs; missing item_group_id for variants; fabricated or incorrect product identifiers; inaccessible images; and policy pages that contradict the actual business process. A catalogue can be technically well formatted and still have issues if the website or offer is misleading."
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid treating the first successful upload as a finished project. Product data changes whenever a price changes, a size sells out, a courier service is paused or a return condition is updated. Assign an owner for the feed and a regular review cadence. For a small store, a weekly check of diagnostics, stock, prices and broken product URLs is a useful starting routine; high-change catalogues may need more frequent synchronisation."
+    },
+    {
+      "type": "heading",
+      "text": "A short pre-launch checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before submitting, confirm that the business and website details are accurate; the domain is verified and claimed; every product links to its own accessible page; each item has a stable ID and accurate title, description, image, price, condition and availability; GST is handled correctly for India; variants are grouped and identified properly; images meet the announced 500 × 500 pixel requirement ahead of 31 January 2027; shipping and returns are transparent; and product structured data matches the visible page. Keep a note of the feed source and who is responsible for maintaining it."
+    },
+    {
+      "type": "heading",
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Is Google Merchant Center free in India? Google describes account creation and showing eligible products on Google as free. Paid Shopping ads are optional and have separate advertising costs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do I need to run Google Ads to use free listings? No. You can set up Merchant Center and submit products for eligible free listings without starting a paid campaign. Paid advertising is a separate option, not a requirement for creating the account."
+    },
+    {
+      "type": "paragraph",
+      "text": "Can I upload a spreadsheet? Google supports product files such as tab-delimited text or TSV and XML. Follow the current product data specification for the required attributes and formatting; a normal Excel workbook is not itself the feed format."
+    },
+    {
+      "type": "paragraph",
+      "text": "Will every product appear at the top of Google Shopping? No. A valid submission does not guarantee display, a particular position or sales. Focus first on accurate data, policy compliance, useful product pages and a reliable buying experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "What should I fix first if products are disapproved? Start with the exact issue shown in Merchant Center diagnostics. Compare the submitted data with the live product page, checkout, stock system and account settings. Fix the source of the mismatch and refresh the feed rather than guessing."
+    },
+    {
+      "type": "heading",
+      "text": "Make your product catalogue easier to discover and maintain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Merchant Center setup works best when it is treated as part of ecommerce operations, not as a one-time SEO trick. Build clear product pages, maintain accurate stock and pricing, keep policies honest, and make sure your feed and structured data describe the same offer. Those foundations help both shoppers and platforms understand what you sell, even though no listing tool can promise traffic or revenue."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are planning an ecommerce website or improving an existing store, our guides to website costs in India and fixing a website that gets traffic but no leads can help you review the wider site experience. Kardengey works across website development, SEO, product-page structure and performance marketing. If you need help connecting the storefront, product feed and measurement setup, tell us what platform you use and what you want to improve."
+    },
+    {
+      "type": "link",
+      "text": "Read: How Much Does a Website Cost in India in 2026?",
+      "href": "/insights/website-cost-india-2026"
+    },
+    {
+      "type": "link",
+      "text": "Read: Website Getting Traffic but No Leads? 9 Fixes for Indian Businesses",
+      "href": "/insights/website-getting-traffic-no-leads"
+    },
+    {
+      "type": "link",
+      "text": "Talk to Kardengey about your ecommerce website",
+      "href": "/#contact"
+    },
+    {
+      "type": "heading",
+      "text": "Official documentation and further reading"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's help pages can change as Merchant Center requirements and product experiences evolve. Recheck the live documentation when you configure an account, especially before changing feed attributes, tax display, image requirements or structured data."
+    },
+    {
+      "type": "link",
+      "text": "Google for Retail India — Merchant Center overview",
+      "href": "https://business.google.com/in/merchant-center/"
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center Help — product file formats",
+      "href": "https://support.google.com/merchants/answer/12631822?hl=en-IN"
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center Help — product data specification",
+      "href": "https://support.google.com/merchants/answer/7052112?hl=en-IN"
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center Help — Misrepresentation policy",
+      "href": "https://support.google.com/merchants/answer/6150127?hl=en-IN"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central — Merchant listing structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
+    }
+  ]
+},
+{
   "category": "MARKETING",
   "filter": "MARKETING",
   "title": "How to Track WhatsApp Leads for Small Businesses in India",
