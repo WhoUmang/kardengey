@@ -74,7 +74,7 @@ const articles = [
     },
     {
       "type": "paragraph",
-      "text": "Sign in with a Google account that the business can continue to access. Open Merchant Center, enter the business details requested, choose India as the country where you sell, and select the checkout method that reflects the real customer journey. Use a consistent business name and website address. Complete the website verification and claiming steps shown in the account before relying on product submissions."
+      "text": "Sign in with a Google account that the business can continue to access. Open Merchant Center, enter the business details requested, choose India as the country where you sell, and select the checkout method that reflects the real customer journey. Use a consistent business name and website address. Complete the website verification and claiming steps shown in the account before relying on product submissions. Choose the country and business address carefully: Google's current setup guide says the country selected during initial account setup cannot be changed later."
     },
     {
       "type": "paragraph",
@@ -82,8 +82,8 @@ const articles = [
     },
     {
       "type": "link",
-      "text": "Google Merchant Center onboarding guide",
-      "href": "https://support.google.com/merchants/answer/6363310?hl=en-IN"
+      "text": "Google Help: Get started with Merchant Center",
+      "href": "https://support.google.com/merchants/answer/12159157"
     },
     {
       "type": "heading",
