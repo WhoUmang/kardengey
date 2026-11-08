@@ -201,6 +201,27 @@ await writeFile(path.join(dist, "about-editorial-standards", "index.html"), shel
   content: editorialContent,
 }));
 
+const contactContent = pageContent(`
+  <p class="seo-kicker">CONTACT / START A CONVERSATION</p>
+  <h1>Tell us what you want to build.</h1>
+  <p>Contact Kardengey about website development, SEO, performance marketing, branding, packaging design or practical digital growth support.</p>
+  <h2>Send a project enquiry</h2>
+  <p>Use the enquiry form on this page to share your name, email address, project details and the service you are considering. We will use the information you provide to respond to your enquiry.</p>
+  <h2>Email</h2>
+  <p><a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a></p>
+  <h2>WhatsApp</h2>
+  <p><a href="https://wa.me/7666459165">Message Kardengey on WhatsApp</a></p>
+  <h2>What to include</h2>
+  <p>A short description of your business, the challenge you want to solve, your website or social profile, and any timeline or budget constraints will help us understand the request. Please do not send passwords, payment details or sensitive personal information.</p>
+`);
+await mkdir(path.join(dist, "contact"), { recursive: true });
+await writeFile(path.join(dist, "contact", "index.html"), shell({
+  title: "Contact Kardengey | Start a Project Enquiry",
+  description: "Contact Kardengey about website development, SEO, performance marketing, branding and digital growth projects.",
+  canonical: `${site}/contact`,
+  content: contactContent,
+}));
+
 const privacyContent = pageContent(`
   <p class="seo-kicker">WEBSITE INFORMATION</p>
   <h1>Privacy policy</h1>
@@ -313,6 +334,7 @@ const sitemapEntries = [
   { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
   { url: site + "/services", priority: "0.8", changefreq: "monthly" },
   { url: site + "/about-editorial-standards", priority: "0.5", changefreq: "yearly" },
+  { url: site + "/contact", priority: "0.7", changefreq: "monthly" },
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
   { url: site + "/tools/marketing-tools", priority: "0.9", changefreq: "weekly" },
