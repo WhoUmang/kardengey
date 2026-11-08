@@ -24,6 +24,7 @@ import MarketingROICalculator from "./pages/MarketingROICalculator";
 import AboutEditorialStandards from "./pages/AboutEditorialStandards";
 import ServicesGuide from "./pages/ServicesGuide";
 import MarketingTools from "./pages/MarketingTools";
+import ContactPage from "./pages/ContactPage";
 
 function Home() {
   return (
@@ -122,6 +123,9 @@ function App() {
             </>
           }
         />
+
+        {/* CONTACT */}
+        <Route path="/contact" element={<><Navbar /><ContactPage /><WhatsAppButton /><Footer /></>} />
 
         {/* FREE MARKETING TOOLS */}
         <Route path="/tools/marketing-tools" element={<><Navbar /><MarketingTools /><WhatsAppButton /><Footer /></>} />
