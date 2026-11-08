@@ -2269,7 +2269,636 @@ const articles = [
       "href": "/#contact"
     }
   ]
-},
+},,
+
+  {
+    "category": "PERFORMANCE MARKETING",
+    "filter": "GROWTH",
+    "title": "Why Meta Ads Generate Leads but Not Customers: A Practical Diagnosis for Indian Businesses",
+    "slug": "meta-ads-leads-not-customers-diagnosis",
+    "description": "Diagnose the gap between Meta lead volume and actual sales with a funnel worksheet, lead-quality checks and practical calculations for Indian businesses.",
+    "date": "08 NOV 2026",
+    "publishedAt": "2026-11-08",
+    "read": "14 MIN READ",
+    "author": "Kardengey",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A Meta campaign can show a low cost per lead and still lose money. The reason is simple: a form submission or WhatsApp message is an early signal, not a sale. If the sales team cannot reach the person, the person is outside the service area, the requirement is unsuitable or the offer is misunderstood, the campaign may be buying activity rather than customers."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide is a diagnostic method for Indian businesses receiving enquiries from Facebook or Instagram ads. It separates delivery problems from offer, audience, response and sales-process problems. The example numbers are hypothetical and are included to demonstrate the calculations; they are not industry benchmarks or Kardengey client results."
+      },
+      {
+        "type": "heading",
+        "text": "Start by defining what counts as a lead"
+      },
+      {
+        "type": "paragraph",
+        "text": "Write down the event your campaign is optimising for. An instant form submission, a WhatsApp conversation started, a phone call connected, a qualified enquiry and a paid customer are different events. If the campaign reports 100 leads but the business counts only 18 people who answered the phone, both numbers can be true. They describe different stages."
+      },
+      {
+        "type": "paragraph",
+        "text": "Create a simple shared definition. For example: a qualified lead is a real person with a genuine requirement, inside the service area, who meets the minimum project or purchase criteria and can be contacted. Adapt the definition to your business. A local salon, a B2B software company and a high-ticket interior designer should not use the same qualification rules."
+      },
+      {
+        "type": "heading",
+        "text": "Map the funnel before changing the ads"
+      },
+      {
+        "type": "paragraph",
+        "text": "Track these stages separately: ad click or impression; form submission or WhatsApp conversation; contact attempted; contact reached; qualified; appointment or quotation; sale; revenue collected. Record counts for the same date cohort. Do not compare leads generated this week with sales closed from last month's leads."
+      },
+      {
+        "type": "heading",
+        "text": "Worked example: a low CPL can hide a weak funnel"
+      },
+      {
+        "type": "paragraph",
+        "text": "Illustrative example: a business spends ₹15,000 and receives 100 enquiries. The reported cost per enquiry is ₹150. The team reaches 60 people, qualifies 24, sends 12 quotations and closes 3 sales. Cost per reached contact is ₹250; cost per qualified lead is ₹625; cost per quotation is ₹1,250; and advertising cost per customer is ₹5,000. These are four different views of the same campaign."
+      },
+      {
+        "type": "paragraph",
+        "text": "If the three customers generate ₹45,000 in collected revenue, the revenue-to-ad-spend ratio is 3.0. That is not automatically profit or ROAS on contribution: product costs, fulfilment, discounts, taxes, agency fees and other operating costs still matter. Calculate contribution after variable costs before deciding whether to scale."
+      },
+      {
+        "type": "heading",
+        "text": "Use this diagnosis table"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Many enquiries but few people answer: check contact timing, phone-number validity, form friction and whether the ad clearly sets expectations.",
+          "People answer but are not a fit: review geography, audience signals, qualification questions, creative claims and offer clarity.",
+          "Qualified leads do not book: inspect response quality, trust, pricing explanation, appointment availability and follow-up process.",
+          "Quotations do not convert: review the sales conversation, scope clarity, proof, objections, payment terms and competitor alternatives.",
+          "Customers buy but economics are poor: calculate contribution per sale, repeat purchase, refunds, discounts and total acquisition cost before increasing budget."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Check the response process before blaming targeting"
+      },
+      {
+        "type": "paragraph",
+        "text": "For WhatsApp and phone leads, record the time of first response, number of attempts, whether the person was reached and the outcome. A lead that waits several hours may have already contacted another provider. This is a process hypothesis to test against your own data, not a universal response-time statistic."
+      },
+      {
+        "type": "paragraph",
+        "text": "Use a consistent first reply that acknowledges the enquiry and asks one useful next question. Avoid sending a long catalogue or generic price list before understanding the requirement. Give staff a short qualification script and a clear next action: call, appointment, quotation or polite disqualification."
+      },
+      {
+        "type": "heading",
+        "text": "Audit the promise made by the creative"
+      },
+      {
+        "type": "paragraph",
+        "text": "The ad, landing page or WhatsApp prefilled message should describe the same offer. If the creative says 'starting at ₹X' but the actual product most customers need costs much more, expect price mismatch. If the ad implies instant delivery but the business needs a consultation, expect unsuitable expectations. Be specific about who the offer is for, what is included and what happens after the enquiry."
+      },
+      {
+        "type": "heading",
+        "text": "Run controlled tests, not random edits"
+      },
+      {
+        "type": "paragraph",
+        "text": "Change one meaningful variable at a time where practical: offer, creative angle, audience, form questions or destination. Keep a dated experiment log with the hypothesis, change, start date, spend, lead count, qualified count and decision. Avoid declaring a winner from a handful of conversions or changing multiple settings before you can interpret the result."
+      },
+      {
+        "type": "heading",
+        "text": "A weekly lead-quality scorecard"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Spend and reporting period",
+          "Enquiries by source and campaign",
+          "Reachable contacts and contact rate",
+          "Qualified leads and qualification rate",
+          "Appointments or quotations",
+          "Customers and close rate",
+          "Collected revenue and contribution estimate",
+          "Cost per qualified lead and acquisition cost",
+          "Top disqualification reasons and next test"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep the lead register privacy-conscious. Collect only information needed to respond, restrict access to the people handling enquiries, and follow applicable privacy and platform requirements. Do not upload customer lists or sensitive personal information to advertising tools unless you have a lawful basis and the required permissions."
+      },
+      {
+        "type": "heading",
+        "text": "When should you increase the budget?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Do not scale because the platform says results are cheap. First confirm that tracking is reliable, lead quality is stable, the team can handle additional enquiries and the economics work using actual sales and contribution data. Increase budgets gradually enough to detect whether lead quality and cost change. There is no universal percentage increase that is safe for every account."
+      },
+      {
+        "type": "heading",
+        "text": "A simple decision rule"
+      },
+      {
+        "type": "paragraph",
+        "text": "If the enquiry volume is low, investigate delivery, audience size, creative and offer. If enquiry volume is healthy but qualification is weak, investigate message match and targeting. If qualification is healthy but sales are weak, investigate response and sales process. If sales are healthy but profit is weak, investigate margin and acquisition economics. This prevents the common mistake of treating every business problem as an ad-targeting problem."
+      },
+      {
+        "type": "paragraph",
+        "text": "The best campaign report is not the one with the lowest cost per lead. It is the one that connects spend to qualified demand, customers and sustainable contribution. Start by measuring the whole journey, then decide which part deserves the next experiment."
+      },
+      {
+        "type": "link",
+        "text": "Related guide: How to track WhatsApp leads for small businesses in India",
+        "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+      },
+      {
+        "type": "link",
+        "text": "Related guide: Marketing ROI calculation and free calculator",
+        "href": "/insights/how-to-calculate-marketing-roi"
+      },
+      {
+        "type": "link",
+        "text": "Explore Kardengey services",
+        "href": "/services"
+      }
+    ]
+  },
+  {
+    "category": "MARKETING BUDGETS",
+    "filter": "GROWTH",
+    "title": "How Much Should an Indian Small Business Spend on Google and Meta Ads?",
+    "slug": "small-business-google-meta-ads-budget-india",
+    "description": "Build an advertising budget from unit economics, test capacity and lead handling—not generic percentage rules. Includes an illustrative ₹10,000 allocation.",
+    "date": "08 NOV 2026",
+    "publishedAt": "2026-11-08",
+    "read": "13 MIN READ",
+    "author": "Kardengey",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "There is no single correct monthly advertising budget for every Indian small business. A ₹10,000 test may be meaningful for one local service and too small to learn anything useful for another business with a long sales cycle or high competition. Start with what a customer is worth, what the business can afford to acquire one for and how many enquiries the team can handle."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide gives a budgeting method for Google Ads and Meta Ads. All rupee amounts used in the worked examples are illustrative planning scenarios, not market-rate promises, platform minimums or guaranteed outcomes."
+      },
+      {
+        "type": "heading",
+        "text": "First separate budget from business economics"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your advertising budget is not the same as your total marketing cost. Keep media spend, creative production, landing-page work, agency or staff fees, software, taxes and sales costs separate. When comparing campaign performance, identify which costs are included in the metric. A media-only cost per lead can look lower than the fully loaded cost of acquiring a customer."
+      },
+      {
+        "type": "heading",
+        "text": "Calculate the maximum affordable acquisition cost"
+      },
+      {
+        "type": "paragraph",
+        "text": "Begin with the money left after variable costs. For a product, estimate selling price minus product cost, packaging, shipping subsidy, payment fees, expected returns and other variable fulfilment costs. For a service, estimate collected project revenue minus delivery labour and direct project expenses. This gives a contribution estimate before fixed overhead and marketing."
+      },
+      {
+        "type": "paragraph",
+        "text": "Illustrative example: a service sells a project for ₹20,000 and expects ₹8,000 in direct delivery cost. The contribution before marketing and fixed overhead is ₹12,000. If the business decides that at least ₹7,000 must remain to help cover overhead and profit, the maximum acquisition cost under this simplified model is ₹5,000. The real limit should also account for cash flow, repeat purchases, refunds and sales effort."
+      },
+      {
+        "type": "heading",
+        "text": "Work backwards from leads to spend"
+      },
+      {
+        "type": "paragraph",
+        "text": "If the maximum affordable acquisition cost is ₹5,000 and 1 in 5 qualified leads becomes a customer, the maximum affordable cost per qualified lead is ₹1,000 in this simplified example. If only half of raw enquiries qualify, the maximum raw enquiry cost would be ₹500. These are derived from the assumed conversion rates; change the assumptions to match your own records."
+      },
+      {
+        "type": "paragraph",
+        "text": "Formula: maximum cost per qualified lead = maximum acquisition cost × qualified-lead-to-customer conversion rate. If you know only raw leads, multiply again by the proportion of raw enquiries that qualify. Never use a platform's reported lead count as the denominator if many records are duplicates, unreachable or irrelevant."
+      },
+      {
+        "type": "heading",
+        "text": "Choose Google or Meta based on customer intent"
+      },
+      {
+        "type": "paragraph",
+        "text": "Google Search is often worth testing when people actively search for a service or product using terms that signal a need, location or comparison. It can be a poor fit when search demand is tiny, the keywords are ambiguous or the business cannot respond competitively. Meta can help introduce an offer to people who were not actively searching, test creative angles and build demand, but the user may need more education or follow-up before buying."
+      },
+      {
+        "type": "paragraph",
+        "text": "These are channel tendencies, not fixed rules. A local event, fashion brand, emergency repair service and specialist B2B provider can behave very differently. Choose based on how customers discover and evaluate the specific offer, then validate with a controlled test."
+      },
+      {
+        "type": "heading",
+        "text": "Illustrative ₹10,000 test allocation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Suppose a business has ₹10,000 available for media spend over a short test period, one clear offer, a working landing page and enough staff capacity to follow up. One possible experiment is ₹6,000 on the channel with the clearest evidence of customer intent and ₹4,000 on a second channel to test a different discovery route. This is an example split, not a universal recommendation. If the business has strong search demand, the split may favour Google; if it sells visually compelling consumer products, Meta may deserve more of the test."
+      },
+      {
+        "type": "paragraph",
+        "text": "Do not split a small budget across many campaigns, audiences and ad sets. Too many fragments can leave each test with too little spend or too few conversion events to interpret. Start with one primary objective per channel, a small number of distinct creative or keyword hypotheses and a clear stopping rule."
+      },
+      {
+        "type": "heading",
+        "text": "Set a test budget you can afford to learn from"
+      },
+      {
+        "type": "paragraph",
+        "text": "A test budget should be large enough to observe meaningful behaviour but small enough that a poor result does not threaten payroll, inventory or essential operating cash. Estimate how many qualified leads or purchases you need to assess the funnel, then use your own historical cost ranges if available. If you have no history, treat the first campaign as discovery and avoid promising a specific number of leads."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a long-consideration purchase, a short campaign may produce enquiries but not enough closed sales to judge acquisition cost. Use leading indicators carefully—search-term relevance, landing-page actions, qualified conversations and appointments—while keeping the final commercial outcome visible."
+      },
+      {
+        "type": "heading",
+        "text": "Budget for the whole conversion path"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Offer: Is the product or service clear, relevant and commercially viable?",
+          "Creative and copy: Does the ad set accurate expectations?",
+          "Destination: Does the landing page answer price, trust, location and next-step questions?",
+          "Measurement: Can you distinguish a click, a lead, a qualified lead and a sale?",
+          "Follow-up: Who responds, how quickly, and how is the outcome recorded?",
+          "Capacity: Can the business fulfil additional orders or enquiries without harming service?"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common budget mistakes"
+      },
+      {
+        "type": "paragraph",
+        "text": "Avoid choosing a budget only because a competitor appears to spend that amount. Their margins, conversion rates, brand demand and customer lifetime value may be completely different. Avoid dividing a small budget across too many campaigns. Avoid judging a channel only by clicks or raw leads. Avoid increasing spend before checking whether the sales team can handle the current volume. And do not treat a daily budget as a guaranteed daily spend or a guaranteed number of results."
+      },
+      {
+        "type": "heading",
+        "text": "A monthly review template"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Media spend by platform and campaign",
+          "Qualified enquiries by source",
+          "Cost per qualified enquiry",
+          "Appointments, quotations or checkout starts",
+          "Customers acquired and collected revenue",
+          "Contribution after variable costs",
+          "Refunds, cancellations and lost-sale reasons",
+          "Next month's budget decision and the evidence behind it"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "If the business cannot yet measure sales outcomes, spend conservatively and improve tracking before scaling. A basic lead register with source, date, status and outcome is more useful than a complicated dashboard filled with events nobody validates."
+      },
+      {
+        "type": "heading",
+        "text": "The practical answer"
+      },
+      {
+        "type": "paragraph",
+        "text": "Set the budget from your maximum affordable acquisition cost, expected conversion rates, test capacity and cash-flow tolerance. Choose Google when customer intent is observable in search; test Meta when creative-led discovery is a credible route; and use both only when the business can measure and manage both. Start with a clear hypothesis, protect the ability to learn and let qualified customer economics—not vanity metrics—guide the next budget decision."
+      },
+      {
+        "type": "link",
+        "text": "Related guide: Why Meta Ads generate leads but not customers",
+        "href": "/insights/meta-ads-leads-not-customers-diagnosis"
+      },
+      {
+        "type": "link",
+        "text": "Related guide: SEO vs Google Ads for small businesses",
+        "href": "/insights/seo-vs-google-ads-small-business-india"
+      }
+    ]
+  },
+  {
+    "category": "WEBSITE / CONVERSION",
+    "filter": "WEBSITE",
+    "title": "How to Audit a Website Before Spending Money on Ads",
+    "slug": "website-audit-before-running-ads",
+    "description": "A practical pre-advertising audit covering message match, mobile experience, speed, trust, forms, analytics and lead handling, with a prioritised checklist.",
+    "date": "08 NOV 2026",
+    "publishedAt": "2026-11-08",
+    "read": "12 MIN READ",
+    "author": "Kardengey",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Before paying for more clicks, check whether the website can turn the right visitor into a useful next action. Advertising can expose a weak landing page quickly: people arrive, cannot understand the offer, do not trust the business or abandon a broken form. More traffic does not repair those problems."
+      },
+      {
+        "type": "paragraph",
+        "text": "This audit is designed for a small business preparing to run Google or Meta campaigns. It is a practical review process, not a guarantee that a page will convert. Work through the checks in order and fix critical failures before increasing media spend."
+      },
+      {
+        "type": "heading",
+        "text": "1. Confirm the page matches the ad promise"
+      },
+      {
+        "type": "paragraph",
+        "text": "Write the exact promise the visitor sees in the ad. Then open the destination page on a phone and check whether the same product, service, location, price condition and next step are immediately clear. If an ad promotes a specific service but sends people to a generic homepage, the visitor must do extra work to find the promised information."
+      },
+      {
+        "type": "paragraph",
+        "text": "Create a message-match table with three columns: ad claim, landing-page evidence and any mismatch. Remove claims that cannot be substantiated. If the ad says 'from ₹X', explain what that starting price includes and what changes the final quote. If availability is limited by location, show the service area before the visitor submits a form."
+      },
+      {
+        "type": "heading",
+        "text": "2. Check the first screen on a real phone"
+      },
+      {
+        "type": "paragraph",
+        "text": "Use an actual mobile device, not only a desktop preview. The first screen should identify what the business offers, who it helps and what action the visitor can take. Check text size, contrast, button visibility, sticky elements, pop-ups and whether important content is obscured by a banner or browser interface."
+      },
+      {
+        "type": "paragraph",
+        "text": "Tap every primary action. A button that looks clickable but does nothing is a critical defect. Check WhatsApp links, phone links, maps, booking tools and form buttons. Confirm that the destination is the correct business account and that the message or phone number is current."
+      },
+      {
+        "type": "heading",
+        "text": "3. Make the offer understandable"
+      },
+      {
+        "type": "paragraph",
+        "text": "A useful service page answers: what is included, who it is for, what information is needed to begin, what the next step looks like and which conditions affect price or timing. Avoid vague claims such as 'best quality' or 'guaranteed growth' unless you can define and substantiate them. Explain limitations honestly; clear boundaries can prevent unsuitable enquiries."
+      },
+      {
+        "type": "heading",
+        "text": "4. Add trust that can be verified"
+      },
+      {
+        "type": "paragraph",
+        "text": "Show the real business name, contact route, service area where relevant, policies and a clear explanation of who will respond. Use genuine team details, real portfolio work with permission and testimonials only when they are authentic and approved for publication. If you do not have case studies, do not invent them. Explain your process and show representative work instead."
+      },
+      {
+        "type": "heading",
+        "text": "5. Test the form end to end"
+      },
+      {
+        "type": "paragraph",
+        "text": "Submit a real test enquiry and check every step: required fields, validation, loading state, success message, email delivery or CRM entry, notification recipient and mobile keyboard behaviour. Check what happens when the network is slow or a required field is missing. Make sure the visitor is not left wondering whether the form worked."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask only for information needed to respond. A first enquiry form may need a name, contact method and a short description; asking for extensive personal or business details too early can add friction. Explain how the information will be used and protect access to submitted enquiries."
+      },
+      {
+        "type": "heading",
+        "text": "6. Check performance and accessibility"
+      },
+      {
+        "type": "paragraph",
+        "text": "Run PageSpeed Insights on the actual landing URL, preferably for both mobile and desktop. Review the field data when available and use lab diagnostics to identify heavy images, render-blocking resources, layout shifts and slow scripts. A lab score is a diagnostic snapshot, not a direct promise of campaign performance or search ranking."
+      },
+      {
+        "type": "paragraph",
+        "text": "Check readable contrast, keyboard focus, meaningful link text, image alternatives where images carry information and headings that describe page sections. A page should remain usable when animations are reduced or when a visitor relies on a keyboard or assistive technology."
+      },
+      {
+        "type": "heading",
+        "text": "7. Validate analytics before launch"
+      },
+      {
+        "type": "paragraph",
+        "text": "Confirm that the correct GA4 property receives page views and that the campaign landing page is recorded accurately. Use UTMs consistently for paid campaigns and keep naming conventions documented. Test important events such as form success, phone click and WhatsApp click. A button click is not the same as a qualified lead or a sale, so name events to reflect what actually happened."
+      },
+      {
+        "type": "paragraph",
+        "text": "If a consent banner is required for the jurisdictions and technologies involved, make sure the implementation reflects the actual consent choices and does not simply display a decorative notice. Do not fire optional tracking contrary to the user's consent or applicable requirements."
+      },
+      {
+        "type": "heading",
+        "text": "8. Check what happens after the lead arrives"
+      },
+      {
+        "type": "paragraph",
+        "text": "Identify the person or team responsible for the enquiry, the notification route, response coverage and follow-up steps. A technically successful form can still fail commercially if nobody receives it. Record source, campaign, date, contact status, qualification and outcome in a simple register or CRM."
+      },
+      {
+        "type": "heading",
+        "text": "A 25-point pre-ad checklist"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The landing page matches the ad's product, service and offer.",
+          "The first screen explains what the business does.",
+          "The intended audience and service area are clear.",
+          "Price conditions or quote requirements are explained.",
+          "Primary call to action is visible on mobile.",
+          "Phone, WhatsApp and email links work.",
+          "Forms validate and show a clear success state.",
+          "Test enquiries reach the correct inbox or CRM.",
+          "The business identity and contact details are accurate.",
+          "Portfolio images and testimonials are genuine and authorised.",
+          "Shipping, returns or service terms are easy to find where relevant.",
+          "The page uses HTTPS and has no browser security warning.",
+          "Images are appropriately sized and compressed.",
+          "The page remains usable at common mobile widths.",
+          "Text contrast and keyboard focus are usable.",
+          "Headings describe the actual page sections.",
+          "PageSpeed Insights has been reviewed for key issues.",
+          "GA4 receives page views on the landing page.",
+          "UTM conventions are documented and consistent.",
+          "Conversion events represent real actions accurately.",
+          "Duplicate and spam submissions have a handling plan.",
+          "A named person owns new enquiries.",
+          "The team has a realistic response and follow-up process.",
+          "The business can fulfil the demand the campaign may create.",
+          "A baseline and test hypothesis are recorded before launch."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Prioritise defects by business impact"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fix blockers first: broken forms, wrong phone numbers, misleading offers, unavailable products and missing lead notifications. Next fix high-friction issues such as unclear messaging, poor mobile layout and slow heavy pages. Cosmetic refinements can follow if they do not prevent a visitor from understanding the offer or taking action."
+      },
+      {
+        "type": "paragraph",
+        "text": "Record each issue with its page, evidence, impact, owner and status. Re-test after changes. This prevents a long audit list from becoming a collection of observations with no clear completion criteria."
+      },
+      {
+        "type": "heading",
+        "text": "A simple pre-launch test record"
+      },
+      {
+        "type": "paragraph",
+        "text": "For each campaign page, save the URL, target audience, offer, primary conversion action, test device, form test date, analytics test date, outstanding blockers and the person responsible for follow-up. This creates a baseline to compare against actual campaign behaviour."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once the page works, begin with a controlled campaign test and review the quality of enquiries—not just clicks. If traffic arrives but enquiries remain weak, use the funnel data to locate the problem before changing every part of the campaign."
+      },
+      {
+        "type": "link",
+        "text": "Related guide: Website traffic but no leads? Practical fixes",
+        "href": "/insights/website-getting-traffic-no-leads"
+      },
+      {
+        "type": "link",
+        "text": "Related guide: How to track WhatsApp leads",
+        "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+      },
+      {
+        "type": "link",
+        "text": "Explore Kardengey website services",
+        "href": "/services"
+      }
+    ]
+  },
+  {
+    "category": "CUSTOMER ACQUISITION",
+    "filter": "GROWTH",
+    "title": "How to Calculate the Real Cost of Acquiring a Customer",
+    "slug": "calculate-real-customer-acquisition-cost-india",
+    "description": "Calculate customer acquisition cost using consistent cohorts and included costs. Understand the difference between media-only CPL, blended CAC and contribution after marketing.",
+    "date": "08 NOV 2026",
+    "publishedAt": "2026-11-08",
+    "read": "11 MIN READ",
+    "author": "Kardengey",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Customer acquisition cost (CAC) is often quoted as if it were a single obvious number. In practice, two businesses can report different CAC figures because one includes only ad spend while another includes sales salaries, agency fees, creative production and discounts. Neither number is automatically wrong, but the scope must be stated before comparisons are useful."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide shows how to calculate a consistent acquisition cost for an Indian small business, how to avoid mixing periods and why CAC should be read alongside contribution margin and customer retention. All examples are hypothetical."
+      },
+      {
+        "type": "heading",
+        "text": "Choose the CAC definition before calculating"
+      },
+      {
+        "type": "paragraph",
+        "text": "Media CAC = advertising media spend divided by new customers attributed to that media. Marketing CAC = defined marketing costs divided by new customers acquired. Blended CAC = the selected acquisition costs across channels divided by all new customers in the same cohort. Fully loaded CAC may also include relevant sales costs. State exactly which costs and customers are included."
+      },
+      {
+        "type": "paragraph",
+        "text": "Do not compare a media-only CAC from one month with a fully loaded CAC from another. Do not include existing customers in the new-customer denominator if the purpose is to measure acquisition. If a customer buys more than once, decide whether the metric counts first-time customers or orders and label it accordingly."
+      },
+      {
+        "type": "heading",
+        "text": "The basic formula"
+      },
+      {
+        "type": "paragraph",
+        "text": "CAC = total acquisition cost for the defined period ÷ number of new customers acquired in that same period. Example: if a business spends ₹60,000 on the acquisition costs it has chosen to include and acquires 12 new customers, the calculated CAC is ₹5,000. This figure is only meaningful when the costs and customer count refer to a consistent period and attribution method."
+      },
+      {
+        "type": "heading",
+        "text": "Build the cost numerator carefully"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Paid media spend for the channels included.",
+          "Agency or freelancer fees attributable to acquisition work.",
+          "Creative, production and landing-page costs, either expensed in the period or allocated consistently.",
+          "Sales labour and tools if calculating a sales-inclusive or fully loaded figure.",
+          "Discounts or incentives only when your chosen definition treats them as acquisition costs; avoid double counting them against revenue as well."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep recurring fixed overhead separate unless you explicitly choose to include it. If you allocate a one-time website build across several months, document the allocation method and use it consistently. The purpose is not to create the biggest possible CAC; it is to make the number useful for a decision."
+      },
+      {
+        "type": "heading",
+        "text": "Use cohorts to avoid timing errors"
+      },
+      {
+        "type": "paragraph",
+        "text": "A lead generated on the last day of a month may convert several weeks later. Dividing this month's spend by this month's closed customers can distort CAC when the sales cycle is long. Where possible, group leads by acquisition date or campaign cohort and allow enough time for the cohort to mature. Report immature cohorts separately rather than treating every open opportunity as a failure."
+      },
+      {
+        "type": "heading",
+        "text": "Worked example: media-only versus blended CAC"
+      },
+      {
+        "type": "paragraph",
+        "text": "Illustrative month: ₹30,000 in paid media, ₹10,000 in creative and campaign support, and ₹20,000 in attributable sales handling. The business acquires 10 new customers. Media-only CAC is ₹3,000. A broader acquisition cost of ₹60,000 gives a fully loaded example CAC of ₹6,000. The difference is not a contradiction; the two metrics answer different questions."
+      },
+      {
+        "type": "heading",
+        "text": "CAC is not enough: compare contribution"
+      },
+      {
+        "type": "paragraph",
+        "text": "Suppose the average first order is ₹12,000 and variable costs are ₹7,000. Contribution before acquisition is ₹5,000. If fully loaded CAC is ₹6,000, the first order does not recover acquisition cost under this simplified example. Repeat purchases may change lifetime economics, but do not assume future orders will happen without evidence."
+      },
+      {
+        "type": "paragraph",
+        "text": "For subscription or repeat-purchase businesses, examine retention, churn, gross margin and the time required to recover CAC. A high lifetime-value estimate based on optimistic assumptions can hide cash-flow risk. Use observed cohorts and show the period over which value is measured."
+      },
+      {
+        "type": "heading",
+        "text": "Attribution: be honest about what you know"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ad platforms may claim conversions using their own attribution windows and models. Analytics tools may use a different attribution approach. A customer may see an ad, search for the brand later and convert through another route. Keep the source fields you can observe, document the attribution method and avoid adding platform-reported conversions together as if they were unique customers."
+      },
+      {
+        "type": "paragraph",
+        "text": "A practical lead register can record first-touch source, latest known source, campaign or UTM, enquiry date, qualification, customer status and collected revenue. Use consistent definitions and protect customer information. For WhatsApp enquiries, distinguish a click from a conversation and a conversation from a qualified lead."
+      },
+      {
+        "type": "heading",
+        "text": "A monthly CAC worksheet"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Define the reporting period and cohort.",
+          "Choose media-only, marketing, blended or fully loaded cost scope.",
+          "Sum only the costs included in that definition.",
+          "Count unique first-time customers in the same cohort.",
+          "Calculate CAC and label the attribution method.",
+          "Calculate contribution before acquisition and after acquisition.",
+          "Review sales-cycle maturity, refunds and repeat purchases.",
+          "Compare channels only when definitions and periods are consistent."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common mistakes"
+      },
+      {
+        "type": "paragraph",
+        "text": "Frequent errors include dividing spend by leads instead of customers, counting repeat orders as new customers, mixing sales from one period with spend from another, ignoring sales handling costs while calling the result fully loaded, and treating platform-reported conversions as deduplicated truth. Another mistake is comparing CAC without comparing margin: a ₹2,000 CAC can be excellent for one offer and unsustainable for another."
+      },
+      {
+        "type": "heading",
+        "text": "How to use CAC to make a decision"
+      },
+      {
+        "type": "paragraph",
+        "text": "If CAC rises, break the number into channel spend, lead quality, qualification, close rate and cost scope. If the cost per lead is stable but CAC rises, the problem may sit after the click—in response, sales conversion, pricing or fulfilment. If CAC is stable but cash flow is strained, examine contribution and payback timing. Make the next decision at the stage where the evidence points, not by automatically changing the ad audience."
+      },
+      {
+        "type": "paragraph",
+        "text": "A useful CAC report is transparent about its definition, period, customer cohort and uncertainty. Pair it with contribution, retention and payback so that growth decisions are based on economics rather than a single attractive number."
+      },
+      {
+        "type": "link",
+        "text": "Related guide: Marketing ROI calculation",
+        "href": "/insights/how-to-calculate-marketing-roi"
+      },
+      {
+        "type": "link",
+        "text": "Related guide: How much should a small business spend on Google and Meta Ads?",
+        "href": "/insights/small-business-google-meta-ads-budget-india"
+      }
+    ]
+  }
+
 ];
 
 export default articles;
