@@ -351,6 +351,46 @@ const articles = [
       "text": "Google Search Central — Merchant listing structured data",
       "href": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
     }
+  ,
+[
+      {
+        "type": "heading",
+        "text": "A practical feed-to-store consistency audit"
+      },
+      {
+        "type": "paragraph",
+        "text": "Before submitting a catalogue, select a small sample that covers different product conditions: a regular-price item, a sale item, an item with size or colour variants, an out-of-stock item and a product with a delivery restriction. For each sample, compare the feed row, product page, structured product data where used, cart and checkout. Record the exact mismatch rather than simply marking the item 'checked'."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Product ID remains stable between feed updates.",
+          "The submitted URL opens the correct product and selected variant.",
+          "Title, brand, condition and description match the real item.",
+          "Price and currency agree across feed, page and checkout.",
+          "Availability reflects the selected variant, not only the parent item.",
+          "Shipping cost and delivery regions reflect the actual policy.",
+          "Main image is clear, crawlable and depicts the submitted product.",
+          "Any sale price is valid for the displayed promotion period."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "A useful defect log includes item ID, attribute, feed value, landing-page value, screenshot or evidence, owner and correction date. Fix the source system where possible, then regenerate or resynchronise the feed. Editing a feed export without correcting the catalogue source can allow the mismatch to return on the next scheduled update."
+      },
+      {
+        "type": "heading",
+        "text": "When a product is disapproved, investigate the attribute—not just the status"
+      },
+      {
+        "type": "paragraph",
+        "text": "Open the affected item in Merchant Center and read the exact issue and affected destination. Check whether the problem is account-wide or limited to particular products, countries or destinations. Compare the affected attribute with the current product data specification and the live landing page. Avoid changing several fields at once: make the correction, allow the source to sync, and then use the account's review or reprocessing options where available."
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep a dated record of the original issue, the change made and the result after reprocessing. Repeatedly resubmitting an unchanged feed does not fix a policy or data mismatch. Google's requirements can change, so use the current Merchant Center diagnostics and product specification rather than an old third-party checklist."
+      }
+    ]
   ]
 },
 {
@@ -649,6 +689,53 @@ const articles = [
       "href": "https://faq.whatsapp.com/577829787429875",
       "external": true
     }
+  ,
+[
+      {
+        "type": "heading",
+        "text": "A simple lead register that connects clicks to outcomes"
+      },
+      {
+        "type": "paragraph",
+        "text": "A spreadsheet is enough to start if the team uses consistent fields. Create one row per genuine enquiry and use a lead ID rather than treating every follow-up message as a new lead. Useful columns include enquiry date, source, campaign or UTM, product or service, first-response time, contact status, qualification status, next action, customer outcome and collected revenue. Limit access to people who need the information and avoid storing unnecessary sensitive details."
+      },
+      {
+        "type": "list",
+        "items": [
+          "New: a conversation or form enquiry has arrived.",
+          "Attempted: the team has tried to respond or call.",
+          "Reached: two-way contact has happened.",
+          "Qualified: the enquiry meets the business's written criteria.",
+          "Quoted or booked: a defined commercial next step is complete.",
+          "Won: a purchase or paid booking is confirmed.",
+          "Lost or unsuitable: record a short reason using consistent categories."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Reconcile analytics events with the lead register"
+      },
+      {
+        "type": "paragraph",
+        "text": "A WhatsApp click event measures an interaction with a link. It does not prove that WhatsApp opened successfully, that a message was sent, that the business received it or that the enquiry was qualified. A generate_lead event should be sent only when the form or lead action actually succeeds, not when the form opens or a submit button is tapped before validation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once a week, compare the count of analytics events with the number of new records in the lead register. Differences are expected because of consent choices, blocked scripts, repeat clicks, browser limitations, duplicate enquiries and attribution differences. Investigate large changes, but do not force the two systems to show identical numbers by changing event definitions."
+      },
+      {
+        "type": "heading",
+        "text": "A worked source comparison"
+      },
+      {
+        "type": "paragraph",
+        "text": "Illustrative example: in one month, a business records 40 WhatsApp enquiries from organic social, 25 from paid social and 15 from its website. If 20, 8 and 9 respectively become qualified, the qualification rates are 50%, 32% and 60%. Paid social has the largest number of raw enquiries in this example, but the website has the highest qualification rate. This does not prove the website is the best channel: compare spend, customer conversion, revenue and contribution before reallocating budget."
+      },
+      {
+        "type": "paragraph",
+        "text": "Use the same lead definitions and reporting window for every source. If a person first discovers the business through an ad and later returns through a direct website visit, document the attribution convention you use. First-touch, last-touch and platform-reported attribution answer different questions; do not add them together as unique customers."
+      }
+    ]
   ]
 },
     {
@@ -2268,6 +2355,38 @@ const articles = [
       "text": "Contact Kardengey about a website redesign",
       "href": "/#contact"
     }
+  ,
+[
+      {
+        "type": "heading",
+        "text": "Create a page-level migration decision register"
+      },
+      {
+        "type": "paragraph",
+        "text": "A URL inventory becomes actionable when every existing page receives a decision. For each URL, record its purpose, organic clicks and impressions where available, backlinks or external references, conversions, content owner and proposed destination. Then choose one action: keep the URL, improve the page at the same URL, redirect it to a genuinely equivalent replacement, or retire it with an appropriate not-found response."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Keep: the page remains useful and the URL is stable.",
+          "Improve in place: retain the address but upgrade the content, layout or conversion path.",
+          "Merge and redirect: combine genuinely overlapping pages and redirect each retired URL to the closest relevant replacement.",
+          "Retire: remove a page that has no useful replacement; do not redirect it to an unrelated homepage just to avoid a 404."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "A small but meaningful post-launch sample"
+      },
+      {
+        "type": "paragraph",
+        "text": "For a small business website, choose a representative test set rather than checking only the homepage: one key service page, one high-traffic article, one contact or lead page, one location page if applicable, and one URL that changed. Verify the HTTP response, canonical destination, page title and main content, internal links, mobile rendering, form behaviour and analytics. For each changed URL, test the old address from an external browser session and confirm it reaches the intended destination in one direct redirect where possible."
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep a launch issue log with URL, expected behaviour, observed behaviour, severity, owner and retest date. Prioritise blocked crawling, incorrect redirects, missing page content and broken enquiry journeys ahead of minor visual differences. This creates a verifiable handover rather than relying on a general statement that the redesign is SEO-friendly."
+      }
+    ]
   ]
 },,
 
