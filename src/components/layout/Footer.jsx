@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const links = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
+  { label: "Service guide", href: "/services" },
   { label: "Process", href: "#process" },
   { label: "About", href: "#about" },
   { label: "Insights", href: "/insights" },
