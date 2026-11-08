@@ -2388,7 +2388,7 @@ const articles = [
       }
     ]
   ]
-},,
+},
 
   {
     "category": "PERFORMANCE MARKETING",
