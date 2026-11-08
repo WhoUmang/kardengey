@@ -9,7 +9,7 @@ const navLinks = [
   { label: "About", type: "section", target: "about" },
   { label: "Insights", type: "page", target: "/insights" },
   { label: "Tools", type: "page", target: "/tools/marketing-roi-calculator" },
-  { label: "Contact", type: "section", target: "contact" },
+  { label: "Contact", type: "page", target: "/contact" },
 ];
 
 export default function Navbar() {
@@ -286,7 +286,7 @@ export default function Navbar() {
 
             <button
               type="button"
-              onClick={() => handleSectionClick("contact")}
+              onClick={() => navigate("/contact")}
               className="
                 group
                 relative
