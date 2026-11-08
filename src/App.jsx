@@ -23,6 +23,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import MarketingROICalculator from "./pages/MarketingROICalculator";
 import AboutEditorialStandards from "./pages/AboutEditorialStandards";
 import ServicesGuide from "./pages/ServicesGuide";
+import MarketingTools from "./pages/MarketingTools";
 
 function Home() {
   return (
@@ -121,6 +122,9 @@ function App() {
             </>
           }
         />
+
+        {/* FREE MARKETING TOOLS */}
+        <Route path="/tools/marketing-tools" element={<><Navbar /><MarketingTools /><WhatsAppButton /><Footer /></>} />
 
         {/* SERVICES GUIDE */}
         <Route
