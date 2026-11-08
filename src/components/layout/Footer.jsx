@@ -10,7 +10,7 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Insights", href: "/insights" },
   { label: "Editorial standards", href: "/about-editorial-standards" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Footer() {
