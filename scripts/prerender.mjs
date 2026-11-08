@@ -250,9 +250,44 @@ await writeFile(path.join(dist, "tools", "marketing-roi-calculator", "index.html
   content: calculatorContent,
 }));
 
+
+const servicesContent = pageContent(`
+  <p class="seo-kicker">SERVICES / HOW WE WORK</p>
+  <h1>Digital work. Clear outcomes.</h1>
+  <p>Kardengey is a digital growth studio working across websites, search, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
+  <h2>Website design and development</h2>
+  <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
+  <h2>Search engine optimisation</h2>
+  <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>
+  <h2>Performance marketing</h2>
+  <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>
+  <h2>Brand identity and creative</h2>
+  <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>
+  <h2>Packaging design</h2>
+  <p>Packaging must work on a shelf, in transit, in photographs and in a customer's hands. Work can include product and audience context, information hierarchy, visual direction, print-ready artwork and production handoff checks. Confirm legibility, mandatory information, material constraints and print proofs with the production partner.</p>
+  <h2>AI and workflow automation</h2>
+  <p>Automation is useful when it removes a defined repetitive task. Begin by mapping the current process, then prototype a bounded workflow with human review and documented failure handling. Compare time per task, error rate and manual review before and after implementation.</p>
+  <h2>How a project is scoped</h2>
+  <ol><li>Understand the business goal and audience.</li><li>Review the starting point, assets, data and constraints.</li><li>Agree deliverables, exclusions, responsibilities and access.</li><li>Implement, test and use available evidence to plan improvements.</li></ol>
+  <h2>Common questions</h2>
+  <h3>How much does a project cost?</h3><p>Cost depends on scope, number of pages or deliverables, integrations, content readiness and ongoing support. Kardengey clarifies the requirements before providing a written scope and price.</p>
+  <h3>How long does a project take?</h3><p>Timelines depend on scope, approvals, access to assets and feedback. Milestones and dependencies should be agreed before work begins.</p>
+  <h3>Can you guarantee rankings or sales?</h3><p>No. Search rankings, ad costs and sales depend on competition, the offer, budget, customer behaviour, platform systems and execution. We can define measurable work and report what the data shows, but cannot guarantee a particular ranking or revenue.</p>
+  <h3>What should I prepare?</h3><p>Share a short description of your business, the audience, the main problem, your website or social profiles and any deadline or budget constraint. A polished brief is not required to start a conversation.</p>
+  <p>To discuss a project, email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. Final deliverables, fees and timelines are agreed in writing for each project.</p>
+`);
+await mkdir(path.join(dist, "services"), { recursive: true });
+await writeFile(path.join(dist, "services", "index.html"), shell({
+  title: "Digital Marketing, SEO & Website Services",
+  description: "Explore how Kardengey approaches website development, SEO, performance marketing, branding, packaging design and practical AI automation.",
+  canonical: `${site}/services`,
+  content: servicesContent,
+}));
+
 const sitemapEntries = [
   { url: site + "/", priority: "1.0", changefreq: "weekly" },
   { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
+  { url: site + "/services", priority: "0.8", changefreq: "monthly" },
   { url: site + "/about-editorial-standards", priority: "0.5", changefreq: "yearly" },
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
@@ -263,4 +298,4 @@ const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
   '\n</urlset>\n';
 await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
-console.log(`Prerendered homepage, insights index, and ${articles.length} article pages.`);
+console.log(`Prerendered homepage, services, insights index, and ${articles.length} article pages.`);
