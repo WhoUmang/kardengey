@@ -284,6 +284,27 @@ await writeFile(path.join(dist, "services", "index.html"), shell({
   content: servicesContent,
 }));
 
+
+const marketingToolsContent = pageContent(`
+  <p class="seo-kicker">FREE BUSINESS TOOLS</p>
+  <h1>Marketing lead quality and acquisition calculators</h1>
+  <p>Use the interactive tools on this page to estimate cost per enquiry, contact rate, qualification rate, cost per qualified lead, customer acquisition cost, revenue-to-ad-spend ratio and estimated return after gross margin. Enter figures from the same reporting cohort.</p>
+  <h2>Lead quality calculator</h2>
+  <p>Enter advertising spend, enquiry count, contacts reached, qualified leads, new customers, other acquisition costs, collected revenue and gross margin. The interactive calculator shows the cost and conversion measures for the figures supplied.</p>
+  <h2>How to interpret the results</h2>
+  <p>A low contact rate can point to invalid contact details, slow response or unclear expectations. A low qualification rate can point to audience, location or offer mismatch. Qualified leads that do not become customers may require a sales-process review. If acquisition cost exceeds contribution, review margin, fulfilment and retention before increasing spend.</p>
+  <h2>Calculation definitions</h2>
+  <p>Cost per enquiry = advertising spend divided by enquiries. Cost per qualified lead = advertising spend divided by qualified leads. Media-only customer acquisition cost = advertising spend divided by new customers. Blended customer acquisition cost = the acquisition costs entered divided by new customers. Revenue-to-ad-spend ratio = collected revenue divided by advertising spend; it is not profit.</p>
+  <p>These are estimates, not forecasts or industry benchmarks. Use consistent time periods and cohorts. The ROI estimate excludes fixed overhead and costs not entered. For detailed context, read <a href="/insights/meta-ads-leads-not-customers-diagnosis">the lead-quality diagnosis guide</a>, <a href="/insights/calculate-real-customer-acquisition-cost-india">the customer acquisition cost guide</a> and <a href="/insights/small-business-google-meta-ads-budget-india">the advertising budget guide</a>.</p>
+`);
+await mkdir(path.join(dist, "tools", "marketing-tools"), { recursive: true });
+await writeFile(path.join(dist, "tools", "marketing-tools", "index.html"), shell({
+  title: "Free Marketing Tools | Lead Quality & Customer Acquisition Calculators",
+  description: "Calculate cost per enquiry, qualified lead, customer acquisition cost, revenue-to-ad-spend ratio and estimated marketing ROI.",
+  canonical: `${site}/tools/marketing-tools`,
+  content: marketingToolsContent,
+}));
+
 const sitemapEntries = [
   { url: site + "/", priority: "1.0", changefreq: "weekly" },
   { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
@@ -291,6 +312,7 @@ const sitemapEntries = [
   { url: site + "/about-editorial-standards", priority: "0.5", changefreq: "yearly" },
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
+  { url: site + "/tools/marketing-tools", priority: "0.9", changefreq: "weekly" },
   ...articles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
 ];
 const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
@@ -298,4 +320,4 @@ const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
   '\n</urlset>\n';
 await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
-console.log(`Prerendered homepage, services, insights index, and ${articles.length} article pages.`);
+console.log(`Prerendered homepage, services, marketing tools, insights index, and ${articles.length} article pages.`);
