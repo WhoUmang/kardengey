@@ -99,7 +99,9 @@ function pageContent(inner) {
   return `${style}<div class="seo-content"><header class="seo-header"><div class="seo-wrap"><a class="seo-brand" href="/">kardengey<span>.</span></a></div></header><main class="seo-wrap seo-main">${inner}</main><footer class="seo-footer"><div class="seo-wrap">© kardengey · <a href="/about-editorial-standards">Editorial standards</a> · <a href="/privacy-policy">Privacy policy</a> · <a href="/insights">Insights</a></div></footer></div>`;
 }
 
-const articleIndex = articles.map((article) => `
+const validArticles = articles.filter((article) => article && typeof article.slug === "string" && article.slug.trim() && typeof article.title === "string");
+
+const articleIndex = validArticles.map((article) => `
   <article class="seo-list">
     <p class="seo-meta">${escapeHtml(article.category)} · ${escapeHtml(article.date)} · ${escapeHtml(article.read)}</p>
     <h2><a href="/insights/${escapeHtml(article.slug)}">${escapeHtml(article.title)}</a></h2>
@@ -122,7 +124,7 @@ await writeFile(path.join(dist, "insights", "index.html"), shell({
   content: insightsContent,
 }));
 
-for (const article of articles) {
+for (const article of validArticles) {
   const content = pageContent(`
     <nav class="seo-meta"><a href="/insights">Kardengey / Insights</a> / ${escapeHtml(article.category)}</nav>
     <article>
@@ -338,11 +340,11 @@ const sitemapEntries = [
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
   { url: site + "/tools/marketing-tools", priority: "0.9", changefreq: "weekly" },
-  ...articles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
+  ...validArticles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
 ];
 const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
   sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
   '\n</urlset>\n';
 await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
-console.log(`Prerendered homepage, services, marketing tools, insights index, and ${articles.length} article pages.`);
+console.log(`Prerendered homepage, services, marketing tools, insights index, and ${validArticles.length} article pages (from ${articles.length} records).`);
