@@ -41,7 +41,7 @@ export default function Contact() {
     if (!form.name.trim()) next.name = "Please enter your name.";
     if (!form.email.trim()) next.email = "Please enter your work email.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = "Please enter a valid email address.";
-    if (form.phone.trim() && !/^[+()\d\s-]{7,20}$/.test(form.phone.trim())) next.phone = "Please enter a valid phone / WhatsApp number.";
+    if (!/^\d{10}$/.test(form.phone.trim())) next.phone = "Please enter a valid 10-digit mobile number.";
     if (!form.service) next.service = "Please select a service.";
     if (!form.message.trim()) next.message = "Please tell us about your project.";
     setErrors(next);
@@ -312,15 +312,18 @@ export default function Contact() {
                         htmlFor="phone"
                         className="mb-3 block text-[9px] uppercase tracking-[0.3em] text-neutral-600"
                       >
-                        Phone / WhatsApp
+                        Phone / WhatsApp *
                       </label>
                       <input
                         id="phone"
                         name="phone"
                         type="tel"
+                        inputMode="numeric"
+                        maxLength={10}
+                        required
                         value={form.phone}
                         onChange={handleChange}
-                        placeholder="+91"
+                        placeholder="10-digit mobile number"
                         className={`${fieldClass} ${errors.phone ? "border-red-500" : ""}`}
                         aria-invalid={Boolean(errors.phone)}
                         aria-describedby={errors.phone ? "phone-error" : undefined}
