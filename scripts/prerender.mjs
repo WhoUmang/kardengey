@@ -176,20 +176,23 @@ await writeFile(path.join(dist, "index.html"), home);
 
 
 const editorialContent = pageContent(`
-  <p class="seo-kicker">ABOUT / EDITORIAL STANDARDS</p>
-  <h1>Useful thinking. Clear standards.</h1>
-  <p>Kardengey publishes practical material about digital marketing, websites, search, analytics and technology. Our aim is to help business owners understand options, compare trade-offs and make better-informed decisions.</p>
-  <h2>Who publishes this material?</h2>
-  <p>Kardengey Insights is produced by the Kardengey team as part of a founder-led digital growth studio. We identify the publisher clearly and do not imply that every article has been independently reviewed by an outside specialist.</p>
-  <h2>How examples and numbers are presented</h2>
-  <p>Illustrative calculations are examples, not customer results or universal industry benchmarks. Prices vary by provider, scope, geography and timing. Where figures are assumptions, readers should replace them with their own data. We do not present invented client results, testimonials or case studies as evidence.</p>
-  <h2>How pages are maintained</h2>
-  <p>We review pages when we identify a material error, when a tool calculation changes, or when guidance becomes outdated. A publication date is not a claim that every detail has been independently revalidated. We aim to correct substantive errors and keep supporting links useful.</p>
-  <h2>Corrections and feedback</h2>
-  <p>If you find an error, broken link or unclear explanation, email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a> with the page URL and the detail in question. Please do not send passwords, payment details or sensitive personal information.</p>
-  <h2>Explore the resources</h2>
-  <p>Browse the <a href="/insights">Insights library</a>, use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a>, or read our <a href="/privacy-policy">privacy policy</a>.</p>
-`);
+  <p class="seo-kicker">ABOUT / PUBLISHER INFORMATION</p>
+  <h1>Built on practical work.</h1>
+  <p>Kardengey is a founder-led digital growth studio working across websites, search, performance marketing, branding and practical technology. This page explains who runs the studio, what we publish and the standards we aim to follow.</p>
+  <h2>Who is behind Kardengey?</h2>
+  <p>Kardengey was founded by Umang Pathak. His professional background includes web development and building digital experiences, with practical work across WordPress, React, website implementation, search optimisation and digital marketing. The studio brings these disciplines together to help businesses improve their digital presence and customer journeys.</p>
+  <h2>What Kardengey publishes</h2>
+  <p>Kardengey Insights covers topics connected to the studio's work: website planning and development, SEO, paid acquisition, analytics, branding and useful technology. Articles aim to explain decisions, processes, trade-offs and ways to evaluate results. Kardengey is the publisher; individual authors or contributors are identified where applicable.</p>
+  <h2>How we approach research and examples</h2>
+  <p>We aim to explain the reasoning behind recommendations and distinguish general guidance from assumptions. Worked numbers and scenarios are illustrative unless a page explicitly identifies a verifiable source or documented case. They are not customer results, guarantees or universal industry benchmarks. Where advice depends on a platform, market or date, readers should verify current requirements before acting.</p>
+  <h2>How we handle tools and calculations</h2>
+  <p>Our calculators use the inputs entered by the visitor and display estimates based on the formulas explained on the relevant page. They are decision-support tools, not financial forecasts or substitutes for accounting, legal or professional advice. Results can be incomplete when costs, refunds, margins, attribution or other relevant variables are not included.</p>
+  <h2>How content is reviewed and corrected</h2>
+  <p>We review content when we identify an error, a material change in a platform or process, or a problem with a tool calculation. Updates are made to improve accuracy and usefulness; a publication date alone does not mean every detail has been independently revalidated. Readers can report a specific issue by emailing us with the page URL and the correction or source they recommend.</p>
+  <h2>Contact the publisher</h2>
+  <p>For editorial corrections, questions about an article or business enquiries, contact Kardengey at <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. You can also use the contact section on our website. Please do not send passwords, payment information or sensitive personal data through ordinary email.</p>
+  <p>Browse our <a href="/insights">Insights library</a>, review <a href="/services">Kardengey services</a>, or use the <a href="/tools/marketing-tools">free marketing tools</a>.</p>
+`);;
 await mkdir(path.join(dist, "about-editorial-standards"), { recursive: true });
 await writeFile(path.join(dist, "about-editorial-standards", "index.html"), shell({
   title: "About Kardengey Insights & Editorial Standards",
