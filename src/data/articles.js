@@ -1893,6 +1893,383 @@ const articles = [
     ]
   },
 
+{
+  "category": "WEBSITE / SEO",
+  "filter": "SEO",
+  "title": "Website Redesign SEO Checklist for Indian Businesses: Protect Traffic During a Rebuild",
+  "slug": "website-redesign-seo-checklist-india",
+  "description": "Planning a website redesign in India? Use this SEO checklist to map URLs, protect content, test redirects and monitor Google Search after launch.",
+  "date": "08 NOV 2026",
+  "publishedAt": "2026-11-08",
+  "read": "13 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A website redesign can make a business easier to understand, faster to use and more effective at generating enquiries. It can also create avoidable search problems if important pages disappear, URLs change without a plan, or the new site launches with staging restrictions still in place. The risk is not the new visual design itself. The risk is changing search-critical parts of a website without recording what existed before or checking what replaced it."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide is for Indian business owners planning a new website, changing developers, moving from WordPress to another platform, rebuilding an ecommerce store or refreshing an existing site. It explains what to prepare before the redesign, what to test on launch day and how to monitor the transition. The aim is to protect useful pages and make the new website easier for visitors and search engines to understand—not to promise that rankings will never move."
+    },
+    {
+      "type": "quote",
+      "text": "Treat a redesign as a controlled website change, not just a design handover. Every valuable old URL needs a deliberate decision."
+    },
+    {
+      "type": "heading",
+      "text": "Why a redesign can affect organic search"
+    },
+    {
+      "type": "paragraph",
+      "text": "Search engines discover URLs, crawl pages, interpret content and links, and decide which pages are useful for particular searches. A redesign can change any of those signals: URL structure, page copy, headings, internal links, metadata, canonical tags, structured data, mobile rendering, page speed or whether crawlers can access the site."
+    },
+    {
+      "type": "paragraph",
+      "text": "A page that answered a specific customer question may be replaced by a short generic page. A service URL may change when a developer reorganises the menu. A staging setting may accidentally block the production site. Even when the new website looks polished, those changes can make it harder for search engines and returning visitors to find information they used before."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's migration guidance distinguishes between a move where visible URLs change and a hosting change where the URLs stay the same. That distinction matters: a visual refresh with the same domain and page paths is not the same project as changing every URL or moving to a new domain."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Site moves with URL changes",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Changing web hosting without URL changes",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes"
+    },
+    {
+      "type": "heading",
+      "text": "First decide what is actually changing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before approving a design or development scope, write down whether the project changes only the appearance, the content, the URL paths, the domain, the hosting platform, or several of these at once. If the current URL structure is understandable and working, keeping it is often the simplest way to reduce migration work. A new design does not require a new URL for every page."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a URL must change because a page is being renamed, consolidated or moved, record the old URL and its exact replacement before development begins. If the domain or subdomain is changing, treat it as a site move and plan the Search Console steps as well. If hosting changes but public URLs do not, follow the hosting-change process rather than creating unnecessary redirects."
+    },
+    {
+      "type": "heading",
+      "text": "Phase 1: Record the current website before anyone edits it"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with an inventory of every important indexable URL. Include the homepage, service pages, location pages, product and category pages, useful blog posts, landing pages and contact information. Do not rely only on the navigation menu: older articles and campaign pages may still receive visits even if they are not linked prominently."
+    },
+    {
+      "type": "paragraph",
+      "text": "Export the current sitemap and crawl the live site with a crawler or a spreadsheet-based process. Record each URL, page title, meta description, H1, status code, canonical URL, indexability, internal links and page purpose. Mark pages that return errors, redirect elsewhere or contain duplicate content. Keep a copy of robots.txt and note important structured data or language annotations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use Google Search Console to identify pages that receive impressions and clicks, the queries that bring visitors, and indexing or enhancement issues. Use GA4 or your analytics platform to identify organic landing pages and meaningful actions such as completed forms, calls or WhatsApp enquiries. If a page has few visits but earns enquiries, keep it on the priority list. Traffic alone is not the only measure of value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Record a baseline before launch: organic sessions, Search Console clicks and impressions, key landing pages, form submissions, call or WhatsApp actions, and the conversion events you trust. Use a consistent date range and annotate seasonal campaigns or unusual business periods. The purpose is to compare like with like after launch, not to create a performance promise."
+    },
+    {
+      "type": "heading",
+      "text": "Build a URL decision sheet"
+    },
+    {
+      "type": "paragraph",
+      "text": "For every old URL, choose one action: keep the URL, move it to a clearly equivalent new URL, consolidate it into a genuinely relevant page, or retire it because the content is no longer useful. Add the reason and the person responsible for checking it. This decision sheet becomes the migration map for developers, content writers and the person doing the final SEO review."
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example: an old page at /services/website-design may move to /services/web-design. If the new page serves the same intent and contains the relevant information, map the old URL directly to the new one with a permanent redirect. An old article about a discontinued service should not automatically redirect to the homepage; create a useful replacement, consolidate it into a closely related page where that genuinely helps visitors, or return an appropriate not-found response."
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid sending a large collection of unrelated old URLs to one generic destination. Google warns that irrelevant redirects can confuse users and may be treated as soft 404s. A redirect should take someone to the closest useful replacement, not simply somewhere that returns a successful status code."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Site-move redirect mapping and avoiding irrelevant redirects",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 2: Preserve the pages that already do a job"
+    },
+    {
+      "type": "paragraph",
+      "text": "A redesign is not a reason to delete useful information because the new layout has less space. Review pages that attract relevant search queries, explain important services, answer buying questions or support existing customers. Keep the substance that makes those pages useful. You can improve clarity and presentation, but do not replace a detailed page with a vague paragraph unless the search intent and customer need have genuinely changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Preserve important page titles, descriptions, headings, image alt text, product details, FAQs and contextual internal links where they still accurately describe the page. These elements do not need to be copied word for word if the new content is better, but every edit should have a reason. If you combine two pages, make sure the new destination answers the important questions that the old pages covered."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check that service pages still explain who the service is for, what is included, the process, relevant constraints and how to enquire. For ecommerce, confirm product and category information, variants, stock and purchase paths. For local businesses, keep accurate business details and service-area information. A new template should not accidentally remove useful copy, internal links or structured data from dozens of pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the current site gets visitors but not enquiries, use the redesign to fix actual conversion friction—unclear offers, broken forms, weak mobile contact options or missing answers. Do not assume a new theme alone will solve the problem."
+    },
+    {
+      "type": "link",
+      "text": "Related guide: Website getting traffic but no leads? 9 fixes for Indian businesses",
+      "href": "/insights/website-getting-traffic-no-leads"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 3: Implement redirects carefully when URLs change"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a permanent move, use a server-side 301 or 308 redirect wherever your hosting stack supports it. Google documents these as permanent redirect signals; temporary redirects such as 302 or 307 communicate a different intent. Do not use a redirect simply because it is easy to configure. First confirm that the destination is the right replacement for the old page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create one direct redirect from each changed old URL to its final destination. Avoid chains such as old page → temporary page → new page, and update your own navigation, footer, breadcrumbs, XML sitemap and contextual links so they point directly to the final URL. Keep redirects for as long as they are needed; Google's site-move guidance generally recommends keeping them for at least a year."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a page has no equivalent replacement, do not force it to the homepage to make the URL appear fixed. A genuine 404 or 410 response may be the correct result for content that has been removed. A custom not-found page can help a visitor recover, but the server response should still indicate that the requested page is not available."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Redirects and Google Search",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/301-redirects"
+    },
+    {
+      "type": "link",
+      "text": "Google Crawling Infrastructure: How HTTP status codes affect crawling",
+      "href": "https://developers.google.com/crawling/docs/troubleshooting/http-status-codes"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 4: Protect the staging site without blocking the launch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Build and review the new website on a staging URL or protected environment. Ideally, require authentication so the unfinished site is not available to the public. If your workflow uses a noindex directive for staging, document exactly where it is set and who will remove it before production launch. Check both page-level meta robots tags and HTTP headers; a forgotten noindex can prevent the finished site from being considered for indexing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not treat robots.txt as a substitute for a noindex directive. Google explains that robots.txt controls crawling, while noindex is the mechanism for asking that a page not be indexed. If crawling is blocked, a crawler may not be able to see the page-level noindex instruction. On launch day, make sure production pages are crawlable and do not carry staging-only restrictions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test the staging site as a real visitor would: open key pages on a phone, submit forms, click phone and WhatsApp links, test checkout if relevant, inspect image loading, and verify navigation. Confirm that page content is present in the HTML or rendered reliably. A password-protected staging site should remain protected; do not remove its access controls simply to make a casual preview link easier to share."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: SEO basics and crawl/index controls",
+      "href": "https://developers.google.com/search/docs/fundamentals/get-started"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 5: Check canonical URLs and technical signals"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every important page should have a clear preferred URL. Check that the canonical tag points to the correct final page on the production domain, not to a staging hostname, an old URL or the homepage. Use the same preferred URL consistently in internal links and the sitemap. Pay attention to trailing slashes, uppercase paths, HTTP versus HTTPS and www versus non-www so the site does not present conflicting versions of the same content."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google recommends a self-referential canonical on the preferred page and advises against sending conflicting canonical signals through different methods. A canonical tag is a hint rather than an instruction that guarantees Google's choice, so combine it with consistent redirects, internal links and sitemap URLs. Do not use canonical tags as a substitute for a redirect when a page has permanently moved and the old URL should no longer serve separate content."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: How to specify a canonical URL",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+    },
+    {
+      "type": "heading",
+      "text": "Check robots.txt, sitemap and structured data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review the production robots.txt file after deployment. It should not accidentally disallow important sections, assets or the entire site. Confirm that the XML sitemap contains the canonical URLs you want search engines to discover, excludes staging and redirecting URLs, and returns a successful response. If URLs have changed, submit the updated sitemap in Search Console after the new pages are live."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check that structured data still matches the visible page. If you use Organization, LocalBusiness, Product, Article, BreadcrumbList or other relevant schema, confirm that the correct data is present on the new templates and that it does not contain old URLs, old business details or unsupported claims. Structured data can help search engines interpret a page, but it does not guarantee a rich result or a ranking improvement."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Console Help: Sitemaps report",
+      "href": "https://support.google.com/webmasters/answer/7451001"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 6: Test the new site before DNS or production cutover"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a launch test list that covers the most valuable URLs, not only the homepage. For each page, confirm that it loads over HTTPS, returns the expected status, displays the right content, has a valid canonical and is not blocked from indexing. For changed URLs, test the old address and confirm that it redirects directly to the correct new page. Check a sample of old articles, service pages, location pages, product pages and campaign landing pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check the user journey as well as the HTML. Submit every important contact form, confirm the success message, verify that the enquiry reaches the intended inbox or CRM, and test phone and WhatsApp links on a real mobile device. If you rely on GA4, confirm that the new site still records page views and meaningful conversion events. A button click is not the same as a completed enquiry, so keep the event definitions clear."
+    },
+    {
+      "type": "paragraph",
+      "text": "For ecommerce, test product variants, cart, checkout, payment, shipping rules, tax display, confirmation messages and order notifications. For a lead-generation website, test each route that a prospective customer can use to contact the business. A migration that preserves rankings but breaks the enquiry form is still a failed business launch."
+    },
+    {
+      "type": "heading",
+      "text": "Phase 7: Launch in a controlled way"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose a launch window when the people responsible for the site, DNS, hosting, forms and analytics are available to respond. Save a backup of the previous production version and keep the old hosting or deployment accessible for a controlled rollback if the new site has a serious fault. Do not combine a major domain move, a complete URL restructure, a content rewrite and a brand change unless there is a clear reason and enough time to test each part."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the domain is staying the same, check that DNS and hosting changes deliver the new site without altering public URLs. If the domain or subdomain is changing, verify the old and new properties in Search Console, implement the URL mapping and redirects, then use the Change of Address tool where Google's guidance says it applies. It is not needed for a simple hosting change with no URL changes or for moving paths within the same domain."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Console Help: Change of Address tool and when to use it",
+      "href": "https://support.google.com/webmasters/answer/9370220"
+    },
+    {
+      "type": "heading",
+      "text": "Phase 8: Monitor Search Console and analytics after launch"
+    },
+    {
+      "type": "paragraph",
+      "text": "After the new site is live, inspect representative URLs with Search Console's URL Inspection tool. Check the live test for fetchability, crawl access and indexing eligibility, then compare the indexed information when Google has recrawled the page. A successful live test does not guarantee that a URL will be indexed, so keep monitoring the Page indexing and Search results reports."
+    },
+    {
+      "type": "paragraph",
+      "text": "Submit or resubmit the updated sitemap if the URL set changed materially. Use the Sitemaps report to check whether Google can fetch and process it. Request indexing for a small number of important updated URLs when appropriate, but do not mistake the request for a guarantee or repeatedly submit every page as a substitute for good internal linking and a valid sitemap."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Console Help: URL Inspection tool",
+      "href": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "type": "paragraph",
+      "text": "Monitor performance by page and query rather than relying only on the site's total clicks. Compare the old and new versions of the most important landing pages, check whether redirects are being used as expected, and look for unexpected 404s, server errors, blocked resources or missing conversions. A temporary fluctuation can happen during a site move; Google notes that processing moved URLs depends on the site and the number of pages, and that visibility may fluctuate while systems process the move. Do not promise a fixed recovery date."
+    },
+    {
+      "type": "paragraph",
+      "text": "For domain or hosting changes, also watch server logs and uptime. Confirm that both people and crawlers can reach the new infrastructure. If you see a sharp drop, investigate the affected URLs and technical changes before rewriting all the content or changing the domain again."
+    },
+    {
+      "type": "heading",
+      "text": "An illustrative website redesign migration map"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative only: imagine an Indian professional-services company rebuilding a 20-page website. It records its current service pages, articles and contact routes before development. The homepage and three service URLs remain unchanged. Two old service pages are combined into one more complete page, so each old URL redirects to that relevant destination. One discontinued announcement has no replacement and returns a proper not-found response. The new sitemap lists only the final canonical URLs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before launch, the team checks the staging site is protected, verifies that production will not carry a noindex rule, tests the forms and WhatsApp link, and compares the new page titles and copy with the inventory. After launch, it tests the old-to-new redirects, inspects key URLs in Search Console and watches landing pages and lead events in analytics. These are example steps, not a real Kardengey client project or a claim about search performance."
+    },
+    {
+      "type": "heading",
+      "text": "Common redesign mistakes that are easy to prevent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not delete old pages before checking their search traffic, backlinks, leads or customer value. Do not change every URL just to make the slugs look shorter. Do not redirect unrelated pages to the homepage. Do not leave a staging noindex or password restriction on production. Do not publish a sitemap full of old, redirected or non-canonical URLs. Do not let the new template remove page-specific titles, descriptions, headings, structured data or internal links."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also avoid changing several major variables at once without a migration plan. If the site needs a new domain, new URL structure and new content, document each decision and test the transitions carefully. A redesign should make the site clearer and more maintainable, not create uncertainty about which page is the right destination."
+    },
+    {
+      "type": "heading",
+      "text": "A practical pre-launch and post-launch checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before development: export the sitemap, crawl the current site, record key organic landing pages and conversions, identify valuable content, decide which URLs will stay, and prepare an old-to-new URL map for every changed page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before launch: review page titles and content, test staging access controls, verify canonical tags, check robots.txt, validate structured data, test mobile navigation and forms, confirm analytics events, and prepare direct permanent redirects for genuine URL changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "On launch day: confirm HTTPS and DNS, check important pages return the right status, test old URLs, inspect the new sitemap, verify contact and checkout journeys, and remove staging-only restrictions from production."
+    },
+    {
+      "type": "paragraph",
+      "text": "After launch: inspect representative URLs in Search Console, monitor sitemap processing, compare organic landing pages and conversions, review server errors and 404s, fix internal links that still point to old URLs, and keep redirects in place for as long as they are needed."
+    },
+    {
+      "type": "heading",
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Will redesigning my website automatically reduce Google rankings? No. A visual redesign that keeps useful content, URLs and crawlability intact does not automatically require a search migration. Rankings can still change for many reasons, so record a baseline and test the new site before and after launch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do I need a 301 redirect for every page? Only when a URL has permanently moved and there is a relevant replacement. If the URL stays the same, no redirect is needed. If a page has been removed without a suitable replacement, a genuine 404 or 410 response may be more appropriate than sending visitors to an unrelated page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Should I change my URLs during a redesign? Keep them when they are clear and useful. Change them only when there is a good reason, and create a direct mapping from each old URL to its closest relevant new destination before launch."
+    },
+    {
+      "type": "paragraph",
+      "text": "How long does it take for Google to process a site move? There is no fixed timeline. Google's documentation says the process depends on factors such as the site's size and server speed; small and medium-sized sites may take a few weeks for most pages to move. Visibility can fluctuate while Google processes the changes, so monitor the affected URLs rather than relying on a promised date."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do I need to submit a Change of Address request? Use it when moving from one domain or subdomain to another, after implementing the redirects. It is not for a redesign with unchanged URLs, an HTTP-to-HTTPS change, a www/non-www switch on the same domain, or moving paths within the same domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Can I launch first and fix SEO later? That is risky for important pages because lost URLs, missing content or blocked indexing can be harder to diagnose after the change. Prepare the inventory, redirects, canonical rules and launch tests before switching production."
+    },
+    {
+      "type": "heading",
+      "text": "Plan the rebuild around the business, not just the new look"
+    },
+    {
+      "type": "paragraph",
+      "text": "A successful redesign should make it easier for the right visitor to understand your offer, trust the business and take the next step. Search continuity is one part of that work. Keep the pages that already serve a purpose, map every changed URL, test the technical signals and measure the enquiries that matter. If you are still comparing scope and budgets, our guide to website development costs in India explains the decisions that affect a project quote."
+    },
+    {
+      "type": "link",
+      "text": "Related guide: Website development costs in India in 2026",
+      "href": "/insights/website-cost-india-2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are evaluating a development partner, ask who owns the domain, source code, analytics, redirects and post-launch fixes. For help planning a website, SEO or migration project, talk to Kardengey about the current site, the changes you need and the pages you cannot afford to lose."
+    },
+    {
+      "type": "link",
+      "text": "Related guide: How to choose a digital marketing agency in India",
+      "href": "/insights/how-to-choose-digital-marketing-agency-india"
+    },
+    {
+      "type": "link",
+      "text": "Related guide: How to track WhatsApp leads for small businesses in India",
+      "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+    },
+    {
+      "type": "link",
+      "text": "Explore more practical Kardengey Insights guides",
+      "href": "/insights"
+    },
+    {
+      "type": "link",
+      "text": "Contact Kardengey about a website redesign",
+      "href": "/#contact"
+    }
+  ]
+},
 ];
 
 export default articles;
