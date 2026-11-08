@@ -1,7 +1,7 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/common/ScrollToTop";
-
 import LatestReads from "./components/insights/LatestReads";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
@@ -15,16 +15,16 @@ import Contact from "./components/contact/Contact";
 import ContactModal from "./components/contact/ContactModal";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Footer from "./components/layout/Footer";
-
-import Insights from "./components/insights/Insights";
-import InsightArticle from "./components/insights/InsightArticle";
 import NotFound from "./components/common/NotFound";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import MarketingROICalculator from "./pages/MarketingROICalculator";
-import AboutEditorialStandards from "./pages/AboutEditorialStandards";
-import ServicesGuide from "./pages/ServicesGuide";
-import MarketingTools from "./pages/MarketingTools";
-import ContactPage from "./pages/ContactPage";
+
+const Insights = lazy(() => import("./components/insights/Insights"));
+const InsightArticle = lazy(() => import("./components/insights/InsightArticle"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const MarketingROICalculator = lazy(() => import("./pages/MarketingROICalculator"));
+const AboutEditorialStandards = lazy(() => import("./pages/AboutEditorialStandards"));
+const ServicesGuide = lazy(() => import("./pages/ServicesGuide"));
+const MarketingTools = lazy(() => import("./pages/MarketingTools"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 function Home() {
   return (
@@ -45,112 +45,32 @@ function Home() {
   );
 }
 
+function RouteFallback() {
+  return (
+    <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white" role="status" aria-live="polite">
+      <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">Loading page…</p>
+    </main>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-
-      {/* Reset scroll position whenever the route changes */}
       <ScrollToTop />
-
-      <Routes>
-
-        {/* HOME */}
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        {/* INSIGHTS */}
-        <Route
-          path="/insights"
-          element={
-            <>
-              <Navbar />
-              <Insights />
-              <WhatsAppButton />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* INDIVIDUAL ARTICLE */}
-        <Route
-          path="/insights/:slug"
-          element={
-            <>
-              <Navbar />
-              <InsightArticle />
-              <WhatsAppButton />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* MARKETING ROI CALCULATOR */}
-        <Route
-          path="/tools/marketing-roi-calculator"
-          element={
-            <>
-              <Navbar />
-              <MarketingROICalculator />
-              <WhatsAppButton />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* ABOUT & EDITORIAL STANDARDS */}
-        <Route
-          path="/about-editorial-standards"
-          element={
-            <>
-              <Navbar />
-              <AboutEditorialStandards />
-              <WhatsAppButton />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* PRIVACY POLICY */}
-        <Route
-          path="/privacy-policy"
-          element={
-            <>
-              <Navbar />
-              <PrivacyPolicy />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* CONTACT */}
-        <Route path="/contact" element={<><Navbar /><ContactPage /><WhatsAppButton /><Footer /></>} />
-
-        {/* FREE MARKETING TOOLS */}
-        <Route path="/tools/marketing-tools" element={<><Navbar /><MarketingTools /><WhatsAppButton /><Footer /></>} />
-
-        {/* SERVICES GUIDE */}
-        <Route
-          path="/services"
-          element={
-            <>
-              <Navbar />
-              <ServicesGuide />
-              <WhatsAppButton />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* 404 */}
-        <Route
-          path="*"
-          element={<NotFound />}
-        />
-
-      </Routes>
-
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/insights" element={<><Navbar /><Insights /><WhatsAppButton /><Footer /></>} />
+          <Route path="/insights/:slug" element={<><Navbar /><InsightArticle /><WhatsAppButton /><Footer /></>} />
+          <Route path="/tools/marketing-roi-calculator" element={<><Navbar /><MarketingROICalculator /><WhatsAppButton /><Footer /></>} />
+          <Route path="/about-editorial-standards" element={<><Navbar /><AboutEditorialStandards /><WhatsAppButton /><Footer /></>} />
+          <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /><Footer /></>} />
+          <Route path="/contact" element={<><Navbar /><ContactPage /><WhatsAppButton /><Footer /></>} />
+          <Route path="/tools/marketing-tools" element={<><Navbar /><MarketingTools /><WhatsAppButton /><Footer /></>} />
+          <Route path="/services" element={<><Navbar /><ServicesGuide /><WhatsAppButton /><Footer /></>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
       <ContactModal />
     </BrowserRouter>
   );
