@@ -22,6 +22,7 @@ import NotFound from "./components/common/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import MarketingROICalculator from "./pages/MarketingROICalculator";
 import AboutEditorialStandards from "./pages/AboutEditorialStandards";
+import ServicesGuide from "./pages/ServicesGuide";
 
 function Home() {
   return (
@@ -116,6 +117,19 @@ function App() {
             <>
               <Navbar />
               <PrivacyPolicy />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* SERVICES GUIDE */}
+        <Route
+          path="/services"
+          element={
+            <>
+              <Navbar />
+              <ServicesGuide />
+              <WhatsAppButton />
               <Footer />
             </>
           }
