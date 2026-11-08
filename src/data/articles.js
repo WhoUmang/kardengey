@@ -2539,6 +2539,28 @@ const articles = [
         "type": "link",
         "text": "Explore Kardengey services",
         "href": "/services"
+      },
+      {
+        "type": "heading",
+        "text": "A worked funnel diagnosis using one consistent lead cohort"
+      },
+      {
+        "type": "paragraph",
+        "text": "Imagine a local service business records 120 Meta enquiries in a month. The team reaches 78 people, identifies 30 as qualified, books 12 consultations and closes 4 customers. These are illustrative numbers, not a performance benchmark. The useful question is not whether 120 is a large or small lead count; it is where the 120 enquiries stop progressing. If only 78 are reached, first inspect phone validity, response time, duplicate records and the hours when leads arrive. If 30 qualify but only 12 book, inspect the offer, availability, trust and follow-up. If 12 attend but 4 buy, review sales conversations, pricing objections and product fit."
+      },
+      {
+        "type": "paragraph",
+        "text": "Create one row per lead and record the date, campaign, ad or form, consented contact details, first response time, contact outcome, qualification reason, appointment status and final sale value. Use consistent definitions: a lead is not qualified merely because a form was submitted, and a sale should be counted only when it meets your business's agreed payment or order rule. Compare leads from the same acquisition period and allow enough time for the sales cycle to mature before judging the campaign."
+      },
+      {
+        "type": "link",
+        "text": "Google Ads Help: Best practices for generating high-quality leads",
+        "href": "https://business.google.com/ca-en/accelerate/resources/articles/best-practices-for-generating-high-quality-leads/"
+      },
+      {
+        "type": "link",
+        "text": "Google Analytics Help: Lead acquisition report and lead-stage events",
+        "href": "https://support.google.com/analytics/answer/16376749?co=GENIE.Platform%3DDesktop&hl=en"
       }
     ]
   },
@@ -2690,6 +2712,32 @@ const articles = [
         "type": "link",
         "text": "Related guide: SEO vs Google Ads for small businesses",
         "href": "/insights/seo-vs-google-ads-small-business-india"
+      },
+      {
+        "type": "heading",
+        "text": "Turn the test budget into a decision, not a promise"
+      },
+      {
+        "type": "paragraph",
+        "text": "Suppose a business can afford ₹15,000 for a first-month test and has enough staff capacity to handle enquiries. One possible planning split is ₹10,500 for the main campaign, ₹3,000 reserved for a second creative or audience test after the first signal, and ₹1,500 held back for measurement or a controlled adjustment. This is only an example of allocating a fixed ceiling; it is not a recommended split for every account. If the business cannot respond to leads, fix the operating process before spending the full amount."
+      },
+      {
+        "type": "paragraph",
+        "text": "Set a stop-and-review rule before launch. For example, review delivery and tracking after the first few days, but do not declare a winner from a handful of clicks. At the end of the planned test, compare qualified enquiries, attended appointments, paid orders and contribution—not just platform-reported leads. Keep a record of changes to budget, targeting, creative and landing page so you can distinguish a genuine signal from several simultaneous edits."
+      },
+      {
+        "type": "paragraph",
+        "text": "Platform budget rules are not identical. Google Ads explains that most campaigns may spend up to twice the average daily budget on a particular day while remaining subject to a monthly spending limit of 30.4 times that average daily budget. Check the current billing rules and campaign type in your own account before translating a monthly cap into a daily setting; do not assume Meta uses the same rule."
+      },
+      {
+        "type": "link",
+        "text": "Google Ads Help: Daily and monthly spending limits",
+        "href": "https://support.google.com/google-ads/faq/10286469?hl=en"
+      },
+      {
+        "type": "link",
+        "text": "Google Ads Help: Best practices for generating high-quality leads",
+        "href": "https://business.google.com/ca-en/accelerate/resources/articles/best-practices-for-generating-high-quality-leads/"
       }
     ]
   },
@@ -2868,6 +2916,37 @@ const articles = [
         "type": "link",
         "text": "Explore Kardengey website services",
         "href": "/services"
+      },
+      {
+        "type": "heading",
+        "text": "A practical mobile test you can repeat"
+      },
+      {
+        "type": "paragraph",
+        "text": "Open the landing page on a real phone using mobile data, not only on a desktop preview. Start from the exact ad promise and check whether the first screen repeats the same product, service, location, price context or offer. Then try the primary action with one thumb: tap the call button, submit the form, open WhatsApp and return to the page. Check whether the keyboard covers the submit button, whether required fields are obvious, whether errors explain how to recover and whether a successful submission produces a clear confirmation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Run PageSpeed Insights for both mobile and desktop, then inspect the field data separately from the lab test. Lab results help reproduce issues in a controlled test; field data reflects eligible real-user experiences over time and may be unavailable for a low-traffic URL. Do not treat one score as a pass/fail verdict. Prioritise issues that block content or interaction, such as oversized hero media, layout shifts, delayed main content and slow third-party scripts."
+      },
+      {
+        "type": "paragraph",
+        "text": "After launch, inspect the destination URL in Search Console and confirm that analytics records the important actions you actually care about. A page_view is not a lead. Test the form, phone and WhatsApp events, verify that duplicate submissions are not counted as separate customers, and check that campaign source information survives the journey where technically possible."
+      },
+      {
+        "type": "link",
+        "text": "Google PageSpeed Insights: Understand performance reports",
+        "href": "https://developers.google.com/speed/docs/insights/v5/about"
+      },
+      {
+        "type": "link",
+        "text": "Google Search Console: URL Inspection tool",
+        "href": "https://support.google.com/webmasters/answer/9012289"
+      },
+      {
+        "type": "link",
+        "text": "Google Analytics Help: Recommended events for lead generation",
+        "href": "https://support.google.com/analytics/answer/9267735"
       }
     ]
   },
@@ -3014,6 +3093,32 @@ const articles = [
         "type": "link",
         "text": "Related guide: How much should a small business spend on Google and Meta Ads?",
         "href": "/insights/small-business-google-meta-ads-budget-india"
+      },
+      {
+        "type": "heading",
+        "text": "A worked blended CAC example"
+      },
+      {
+        "type": "paragraph",
+        "text": "Consider a hypothetical month with ₹40,000 in ad spend, ₹8,000 in creative and landing-page costs allocated to that month, ₹7,000 in sales-team acquisition time, and 5 first-time customers. The included acquisition cost is ₹55,000, so blended CAC is ₹11,000 per new customer. Media-only CAC is ₹8,000. Both figures can be useful, but they answer different questions: media-only CAC describes the ad channel's cost under the chosen attribution method, while blended CAC asks how much of the included acquisition operation was spent to win each new customer."
+      },
+      {
+        "type": "paragraph",
+        "text": "Now suppose each customer pays ₹20,000 and the gross margin after direct product or service delivery costs is 55%. That produces ₹11,000 of gross contribution per customer before acquisition cost. In this simplified example, first-order contribution exactly matches the ₹11,000 blended CAC, leaving no contribution from that first order for fixed overhead, taxes or profit. Repeat purchases may change lifetime economics, but do not count future value as guaranteed: use observed repeat rates, refunds, retention and service costs from mature customer cohorts."
+      },
+      {
+        "type": "paragraph",
+        "text": "For a useful comparison, define the acquisition window, customer definition, included cost categories and attribution rule before calculating. Count new customers rather than all orders, avoid mixing an ad-spend month with customers acquired in a different period without explaining the lag, and report refunds or cancellations consistently. If you allocate shared staff or software costs, document the method and apply it consistently across channels."
+      },
+      {
+        "type": "link",
+        "text": "Google Analytics Help: Lead acquisition report and qualified or converted lead stages",
+        "href": "https://support.google.com/analytics/answer/16376749?co=GENIE.Platform%3DDesktop&hl=en"
+      },
+      {
+        "type": "link",
+        "text": "Google Ads Help: Enhanced conversions for leads",
+        "href": "https://business.google.com/in/accelerate/resources/articles/enhanced-conversions-leads/"
       }
     ]
   }
