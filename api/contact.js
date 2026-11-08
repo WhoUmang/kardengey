@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     }
 
     const normalizedPhone = String(phone).trim();
-    if (!/^\\d{10}$/.test(normalizedPhone)) {
+    if (!/^\d{10}$/.test(normalizedPhone)) {
       return res.status(400).json({
         success: false,
         message: "Please enter a valid 10-digit mobile number without a country code.",
