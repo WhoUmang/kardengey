@@ -3127,6 +3127,408 @@ const articles = [
         "text": "Google Ads Help: Enhanced conversions for leads",
         "href": "https://business.google.com/in/accelerate/resources/articles/enhanced-conversions-leads/"
       }
-    ];
+    ,
+{
+  "category": "GOOGLE ADS / ANALYTICS",
+  "filter": "MARKETING",
+  "title": "Google Ads Conversion Tracking for Lead Generation in India: Forms, Calls and Sales",
+  "slug": "google-ads-lead-conversion-tracking-india",
+  "description": "Set up Google Ads lead conversion tracking in India for forms, calls and qualified sales. Learn GA4 events, GTM, offline imports and quality checks.",
+  "date": "09 NOV 2026",
+  "publishedAt": "2026-11-09",
+  "read": "15 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A Google Ads campaign can show clicks, impressions and even a growing conversion count while the sales team still struggles to identify where genuine enquiries are coming from. That gap often starts with the measurement setup. A button click is not necessarily a submitted form, a WhatsApp link click is not a conversation, and a form submission is not automatically a qualified lead or a customer."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide explains how Indian service businesses, B2B companies, consultants, local operators and other lead-generation advertisers can build a more dependable Google Ads measurement system. It covers website forms, phone calls, WhatsApp journeys, GA4 events, Google Tag Manager, CRM outcomes and the current Google guidance for enhanced conversions and offline uploads. The aim is not to collect the largest possible conversion number. It is to measure the actions that matter to the business and make campaign reporting useful for decisions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The examples are implementation patterns, not a promise of campaign performance. Google Ads and Analytics interfaces change, and the exact options available can depend on the account, campaign, country, website platform and permissions. Check the linked Google documentation before making account-level changes."
+    },
+    {
+      "type": "heading",
+      "text": "1. Decide what a conversion means before installing tags"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with the customer journey rather than the tracking interface. A typical lead-generation journey might be: an ad click, a landing-page visit, a successful enquiry submission, a first contact by the business, a qualified opportunity, a proposal and finally a sale. Each step answers a different question. If you count every step as the same conversion, the campaign report becomes difficult to interpret."
+    },
+    {
+      "type": "paragraph",
+      "text": "Write down the exact business action you want Google Ads to help produce. For a quotation-led business, that may be a valid request for a quote. For a professional service, it may be a consultation request that meets a defined service and location requirement. For a B2B company, it may be a sales-accepted lead rather than every person who downloads a brochure."
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate three layers. A micro-action is an expression of interest, such as a CTA click, phone-number click or WhatsApp link click. A lead event is a completed enquiry that reaches your system. A qualified or commercial outcome is a lead that meets your criteria, attends a meeting, receives a proposal or becomes a customer. These actions should not be added together and described as one set of new customers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a short measurement plan with the event name, what must happen for it to fire, where it is recorded, who owns the data, whether it is primary or secondary in Google Ads, and how it will be checked. This simple document prevents a common problem: a tag is installed, but nobody can explain exactly what the conversion count represents."
+    },
+    {
+      "type": "heading",
+      "text": "2. Install one reliable Google tag foundation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google Ads website conversion tracking needs a correctly configured Google tag and a conversion event that tells the tag when the chosen action has happened. You can implement tags directly in the website code or manage them through Google Tag Manager. GTM is often convenient when a developer or marketer needs to manage several measurement tags without editing the site for every change. A direct tag can also work well when the website has a controlled implementation process."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before installing anything, check whether the site already has a Google tag through Google Analytics, Google Ads, a CMS integration, a Shopify or WordPress plugin, or an existing GTM container. Do not paste a second copy simply because a setup screen offers a new snippet. Duplicate tags can produce duplicate page views or events and make debugging harder. Confirm which account owns the tag, which destinations it sends data to, and who has permission to publish changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use GTM, confirm that the correct container is installed on every page where measurement is required. Keep the production container separate from test workspaces, name tags and triggers clearly, and document what each one does. Avoid adding several overlapping click triggers that all fire the same conversion action."
+    },
+    {
+      "type": "paragraph",
+      "text": "After the base tag is in place, create the conversion action in Google Ads and use the implementation method shown for that action. A website conversion can use the Google tag event snippet or the relevant Google Ads tag in GTM. Do not copy a sample tag ID or conversion label from an online tutorial: use the identifiers generated in the actual advertising account."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Add a Google tag to your website",
+      "href": "https://support.google.com/google-ads/answer/6331314?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Use the Google tag for conversion tracking",
+      "href": "https://support.google.com/google-ads/answer/7548399?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "3. Track successful form submissions, not button clicks"
+    },
+    {
+      "type": "paragraph",
+      "text": "For most lead-generation websites, the most important first conversion is a successfully submitted enquiry. The tag should fire after the website has accepted the form and confirmed success—not merely when someone presses the submit button. A click can happen even when required fields are missing, a validation error appears, a network request fails or the visitor changes their mind."
+    },
+    {
+      "type": "paragraph",
+      "text": "A dedicated thank-you page can provide a clear trigger if the website only sends visitors there after the form has been accepted. Make sure the page cannot be reached through an ordinary menu link or counted repeatedly when someone refreshes it. If the form submits in the background and stays on the same page, ask the developer to trigger a data-layer event from the form's confirmed success callback. The event should be sent after the server response indicates that the enquiry was saved or delivered."
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid relying on a generic form-submit trigger without testing it against the actual form. Modern forms may use AJAX, embedded widgets, third-party form providers or custom validation. A browser can register a click while the application rejects the submission. Test the full path on mobile and desktop, including invalid fields, successful submission, error messages and repeat visits."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a stable event name such as generate_lead for the successful lead event in GA4. If you need more detail, add non-identifying parameters such as form_id, form_name, page_location category or service_line. Do not place a visitor's name, email address or phone number in an event name, event parameter, page title or URL."
+    },
+    {
+      "type": "paragraph",
+      "text": "Build duplicate protection into the implementation. A single successful submission should produce one lead event, even if the user double-clicks the button, the page re-renders or a confirmation component appears more than once. Where a form provider supplies a submission ID, use it in your own backend or CRM to deduplicate records. Do not assume that a tag firing in preview mode proves that the CRM received one valid lead."
+    },
+    {
+      "type": "heading",
+      "text": "4. Use GA4 events to describe the lead journey"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google Analytics 4 recommends generate_lead when someone submits a form or requests information. For businesses that need to understand what happens after the enquiry, Google also documents lead-lifecycle events such as qualify_lead, disqualify_lead, working_lead and close_convert_lead. These names help describe the funnel consistently; they do not automatically know whether a lead is suitable. Your website, CRM or connected system must send the event when the corresponding business status actually changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "A practical starting point is to send generate_lead after a successful website enquiry. If your team maintains reliable lead statuses, add qualify_lead when a representative confirms that the enquiry meets your agreed criteria, and close_convert_lead when the opportunity becomes a customer. Use disqualify_lead for enquiries that clearly fall outside your service, geography or commercial requirements. Only send these lifecycle events when the status is supported by a real record, not when someone merely opens a lead in a dashboard."
+    },
+    {
+      "type": "paragraph",
+      "text": "In GA4, an event can be marked as a key event when it represents an important interaction. Marking an event as a key event changes how it is reported from that point forward; it does not rewrite historical data. GA4 key events and Google Ads conversion actions are related but are not identical concepts. If you import a GA4 key event into Google Ads, review the imported action, the campaign's selected goals and the primary or secondary setting so the same enquiry is not counted twice for bidding."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Recommended events for lead generation",
+      "href": "https://support.google.com/analytics/answer/9267735"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Mark events as key events",
+      "href": "https://support.google.com/analytics/answer/13128484?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Tag Manager Help: Set up Analytics events and verify them",
+      "href": "https://support.google.com/tagmanager/answer/13034206"
+    },
+    {
+      "type": "heading",
+      "text": "5. Choose primary and secondary conversion actions carefully"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google Ads distinguishes primary conversion actions from secondary actions. Primary actions can appear in the Conversions reporting column and can be used for bidding when the associated standard goal is selected by the campaign. Secondary actions are generally for observation and appear in All conversions rather than driving standard goal-based bidding. A secondary action included in a custom goal can behave differently, so review the campaign goal configuration rather than relying on the label alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not mark every measurable click as primary. If a campaign is optimising towards a phone-number click, a WhatsApp click, a page scroll and a form submission together, the bidding system may receive signals that do not represent equal business value. Keep useful diagnostic actions available as secondary observations, then choose the primary action that best represents the outcome the campaign should pursue."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a new lead-generation account with no dependable CRM feedback, a successful enquiry submission may be the most practical initial primary action. Review the resulting lead quality manually. Once the business has a stable process for qualifying and recording leads, consider whether a qualified-lead or converted-lead signal is more appropriate for optimisation. The right choice depends on the volume, reliability and commercial value of the signal; there is no universal setting for every advertiser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check the campaign's selected conversion goals after creating or importing an action. An action can be marked primary in the account but still not influence a campaign if that campaign is not using the goal that contains it. Conversely, a custom goal can include an action that you expected to remain observation-only. Audit the actual campaign configuration before interpreting the Conversions column."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About primary and secondary conversion actions",
+      "href": "https://support.google.com/google-ads/answer/11461796?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "6. Measure phone calls and WhatsApp enquiries honestly"
+    },
+    {
+      "type": "paragraph",
+      "text": "Phone and messaging journeys need their own definitions. A tap on a tel: link proves that someone clicked a phone number on the website; it does not prove that a call connected, lasted long enough to matter or resulted in an appointment. If phone enquiries are central to the business, investigate Google Ads call conversion options and decide which call events can be measured reliably in the account and country."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's current help documentation says Google forwarding numbers are available in India, but importing phone-call conversions is supported for only a portion of calls in India. That limitation matters when planning a call-measurement workflow: do not assume every call can be imported or that a click-to-call event is equivalent to a completed conversation. Keep a call log or CRM record for the business outcome and compare it with the platform's available call reporting."
+    },
+    {
+      "type": "paragraph",
+      "text": "A WhatsApp button click is another useful intent signal, but it is not the same as a delivered message, a two-way conversation or a sale. Track the outbound click as a separate event if it helps you understand how visitors use the page. Then connect the conversation to a lead record using a process your team can maintain. Record the enquiry source and outcome in the CRM or lead register instead of treating every WhatsApp click as a new customer."
+    },
+    {
+      "type": "paragraph",
+      "text": "If WhatsApp is a major enquiry channel, use a consistent handoff process: capture the campaign or landing-page source where available, record the first meaningful conversation, apply a lead status and mark the eventual outcome. The WhatsApp guide explains how UTMs, GA4 click events and a simple lead register can work together."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Import phone call conversions and review India availability",
+      "href": "https://support.google.com/google-ads/answer/6275629?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Track WhatsApp Leads for Small Businesses in India",
+      "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+    },
+    {
+      "type": "heading",
+      "text": "7. Connect website enquiries with qualified leads and sales"
+    },
+    {
+      "type": "paragraph",
+      "text": "Website tracking explains what happened in the browser. It cannot, by itself, tell you whether a salesperson reached the person, whether the requirement was suitable, whether a proposal was accepted or whether money was collected. For that, keep a CRM or a disciplined lead register with a stable lead ID, enquiry timestamp, source information, current stage, owner and final outcome."
+    },
+    {
+      "type": "paragraph",
+      "text": "Where available and appropriate, preserve the Google Ads click identifier with the lead record so an eligible offline conversion workflow can connect a later business outcome to the original ad interaction. Capture it at the point of enquiry, keep it attached to the correct lead, and avoid overwriting it when the person returns through another channel. If you use a CRM, map the fields before connecting an upload or integration. A spreadsheet can be a useful starting point, but only if someone updates it consistently and access is controlled."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enhanced conversions for leads can supplement offline conversion measurement with hashed first-party customer data, such as an email address, to help match a later lead outcome with an earlier ad interaction. Hashing is a technical matching method, not a reason to collect unnecessary data or ignore consent and disclosure requirements. Use the supported setup in your Google Ads account, accept the relevant data terms, and follow Google's customer-data policies and applicable privacy requirements."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is an important current platform change for API-based workflows. Google's help documentation states that from 15 June 2026, offline conversion imports and enhanced-conversions-for-leads uploads are migrated to the Data Manager API and blocked in the Google Ads API. Google also documents a unified enhanced-conversions setting during 2026. If you maintain a custom API integration or automated upload, check the current Data Manager route and account settings before building or changing it. This change should not be confused with the ordinary process of sending a website event through a Google tag or GTM."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a small business without a CRM integration, begin with a weekly lead-status export and a manual reconciliation. Count how many enquiries were received, contacted, qualified, disqualified and converted. The objective is to create a trustworthy feedback loop before investing in a more complex integration."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About enhanced conversions for leads",
+      "href": "https://support.google.com/google-ads/answer/15713840?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: 2026 updates to enhanced conversions settings",
+      "href": "https://support.google.com/google-ads/answer/16884284?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About offline conversion imports",
+      "href": "https://support.google.com/google-ads/answer/2998031?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "8. Protect customer data in Analytics and advertising uploads"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not send a visitor's email address, personal mobile number, full name or other directly identifying details to ordinary GA4 event parameters, custom dimensions, page URLs or UTM campaign values. Google Analytics' guidance specifically warns that personally identifiable information must not be sent to Analytics and calls out URLs, page titles, user-entered fields and campaign parameters as places where it can leak accidentally."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enhanced conversions is a separate, explicitly configured advertising measurement feature. If you choose to use user-provided data for it, follow the product's terms, approved collection methods and customer-data policies. Google's policies require appropriate disclosure to customers and consent for third-party sharing and use where legally required. Do not assume that hashing an email or phone number makes every collection or upload lawful, permitted or appropriate."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep form fields out of page URLs, do not place phone numbers in query strings, and do not pass raw lead details into analytics event labels. Limit CRM access to people who need it, document retention and deletion practices, and obtain professional privacy advice where the business handles sensitive or regulated information. This article is operational guidance, not legal advice."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Best practices to avoid sending personally identifiable information",
+      "href": "https://support.google.com/analytics/answer/6366371?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads policy: Customer data requirements",
+      "href": "https://support.google.com/adspolicy/answer/7475709?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "9. Test the complete journey before relying on the numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use GTM Preview and Tag Assistant to confirm that the expected tag fires on the correct event and only once. Use GA4 DebugView or Realtime to confirm that the event reaches the intended property with the expected non-identifying parameters. Then check the Google Ads conversion action diagnostics and the campaign's goal settings. A tag appearing in a browser preview is only one part of the test; verify that the actual form record is created and that the event is associated with the correct account."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test at least one successful form submission, one failed validation, one abandoned form, one repeat visit to a confirmation page and one mobile interaction. Check that failed attempts do not count as leads, that the success event does not fire twice, and that the CRM contains the corresponding enquiry. If a call or WhatsApp click is measured, test it as a separate action and confirm that the report label describes a click rather than a completed conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a conversion is missing, check the basics in order: the correct Google Ads account and conversion ID; the correct GTM container and published version; the trigger condition; the page or form success response; consent and tag settings; duplicate or conflicting tags; and the campaign's selected conversion goal. Keep a record of the test time, browser, page, action and expected result so a developer can reproduce the issue."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not make several tracking changes at once and then guess which one fixed the problem. Change one element, preview it, publish the tested version, and document the result. Keep a known-good container version available so an accidental tag change can be rolled back."
+    },
+    {
+      "type": "heading",
+      "text": "10. An illustrative lead-quality example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a commercial interiors firm receives 40 website enquiries in a reporting period. The team reaches 25 people, marks 10 as qualified, sends 3 proposals and wins 1 customer. If Google Ads is optimising only towards the initial form submission, the platform sees 40 lead events. The sales team sees a smaller set of qualified opportunities and one customer. Neither number is automatically wrong; they describe different stages of the journey."
+    },
+    {
+      "type": "paragraph",
+      "text": "The business can use the form event to confirm that the website is working, keep qualification and sale events in its CRM, and later send eligible downstream outcomes through a supported offline conversion workflow. It should not relabel the 40 submissions as 40 customers, nor should it assume that one reporting period is enough to judge every campaign. The example contains hypothetical figures and is not an industry benchmark or a Kardengey client result."
+    },
+    {
+      "type": "heading",
+      "text": "11. Build a weekly report around business outcomes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review advertising spend, clicks, landing-page sessions, successful enquiries, contacted leads, qualified leads, proposals and new customers in the same reporting window or with the lag clearly explained. Calculate media cost per enquiry and media cost per qualified lead separately. If you include sales time, creative, agency fees or other acquisition costs, label the result as a blended cost rather than comparing it directly with media-only figures."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the same lead definition and attribution rule each week. Check duplicate records, spam, missed calls, delayed follow-up and enquiries outside the service area. If lead volume rises while qualified opportunities fall, investigate search terms, location targeting, offer clarity, landing-page expectations and response time before increasing the budget."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a broader diagnosis of why lead volume does not always become revenue, read our guide to Meta Ads lead quality and the practical guide to customer acquisition cost. The principles of defining a qualified lead, including the right costs and comparing outcomes across consistent cohorts apply beyond one advertising platform."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Why Meta Ads Generate Leads but Not Customers",
+      "href": "/insights/meta-ads-leads-not-customers-diagnosis"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Calculate the Real Cost of Acquiring a Customer",
+      "href": "/insights/calculate-real-customer-acquisition-cost-india"
+    },
+    {
+      "type": "link",
+      "text": "Use the free Kardengey Marketing ROI Calculator",
+      "href": "/tools/marketing-roi-calculator"
+    },
+    {
+      "type": "heading",
+      "text": "12. A practical launch checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before the campaign goes live, confirm that the business has defined a real lead, chosen the primary conversion action, documented useful secondary actions, and assigned an owner for lead-status updates. Confirm that one Google tag foundation is installed, that the correct conversion action and campaign goal are selected, and that the website event fires only after a successful submission."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then preview and test the form, call and messaging journeys on mobile and desktop. Check that GA4 receives the intended event, that no personal contact details are sent to Analytics, that the CRM or lead register stores the enquiry, and that the team can mark a lead as contacted, qualified or converted. If offline uploads or enhanced conversions are part of the plan, review the current Data Manager route, account terms and customer-data requirements first."
+    },
+    {
+      "type": "paragraph",
+      "text": "After launch, reconcile platform conversions against actual enquiries and sales before changing bids or budgets. Keep the event definitions, tag versions, CRM fields and reporting window documented. When the numbers disagree, investigate the measurement path rather than immediately assuming that the advertising campaign or the sales team is at fault."
+    },
+    {
+      "type": "paragraph",
+      "text": "Accurate conversion tracking is not a one-time code installation. It is an operating agreement between the website, analytics setup, advertising account and people who handle enquiries. When each stage has a clear definition and an owner, Google Ads reporting becomes easier to trust—and optimisation can focus on the outcomes that matter to the business."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your tracking is unclear, start with a website and measurement audit before increasing media spend. Kardengey works across website development, analytics foundations, SEO and performance marketing; the right scope depends on your website, lead process and existing account setup."
+    },
+    {
+      "type": "link",
+      "text": "Review Kardengey services for websites, analytics and performance marketing",
+      "href": "/services"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Audit a Website Before Spending Money on Ads",
+      "href": "/insights/website-audit-before-running-ads"
+    },
+    {
+      "type": "heading",
+      "text": "Official references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Add a Google tag to your website",
+      "href": "https://support.google.com/google-ads/answer/6331314?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Primary and secondary conversion actions",
+      "href": "https://support.google.com/google-ads/answer/11461796?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Recommended events",
+      "href": "https://support.google.com/analytics/answer/9267735"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Mark events as key events",
+      "href": "https://support.google.com/analytics/answer/13128484?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Tag Manager Help: Set up Analytics events",
+      "href": "https://support.google.com/tagmanager/answer/13034206"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Enhanced conversions for leads",
+      "href": "https://support.google.com/google-ads/answer/15713840?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Updates to enhanced conversions settings",
+      "href": "https://support.google.com/google-ads/answer/16884284?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Phone call conversion imports",
+      "href": "https://support.google.com/google-ads/answer/6275629?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Avoid sending personally identifiable information",
+      "href": "https://support.google.com/analytics/answer/6366371?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads policy: Customer data requirements",
+      "href": "https://support.google.com/adspolicy/answer/7475709?hl=en"
+    }
+  ]
+}
+];
 
 export default articles;
