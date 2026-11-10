@@ -1,5 +1,371 @@
 const articles = [
 {
+  "category": "WHATSAPP / BUSINESS MESSAGING",
+  "filter": "MARKETING",
+  "title": "WhatsApp Business App vs Platform in India: Which Should Your Business Use?",
+  "slug": "whatsapp-business-app-vs-platform-india",
+  "description": "Compare WhatsApp Business app and Platform in India. Understand features, costs, opt-in rules, templates, CRM integration and when to upgrade.",
+  "date": "10 NOV 2026",
+  "publishedAt": "2026-11-10",
+  "read": "18 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "For many Indian businesses, WhatsApp is where a customer asks the first question, requests a quotation, checks stock or follows up after seeing an advertisement. As that inbox grows, owners often hear that they should move from the WhatsApp Business app to the WhatsApp Business Platform. The two products are related, but they solve different operating problems. Choosing the wrong setup can add software, process and message costs without improving the customer experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide compares the WhatsApp Business app with the WhatsApp Business Platform for Indian small businesses, retailers and service teams. It explains what each product is designed to do, when an upgrade is justified, how the Platform's messaging rules affect everyday work, what to check before choosing a provider and how to pilot a new setup without disrupting active customer conversations. Product features and policies can change; the official Meta references at the end were checked on 10 November 2026."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: start with the workflow, not the API"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WhatsApp Business app is generally the simpler choice when an owner or a small team can manage conversations directly from the app. It includes business-profile tools, catalogue features and practical ways to organise and respond to chats. The WhatsApp Business Platform is designed for businesses that need to connect WhatsApp to software, automate defined parts of a conversation, route enquiries between people or integrate messaging with systems such as a CRM."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Platform is not automatically better because a business has started advertising or receives a busy inbox. If customers still receive timely, accurate answers and one person can maintain the process, the app may be enough. An API-based setup becomes worth evaluating when the current process is creating a specific operational problem: conversations are being missed, ownership is unclear, several teams need one shared queue, or customer records must connect to other systems."
+    },
+    {
+      "type": "quote",
+      "text": "Choose the least complicated setup that lets your team respond reliably, respect customer preferences and keep a usable record of what happened."
+    },
+    {
+      "type": "heading",
+      "text": "1. What the WhatsApp Business app is built for"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WhatsApp Business app is a business-focused messaging app for direct conversations with customers. Meta describes it as a tool for small businesses to communicate one-to-one, present products and services and manage customer relationships. Its business profile can show details such as the business name, description, hours and website. A catalogue can help customers browse products or services without asking the owner to send every item manually."
+    },
+    {
+      "type": "paragraph",
+      "text": "The app also includes practical response and organisation features. Depending on the device and current app version, a business can use greeting messages, away messages, quick replies and labels to make routine conversations easier to handle. These tools can be enough for a boutique, local repair service, independent consultant, home-service provider or small retailer where the owner or a few staff members personally handle enquiries."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meta also promotes Business Broadcasts and other newer app features, but availability is not universal. Its product page says Business Broadcasts are available to eligible users in select countries. Do not buy a phone or plan, promise a customer a feature, or design a campaign around a feature until you have checked whether it is available to your account and market."
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business app overview",
+      "href": "https://business.whatsapp.com/products/business-app"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business app features",
+      "href": "https://business.whatsapp.com/products/business-app-features"
+    },
+    {
+      "type": "heading",
+      "text": "2. What the WhatsApp Business Platform adds"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WhatsApp Business Platform provides business messaging APIs. Instead of relying only on a person opening the mobile app and replying manually, a business can connect WhatsApp conversations to a supported inbox, CRM, customer-support system or its own software. Meta describes use cases that include lead generation, notifications, customer care, conversational commerce, templates, automation and custom flows."
+    },
+    {
+      "type": "paragraph",
+      "text": "This can change how a team works. A new enquiry can be assigned to a sales queue, tagged with a source, linked to a customer record and handed to the right person. A system can send a permitted order update or appointment reminder, while a human agent handles questions that require judgement. A developer can build a more tailored workflow when the business has a clear process and the technical resources to maintain it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Platform does not create a good sales process by itself. It will not decide which enquiry is commercially suitable, write accurate product information, resolve a delivery dispute or ensure that a salesperson follows up. Those decisions still need clear rules, responsible staff and reliable data. Automation should remove repetitive work while making it easy for a customer to reach a person when the situation needs one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meta outlines two broad implementation paths. A business can work with a Platform partner that provides onboarding and software, or integrate directly with the Platform using its own technical resources. A partner may reduce the amount of code the business needs to manage, while a direct integration offers more control but makes the business responsible for implementation, monitoring and ongoing support."
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Platform overview and setup options",
+      "href": "https://business.whatsapp.com/products/business-platform"
+    },
+    {
+      "type": "heading",
+      "text": "3. App vs Platform: compare the operating model"
+    },
+    {
+      "type": "paragraph",
+      "text": "Conversation handling: with the app, staff usually work inside the app and use its available linked-device and organisation features. With a Platform setup, conversations can be presented through a provider's shared inbox or a custom interface. Check how many agents can work at the same time, how assignment works, whether an agent can see another agent's replies and what happens when someone leaves the business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Automation: the app provides simpler tools for routine replies and business-hours messages. The Platform can support programmed responses, approved templates and interactive flows. Automation should be limited to tasks with a known answer, such as collecting an order reference or explaining the next step. A customer should not be trapped in a menu when they need a human to resolve an unusual request."
+    },
+    {
+      "type": "paragraph",
+      "text": "Customer records: the app can be sufficient when the owner can recognise the customer and maintain a simple follow-up process. A Platform integration can connect conversations with a CRM or other business system, but the quality of that connection depends on the provider, field mapping and staff discipline. Ask whether the integration creates one customer record, prevents duplicate contacts and records the outcome of a conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reporting: an app may provide basic activity information, but a business that needs team-level accountability usually requires a more deliberate reporting setup. A shared inbox or CRM may report response times, assignment, unresolved chats and lead stages. Ask for a live demonstration of the exact reports you need; do not assume that every vendor dashboard measures qualified leads or revenue."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ownership and maintenance: an app is usually easier for a non-technical owner to operate. A Platform workflow introduces more dependencies: Meta account access, WhatsApp Business Account, phone number configuration, templates, provider availability, integrations, payment settings and support arrangements. Decide who will own each dependency before the business relies on the system for customer service."
+    },
+    {
+      "type": "heading",
+      "text": "4. When the app is probably enough"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep the app if one person or a small, clearly organised team can answer enquiries within the service standard your business has promised. It is also a sensible choice when most conversations are unique, the team does not need to update a CRM automatically, and the available labels, quick replies and catalogue tools cover the daily workload."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before upgrading, fix the process problems that software cannot solve. Set business hours, decide who checks the inbox, create a short set of accurate quick replies, define what information staff should collect and agree how a conversation is marked as resolved. If messages are missed because nobody owns the phone during busy periods, a shared inbox may help—but a rota and escalation rule are still required."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not move to the Platform just because an agency, software seller or competitor says every serious business needs an API. Ask what measurable problem the new setup will solve, what the total recurring cost will be and how the business will know the change worked. If those answers are unclear, improve the current workflow first."
+    },
+    {
+      "type": "heading",
+      "text": "5. When the Platform is worth evaluating"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider the Platform when several people need to handle the same business number with clear ownership and visibility. It can also be useful when the business receives enough repetitive questions to justify structured automation, needs to connect enquiries with a CRM, sends permitted transactional notifications, or wants to build a guided customer journey that the app cannot support."
+    },
+    {
+      "type": "paragraph",
+      "text": "A practical signal is repeated operational failure, not a particular message count. For example, if a customer asks for a quotation, the chat is passed between staff, nobody knows who owns the next action and the lead is never entered into the sales system, the business has a workflow problem. A shared inbox and CRM integration may make responsibility visible, provided the team agrees how to use them."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Platform may also make sense for ecommerce or service operations that need to send approved updates after a customer has placed an order, booked an appointment or requested a service. The message must match the correct policy category and the customer's expectations. A system should not turn a delivery notification into an unsolicited promotion simply because it has the ability to send messages at scale."
+    },
+    {
+      "type": "heading",
+      "text": "6. Understand Platform pricing before you compare vendors"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not compare the Platform with the app using a single advertised monthly price. Meta's current pricing page describes charges per message delivered to a user, with rates determined by the recipient's market and the message category. The four categories shown by Meta are marketing, utility, authentication and service. The rate card and billing details should be checked for the recipient country and currency at the time you prepare a budget."
+    },
+    {
+      "type": "paragraph",
+      "text": "Your full operating cost may also include a partner's inbox subscription, onboarding, number setup, CRM integration, automation development, support, additional agents or other software services. Ask the provider to separate Meta message charges from its own fees. Confirm whether the quote is per business number, per agent, per conversation, per message volume or a combination, and whether taxes are additional. A low entry price can become expensive if essential features are sold as add-ons."
+    },
+    {
+      "type": "paragraph",
+      "text": "Build a simple estimate before signing. List the number of expected delivered messages by category and recipient market, apply the current Meta rate card, then add the provider's subscription and any one-time or recurring integration costs. Include a buffer for seasonal activity and test the estimate with a realistic month of your own conversations. Do not use an old blog post or a third-party calculator as the final source for current rates."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also ask how billing works if a message fails, a template is paused, the provider account is disconnected or the business changes software vendors. Request an itemised invoice example and confirm which party controls the Meta billing relationship. The goal is to understand the cost of running the whole customer communication process, not just the headline software fee."
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Platform pricing and live rate-card selector",
+      "href": "https://business.whatsapp.com/products/platform-pricing"
+    },
+    {
+      "type": "heading",
+      "text": "7. Know the 24-hour customer service window and template rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WhatsApp Business Platform has messaging rules that affect how a business can reply. Meta's Business Messaging Policy says a business may reply to a user's message without a message template while the 24-hour customer service window is open. The window opens and resets with each user message. Outside that window, the business may only send approved message templates. A business can initiate a conversation only using an approved template."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is an important difference from the ordinary app workflow. A sales or support team using the Platform cannot assume that it can send any free-form follow-up whenever it wants. If a customer asks for a quotation and then stops replying, a later reminder may need an approved template and must follow the applicable opt-in and policy requirements. Design follow-up timing and message content before launching an automation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meta groups Platform messages into marketing, utility, authentication and service categories. A promotion or product offer is not the same as a delivery update or a one-time password. The category should reflect the message's actual purpose. Do not label promotional copy as utility just to seek a different rate, and do not reuse an approved template for a purpose it was not designed for."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meta allows automation during the 24-hour window, but its policy requires prompt, clear and direct escalation paths. The policy lists options such as transfer to a human agent, phone, email, web support or an in-store visit. In practice, every automated flow should make it obvious how a customer can reach a person and what happens if the bot cannot answer."
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Messaging Policy (last updated 23 September 2026)",
+      "href": "https://business.whatsapp.com/policy"
+    },
+    {
+      "type": "heading",
+      "text": "8. Get opt-in permission and make opt-out easy"
+    },
+    {
+      "type": "paragraph",
+      "text": "A phone number in a spreadsheet is not, by itself, permission to send a WhatsApp campaign. Meta's policy says a business may contact people only when they have provided their mobile number or username and have given opt-in permission confirming that they want to receive subsequent messages or calls from the business. The business is responsible for obtaining permission in a way that complies with applicable law and for respecting requests to stop or opt out."
+    },
+    {
+      "type": "paragraph",
+      "text": "Explain what the person is agreeing to receive and identify the business that will send the messages. For example, a checkout option could distinguish order and delivery updates from promotional offers. Keep a record of when and how permission was collected, the wording shown and the categories the customer selected. If a customer asks for order updates, do not silently treat that as permission for every future marketing campaign."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meta's best-practice guidance recommends making opt-in expectations clear, considering separate permission for different message categories and obtaining separate permission to initiate calls. It also recommends clear instructions for opting out and honouring those requests. Make the opt-out process work in the actual inbox and CRM, not just in a policy document. If a customer withdraws permission, ensure that the suppression status is respected by connected tools and future uploads."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep a published privacy policy and explain how enquiry information is used, who may access it and which service providers process it. Collect only the information needed for the conversation or transaction. Limit staff access, protect account credentials and avoid asking customers to send full payment-card numbers, financial account details or other sensitive identifiers through chat. This is operational guidance, not legal advice; check the laws and sector rules that apply to your business."
+    },
+    {
+      "type": "heading",
+      "text": "9. Direct integration or a Platform partner?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A partner integration may suit a business that wants a ready-made shared inbox, onboarding help and standard CRM or automation features without building the entire technical system. A direct integration may suit a company with developers who can connect the Platform to its own website, CRM or support tools and who can maintain that integration over time. Meta describes both paths and directs businesses to its partner directory for supported providers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before selecting a partner, ask for a demonstration using your real workflow. Can a new enquiry be assigned to a person? Can another agent see the status? Can a supervisor review unresolved chats? Can the business export contacts and conversation records? Can it change provider without losing control of its number or business account? Does the integration support the features and message categories you actually need? Get clear answers in writing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check account ownership carefully. The business should control its own Meta Business Portfolio, WhatsApp Business Account, phone number, billing arrangements and key administrator access. A provider may need authorised access to deliver its service, but the business should understand how that access is granted and revoked. Avoid an arrangement where a vendor's personal login is the only way to administer an important customer channel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Review support and failure handling. Ask who responds if the inbox is unavailable, a template is rejected, a number is disconnected or messages stop delivering. Check the support hours, escalation route, data export options, backup process and contract termination terms. If the provider's software is unavailable, staff should know whether they can still access the appropriate Meta account or use an agreed fallback channel."
+    },
+    {
+      "type": "heading",
+      "text": "10. Prepare a migration and continuity checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not assume that changing to the Platform automatically transfers every chat, contact, catalogue item, label or linked-device behaviour exactly as it works today. The available migration path and app coexistence options can depend on the number, country, account eligibility, provider and current Meta product rules. Confirm the exact supported process with Meta's current documentation and the provider before changing a live business number."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before migration, export or otherwise preserve the business records that the team is allowed to retain, document the current number and account owner, list linked systems, and record the current customer-service workflow. Ask which message history, contacts and media can be retained, what customers will experience during the change, whether the existing app remains usable, and what cannot be reversed. Do not promise customers uninterrupted access until the provider has confirmed the technical path."
+    },
+    {
+      "type": "paragraph",
+      "text": "Plan a controlled cutover. Choose a low-risk period, nominate one owner, test with internal numbers, verify inbound and outbound messages, test the human handoff and confirm that CRM records are created correctly. Keep the old process documented until the new one is stable. If the number or integration fails, staff need a clear way to continue responding to customers and a record of enquiries received during the interruption."
+    },
+    {
+      "type": "heading",
+      "text": "11. Run a 30-day pilot before expanding automation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Week one: map the current journey. Record where a customer starts a chat, which questions are repeated, who replies, how a lead is assigned and how the outcome is recorded. Identify the most costly failure, such as missed enquiries or duplicate follow-ups. Do not begin by automating every conversation; choose one narrow workflow with a clear owner and a measurable purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week two: configure the minimum viable setup. If you are using a provider, create a small number of agent roles, queues and templates. Connect only the CRM fields you need. Test opt-in records, opt-out suppression, message categories, the 24-hour window and the human escalation route. Have the team practise the process with test conversations before customers depend on it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week three: run a controlled pilot with one team or one enquiry type. Review conversations each day. Check whether messages are assigned correctly, whether staff can see the context, whether customers receive clear answers and whether the automation escalates unusual questions. Record errors and adjust the workflow rather than adding more automation to cover a poorly understood problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week four: compare the pilot with the previous process. Review missed or unanswered chats, time to first human response, unresolved conversations, duplicate records, opt-out handling and the completeness of lead outcomes. If you cannot measure a useful improvement or the new process adds more work than it removes, revise or stop the pilot. Do not scale only because the software is installed."
+    },
+    {
+      "type": "heading",
+      "text": "12. An illustrative example: a small Indian retail team"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative scenario only: imagine a clothing retailer receives website enquiries, Instagram messages and WhatsApp questions about sizes, availability and delivery. The owner currently replies from one phone and sometimes asks a store employee to follow up. During busy periods, two people answer the same customer or nobody knows whether a promised size check was completed. The retailer first standardises its quick replies, labels and handover notes in the app."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the same problems continue after the basic process is working, the retailer could evaluate a Platform partner with a shared inbox and a simple stock-check workflow. The team might assign each new enquiry to one person, record the product or size requested and close the chat only after the customer has received an answer. The Platform would be justified only if the shared workflow reduces a real operational gap. The scenario is hypothetical and is not a Kardengey client result or a performance benchmark."
+    },
+    {
+      "type": "heading",
+      "text": "13. Common mistakes to avoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, do not buy software before mapping the customer journey. A shared inbox cannot compensate for unclear responsibilities. Second, do not send bulk messages to contacts simply because their numbers are available. Permission, expectations and opt-out handling matter. Third, do not automate sensitive or unusual questions without a human escalation route. Fourth, do not treat every delivered message, click or conversation as a qualified lead or sale."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fifth, do not let a provider own the only administrator access to your customer channel. Sixth, do not budget using a rate card from an old article. Seventh, do not migrate a live number without confirming what happens to history, app access and connected tools. Finally, do not judge the new setup by the number of messages sent. Judge it by whether customers get accurate help and the business can handle the work reliably."
+    },
+    {
+      "type": "heading",
+      "text": "14. Questions to answer before you sign"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask the provider to show the complete price: Meta message charges, software subscription, agent seats, onboarding, integration, support and taxes. Ask which account and number the business owns, how access is granted, how customer data is stored and exported, and what happens if the contract ends. Ask how templates are created and reviewed, how opt-outs are synchronised and how message delivery or quality issues are surfaced."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask for a test using your own use case, not a generic sales demo. Have the provider demonstrate a new inbound enquiry, assignment, human reply, opt-out, a message outside the 24-hour window and a failed integration. If the vendor cannot explain what the system does in those cases, do not make it a critical part of your customer operation yet."
+    },
+    {
+      "type": "heading",
+      "text": "15. How WhatsApp setup connects with lead tracking"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choosing the app or Platform is a decision about how conversations are handled. Measuring where those conversations came from and whether they became business is a separate task. If customers arrive from a website, Google Ads, Meta Ads or a QR code, create a consistent way to record the source, the first meaningful enquiry, the person responsible and the eventual outcome. A Platform integration may help automate parts of this record, but the event definitions and sales process still need to be designed."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a lightweight process, start with tagged links, a clear lead register and a weekly review of contacted, qualified and converted enquiries. If you need a more detailed measurement plan, read the Kardengey guide to tracking WhatsApp leads. If your business uses paid search, the Google Ads conversion tracking guide explains how to distinguish a click from a completed enquiry and a later sale."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Track WhatsApp Leads for Small Businesses in India",
+      "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Google Ads Conversion Tracking for Lead Generation in India",
+      "href": "/insights/google-ads-lead-conversion-tracking-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kardengey works across websites, search, performance marketing and practical digital systems. If your enquiry process is difficult to manage, start by documenting the current journey and the problem you want to remove. Then choose the smallest technical change that solves it. Explore the services page or contact the studio to discuss a website, lead-handling or measurement project."
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey services",
+      "href": "/services"
+    },
+    {
+      "type": "heading",
+      "text": "Official references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business app overview",
+      "href": "https://business.whatsapp.com/products/business-app"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business app features",
+      "href": "https://business.whatsapp.com/products/business-app-features"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Platform overview",
+      "href": "https://business.whatsapp.com/products/business-platform"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Platform pricing",
+      "href": "https://business.whatsapp.com/products/platform-pricing"
+    },
+    {
+      "type": "link",
+      "text": "Meta: WhatsApp Business Messaging Policy",
+      "href": "https://business.whatsapp.com/policy"
+    }
+  ]
+},
+{
   "category": "ECOMMERCE / GROWTH",
   "filter": "GROWTH",
   "title": "Google Merchant Center in India: A Setup Guide for D2C Brands",
