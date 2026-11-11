@@ -53,6 +53,13 @@ export default function InsightArticle() {
   ========================================================= */
 
   const seo = getArticleSEO(article);
+  const titleLength = article.title.trim().length;
+  const articleTitleSize =
+    titleLength >= 90
+      ? "text-[clamp(2rem,4.1vw,4.5rem)] leading-[0.98]"
+      : titleLength >= 65
+        ? "text-[clamp(2.4rem,5.2vw,5.8rem)] leading-[0.92]"
+        : "text-[clamp(3rem,7vw,7rem)] leading-[0.86]";
 
   return (
     <article className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
@@ -117,7 +124,7 @@ export default function InsightArticle() {
               delay: 0.15,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className={`mt-7 font-black uppercase tracking-[-0.075em] ${article.slug === "good-cost-per-lead-india-2026" ? "max-w-5xl text-[clamp(3rem,6.2vw,6.5rem)] leading-[0.88]" : "max-w-6xl text-[clamp(3.5rem,8vw,8rem)] leading-[0.82]"}`}
+            className={`mt-7 max-w-6xl font-black uppercase tracking-[-0.075em] text-balance break-words ${articleTitleSize}`}
           >
             {article.title}
           </motion.h1>
