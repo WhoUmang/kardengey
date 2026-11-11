@@ -1,5 +1,412 @@
 const articles = [
 {
+  "category": "GOOGLE ADS / SEARCH OPTIMISATION",
+  "filter": "MARKETING",
+  "title": "Google Ads Negative Keywords in India: How to Audit Search Terms Without Blocking Good Leads",
+  "slug": "google-ads-negative-keywords-india-search-terms-guide",
+  "description": "Learn how Indian businesses can review Google Ads search terms, choose negative keyword match types, organise exclusions and protect qualified enquiries.",
+  "date": "11 NOV 2026",
+  "publishedAt": "2026-11-11",
+  "read": "15 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A Google Ads campaign can target the right service, use a relevant landing page and still attract searches that are not useful to the business. A person looking for a job, a course, a free template or a product you do not sell may see an ad because the search is related to a keyword in your account. Those clicks are not automatically a sign that the campaign is broken. They are a signal to inspect what people actually searched for and decide whether the query belongs in your customer-acquisition plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "That is the job of negative keywords. Used carefully, they help a business stop showing Search ads for clearly irrelevant queries. Used carelessly, they can block people who are ready to buy, ask for a quotation or compare suppliers. This guide explains how Indian small businesses, local service providers, ecommerce brands and B2B teams can audit search terms, choose the right negative match type, organise exclusions and keep a record of why each change was made. Google Ads Help documentation was checked on 11 November 2026; interface labels and product features can change."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: review intent before adding an exclusion"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not begin with a giant negative keyword list downloaded from the internet. Begin with the actual searches that triggered your ads. For each search term, ask three questions: does this person want something we sell, can we serve this person in the location and manner requested, and is the query clearly outside the commercial purpose of this campaign? Exclude a term only when the answer and the business context justify it. Then choose the narrowest useful scope and match type, check for conflicts with your positive keywords, and review the results after the change."
+    },
+    {
+      "type": "quote",
+      "text": "A good negative keyword list is not the longest list. It is a documented set of exclusions that removes the wrong intent without hiding the right customer."
+    },
+    {
+      "type": "heading",
+      "text": "1. A keyword and a search term are not the same thing"
+    },
+    {
+      "type": "paragraph",
+      "text": "A keyword is what an advertiser adds to an ad group to make an ad eligible for an auction. A search term is what a person actually types or says when searching on Google or a Search Network site. One keyword can match several different searches. For example, a broad keyword related to air-conditioner repair could match a person looking for a nearby technician, a training course, a repair manual or a job vacancy. The search terms report shows the queries Google makes available for review and helps you understand how the keyword is working in practice."
+    },
+    {
+      "type": "paragraph",
+      "text": "The match type shown beside a search term helps explain how that query related to the keyword that triggered the ad. It is not necessarily identical to the match type you selected for the keyword. Google also uses meaning and intent for positive keyword matching: phrase and exact match are not simply literal character comparisons, and broad match can reach related searches that do not contain the keyword wording. Read the report in the context of the campaign, ad group, ad and landing page rather than treating a keyword as a promise that only one exact phrase will appear."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About the search terms report",
+      "href": "https://support.google.com/google-ads/answer/2472708?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "2. Where to find the search terms report—and what it cannot show"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Google Ads, open Campaigns and find Search terms under the Insights and reports section. Select a useful date range, then review the report at account, campaign or ad-group level. Depending on the view, you can inspect the search term, the keyword associated with it, match type, campaign, ad group and available performance columns. Use the columns control to add the measures that help you judge the query, and download the report if you want to annotate decisions in a spreadsheet."
+    },
+    {
+      "type": "paragraph",
+      "text": "The report is not a complete transcript of every search. Google says that queries without enough activity may be omitted to meet its data-privacy standards. Search terms insights can group lower-volume or otherwise undisclosed queries into themes or subthemes without exposing the individual search itself. That means a blank or incomplete-looking report does not prove that no other searches occurred. Use the available query data as evidence, not as a promise that every search will be visible."
+    },
+    {
+      "type": "paragraph",
+      "text": "Search terms insights are useful when you want to understand broader intent categories across eligible campaign types. They are not a substitute for the individual search terms report when you need to assess a specific visible query. If a theme looks concerning but the underlying searches are not disclosed, review the associated campaigns, landing pages, conversion quality and other available signals before making a broad exclusion."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About search terms insights",
+      "href": "https://support.google.com/google-ads/answer/11386930?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "3. Check conversion quality before deciding that a query is wasteful"
+    },
+    {
+      "type": "paragraph",
+      "text": "A search that has not produced a recorded conversion is not automatically irrelevant. The person may still be comparing suppliers, the buying cycle may be longer than the reporting window, the conversion may happen by phone or WhatsApp, or the tracking setup may not record the action correctly. A query can also generate a genuine enquiry that the sales team has not yet updated in the CRM. Before excluding a term because it has no conversions, confirm that the business is measuring the outcomes it cares about and that the team is recording lead quality consistently."
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate three questions in your review. First, is the search relevant to the product or service? Second, did it produce a measurable action such as a form, call or message? Third, did the enquiry become a qualified opportunity or sale? A relevant query with no recorded conversion may need more time or better measurement. An irrelevant query may deserve an exclusion even if it generated a click or a low-value action. Do not let a single column make the decision for you."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Google Ads Conversion Tracking for Lead Generation in India",
+      "href": "/insights/google-ads-lead-conversion-tracking-india"
+    },
+    {
+      "type": "heading",
+      "text": "4. Classify search intent before building a negative list"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by grouping visible queries into a small number of business categories. A wrong-product query is about something you do not sell. A wrong-service query asks for a service outside your offer. An employment query is looking for a job, salary, internship or vacancy rather than a supplier. An education query wants a course, tutorial, certificate or study material. An information-only query may be research rather than purchase intent. A location mismatch comes from a place you cannot serve. A relevant commercial query asks for a price, quotation, appointment, supplier, product or service you actually provide."
+    },
+    {
+      "type": "paragraph",
+      "text": "These categories are prompts for investigation, not universal rules. A training company should not automatically exclude course-related terms. A retailer that sells spare parts should not exclude every repair-related search. A recruitment firm should not add job and vacancy terms to its account-wide exclusions. A business that offers free consultations may want to keep some searches containing the word free. The meaning of a query depends on the actual offer, margin, customer journey and campaign objective."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a search is relevant but appears to be reaching the wrong landing page, consider whether the campaign or ad-group structure needs improvement instead of excluding the query. If a business offers installation, repair and annual maintenance, separate ad groups or campaigns may make it easier to match the ad and landing page to each service. Negative keywords can help separate themes, but they should not be used to compensate for a confusing account structure."
+    },
+    {
+      "type": "heading",
+      "text": "5. Understand the three negative keyword match types"
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative keywords for Search campaigns can use broad match, phrase match or exact match. Their behaviour is different from the positive keyword match types. This distinction matters because a negative keyword can be much narrower—or broader—than an advertiser expects. Always check the syntax and test the likely search variations before applying a list to multiple campaigns."
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative broad match is the default when no match symbols are used. The ad is excluded when the search contains all the terms in the negative keyword, regardless of their order. If the negative keyword is \"jobs technician\", a search containing both words may be excluded even if other words appear between them or the order changes. A search containing only one of the two terms may still be eligible. For a single-word negative such as \"vacancy\", any search containing that word is excluded, so its scope can be wider than expected."
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative phrase match uses quotation marks. The ad is excluded when the search contains the negative phrase in the same order, although additional words may appear before or after it. For example, the negative phrase \"AC repair course\" can exclude a longer query such as \"best AC repair course online\" because the phrase appears in that order. It does not automatically exclude every search that expresses a similar idea using different words or a different word order."
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative exact match uses square brackets. The ad is excluded when the search contains the exact terms in the same order without additional words. A negative exact keyword [AC repair course] is therefore narrower than the phrase version: a longer query with extra words can remain eligible. This can be useful when one specific search is clearly irrelevant but related searches may still be valuable."
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative keywords do not expand to close variants in the same way positive keywords can. Google specifically notes that you may need to add synonyms and singular or plural forms separately if you want to exclude them. Google handles casing and misspellings automatically, but do not assume that a singular term, plural term, synonym, abbreviation or Hindi transliteration will be covered by one entry. Review the actual language used by customers before adding variants."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About negative keywords and their match behaviour",
+      "href": "https://support.google.com/google-ads/answer/2453972?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "6. Add exclusions from the report—but check the default match type"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google provides a workflow for selecting a search term in the report and choosing Add as negative keyword. You can add the exclusion to an ad group, a campaign, an existing negative keyword list or a new list. This is convenient, but the default matters: Google's help documentation says that terms added from the Search terms report are added as negative exact match by default. If you intended to exclude a phrase or a broader pattern, review and change the match type before saving."
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose the scope based on where the problem exists. Use an ad-group negative when a query is unsuitable for one ad group but may be relevant to another. Use a campaign-level exclusion when the whole campaign should avoid that intent. Use a shared negative keyword list when the same exclusions are genuinely appropriate across several related campaigns. Do not apply a service-specific exclusion to every campaign simply because it was wrong for one product or location."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Get negative keyword ideas using the search terms report",
+      "href": "https://support.google.com/google-ads/answer/7102466?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "7. Organise negative keyword lists by business purpose"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful structure is easier to maintain than one enormous list. You might have a carefully reviewed brand-wide list for terms that are never relevant to any product or service, an employment list for campaigns that are not recruiting, an education list for campaigns that do not sell training, and product- or service-specific lists for exclusions that apply only to a particular offer. Name each list clearly and write down which campaigns should use it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shared lists are designed to help apply common exclusions across multiple campaigns. Account-level negative keywords are broader: they can apply across eligible Search and Shopping inventory in relevant campaign types. Reserve account-level exclusions for terms that are genuinely wrong for the entire business. If one campaign sells spare parts and another sells repair services, a word that is irrelevant to the service campaign may be central to the parts campaign. Global exclusions can create hidden damage when different offers share one account."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About negative keyword lists",
+      "href": "https://support.google.com/google-ads/answer/2453983?hl=en"
+    },
+    {
+      "type": "heading",
+      "text": "8. Localise the review for Indian search behaviour"
+    },
+    {
+      "type": "paragraph",
+      "text": "Indian customers may search in English, Hindi, another regional language, Romanised Hindi, a mixture of languages, abbreviations or local product names. A search-term audit should reflect the language your customers actually use. If your business serves customers who type \"AC repair Noida\", \"AC theek karna\", \"AC mechanic near me\" or a local-language equivalent, do not assume that one English negative keyword will cover every expression of an unwanted intent."
+    },
+    {
+      "type": "paragraph",
+      "text": "Build language variants from observed queries and genuine knowledge of the product, not from an automated translation exercise that produces a large list without context. Check spelling, transliteration and the words people use for the same service. A term that looks like a synonym to an advertiser may have a different meaning in a local market. If a word is ambiguous, leave it out until you have enough context to make a defensible decision."
+    },
+    {
+      "type": "paragraph",
+      "text": "Location also needs care. A person searching for a service in a nearby neighbourhood may be a good customer even if the campaign uses a broader city name. Conversely, a search for a city outside your service area may be irrelevant. Use the campaign's location settings and the business's actual coverage to guide the decision; do not create a long list of every Indian city as negative keywords when a location-targeting adjustment is the more appropriate fix."
+    },
+    {
+      "type": "paragraph",
+      "text": "Treat common modifiers such as free, cheap, low-cost, price, salary, jobs, course, PDF, repair, second-hand and wholesale as clues—not universal exclusions. A premium service may not want bargain-only searches, but a business that offers a free estimate or affordable product may want to retain them. The word is not the intent by itself. Read the complete query and compare it with the offer."
+    },
+    {
+      "type": "heading",
+      "text": "9. Illustrative example: a Noida air-conditioning service business"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example is illustrative only. Imagine a Noida business that provides residential AC repair, installation and maintenance. It does not recruit technicians, sell training courses or sell repair kits. The campaign is intended to generate service enquiries from households and offices within its service area. The team reviews the search terms report and sees several types of queries."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"AC repair near me\" and \"split AC installation in Noida\" are commercially relevant. Keep them eligible and check that the ad and landing page clearly explain the service, coverage and next step. \"AC technician vacancy Noida\" is an employment search, not a customer enquiry. A negative broad keyword containing both \"technician\" and \"vacancy\" may be appropriate if both terms together reliably identify unwanted recruitment intent, but it should be tested against the account's other campaigns."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Best AC repair course online\" is an education search. If the business does not teach, a negative phrase such as \"AC repair course\" may be a reasonable candidate. Review singular and plural or alternate wording if those searches appear. \"AC repair kit\" may be irrelevant because the business sells a service rather than a kit, but if the business also sells parts, the exclusion should be limited to the service campaign rather than applied across the account."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"AC service price in Noida\" should not be excluded merely because it contains the word price. A customer comparing service costs may be close to contacting a provider. Likewise, \"AC mechanic near me\" may be another way to describe the service the business sells. The point of the audit is to separate a job seeker or course researcher from a household that wants a technician—not to eliminate every search that uses different language from the advertiser's keywords."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before saving any candidate, the business checks the complete search term, the campaign and ad group, the landing page, the service coverage and whether another offer in the account could make the term relevant. It records the reason, chosen match type and scope. This small review prevents a one-campaign problem from becoming an account-wide exclusion."
+    },
+    {
+      "type": "heading",
+      "text": "10. Illustrative example: a B2B software company"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a B2B software company that sells an accounting platform to Indian businesses. This is also an illustrative scenario. Searches such as \"accounting software for small business\", \"GST billing software demo\" or \"accounting software pricing\" may represent commercial research and should not be dismissed simply because the person has not requested a demo yet. Searches for a university assignment, a free spreadsheet template or an unrelated job vacancy may be outside the offer, depending on the company's product and audience."
+    },
+    {
+      "type": "paragraph",
+      "text": "The company should distinguish a person who wants a free trial of its own software from someone searching for a free downloadable Excel template. The word free appears in both, but the intent is different. A broad negative for \"free\" could block a valuable trial search. A more specific phrase or exact exclusion based on the actual unwanted query may be safer. If the product offers a free plan, trial or demo, the team should be especially cautious about generic price-related exclusions."
+    },
+    {
+      "type": "heading",
+      "text": "11. Build a search-term review sheet that preserves the reasoning"
+    },
+    {
+      "type": "paragraph",
+      "text": "A spreadsheet makes decisions easier to audit, especially when several people manage the account. Keep the original search term and add columns for date range, campaign, ad group, matched keyword, match type, clicks, cost, recorded conversions, qualified leads or sales where available, landing page, intent category, decision, negative match type, scope, reason and review date. You do not need every metric for every decision, but the context should be available when someone asks why a term was excluded."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use three decision labels: keep, investigate and exclude. Keep means the query is relevant or may reveal a useful new keyword or landing-page idea. Investigate means the query is ambiguous, low-volume, affected by conversion lag or not yet supported by enough business context. Exclude means the query clearly falls outside the product, service, location or commercial purpose of the campaign. This prevents a rushed binary decision when the evidence is incomplete."
+    },
+    {
+      "type": "paragraph",
+      "text": "For active campaigns, set a recurring review time that matches the amount of traffic and the sales cycle. A high-volume campaign may justify a more frequent review; a low-volume local campaign may need a longer observation window to avoid reacting to one unusual query. There is no universal number of clicks or days that proves a search term is bad. Use enough data to understand the query, and take conversion delay and offline sales follow-up into account."
+    },
+    {
+      "type": "heading",
+      "text": "12. A practical review workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 1 — Confirm the measurement. Check that forms, calls, WhatsApp enquiries and other meaningful actions are recorded correctly. If only a page view or button click is counted, the report may not tell you whether a search produced a genuine lead. Make sure the team can distinguish a raw enquiry from a qualified opportunity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 2 — Choose the review period and campaign. Start with a date range that gives enough context for the campaign's volume and sales cycle. Review campaigns separately when they sell different services, target different locations or use different landing pages. Segment by device or network if the available data suggests a meaningful difference, but do not create exclusions simply because one segment has fewer conversions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 3 — Read the complete query. Ask what the person wanted, not just which word appears. Check whether the query is a job search, course search, product mismatch, out-of-area request, competitor comparison, informational question or legitimate buying query. If the meaning is uncertain, classify it as investigate and leave it eligible until you have a better reason."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 4 — Select the narrowest effective match type. Use negative exact for one clearly unwanted query, phrase for an unwanted phrase that can appear inside longer searches, and broad only when the combination of terms reliably identifies irrelevant intent. Remember that negative match types do not behave like positive match types and do not automatically cover close variants."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 5 — Choose the right scope. Apply the exclusion at ad-group level when the issue belongs to one ad group, campaign level when it belongs to the whole campaign, and a shared list when the same rule is suitable across related campaigns. Use account-level exclusions only for terms that are genuinely irrelevant everywhere they will apply."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 6 — Check for conflicts. Search your positive keyword list, campaign themes, landing-page content and other campaigns for the proposed negative. Ask whether the exclusion could block a service, product, location or audience you actually want. Review singular, plural, synonym, abbreviation and language variants only where they matter to the observed query pattern."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 7 — Save a reason and monitor the change. Record what was changed, when, where and why. After the next suitable review period, check whether irrelevant searches reduced and whether qualified enquiries remained available. If a good query was blocked, remove or narrow the exclusion. Treat negative keyword management as ongoing maintenance, not a one-time upload."
+    },
+    {
+      "type": "heading",
+      "text": "13. Common mistakes that can hide good customers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first mistake is copying a generic negative keyword list and applying it to every campaign. Lists often contain terms such as free, cheap, jobs, course, repair, online or price without knowing what the advertiser sells. Each of those words can appear in a legitimate customer search. Start with the business model and use the search terms report to validate the exclusion."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second mistake is using a broad negative when a phrase or exact negative would be enough. A single broad term can remove many searches that contain it. A multi-word broad negative excludes when all its words appear, even in a different order. If the words are common in your market, the scope can become unexpectedly wide. Test likely queries before applying it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The third mistake is assuming that negative keywords automatically cover every close variant, singular, plural, synonym or transliteration. They do not. The fourth is adding a campaign-specific exclusion at account level. The fifth is excluding a search after one click without checking whether it was relevant, whether conversion tracking works and whether the sales cycle is longer than the selected reporting window."
+    },
+    {
+      "type": "paragraph",
+      "text": "The sixth mistake is treating a lower click count as proof of better performance. A negative keyword can reduce impressions and clicks, but that does not guarantee a lower cost per qualified lead or more sales. Compare the quality and volume of enquiries, spend, conversion measurement and business outcomes before declaring the change successful. A smaller traffic number is not automatically a better campaign."
+    },
+    {
+      "type": "heading",
+      "text": "14. How negative keywords fit into the wider campaign strategy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative keywords are one control in a larger system. Campaign structure, positive keywords, ad copy, location settings, landing pages, conversion measurement, budgets and sales follow-up all influence what happens after a person searches. If the same irrelevant query keeps appearing, investigate whether the positive keyword theme or campaign structure is too broad. If relevant searches click but do not enquire, the problem may be the offer, page, price information or lead journey rather than the search term itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are deciding how much to spend, first connect the budget to the value of a qualified customer and the team's ability to respond. If you are comparing SEO with paid search, remember that the two channels serve different time horizons and intent patterns. If you need to understand whether the campaign is producing profitable outcomes, calculate acquisition cost using consistent definitions rather than looking only at clicks or raw leads."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How Much Should an Indian Small Business Spend on Google and Meta Ads?",
+      "href": "/insights/small-business-google-meta-ads-budget-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: What Is a Good Cost Per Lead in India?",
+      "href": "/insights/good-cost-per-lead-india-2026"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Calculate the Real Cost of Acquiring a Customer",
+      "href": "/insights/calculate-real-customer-acquisition-cost-india"
+    },
+    {
+      "type": "link",
+      "text": "Use the free Kardengey Marketing ROI Calculator",
+      "href": "/tools/marketing-roi-calculator"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kardengey's performance marketing work can include campaign structure, keyword and search-term reviews, conversion measurement, landing-page improvements and ongoing optimisation. The right scope depends on the offer, account history, website and sales process. A review should begin with the business outcome the campaign is meant to create, not with a promise that a particular negative keyword list will produce a fixed result."
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey's performance marketing and website services",
+      "href": "/services"
+    },
+    {
+      "type": "heading",
+      "text": "15. Frequently asked questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Should every search term without a conversion become a negative keyword? No. A query may be relevant but have too little data, a delayed conversion or an offline outcome that is not recorded. Exclude it when the intent is clearly unsuitable, not merely because one reporting window shows no conversion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Should I use negative broad match for every unwanted word? No. Broad match can be useful when all the terms together reliably identify irrelevant intent, but a single-word negative may remove many searches. Choose the narrowest match type that achieves the intended exclusion and test the effect."
+    },
+    {
+      "type": "paragraph",
+      "text": "Can I see every search that triggered my ad? No. Google omits some low-activity queries from the individual report for privacy reasons. Search terms insights may group undisclosed queries into themes or other categories, but it does not reveal every hidden query."
+    },
+    {
+      "type": "paragraph",
+      "text": "Should I put all exclusions at account level? No. Account-level exclusions can affect eligible inventory across relevant campaigns. Keep service-, product-, location- or campaign-specific exclusions closer to the campaign they belong to. Reserve global exclusions for terms that are truly irrelevant to the entire business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do negative keywords guarantee a lower cost per lead? No. They can prevent ads from showing on selected searches, but they do not guarantee more qualified enquiries, a lower acquisition cost or higher revenue. Measure the outcome after making controlled changes."
+    },
+    {
+      "type": "heading",
+      "text": "A final checklist before saving a negative keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before you click Save, confirm that you have read the complete search term, identified the intent, checked the product or service being advertised, and considered the location and language. Confirm that the query is genuinely irrelevant rather than simply unfamiliar. Choose broad, phrase or exact match deliberately; verify the default if you add the term from the report; select the narrowest appropriate scope; and check for conflicts with positive keywords and other campaigns."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then document the reason and review the effect after a suitable period. Keep the exclusions that remove genuinely irrelevant demand, narrow or reverse those that block qualified searches, and update your language variants as real customer behaviour changes. The aim is not to make a Google Ads account look tidy. It is to make the campaign more relevant to the people the business can actually serve."
+    },
+    {
+      "type": "heading",
+      "text": "Official Google Ads references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About negative keywords",
+      "href": "https://support.google.com/google-ads/answer/2453972?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About the search terms report",
+      "href": "https://support.google.com/google-ads/answer/2472708?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Get negative keyword ideas using the search terms report",
+      "href": "https://support.google.com/google-ads/answer/7102466?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Add negative keywords to campaigns",
+      "href": "https://support.google.com/google-ads/answer/7102995?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About negative keyword lists",
+      "href": "https://support.google.com/google-ads/answer/2453983?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About keyword matching options",
+      "href": "https://support.google.com/google-ads/answer/7478529?hl=en-IN"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: About search terms insights",
+      "href": "https://support.google.com/google-ads/answer/11386930?hl=en"
+    }
+  ]
+},
+{
   "category": "WHATSAPP / BUSINESS MESSAGING",
   "filter": "MARKETING",
   "title": "WhatsApp Business App vs Platform in India: Which Should Your Business Use?",
