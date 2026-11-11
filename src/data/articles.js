@@ -7,7 +7,7 @@ const articles = [
   "description": "Learn how Indian businesses can review Google Ads search terms, choose negative keyword match types, organise exclusions and protect qualified enquiries.",
   "date": "11 NOV 2026",
   "publishedAt": "2026-11-11",
-  "read": "15 MIN READ",
+  "read": "22 MIN READ",
   "author": "Kardengey",
   "content": [
     {
