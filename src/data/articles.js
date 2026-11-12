@@ -7,7 +7,7 @@ const articles = [
   "description": "A practical DPDP Act readiness guide for Indian business websites. Review lead forms, marketing opt-ins, analytics tags, CRM access, vendors and retention.",
   "date": "12 NOV 2026",
   "publishedAt": "2026-11-12",
-  "read": "18 MIN READ",
+  "read": "23 MIN READ",
   "author": "Kardengey",
   "content": [
     {
