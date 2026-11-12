@@ -1,5 +1,421 @@
 const articles = [
 {
+  "category": "WEBSITE / DATA PRIVACY",
+  "filter": "TECH",
+  "title": "DPDP Act for Indian Business Websites: Lead Forms, Marketing Consent and Analytics Checklist",
+  "slug": "dpdp-act-website-lead-forms-india",
+  "description": "A practical DPDP Act readiness guide for Indian business websites. Review lead forms, marketing opt-ins, analytics tags, CRM access, vendors and retention.",
+  "date": "12 NOV 2026",
+  "publishedAt": "2026-11-12",
+  "read": "23 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A business website can collect personal information long before a customer becomes a customer. Someone may request a quotation through a contact form, tap a WhatsApp button, submit a Meta lead form, call a tracking number or create an account. Analytics and advertising tags may also collect identifiers and information about how the visitor uses the site. Those details can then move into a CRM, inbox, spreadsheet, email platform or sales team's phone. If the business cannot explain what it collects, why it collects it and who can access it, its privacy process is difficult to manage."
+    },
+    {
+      "type": "paragraph",
+      "text": "India's Digital Personal Data Protection Act, 2023 (DPDP Act) and the Digital Personal Data Protection Rules, 2025 introduce a framework for processing digital personal data. Their provisions have staggered commencement dates, so it is important not to confuse the date of a notification with the date on which every obligation becomes operative. This guide, checked against the official material on 12 November 2026, helps Indian business owners prepare their websites, lead forms, analytics and marketing workflows. It is an operational readiness guide, not legal advice."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: map the data before changing the form"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by listing every place where a person can share information with your business. For each point, record the fields collected, the purpose, the systems that receive the data, the people who can see it and the period for which it is kept. Then make the form explain its purpose in plain language, keep optional marketing separate from a service enquiry, stop personal information from leaking into analytics URLs or event parameters, and review the vendors that process the data. A privacy policy is useful, but it is not a substitute for a working data-handling process."
+    },
+    {
+      "type": "quote",
+      "text": "A good lead form should make the next step clear to the customer and make the business's use of the information clear to the person submitting it."
+    },
+    {
+      "type": "heading",
+      "text": "1. Understand what counts as digital personal data"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DPDP Act defines personal data as data about an individual who is identifiable by or in relation to that data. It applies to digital personal data processed in India when the information is collected in digital form, or collected in another form and digitised later. It can also apply to processing outside India when that processing is connected with offering goods or services to people in India. A name, personal mobile number, email address or a combination of details that identifies a person can therefore be relevant to a business website's data inventory."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Act uses the term Data Fiduciary for the person or organisation that determines the purpose and means of processing personal data. A Data Processor handles personal data on behalf of a Data Fiduciary. A small business that decides why it collects a lead's name and phone number will commonly be making the key decisions about that processing, even if a web developer, CRM provider or marketing agency operates part of the system. The correct role depends on the actual arrangement, not just the label in a service contract."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is why a business should not assume that the website developer, advertising agency or software vendor automatically becomes responsible for every privacy decision. The business needs to understand the data flow and the role each party performs. Ask who chooses the purpose, who controls access, who can export the records, who responds to requests and who can delete information when it is no longer needed."
+    },
+    {
+      "type": "link",
+      "text": "Official text: Digital Personal Data Protection Act, 2023 — India Code",
+      "href": "https://www.indiacode.nic.in/bitstream/123456789/22037/2/a2023-22.pdf"
+    },
+    {
+      "type": "heading",
+      "text": "2. Know the phased commencement dates before planning compliance"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Central Government's commencement notification, G.S.R. 843(E), dated 13 November 2025, does not bring every section of the Act into force on one day. It appoints different dates for different provisions. The Digital Personal Data Protection Rules, 2025, notified as G.S.R. 846(E), use a similar phased approach. Business owners should work from the Gazette notifications and the final Rules, not from a headline that says the entire Act has started."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first phase began on publication of the notifications in November 2025 and included definitions and the establishment and operation of the Data Protection Board, among other listed provisions. The one-year phase is scheduled for 13 November 2026: under the Act it includes section 6(9), which concerns registration of Consent Managers, and the related Board function in section 27(1)(d); under the Rules it brings Rule 4, which sets out Consent Manager registration and obligations. This is a specific Consent Manager phase—not the start date for every website notice, consent or data-fiduciary obligation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The main operational provisions relevant to most businesses—including sections 3 to 5, sections 6(1) to 6(8) and 6(10), and sections 7 to 17—are scheduled for the eighteen-month phase, calculated from the Gazette publication date. The Rules similarly defer Rule 3 and Rules 5 to 16, 22 and 23. Based on the Gazette dated 13 November 2025, that phase is scheduled for 13 May 2027. Check the current official notifications before relying on a date, especially if a later notification or corrigendum affects your situation."
+    },
+    {
+      "type": "paragraph",
+      "text": "One term is easy to misunderstand: a Consent Manager under the DPDP Act is a registered person that acts as a single point of contact to help individuals give, manage, review and withdraw consent through an accessible, transparent and interoperable platform. It is not simply another name for a cookie banner, a website privacy-policy generator, a CRM or a marketing agency. Do not buy a product because it uses the words consent manager without checking what role it actually performs."
+    },
+    {
+      "type": "link",
+      "text": "MeitY Gazette notification G.S.R. 843(E): commencement of the DPDP Act",
+      "href": "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf"
+    },
+    {
+      "type": "link",
+      "text": "MeitY Gazette notification G.S.R. 846(E): Digital Personal Data Protection Rules, 2025",
+      "href": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf"
+    },
+    {
+      "type": "heading",
+      "text": "3. Build a simple inventory of every lead-data collection point"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not limit the inventory to the main contact page. Include quotation forms, appointment bookings, newsletter sign-ups, account registration, checkout, callback requests, downloadable guides, event registrations, website chat, WhatsApp conversations, call tracking, social-platform lead forms and information collected by support teams. Include offline forms that are later entered into a CRM or spreadsheet, because digitising information can bring it into the Act's scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each collection point, write down the exact fields. A service enquiry may need a person's name, a way to contact them, the service they are asking about and perhaps a city or preferred appointment time. It may not need their date of birth, home address, identity document, personal social-media profile or a long open-ended questionnaire. An ecommerce checkout may need different details to fulfil an order. The right field list depends on the service and the purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add a purpose column beside each field. For example, a phone number may be used to call back about a quotation; an email address may be used to send the requested proposal; an order address may be needed for delivery. If the same field is also used for promotional campaigns, record that as a separate purpose rather than hiding it inside a broad description such as 'business communications'. A field that has no clear purpose is a candidate for removal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, record where the information goes. A website form may send details to a server, an email notification, a CRM, an automation tool and a sales representative. A Meta lead form may send information directly to a connected CRM. A call-tracking provider may store call metadata or recordings. The inventory should show the complete journey, including manual exports and copies made by staff."
+    },
+    {
+      "type": "heading",
+      "text": "4. Separate a requested service response from optional marketing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Act identifies consent and certain legitimate uses as grounds for processing personal data. Section 7(a), for example, describes a specified purpose for which an individual voluntarily provides personal data and has not indicated that they do not consent to its use. That provision should not be treated as a blanket permission to use every enquiry for every future campaign. The purpose, the circumstances in which the information was provided and any other applicable requirements matter. Get legal advice before deciding which ground applies to a particular workflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "A person who asks for a quotation is clearly expecting the business to respond to that request. That does not mean the person necessarily wants an ongoing newsletter, promotional WhatsApp broadcasts, unrelated product announcements or remarketing based on every detail in the enquiry. Keep the service response and optional promotional communication as separate decisions. If the business relies on consent for a purpose, the Act describes consent as free, specific, informed, unconditional and unambiguous, given through clear affirmative action and limited to the personal data necessary for that purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "A practical form can therefore ask for the information needed to handle the enquiry, then offer a separate, optional choice for marketing updates. Do not pre-select the marketing box. Do not make a person subscribe to promotions as a condition of requesting a service quotation unless qualified advice confirms a valid basis for that design. Store the preference and the context in which it was given, and provide a working way to change it later."
+    },
+    {
+      "type": "heading",
+      "text": "5. Make the form and the privacy notice understandable"
+    },
+    {
+      "type": "paragraph",
+      "text": "A privacy notice should answer the visitor's immediate questions: what information is being collected, why it is needed, what will happen after the form is submitted, which service providers may handle it, how long it is likely to be retained and how the person can contact the business about their information. Avoid vague phrases such as 'we may use your data for business purposes' when you can describe the actual purpose more clearly."
+    },
+    {
+      "type": "paragraph",
+      "text": "Place a short explanation close to the form and link to the full privacy notice. Make sure the link works on a phone, the text is readable and the submit button does not obscure the information. If a form collects information for more than one purpose, explain the purposes separately. A privacy notice should not be buried in a footer while the form asks for details without telling the visitor what the business intends to do with them."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following is an illustrative wording pattern, not a legal template: 'We collect your name, phone number and service details to respond to your request for a quotation. See our privacy notice for information about how we handle your details and how to contact us.' A separate optional choice might say: 'I would like to receive occasional product updates and offers by email or WhatsApp. I can change this preference later.' The actual wording, lawful basis and channels should be reviewed for the business's specific use."
+    },
+    {
+      "type": "heading",
+      "text": "6. Prepare for the DPDP Rules' notice requirements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rule 3 of the DPDP Rules, 2025 describes a notice that is understandable on its own and distinct from other information. It calls for clear, plain language and a specific account of the personal data being processed and the purpose or purposes for processing it. It also describes providing a communication link to the Data Fiduciary's website or app and explaining how an individual can withdraw consent, exercise rights and make a complaint, where applicable."
+    },
+    {
+      "type": "paragraph",
+      "text": "Rule 3 is part of the eighteen-month phase, scheduled for May 2027 under the published commencement framework. That does not make it sensible to wait until the last moment. A business can begin by writing down its data fields and purposes, removing unnecessary questions, checking its contact details and designing a notice that a real customer can understand. Before the relevant provisions commence, confirm the latest legal position and obtain professional advice on the final notice."
+    },
+    {
+      "type": "paragraph",
+      "text": "MeitY's explanatory note gives a plain-language overview of the Rules' notice approach, including itemised information and a description of the purposes and services enabled by processing. The Ministry expressly says that the explanatory note is not part of the Rules and should not be used as the legal text. Use it to understand the policy direction, then read the Gazette itself when making a compliance decision."
+    },
+    {
+      "type": "link",
+      "text": "MeitY: Explanatory note to the Digital Personal Data Protection Rules, 2025",
+      "href": "https://www.meity.gov.in/writereaddata/files/Explanatory-Note-DPDP-Rules-2025.pdf"
+    },
+    {
+      "type": "heading",
+      "text": "7. Treat WhatsApp, calls and social lead forms as part of the same data journey"
+    },
+    {
+      "type": "paragraph",
+      "text": "A lead may arrive through a website form, a WhatsApp click-to-chat link, a social-platform instant form or a phone call. The collection point changes, but the business still needs to understand what information is received, why it is used, where it is stored and who can access it. If a sales representative copies a WhatsApp number into a spreadsheet and later imports it into a CRM, that is still part of the business's data workflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not assume that a platform's own opt-in or messaging controls automatically settle every question under Indian data-protection law. Channel rules, platform policies and the DPDP framework are related but not interchangeable. Keep a record of the source of the enquiry, the purpose the person requested, any separate marketing preference and any opt-out. Avoid adding people to promotional lists simply because they once asked a question."
+    },
+    {
+      "type": "paragraph",
+      "text": "For calls, decide whether the business records audio, stores call notes or uses a third-party tracking provider. If calls are recorded, the visitor or customer should receive appropriate information and the business should obtain advice on the applicable requirements. Restrict recordings and transcripts to people who need them, set a retention rule and avoid sending the content of calls into analytics events."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: How to Track WhatsApp Leads for Small Businesses in India",
+      "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: WhatsApp Business App vs Platform in India",
+      "href": "/insights/whatsapp-business-app-vs-platform-india"
+    },
+    {
+      "type": "heading",
+      "text": "8. Keep personal information out of analytics URLs and event data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Analytics and advertising tags are often added to a site to understand which campaigns generate enquiries. They should not become an accidental destination for the information entered in a form. Google Analytics prohibits customers from sending personally identifiable information to Analytics. Google's guidance specifically warns about email addresses and personal mobile numbers, and explains that personal information can leak through page URLs, query parameters, page titles, search terms, campaign parameters and event dimensions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Never build a thank-you URL that includes a visitor's email address, phone number, name or other personal details. Avoid putting form values into event names, event labels, custom dimensions, UTM parameters or page titles. Use neutral event names such as 'lead_form_submit' and send only the non-identifying information needed for measurement. If a URL or event can contain user-entered text, test it with sample data and inspect the outgoing analytics requests."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a tag-management plan that identifies every tag, its owner, the data it reads and the conditions under which it runs. Remove duplicate or abandoned tags. Check pixels and conversion tags after a website redesign, because a new form, URL structure or thank-you page can change what gets sent. Keep advertising measurement separate from the CRM record that contains the person's actual contact details."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Best practices to avoid sending personally identifiable information",
+      "href": "https://support.google.com/analytics/answer/6366371"
+    },
+    {
+      "type": "heading",
+      "text": "9. Understand what Google Consent Mode does—and does not do"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google Consent Mode lets a website communicate a visitor's consent choices to supported Google tags so those tags can adjust their behaviour. It works with a consent banner or other mechanism that collects the visitor's choice; Consent Mode itself does not provide the banner or decide the legal basis for processing. A correctly configured tag setup is a technical control, not a complete privacy programme."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use Google Tag Manager, review the consent settings for each relevant tag and make sure consent defaults are set before other tags run. Test both acceptance and rejection paths. Check whether tags fire, whether cookies are written and what network requests are sent in each state. Do not copy a configuration from another region or website without checking the laws, tag behaviour and business purposes that apply to your own site."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also avoid assuming that the DPDP Act automatically requires a particular cookie-banner design for every website. Assess the actual identifiers and personal data being processed, the purpose, the applicable legal basis and any other laws or platform rules that may apply. A banner that offers only one large 'Accept' button, does not explain the choices or leaves tags running regardless of the selection may not reflect the process the business thinks it has implemented."
+    },
+    {
+      "type": "link",
+      "text": "Google Tag Manager Help: About Consent Mode",
+      "href": "https://support.google.com/tagmanager/answer/10000067"
+    },
+    {
+      "type": "heading",
+      "text": "10. Review your CRM, agency and software-provider relationships"
+    },
+    {
+      "type": "paragraph",
+      "text": "List every service that receives or stores lead information: website hosting, form delivery, CRM, email marketing, WhatsApp provider, call tracking, cloud storage, customer-support software, analytics and advertising platforms. For each provider, identify the information it receives, the reason it receives it, the people who can access it, the retention settings and the process for exporting or deleting records. Remove tools that are no longer used but still hold old leads."
+    },
+    {
+      "type": "paragraph",
+      "text": "Section 8 of the Act places obligations on the Data Fiduciary and addresses processing carried out on its behalf. It states that a Data Fiduciary may engage a Data Processor for activities related to offering goods or services only under a valid contract. This makes vendor review a business task, not just a technical one. A contract should clearly address instructions, permitted use, confidentiality, access, security, assistance with requests, incident escalation, subcontractors and return or deletion of data at the end of the engagement."
+    },
+    {
+      "type": "paragraph",
+      "text": "If an agency manages advertising or a CRM, make sure the client retains appropriate ownership and administrative access to its accounts and customer records. Use individual accounts and role-based permissions instead of shared passwords. Remove access when a staff member or vendor leaves. Do not send full lead exports through personal email or informal chat when a secure system with controlled access is available."
+    },
+    {
+      "type": "heading",
+      "text": "11. Set retention, deletion and security rules that staff can follow"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keeping every enquiry forever is not a retention policy. Decide how long different records are needed for the purpose they serve, and check whether tax, consumer, contract or other laws require some records to be retained for a separate period. A sales enquiry that never progressed may not need the same retention period as an invoice or an order record. Record the reason for each period and make sure the CRM, inbox and exported spreadsheets follow it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Act's section 8 addresses reasonable security safeguards and erasure when the purpose is no longer being served or consent is withdrawn, subject to legal requirements that may require continued retention. The relevant operational provisions are scheduled for the later commencement phase, but businesses can prepare by limiting access, using multi-factor authentication, keeping software updated, securing backups, reviewing exports and documenting who is responsible for deletion."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a simple offboarding checklist for employees and vendors. Revoke accounts, rotate shared credentials where they exist, remove access to cloud folders, check connected applications and recover devices or records where appropriate. Make sure the business knows how to respond if a lead list is emailed to the wrong recipient, a phone is lost or an account is compromised. A written incident contact path is more useful than discovering ownership during an emergency."
+    },
+    {
+      "type": "heading",
+      "text": "12. Make it possible to handle customer questions and preferences"
+    },
+    {
+      "type": "paragraph",
+      "text": "A person should not have to guess which inbox to contact when they want to ask how their information is used. Identify a business contact who can route privacy questions to the right person. Decide how the team will locate a record, confirm the requester, review the information held, correct an error, record a preference change and escalate a complaint. The Act sets out rights and grievance provisions, with the relevant provisions scheduled in the later phase; preparation requires an operational owner, not only a paragraph in a policy."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a person withdraws a marketing preference, update the systems that use that preference. A CRM checkbox is not enough if a separate email tool or WhatsApp list continues to send campaigns. Keep a suppression record where necessary to respect the opt-out, but do not keep using the person's details for the purpose they have withdrawn from. Where a different legal retention requirement applies, get advice on what may be kept and why."
+    },
+    {
+      "type": "paragraph",
+      "text": "Businesses that collect information about children need special care. The Act includes provisions for verifiable parental consent and restrictions relating to tracking, behavioural monitoring and targeted advertising directed at children, subject to specified exemptions and conditions. If your product, education service, app or campaign may involve children, do not adapt an adult lead form and assume it is sufficient. Obtain specialist legal and product advice before collecting or using that information."
+    },
+    {
+      "type": "heading",
+      "text": "13. A practical 30-day website readiness plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 1–5: map the collection points. Review the main website, landing pages, social lead forms, WhatsApp entry points, phone workflows and offline forms. List every field and system. Mark any field whose purpose is unclear, any export stored outside the CRM and any tag that receives user-entered information. Assign an owner for each workflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 6–10: simplify the forms and notices. Remove unnecessary fields, explain why required information is needed, link to the privacy notice and separate optional marketing preferences. Test the forms on mobile and desktop. Review the words used in confirmation messages and automated replies so they match what the visitor requested."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 11–15: audit measurement. Open Google Tag Manager and analytics settings. List the tags, pixels and custom events. Check page URLs, query strings, event parameters and campaign naming for personal information. Test form submissions with dummy details and inspect what is sent to analytics and advertising platforms. Document the intended behaviour when a visitor makes a different consent choice."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 16–20: review vendors and access. Confirm which providers receive lead data, which staff and agencies have access, how data can be exported or deleted and what contractual terms apply. Remove unused integrations and personal spreadsheets. Turn on multi-factor authentication where available and check that former staff or vendors no longer have access."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 21–30: write the operating procedure. Set a retention schedule, an opt-out process, a contact for privacy questions and an incident escalation path. Train the people who answer calls, WhatsApp messages and forms. Test one sample request from start to finish: submit an enquiry, record the purpose, route it to the right team, change a marketing preference and verify that the change reaches the connected tools. Ask qualified counsel to review the legal basis and notices for your specific business."
+    },
+    {
+      "type": "heading",
+      "text": "14. Common mistakes Indian businesses should avoid"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first mistake is assuming that a privacy-policy page alone solves every issue. A policy cannot fix a form that collects unnecessary information, a CRM that gives every employee access or a tag that sends email addresses to analytics. The second is combining service responses and promotional messages into one vague purpose. The third is using a pre-ticked marketing checkbox or treating silence as a positive choice when consent is the basis for processing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another mistake is confusing a Consent Manager under the DPDP Act with a cookie-consent platform. They are different concepts. A further mistake is assuming that a third-party agency or software provider takes over all responsibility for the business's data decisions. The business should understand the roles, instructions and contracts, and should be able to retrieve its own customer information when a provider relationship ends."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not send personal details to Google Analytics in order to make lead reports easier. Do not put a phone number or email address in a URL parameter. Do not leave old lead exports in public cloud folders. Do not keep promotional lists after a person has opted out simply because the CRM and email platform are not synchronised. These are preventable workflow problems that should be found during a routine audit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, do not treat the phased commencement dates as a reason to ignore the subject until 2027, and do not tell customers that the entire Act becomes enforceable on 13 November 2026. The one-year stage is specifically about Consent Managers; the main notice, consent and Data Fiduciary provisions are in the later phase under the published notifications. Keep a dated record of what you have checked and verify the official legal position before implementing a change."
+    },
+    {
+      "type": "heading",
+      "text": "15. Frequently asked questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Does the DPDP Act start fully on 13 November 2026? No. The published commencement notification uses phases. The one-year stage includes registration of Consent Managers and the related Board function. The main provisions covering notice, consent, general Data Fiduciary obligations and individual rights are scheduled for the eighteen-month phase, calculated from the Gazette publication date."
+    },
+    {
+      "type": "paragraph",
+      "text": "Does every Indian website need a cookie banner? There is no one-size-fits-all answer in the DPDP Act that makes a banner alone the compliance solution. Identify what personal data or identifiers your site processes, why they are used, what other laws and platform policies apply and how your tags behave. A banner or Consent Mode configuration does not replace a lawful basis, a clear notice or a complete data-handling process."
+    },
+    {
+      "type": "paragraph",
+      "text": "Can a business use an enquiry form to send promotional messages later? Do not assume that a service enquiry automatically authorises unrelated marketing. The Act recognises consent and certain legitimate uses, but the appropriate basis depends on the facts and purpose. Keep optional marketing separate, record the choice and provide a way to change it. Ask qualified counsel to review the workflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Is a small business automatically exempt? Do not assume that a business is outside the framework simply because it is small. The Act's application, definitions and exemptions need to be considered in context. A business that collects digital personal data through its website should map its processing and obtain advice on which provisions apply to it."
+    },
+    {
+      "type": "paragraph",
+      "text": "If an agency runs my ads and CRM, does it own the lead data? The commercial contract and actual processing roles matter. The Act distinguishes Data Fiduciaries from Data Processors and addresses processing on behalf of a Data Fiduciary. Keep account ownership, permitted uses, access, security, deletion and exit arrangements clear in writing."
+    },
+    {
+      "type": "heading",
+      "text": "A final checklist before your next campaign goes live"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before publishing a new landing page or campaign, confirm that every field has a purpose, the visitor can understand what happens after submission, optional marketing is not bundled into the service request, the privacy notice is easy to find, analytics does not receive personal information, vendors and staff have appropriate access, and the business can find and update a lead record. Recheck the form after every major redesign, CRM migration or new advertising integration."
+    },
+    {
+      "type": "paragraph",
+      "text": "Privacy readiness is not a one-time banner installation. It is a set of decisions about what a business collects, what it promises, how its systems behave and whether its team follows the same process. A clearer data journey can also make lead management easier: the right people receive the right information for the right purpose, while the customer knows what to expect. Build the workflow first, then have the legal details reviewed for your particular business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Kardengey's work across website development, performance marketing and analytics can include reviewing forms, conversion journeys, tracking setups and the hand-offs between a website and the tools a business uses. The appropriate scope depends on the business and its systems. We do not provide legal advice or guarantee compliance; involve a qualified privacy professional or lawyer when deciding legal bases, notices, contracts and retention requirements."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey services: websites, SEO and performance marketing",
+      "href": "/services"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Google Ads Conversion Tracking for Lead Generation in India",
+      "href": "/insights/google-ads-lead-conversion-tracking-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Website Redesign SEO Checklist for Indian Businesses",
+      "href": "/insights/website-redesign-seo-checklist-india"
+    },
+    {
+      "type": "link",
+      "text": "Read Kardengey's Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "type": "link",
+      "text": "Contact Kardengey",
+      "href": "/contact"
+    },
+    {
+      "type": "heading",
+      "text": "Official references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Digital Personal Data Protection Act, 2023 — India Code",
+      "href": "https://www.indiacode.nic.in/bitstream/123456789/22037/2/a2023-22.pdf"
+    },
+    {
+      "type": "link",
+      "text": "Digital Personal Data Protection Rules, 2025 — MeitY Gazette PDF",
+      "href": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf"
+    },
+    {
+      "type": "link",
+      "text": "Commencement notification G.S.R. 843(E) — MeitY Gazette PDF",
+      "href": "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf"
+    },
+    {
+      "type": "link",
+      "text": "MeitY explanatory note to the DPDP Rules, 2025",
+      "href": "https://www.meity.gov.in/writereaddata/files/Explanatory-Note-DPDP-Rules-2025.pdf"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics: Best practices to avoid sending PII",
+      "href": "https://support.google.com/analytics/answer/6366371"
+    },
+    {
+      "type": "link",
+      "text": "Google Tag Manager: About Consent Mode",
+      "href": "https://support.google.com/tagmanager/answer/10000067"
+    }
+  ]
+},
+{
   "category": "GOOGLE ADS / SEARCH OPTIMISATION",
   "filter": "MARKETING",
   "title": "Google Ads Negative Keywords in India: How to Audit Search Terms Without Blocking Good Leads",
