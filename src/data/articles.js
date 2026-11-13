@@ -4726,7 +4726,7 @@ const articles = [
   "description": "Prepare a clear website design brief for an Indian business. Define goals, pages, content, integrations, SEO, budget, ownership and launch checks before hiring an agency.",
   "date": "13 NOV 2026",
   "publishedAt": "2026-11-13",
-  "read": "16 MIN READ",
+  "read": "22 MIN READ",
   "author": "Kardengey",
   "content": [
     {
