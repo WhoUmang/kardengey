@@ -4717,6 +4717,515 @@ const articles = [
       "href": "https://support.google.com/adspolicy/answer/7475709?hl=en"
     }
   ]
+},
+{
+  "category": "WEBSITE / PROJECT PLANNING",
+  "filter": "TECH",
+  "title": "Website Design Brief for Indian Businesses: A Practical Agency Checklist",
+  "slug": "website-design-brief-india",
+  "description": "Prepare a clear website design brief for an Indian business. Define goals, pages, content, integrations, SEO, budget, ownership and launch checks before hiring an agency.",
+  "date": "13 NOV 2026",
+  "publishedAt": "2026-11-13",
+  "read": "22 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A website project can begin with a simple request: make the site look more modern. A few reference links and a logo are shared, a quote is requested, and work starts. A few weeks later, the business discovers that the quote did not include product uploads, copywriting, CRM integration, migration, analytics or the pages the sales team actually needs. The design may look polished, but the project is now negotiating scope instead of moving towards launch."
+    },
+    {
+      "type": "paragraph",
+      "text": "A website design brief prevents much of this avoidable confusion. It is not a technical specification and it does not need to be written by a developer. It is a short decision document that explains what the business does, who the website must serve, what visitors should do, what the project includes, what the team can provide and how the finished work will be judged. This guide shows Indian business owners how to prepare one before requesting proposals from a web design or development agency."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: write the business decisions before the design instructions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with the business goal, the primary audience and the action you want a visitor to take. Then list the pages, features, content, integrations, brand assets, search requirements, responsibilities, constraints and acceptance checks. Separate what must be delivered at launch from what can wait for a later phase. Ask every agency to price the same scope and identify assumptions, exclusions and ongoing costs in writing."
+    },
+    {
+      "type": "quote",
+      "text": "A useful brief does not tell a designer exactly what every screen must look like. It gives the team enough context to make good decisions—and enough boundaries to know when the project is complete."
+    },
+    {
+      "type": "heading",
+      "text": "1. Explain the business in plain language"
+    },
+    {
+      "type": "paragraph",
+      "text": "Write a short introduction that a person outside your industry can understand. Include the business name, what it sells or provides, where it operates, how customers buy, and what makes the offer meaningfully different. Avoid internal jargon and broad claims such as 'best quality' or 'world-class service' unless you can explain what those phrases mean in practice."
+    },
+    {
+      "type": "paragraph",
+      "text": "For an Indian business, location and service coverage often matter. State whether you serve one neighbourhood, a city, several states or customers across India. If you sell online, describe where you ship, how fulfilment works and whether customers can also visit a store. If your business serves different audiences—for example, retail buyers and distributors—say so. They may need different information and enquiry paths."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the commercial context that affects the website. Is the visitor expected to buy immediately, request a quotation, book a consultation, compare a catalogue, find a branch or speak to a sales representative? Does the business sell a fixed-price product, a customised service or a high-consideration project? A website for a local clinic, a B2B manufacturer and a fashion store should not be scoped from the same generic template."
+    },
+    {
+      "type": "heading",
+      "text": "2. Choose one primary website outcome"
+    },
+    {
+      "type": "paragraph",
+      "text": "A website can support several goals, but the brief should identify the most important action for the first release. Examples include a completed enquiry form, a booked appointment, a purchase, a distributor application, a store visit or a qualified consultation request. Pick the action that best represents progress for the business—not simply the action that is easiest to count."
+    },
+    {
+      "type": "paragraph",
+      "text": "List secondary actions separately. A visitor might download a catalogue, tap a WhatsApp link, call the business, subscribe to updates or open directions. These actions can be useful, but they should not obscure the primary goal. If every button is equally prominent, the page may leave visitors unsure what to do next."
+    },
+    {
+      "type": "paragraph",
+      "text": "Describe what happens after the action. Who receives the enquiry? How quickly should the team respond? Does the visitor see a confirmation message? Is the record sent to a CRM, email inbox or spreadsheet? Does a sales representative need to qualify the enquiry before it becomes an opportunity? A conversion path is a process, not just a button."
+    },
+    {
+      "type": "heading",
+      "text": "3. Identify the people who will use the site"
+    },
+    {
+      "type": "paragraph",
+      "text": "Describe the main customer groups using their needs and buying context rather than invented demographic personas. What are they trying to solve? What do they need to know before trusting the business? What objections or practical questions delay a decision? What information do they compare across suppliers? If you have actual customer questions from calls, sales conversations, support messages or store visits, use those as evidence."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each important audience, write the question they arrive with and the next step the site should make easy. A homeowner comparing renovation services may need examples, process, service area and a consultation route. A procurement manager may need specifications, certifications, delivery capabilities and a request-for-quotation form. A shopper may need product details, sizing, shipping, returns and checkout information."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the business serves customers in more than one language, say which languages are required at launch and who will supply and approve translations. Do not treat a translation toggle as the whole localisation plan. Navigation, product names, form labels, dates, currency, support details and the content behind each page also need to be considered."
+    },
+    {
+      "type": "heading",
+      "text": "4. Define the offer and the evidence that supports it"
+    },
+    {
+      "type": "paragraph",
+      "text": "List the products or services the website must explain. For each one, note the intended customer, the problem it solves, what is included, important limitations, the next step and any information that must be confirmed by the business. If prices are public, provide the approved price basis and clarify whether taxes, delivery, installation or customisation are additional. If prices are quote-based, explain what information is needed to prepare a useful quote."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trust should be based on evidence the business can genuinely provide. This might include real team profiles, business contact details, a physical address where relevant, product specifications, authorised certifications, process photographs, customer reviews with permission, case studies approved for publication or clear service terms. Do not ask an agency to invent testimonials, awards, client logos, certifications or performance claims to fill empty sections."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tell the agency which claims require approval and who can approve them. If the business operates in a regulated or specialised field, identify the person responsible for checking technical, medical, financial or legal wording. A designer can improve presentation, but the business remains responsible for the accuracy of information it publishes."
+    },
+    {
+      "type": "heading",
+      "text": "5. Create a page list before choosing a design"
+    },
+    {
+      "type": "paragraph",
+      "text": "A page list, sometimes called a sitemap, describes the information the website needs to contain and how visitors should move between it. Start with the smallest structure that answers customer questions and supports the main business goal. Do not add pages only because another company has them. Each page should have a distinct purpose and enough useful information to justify existing as a separate destination."
+    },
+    {
+      "type": "paragraph",
+      "text": "A service business might need Home, About, Services, individual service pages, Industries or Locations, Work or Projects, FAQs and Contact. An ecommerce business may need category pages, product detail pages, cart, checkout, shipping information, returns, support and account pages. A B2B business may need product families, technical resources, downloadable documents and a quotation workflow. These are examples, not a required template."
+    },
+    {
+      "type": "paragraph",
+      "text": "For every proposed page, write three short notes: the visitor's question, the information the page must provide and the action the visitor should be able to take. Mark each page as launch-critical, useful for a later phase or optional. This makes it easier to control scope when budget or content availability is limited."
+    },
+    {
+      "type": "paragraph",
+      "text": "Identify pages that need to be linked from the main navigation and pages that can be reached through contextual links. A clear structure helps visitors understand where they are and helps search engines discover relationships between pages. Google explains that descriptive titles and useful site structure help people and Search understand a page; the content and internal links should support the actual information architecture rather than being added as an afterthought."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: SEO Starter Guide",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "type": "heading",
+      "text": "6. Separate essential features from future ideas"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a feature register and label every item as must-have for launch, should-have if the budget allows, or later phase. Common requirements include enquiry forms, click-to-call links, WhatsApp contact, appointment booking, search, product filters, customer accounts, payments, inventory, shipping rules, downloadable catalogues, multilingual content, maps, CRM connections and email notifications."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each feature, describe the user problem it solves and the expected behaviour. 'Add a booking system' is too vague. Explain whether customers choose a service, location, date and time; whether staff approve the request; whether a deposit is collected; what confirmation is sent; and how a booking is changed or cancelled. The details determine the integration, testing and support required."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not assume that every feature should be custom-built. Ask the agency to explain whether a maintained third-party service, an existing platform feature or a custom implementation is the better fit. Compare the recurring subscription, transaction fees, limits, data export, support and what happens if the provider is changed. A low initial build price can hide an expensive dependency if these questions are ignored."
+    },
+    {
+      "type": "heading",
+      "text": "7. Decide who will provide the words, images and product information"
+    },
+    {
+      "type": "paragraph",
+      "text": "Content is one of the most common reasons a website project stalls. For each page, state who writes the first draft, who supplies technical details, who selects images, who checks spelling and who gives final approval. If the agency is expected to write or edit content, define the number of pages, revision rounds, languages and subject-matter review included in the scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "Prepare a shared asset folder with the current logo files, brand guidelines, approved colours and fonts, product photographs, team images, diagrams, brochures, videos and existing copy. Provide original files where possible rather than screenshots copied from social media. Identify the owner and permitted use of every image, font, illustration and video. Do not assume that an image found through a search engine is free to use commercially."
+    },
+    {
+      "type": "paragraph",
+      "text": "Give the agency a content inventory if a website already exists. Mark each page as keep, rewrite, combine, remove or redirect. Include downloadable files and pages that receive enquiries or search traffic. If the website is being redesigned, the separate migration checklist explains how to protect existing URLs and search visibility during the move."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Website Redesign SEO Checklist for Indian Businesses",
+      "href": "/insights/website-redesign-seo-checklist-india"
+    },
+    {
+      "type": "heading",
+      "text": "8. Include search requirements in the brief"
+    },
+    {
+      "type": "paragraph",
+      "text": "Search engine optimisation should influence the page structure and content plan before development begins. Tell the agency which products, services, locations and customer questions matter most. Provide existing Search Console or analytics access where available, along with known high-value pages and any current ranking or indexing concerns. If keyword research is part of the engagement, ask for the intended search themes and the pages planned to serve them."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask how the project will handle editable page titles, meta descriptions, headings, descriptive URLs, image alternative text, internal links, canonical tags, redirects where needed, XML sitemap and robots directives. For a JavaScript-based site, ask how important page content and metadata will be made available to crawlers. Google notes that JavaScript can be processed, but there are differences and limitations that developers should account for."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not treat SEO as a promise of a particular ranking. The agency can deliver a crawlable structure, useful content, technical checks and measurement setup. Search visibility also depends on competition, the usefulness and reputation of the business, external signals and Google's systems. Ask for concrete deliverables and reporting rather than a guaranteed position."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Get started with Search for developers",
+      "href": "https://developers.google.com/search/docs/fundamentals/get-started-developers"
+    },
+    {
+      "type": "heading",
+      "text": "9. Set performance expectations for real customers"
+    },
+    {
+      "type": "paragraph",
+      "text": "A page that looks impressive on a fast office connection may feel very different on a mid-range phone or a congested mobile network. Ask the agency to test the main journeys on mobile devices, not only on a large desktop screen. Prioritise the first screen, navigation, product or service information, forms and checkout. Large background videos, oversized images, heavy animation and unnecessary scripts should have a clear reason to exist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's current Core Web Vitals guidance focuses on loading, interactivity and visual stability. The published 'good' thresholds are LCP within 2.5 seconds, INP at or below 200 milliseconds and CLS at or below 0.1, assessed at the 75th percentile of page loads and segmented by mobile and desktop. These are measurement thresholds, not a promise that every visit will be identical. Ask the agency how it will test important pages and how it will review real-user data after launch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Request an explanation of image sizing and modern formats, font loading, caching, hosting, script usage and layout stability. Ask whether third-party chat, maps, analytics, video and marketing tags will be loaded only where needed. A performance score from one lab run is useful for diagnosis, but it is not a substitute for field data from actual visitors."
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Web Vitals and current Core Web Vitals thresholds",
+      "href": "https://web.dev/articles/vitals"
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Core Web Vitals workflows with Google tools",
+      "href": "https://web.dev/articles/vitals-tools"
+    },
+    {
+      "type": "heading",
+      "text": "10. Make accessibility and usability part of acceptance"
+    },
+    {
+      "type": "paragraph",
+      "text": "Accessibility is easier to plan when it is included in the brief and tested throughout the project. Ask for readable text, sufficient contrast, visible keyboard focus, meaningful headings, descriptive links, text alternatives for informative images and controls that work without a mouse. Forms should have clear labels, instructions and error messages. Important information should not be communicated through colour alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "The W3C's Web Content Accessibility Guidelines 2.2 are a published Recommendation. They provide testable criteria for making web content more accessible across devices. For example, WCAG 2.2 includes requirements relating to text contrast, resizing text and focus visibility. W3C's form guidance explains that labels should identify controls and be programmatically associated with the relevant field. These are practical design and development considerations, not a claim that a short checklist proves full conformance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask the agency to demonstrate keyboard navigation, visible focus, form labels, validation feedback, text zoom and basic screen-reader checks on the important journeys. If the business has a formal accessibility requirement, name the target standard and level in the scope, and agree who will test and document it. Avoid accepting the vague statement 'the site is accessible' without a defined test plan."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+      "href": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "type": "link",
+      "text": "W3C Web Accessibility Initiative: Labeling form controls",
+      "href": "https://www.w3.org/WAI/tutorials/forms/labels/"
+    },
+    {
+      "type": "heading",
+      "text": "11. Specify analytics, lead handling and privacy responsibilities"
+    },
+    {
+      "type": "paragraph",
+      "text": "Decide what the business needs to measure. Examples include successful form submissions, calls, appointment requests, purchases, quote requests and downloads. Define what counts as a completed action and who will verify that the record reaches the right team. A click on a button is not always the same as a successful form submission or a completed purchase."
+    },
+    {
+      "type": "paragraph",
+      "text": "List the systems that must be connected: Google Analytics 4, Google Tag Manager, Google Ads, Meta Pixel, a CRM, email marketing, a booking platform, ecommerce software or a call-management tool. State who owns each account and who will have administrator access. Require the agency to document what it installs, what data each tag collects and how the business can revoke access when the engagement ends."
+    },
+    {
+      "type": "paragraph",
+      "text": "The brief should also identify the business's privacy requirements. Explain what information forms collect, why it is needed, where it is stored and which providers receive it. Keep service enquiries distinct from optional marketing choices. Do not place personal contact details in analytics URLs or event parameters. The legal basis and final wording should be reviewed for the business's actual processing; a web project brief is not a substitute for legal advice."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: DPDP Act readiness for Indian business websites",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "heading",
+      "text": "12. Confirm ownership of the domain, hosting, code and accounts"
+    },
+    {
+      "type": "paragraph",
+      "text": "The business should know who owns the domain registrar account, DNS, hosting, source repository, CMS administrator, analytics property, advertising accounts, email service and third-party subscriptions. Where possible, these should be created in business-controlled accounts and the agency should receive only the access required to do its work. Do not let a website become dependent on an individual developer's personal login."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask what source files and credentials will be handed over at completion. Confirm whether the business receives the design files, source code, database export, content files, deployment instructions, environment-variable inventory, plugin or theme licences, integration documentation and backup process. Clarify which third-party components remain licensed to the agency and which can be transferred."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a CMS is included, identify who can add pages, edit text, upload products, manage orders and create users. If the site is code-managed without a CMS, explain how future changes will be requested, priced, tested and deployed. The correct choice depends on how often content changes and who will maintain it; neither option is automatically best for every business."
+    },
+    {
+      "type": "heading",
+      "text": "13. Define scope, timeline, budget and decision-makers"
+    },
+    {
+      "type": "paragraph",
+      "text": "State the budget range or commercial constraint honestly. It helps an agency recommend a realistic first release rather than designing a proposal around assumptions. If the budget is fixed, ask the agency to show what is included, what is excluded and which items could be moved to a later phase. Do not compare proposals only by the final number if the deliverables are different."
+    },
+    {
+      "type": "paragraph",
+      "text": "Name one person who can consolidate feedback and approve milestones. List the people who must review content, design, technical integrations, legal wording and final acceptance. Agree how feedback will be provided, how many revision rounds are included and how additional work is estimated. If the business expects a launch date tied to an event or campaign, identify the latest date for supplying content and approvals."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask the agency to break the work into stages such as discovery, sitemap and wireframes, visual design, development, content entry, integrations, quality assurance, launch and handover. Each stage should have a deliverable and an approval point. The timeline should show dependencies—for example, product data, photography, translations, payment-provider approval or CRM credentials—not just a single launch promise."
+    },
+    {
+      "type": "heading",
+      "text": "14. Write acceptance criteria before the work begins"
+    },
+    {
+      "type": "paragraph",
+      "text": "Acceptance criteria turn subjective expectations into checks. Examples include: every agreed page is present; navigation works on desktop and mobile; forms validate required fields and deliver a test enquiry to the nominated inbox or CRM; product prices and stock are correct; payment and order notifications work in the agreed test environment; analytics events fire once on successful actions; page titles and canonical URLs are present; and redirects work for the URLs listed in the migration plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add content and design checks too. Confirm that approved copy is used, images have the right permissions, phone numbers and addresses are accurate, buttons have clear labels, error states are understandable and no placeholder text remains. For an ecommerce site, test the complete purchase journey, including shipping rules, tax display, payment failure, confirmation and refund or cancellation information where included in scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "Agree the browser and device coverage, test accounts, test data, defect severity and sign-off process. Define what counts as a launch-blocking defect and what can be recorded for a later maintenance release. Keep the acceptance list in a shared document so both the business and the agency are checking the same requirements."
+    },
+    {
+      "type": "heading",
+      "text": "15. Compare agency proposals on the same basis"
+    },
+    {
+      "type": "paragraph",
+      "text": "Send the same brief to every shortlisted agency. Ask each one to respond with the proposed approach, deliverables, page count, design process, technology, content responsibilities, integrations, SEO work, testing, handover, timeline, payment milestones and ongoing costs. Ask for assumptions and exclusions in a separate section. This makes gaps visible before a contract is signed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look for evidence that the agency has understood the business problem. A proposal that repeats the brief without discussing the customer journey, scope risks or implementation choices may be generic. Ask who will do the work, who will communicate with you, how feedback is handled and what happens if the project changes. Request relevant examples that the agency is authorised to share, but do not accept unverifiable performance claims as proof."
+    },
+    {
+      "type": "paragraph",
+      "text": "Clarify post-launch support. Is there a defect warranty period? Are content changes included? Who updates plugins or dependencies? Who monitors uptime, backups and security alerts? What is the response process if a form stops working? Is hosting billed separately? A website is an operating business asset, so maintenance should be planned rather than assumed to be free forever."
+    },
+    {
+      "type": "heading",
+      "text": "16. An illustrative website brief example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a Noida-based commercial interiors firm that wants a new website. Its main objective is to receive better-scoped project enquiries from offices and retail businesses across Delhi NCR. The first release needs a homepage, company page, three service pages, project gallery, process page, FAQs and contact page. The primary conversion is a project enquiry with project type, approximate area, city and preferred contact method. A WhatsApp link and phone number are secondary actions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The firm will supply its logo, approved project photographs, service descriptions and contact details. The agency will structure and edit the copy, design the pages, build the responsive site, configure the enquiry form, connect the agreed analytics property and provide basic on-page SEO fields. A CRM integration, multilingual version and appointment calendar are later-phase items. The business owns the domain, hosting, source repository and analytics accounts. Acceptance includes mobile testing, successful form delivery, approved content, metadata checks and handover documentation."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example is not a client project or a recommended universal scope. It demonstrates how a brief can describe the business, audience, primary action, page list, content responsibilities, feature priorities, ownership and acceptance checks without prescribing every design detail."
+    },
+    {
+      "type": "heading",
+      "text": "17. Copy-and-use website brief template"
+    },
+    {
+      "type": "paragraph",
+      "text": "Business and offer: What do you sell or provide, where do you operate, and what makes the offer different?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Project reason: Why is a new website or rebuild needed now? What is not working or what new capability is required?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Primary audience: Who is the most important visitor, what are they trying to do and what questions must the website answer?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Primary outcome: What is the one most important action the website should help a visitor complete?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Secondary actions: Which calls, WhatsApp messages, downloads, bookings or other actions should also be available?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pages: List every required page, its purpose, the key information it needs and whether it is essential at launch or can wait."
+    },
+    {
+      "type": "paragraph",
+      "text": "Features and integrations: List the required forms, payments, booking, search, CRM, analytics, ecommerce, language and third-party systems. Explain the expected behaviour."
+    },
+    {
+      "type": "paragraph",
+      "text": "Content and assets: Who supplies copy, photographs, product data, translations, legal text, brand files and approvals?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Search and performance: What search themes, existing URLs, metadata, content requirements, mobile journeys and performance checks matter?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Privacy and security: What information is collected, which providers receive it, who controls access and what security or retention requirements need review?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ownership and maintenance: Who owns the domain, hosting, code, CMS, analytics and subscriptions? Who will update and support the site after launch?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Commercial and delivery: What is the budget range, target date, decision-maker, approval process, dependencies and preferred milestone structure?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Acceptance: What exact checks must pass before the business signs off and approves launch?"
+    },
+    {
+      "type": "heading",
+      "text": "18. A practical five-step preparation process"
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 1 — Gather evidence. Collect customer questions, sales objections, existing page analytics, Search Console data, enquiry examples, product information and feedback from the people who speak to customers. Do not rely only on opinions from the internal team."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 2 — Decide the first-release goal. Agree on the primary action, the audience that matters most and the minimum pages and features needed to support it. Put nice-to-have ideas into a separate later-phase list."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 3 — Assign content and account ownership. Identify who supplies copy and images, who approves claims, who owns the domain and platform accounts, and who can provide integration access."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 4 — Write the acceptance checklist. Describe how the business will test pages, forms, payments, tracking, mobile usability, metadata and handover. Make sure the agency can estimate the work from those requirements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Step 5 — Compare proposals and agree scope in writing. Review deliverables, assumptions, exclusions, payment milestones, change control and support. Ask for a revised scope if a proposal does not answer the brief."
+    },
+    {
+      "type": "heading",
+      "text": "19. Warning signs in a website proposal"
+    },
+    {
+      "type": "paragraph",
+      "text": "Be cautious if the proposal promises rankings or sales without explaining the work; quotes a price without identifying page count and features; assumes the business will supply all content without saying so; offers integrations without naming the systems; excludes mobile testing; keeps the domain or analytics account under an agency-controlled login; or does not describe source-code handover and post-launch support."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another warning sign is a design-first process with no discovery or page planning. Visual direction matters, but the website must also explain the offer, answer customer questions, work with the business's operations and be measurable. If the agency cannot explain why a proposed feature is needed, ask what customer problem it solves and what it adds to cost, time and maintenance."
+    },
+    {
+      "type": "heading",
+      "text": "20. Final checklist before requesting a quote"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before sending the brief, confirm that it includes the business context, target audience, primary conversion, page list, feature priorities, content responsibilities, existing assets, search requirements, performance expectations, accessibility checks, integrations, privacy considerations, account ownership, budget, timeline, decision-makers and acceptance criteria. Attach useful reference material and identify which examples you like and why—navigation, tone, layout, product filtering or the way a service is explained."
+    },
+    {
+      "type": "paragraph",
+      "text": "You do not need to know the exact framework, database or hosting architecture before speaking to an agency. You do need to explain the business outcome, the constraints and the systems the website must work with. A good agency should translate that context into technical options, explain the trade-offs and identify decisions that still need to be made."
+    },
+    {
+      "type": "paragraph",
+      "text": "A clear brief will not eliminate every change or guarantee that a project stays on its first estimate. It does give the business and agency a shared starting point, a way to compare proposals fairly and a concrete definition of what the first release must achieve. That is a better foundation than choosing a design from a screenshot and discovering the real requirements after development has begun."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are planning a new website, redesign or landing page, Kardengey can help clarify the scope across strategy, design, development, search and measurement. The right project begins with the business problem—not with a template or a list of effects."
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey's website, SEO and digital growth services",
+      "href": "/services"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Audit a website before spending money on ads",
+      "href": "/insights/website-audit-before-running-ads"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Website redesign SEO checklist",
+      "href": "/insights/website-redesign-seo-checklist-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: DPDP Act readiness for website lead forms",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "link",
+      "text": "Use the free Kardengey Marketing ROI Calculator",
+      "href": "/tools/marketing-roi-calculator"
+    },
+    {
+      "type": "heading",
+      "text": "Official references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: SEO Starter Guide",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Get started with Search for developers",
+      "href": "https://developers.google.com/search/docs/fundamentals/get-started-developers"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Creating helpful, reliable, people-first content",
+      "href": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Web Vitals and Core Web Vitals thresholds",
+      "href": "https://web.dev/articles/vitals"
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Core Web Vitals workflows with Google tools",
+      "href": "https://web.dev/articles/vitals-tools"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+      "href": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "type": "link",
+      "text": "W3C Web Accessibility Initiative: Labeling form controls",
+      "href": "https://www.w3.org/WAI/tutorials/forms/labels/"
+    }
+  ]
 }
 ];
 
