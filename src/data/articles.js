@@ -5226,6 +5226,505 @@ const articles = [
       "href": "https://www.w3.org/WAI/tutorials/forms/labels/"
     }
   ]
+},
+{
+  "category": "WEBSITE / ACCESSIBILITY",
+  "filter": "TECH",
+  "title": "Website Accessibility Checklist for Indian Businesses: Forms, Navigation and Mobile UX",
+  "slug": "website-accessibility-checklist-india",
+  "description": "Use this website accessibility checklist for Indian businesses to review keyboard access, contrast, forms, mobile layouts, images and testing before launch.",
+  "date": "20 NOV 2026",
+  "publishedAt": "2026-11-20",
+  "read": "15 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A website can look polished on a designer's laptop and still be difficult for a customer to use. A visitor may be unable to read pale text, reach a menu without a mouse, understand an unlabeled form field, identify an error, or complete a purchase after zooming in. These are not small finishing details. They can prevent someone from finding information, contacting the business or completing a task."
+    },
+    {
+      "type": "paragraph",
+      "text": "Website accessibility is the practice of designing and building digital content so people with different disabilities, devices and ways of interacting can perceive, understand, navigate and use it. For an Indian business, that includes checking the mobile experience, forms, navigation, images, language choices, documents and third-party tools—not just running an automated scanner once before launch."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: make important customer journeys usable without relying on one sense or one input method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with the tasks that matter to the business: finding a service, comparing a product, requesting a quote, booking an appointment, contacting support or completing checkout. Check that each task works with a keyboard, remains understandable when text is enlarged, has readable contrast, uses meaningful labels and gives clear feedback when something goes wrong. Then test representative pages manually and with accessibility tools, fix the highest-impact barriers, and repeat the checks after content or design changes."
+    },
+    {
+      "type": "quote",
+      "text": "Accessibility is not a separate visual theme. It is whether a real person can understand the page and complete the task the business built it for."
+    },
+    {
+      "type": "heading",
+      "text": "1. Understand the standard—and the Indian context"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Web Content Accessibility Guidelines (WCAG) provide testable criteria for making web content more accessible. As checked on 20 November 2026, WCAG 2.2 is the latest published WCAG Recommendation from the World Wide Web Consortium (W3C). It builds on earlier versions and adds criteria that address areas such as focus visibility, dragging alternatives and minimum target size. It is a useful technical reference when planning or reviewing a business website."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not confuse a technical checklist with a legal opinion. India's Guidelines for Indian Government Websites and Apps (GIGW 3.0) are specifically directed at government websites and applications at central, state and local levels. A private business should not assume that GIGW 3.0 automatically defines every legal obligation that may apply to its own website. Sector-specific rules and applicable Indian law should be reviewed with qualified counsel. This article is a practical web-development guide, not legal advice or a certification of compliance."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+      "href": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "type": "link",
+      "text": "Government of India: GIGW 3.0 scope and objective",
+      "href": "https://guidelines.india.gov.in/scope-and-objective/"
+    },
+    {
+      "type": "heading",
+      "text": "2. Begin with the customer task, not the accessibility widget"
+    },
+    {
+      "type": "paragraph",
+      "text": "List the important things a visitor must be able to do. A service business may need a person to understand the service area, compare packages and submit an enquiry. A retailer may need product details, size selection, cart, payment and order confirmation to work. A clinic may need visitors to find location details and request an appointment. A B2B supplier may need a buyer to download a specification sheet or request a quotation."
+    },
+    {
+      "type": "paragraph",
+      "text": "For each task, write down the pages and controls involved, the information a visitor needs at each step, and what success looks like. Include the failure path. If a form rejects a phone number, can the visitor understand why and correct it? If a payment fails, is the message clear and is the cart still available? If a menu opens, can it be closed and navigated without a pointer? Accessibility testing is more useful when it follows complete journeys rather than isolated page elements."
+    },
+    {
+      "type": "heading",
+      "text": "3. Use meaningful headings and page structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Headings are not only a styling device. They communicate how information is organised and help visitors scan a page. Use one clear page-level heading, then organise sections with descriptive subheadings in a logical order. Avoid choosing a heading level simply because its font size looks right. A heading should describe the content that follows, not act as a decorative label."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use semantic HTML for the parts of the page: navigation for navigation, main for the primary content, buttons for actions and links for destinations. A clickable div may look like a button, but it does not automatically behave like one for keyboard or assistive-technology users. Use native elements first; add ARIA only when a real semantic gap remains and the implementation can be tested."
+    },
+    {
+      "type": "paragraph",
+      "text": "Provide a descriptive page title and a way to skip repeated navigation and move to the main content. A skip link is particularly useful on pages with long menus or repeated headers. Check that the page language is declared in the document and that language changes within the content are identified where appropriate, so assistive technologies can pronounce words more accurately."
+    },
+    {
+      "type": "heading",
+      "text": "4. Make every important journey work with a keyboard"
+    },
+    {
+      "type": "paragraph",
+      "text": "Put the mouse aside and try the website using Tab, Shift+Tab, Enter, Space and the arrow keys where appropriate. You should be able to reach links, buttons, form fields, menus, dialogs and other interactive controls in a sensible order. The focus order should follow the visual and logical sequence of the page; it should not jump unpredictably between unrelated areas."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check that menus can be opened, used and closed without a mouse. Make sure a modal dialog does not trap a visitor permanently, that focus moves into it when it opens, and that it returns to a sensible place when it closes. Avoid keyboard traps in carousels, date pickers, chat widgets and custom dropdowns. If a component is difficult to use with a keyboard, replacing it with a simpler native control may be more reliable than adding more scripting."
+    },
+    {
+      "type": "heading",
+      "text": "5. Keep keyboard focus visible and unobscured"
+    },
+    {
+      "type": "paragraph",
+      "text": "A keyboard user needs to see which control is currently active. Do not remove the browser outline unless the replacement is equally clear. Test focus on the actual background colours, including dark sections, image overlays, sticky headers and footer areas. A subtle colour change that is visible only on hover is not a dependable focus indicator."
+    },
+    {
+      "type": "paragraph",
+      "text": "WCAG 2.2 includes Focus Not Obscured criteria. Check what happens when a visitor tabs to a link near the top or bottom of a page while a sticky header, cookie banner, floating WhatsApp button or chat panel is present. The focused control should not be completely hidden behind author-created content. If a sticky element covers the page, adjust scroll offsets, layout spacing or the sticky behaviour."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Focus Visible",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html"
+    },
+    {
+      "type": "heading",
+      "text": "6. Check colour contrast instead of trusting the brand palette"
+    },
+    {
+      "type": "paragraph",
+      "text": "A colour combination can look elegant on a calibrated design monitor and still be hard to read on a phone outdoors. Check the contrast between text and its actual background, including text placed over photographs, gradients, tinted cards and buttons. Do not use colour alone to communicate status, such as showing an error only with a red border or a successful state only with green."
+    },
+    {
+      "type": "paragraph",
+      "text": "WCAG 2.2's Level AA contrast criterion generally calls for a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text, subject to the criterion's exceptions. Treat these as testable thresholds, not as a visual guess. Recheck hover, active, disabled and focus states, as well as placeholder text and small labels. If a brand colour fails on a particular background, use an accessible text or surface variant rather than forcing the original combination everywhere."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Contrast (Minimum)",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "type": "heading",
+      "text": "7. Make text readable when visitors zoom or change text settings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use real text for important information instead of embedding paragraphs, prices or instructions inside images. Choose readable font sizes and line spacing, avoid long lines of dense copy, and let text wrap naturally. Do not lock the page to a fixed height that cuts off content when someone increases text size. Make sure navigation, cookie notices and form controls remain usable when text grows."
+    },
+    {
+      "type": "paragraph",
+      "text": "WCAG 2.2 Reflow addresses whether ordinary content can be presented without loss of information or functionality and without two-dimensional scrolling at a width equivalent to 320 CSS pixels. Some content, such as a data table or map that genuinely needs two dimensions, has exceptions; that does not excuse the rest of the page from adapting. Test narrow viewports and browser zoom, not just the device preview in a design tool."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Reflow",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+    },
+    {
+      "type": "heading",
+      "text": "8. Give buttons and touch controls enough size and space"
+    },
+    {
+      "type": "paragraph",
+      "text": "Small icon-only controls can be difficult to activate, especially when several are placed close together. Review menu toggles, close buttons, quantity controls, carousel arrows, filter chips, calendar dates and small social icons. Give controls a clear accessible name and enough clickable area; do not make the visible icon the only clue to its purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "WCAG 2.2 Success Criterion 2.5.8 sets a minimum target size of 24 by 24 CSS pixels for pointer inputs, with defined exceptions including spacing. This is a minimum criterion, not a recommendation to make every important mobile button exactly that size. Larger, comfortably spaced controls can be easier to use. Test the actual hit area, not only the size of the icon artwork inside it."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Target Size (Minimum)",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+    },
+    {
+      "type": "heading",
+      "text": "9. Design forms with visible labels and useful instructions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Forms are often the most commercially important part of a business website. Give every field a clear label that remains visible after a visitor starts typing. A placeholder can show an example, but it should not be the only label because it disappears and may not be announced consistently by assistive technologies. Associate labels with the correct controls and group related options with an appropriate legend."
+    },
+    {
+      "type": "paragraph",
+      "text": "Explain which fields are required, which are optional and what format is expected. If a phone number needs a country code, say so. If a date must follow a particular format, show an example. Avoid asking for information that is not needed to handle the enquiry. The form should make the next step clear without forcing a visitor to guess what a field means."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a form detects an error, identify the field and describe the problem in text. Do not rely on colour, an icon or a generic 'Something went wrong' message alone. Keep valid entries where possible, move focus to a useful error summary or the first invalid field, and explain how to fix the issue. On a successful submission, announce the confirmation clearly and explain when the business will respond if that information is known."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test forms with keyboard-only navigation and a screen reader. Check radio buttons, checkboxes, dropdowns, date pickers, file uploads, CAPTCHA and any custom validation. If the form uses a third-party embed, test the embedded experience itself; a well-labelled page around an inaccessible widget is still a barrier."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Labeling form controls",
+      "href": "https://www.w3.org/WAI/tutorials/forms/labels/"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Form instructions",
+      "href": "https://www.w3.org/WAI/tutorials/forms/instructions/"
+    },
+    {
+      "type": "heading",
+      "text": "10. Write alternative text that explains the purpose of an image"
+    },
+    {
+      "type": "paragraph",
+      "text": "An image's alternative text should communicate the information or function that the image provides in that context. A product photograph may need to identify the product and a meaningful visible feature. A chart may need a short summary plus a longer explanation of the data. A linked logo may need to identify the destination or organisation. Repeating a long file name or stuffing keywords into alt text does not help the visitor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Decorative images that add no information should generally be hidden from assistive technology with an empty alternative, rather than announced as irrelevant content. If text is baked into an image, provide the same important information as real text nearby. For image buttons, describe the action or destination, not merely the appearance of the icon. Review images added through the CMS as carefully as images included in the original design."
+    },
+    {
+      "type": "heading",
+      "text": "11. Plan language and localisation deliberately"
+    },
+    {
+      "type": "paragraph",
+      "text": "A website serving customers across India may need English, Hindi or other regional-language content. Decide which languages are required for the pages and journeys that matter most. Navigation, product details, form labels, error messages, privacy information, payment instructions and support details should not be translated selectively if a visitor is expected to complete the full journey in that language."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the correct page language in the HTML document and identify meaningful language changes within a page. Use readable fonts that support the chosen scripts, check line wrapping and test the content with people who understand the language. Machine translation can be a starting point, but product claims, legal wording, safety instructions and commercial terms should be reviewed by a competent human. A language selector should be easy to find and should take visitors to the equivalent page where one exists, not always send them to the homepage."
+    },
+    {
+      "type": "heading",
+      "text": "12. Make video, audio and animation usable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Provide captions for prerecorded video that contains speech or meaningful audio, and offer transcripts where they help people access the information. Do not rely on music, colour or sound alone to communicate a status. If a video demonstrates a product feature, explain the relevant action in the page text as well. Check that media controls can be reached and operated by keyboard and that captions do not cover essential information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid automatically moving or flashing content that distracts from the task. Give visitors a way to pause, stop or hide moving content when required, and respect reduced-motion preferences where possible. Animation should explain a state change or support the experience, not be the only way to discover that a button is interactive. Test carousels, counters, scrolling effects and auto-playing hero videos on real devices."
+    },
+    {
+      "type": "heading",
+      "text": "13. Make links, buttons and navigation predictable"
+    },
+    {
+      "type": "paragraph",
+      "text": "A link should describe where it goes; a button should describe what it does. Labels such as 'Click here' or an icon with no accessible name leave the purpose unclear when controls are read out of context. Use descriptive link text, make visited and focused states distinguishable, and avoid opening new tabs without a clear reason or warning."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep navigation patterns consistent across pages. If a mobile menu opens, make its state available to assistive technology, keep focus within the menu while it is modal, and provide an obvious way to close it. Do not make important information available only on hover. Any expandable FAQ, accordion, filter or tab interface should expose its state and work with the expected keyboard interaction."
+    },
+    {
+      "type": "heading",
+      "text": "14. Check tables, PDFs and downloadable documents"
+    },
+    {
+      "type": "paragraph",
+      "text": "A website can be accessible while a linked brochure or price list is not. If a PDF contains important information, make sure it has a meaningful reading order, selectable text, document title, headings and properly tagged tables where relevant. If the document is only a scanned image, consider providing an accessible HTML version or an OCR-processed document and verify the result rather than assuming the file is usable."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use real HTML tables for data, not for page layout. Give data tables clear header relationships and make sure they remain understandable on smaller screens. If a table is too wide to reflow, provide a usable alternative or explain how the visitor can navigate it. Check that downloads have descriptive names and that the page explains what the file contains and, where relevant, its format."
+    },
+    {
+      "type": "heading",
+      "text": "15. Treat third-party tools as part of your website"
+    },
+    {
+      "type": "paragraph",
+      "text": "Chat widgets, maps, booking tools, payment gateways, review embeds, cookie banners, video players and social feeds can introduce accessibility barriers even when the main site is carefully built. List each third-party component in the project brief, identify the provider and test its actual interface. Check keyboard access, labels, focus behaviour, contrast, error messages and mobile layout."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask the vendor for accessibility documentation or a conformance report, but do not treat a marketing statement as proof that the exact configuration on your site works. If a component blocks a key journey and the provider cannot address it, consider another provider or a simpler alternative. The business should know who can update the component and how a future vendor change will be tested."
+    },
+    {
+      "type": "heading",
+      "text": "16. Test the real mobile experience"
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsive design is not automatically accessible. A page can fit a narrow screen and still have tiny controls, clipped labels, an obstructive sticky banner or a menu that cannot be operated with a keyboard. Test the actual forms, product options, booking steps, navigation and checkout at narrow widths, at higher zoom and with larger text settings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use real devices where possible. Check that the page remains understandable when the screen is rotated, when the browser text size is increased, and when the visitor uses the device's accessibility features. Test with a slower connection as well: essential content and controls should not depend on a large animation or an external widget loading before the visitor can understand the page."
+    },
+    {
+      "type": "heading",
+      "text": "17. Combine automated scans with manual testing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Automated accessibility tools can find useful issues such as missing names, some contrast problems, invalid markup and certain structural errors. Run them during development and again on the live site. Scan more than the homepage: include representative service pages, product details, forms, checkout, account pages, modal dialogs and any template used across many URLs."
+    },
+    {
+      "type": "paragraph",
+      "text": "A clean automated report is not proof that a website is accessible. Tools cannot judge every image description, whether the reading order makes sense, whether an instruction is understandable, or whether a complex workflow works with assistive technology. W3C explains that automated tools assist evaluation but cannot determine accessibility on their own; knowledgeable human evaluation is required."
+    },
+    {
+      "type": "paragraph",
+      "text": "A practical manual review includes keyboard-only navigation, visible focus, browser zoom, contrast checks, form completion and error handling, a screen-reader pass on important journeys, captions and transcripts for media, and review by people who use assistive technologies where possible. Record the page, task, issue, impact, reproduction steps and proposed fix. Re-test after the change."
+    },
+    {
+      "type": "link",
+      "text": "W3C: Easy Checks — A First Review of Web Accessibility",
+      "href": "https://www.w3.org/WAI/test-evaluate/easy-checks/"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Selecting Web Accessibility Evaluation Tools",
+      "href": "https://www.w3.org/WAI/test-evaluate/tools/selecting/"
+    },
+    {
+      "type": "heading",
+      "text": "18. Choose a representative set of pages to audit"
+    },
+    {
+      "type": "paragraph",
+      "text": "You do not need to begin by manually testing every URL. Select a sample that covers each page template and each important interaction. For a service business, that might include the homepage, a service detail page, a contact form, a location page and a downloadable brochure. For ecommerce, include a category, a product detail page, a cart, checkout and an order confirmation. Add any custom widget or flow that is central to the business."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test repeated components once in each meaningful context: a header over a light and dark background, a footer with multiple link groups, a modal over a long page, or a form inside a mobile layout. When a shared component is fixed, check the other templates that use it. A page sample is a starting point for systematic coverage, not a claim that untested pages are automatically clear."
+    },
+    {
+      "type": "heading",
+      "text": "19. Prioritise fixes by the task they block"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with barriers that prevent someone from completing an important task: an inaccessible menu, a form that cannot be submitted by keyboard, a checkout control without a usable name, a missing error message or text that cannot be read against its background. Next address issues that make information difficult to understand, such as poor headings, missing alternatives for informative images or confusing instructions. Then improve consistency and polish."
+    },
+    {
+      "type": "paragraph",
+      "text": "Record severity and scope. A defect in a shared header can affect many pages; a missing description on one decorative image may have little user impact. Fix the underlying component or content pattern instead of patching each page independently. Include accessibility checks in design review, content entry, code review and release testing so the same problems are less likely to return."
+    },
+    {
+      "type": "heading",
+      "text": "20. Put accessibility into the website project brief and acceptance criteria"
+    },
+    {
+      "type": "paragraph",
+      "text": "When hiring a web design or development agency, specify the accessibility checks expected in the project. Ask how headings and landmarks will be structured, how keyboard focus will work, how form labels and errors will be handled, how images will be described, what contrast checks will be used, how content will reflow and how third-party widgets will be reviewed. Clarify who writes alternative text and who approves captions or translations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Define acceptance criteria that can be tested. For example: every primary navigation item and form control is reachable by keyboard; focus remains visible and is not hidden by fixed elements; important text combinations are checked against the selected contrast criteria; forms have associated labels and understandable error messages; page content reflows at the required narrow width except for justified two-dimensional content; and the agreed sample of pages has been reviewed with automated and manual checks."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask for a short issue register and handover notes. The business should know which issues were fixed, which remain open, which third-party components need separate attention and who owns future checks. Do not accept an unqualified promise of '100% accessibility' or a certificate that the supplier cannot substantiate. Agree the standard, scope, evaluation method and limitations in writing."
+    },
+    {
+      "type": "heading",
+      "text": "21. A practical 30-day accessibility improvement plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 1–5: map the important customer journeys and choose representative pages. Gather the current page templates, forms, third-party widgets, documents and media. Identify the business owner who can approve fixes and the person who can make website changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 6–10: run an initial automated scan and a keyboard-only review. Check page titles, headings, navigation, focus, contrast, image alternatives and form labels. Record findings with screenshots or reproduction steps. Do not treat the automated score as a pass/fail certificate."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 11–20: fix the highest-impact shared components and customer journeys first. Update form labels and errors, improve contrast, correct keyboard behaviour, adjust mobile layouts, add meaningful text alternatives and provide captions or transcripts where needed. Review third-party widgets and replace those that block essential tasks."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 21–25: re-test the affected journeys with keyboard navigation, zoom, mobile layouts, automated tools and assistive technology where available. Ask people with relevant access needs to review important flows if the business can arrange it. Document any issues that cannot be fixed immediately and provide an alternative contact route where practical."
+    },
+    {
+      "type": "paragraph",
+      "text": "Days 26–30: publish an internal checklist, assign an owner for new content and components, and add accessibility checks to the website release process. Revisit the sample after major design, plugin, CMS or content changes. Accessibility is ongoing maintenance, not a one-time badge added to the footer."
+    },
+    {
+      "type": "heading",
+      "text": "22. Illustrative example: improving a local service enquiry journey"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a home-maintenance company serving customers in Delhi NCR. Its website has a dark hero section, a small WhatsApp icon, a callback form and a sticky mobile contact bar. The form uses placeholders instead of labels, errors appear only as red borders, and keyboard focus is hidden by a custom CSS reset. A visitor using a screen reader or keyboard may struggle to understand or submit the enquiry."
+    },
+    {
+      "type": "paragraph",
+      "text": "The improvement plan is to add persistent labels and clear instructions, identify invalid fields in text, preserve entered information after an error, restore a visible focus indicator, check the contrast of the hero text, give the WhatsApp control a descriptive name and ensure the sticky bar does not cover focused controls. The team then tests the complete enquiry flow on a narrow screen and with keyboard navigation. This example illustrates a process; it is not a client result or a claim about a real business."
+    },
+    {
+      "type": "heading",
+      "text": "23. Final checklist before launch"
+    },
+    {
+      "type": "paragraph",
+      "text": "Content and structure: page titles describe the page; headings follow a meaningful hierarchy; links describe their destinations; page language is identified; important content is real text; and repeated navigation can be skipped. Images have alternatives that match their purpose, while decorative images are not unnecessarily announced."
+    },
+    {
+      "type": "paragraph",
+      "text": "Navigation and interaction: every important control works by keyboard; focus is visible and not hidden; menus, dialogs and custom widgets expose their state; touch targets are adequately sized or spaced; and no essential action depends only on hover, colour or sound."
+    },
+    {
+      "type": "paragraph",
+      "text": "Forms and conversion: fields have persistent labels; instructions explain required formats; errors are identified in text; success messages are announced; and the full enquiry, booking or checkout path can be completed without a pointer. Privacy notices and data collection choices are understandable and appropriate to the business's actual process."
+    },
+    {
+      "type": "paragraph",
+      "text": "Display and media: text has sufficient contrast; content remains usable when enlarged; ordinary page content reflows at narrow widths; video has captions where needed; audio has an accessible alternative; and moving content can be controlled where required. PDFs and downloads are checked rather than assumed to be accessible."
+    },
+    {
+      "type": "paragraph",
+      "text": "Testing and ownership: automated scans are supplemented by manual review; representative templates and third-party tools are included; defects are documented and re-tested; and someone is responsible for maintaining the standard as new pages and campaigns are added."
+    },
+    {
+      "type": "heading",
+      "text": "Make accessibility part of the website's definition of done"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful website should not make a customer fight the interface before they can understand the offer. Clear structure, readable text, predictable navigation, well-designed forms and dependable mobile behaviour improve the experience for people with different access needs—and often make the site easier for everyone to use."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are planning a new website or redesign, include accessibility in the brief, design review, development checks and launch criteria. It is usually easier to address structural issues while components are being built than after the site has accumulated many pages and integrations. For an existing site, begin with the journeys that matter most to customers and work through the highest-impact barriers systematically."
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Website Design Brief for Indian Businesses",
+      "href": "/insights/website-design-brief-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Website Redesign SEO Checklist for Indian Businesses",
+      "href": "/insights/website-redesign-seo-checklist-india"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: Audit a Website Before Spending Money on Ads",
+      "href": "/insights/website-audit-before-running-ads"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey guide: DPDP Act readiness for Indian business websites",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey's website and digital growth services",
+      "href": "/services"
+    },
+    {
+      "type": "heading",
+      "text": "Official references and further reading"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+      "href": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Contrast (Minimum)",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Target Size (Minimum)",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Reflow",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Understanding Focus Visible",
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html"
+    },
+    {
+      "type": "link",
+      "text": "W3C Web Accessibility Initiative: Labeling Controls",
+      "href": "https://www.w3.org/WAI/tutorials/forms/labels/"
+    },
+    {
+      "type": "link",
+      "text": "W3C Web Accessibility Initiative: Form Instructions",
+      "href": "https://www.w3.org/WAI/tutorials/forms/instructions/"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Easy Checks — A First Review of Web Accessibility",
+      "href": "https://www.w3.org/WAI/test-evaluate/easy-checks/"
+    },
+    {
+      "type": "link",
+      "text": "W3C: Selecting Web Accessibility Evaluation Tools",
+      "href": "https://www.w3.org/WAI/test-evaluate/tools/selecting/"
+    },
+    {
+      "type": "link",
+      "text": "Government of India: GIGW 3.0 scope and objective",
+      "href": "https://guidelines.india.gov.in/scope-and-objective/"
+    },
+    {
+      "type": "link",
+      "text": "Government of India: GIGW 3.0 guidelines",
+      "href": "https://guidelines.india.gov.in/guidelines/"
+    }
+  ]
 }
 ];
 
