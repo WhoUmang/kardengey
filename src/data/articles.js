@@ -158,6 +158,34 @@ const articles = [
       "href": "https://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
     },
     {
+      "type": "paragraph",
+      "text": "There is also a notified change to plan for. The Consumer Protection (E-Commerce) (Amendment) Rules, 2026 were published in the Gazette on 9 September 2026 and are scheduled to come into force on 1 January 2027. Among other provisions, the amendment requires sponsored product and service listings to be clearly identified; where a price reduction is announced, the prior price must also be shown, with prior price defined as the lowest price during the 30 days before the announcement; seller names must be prominent on invoices in the same font size as the e-commerce entity name; and e-commerce entities must conduct yearly dark-pattern self-audits and prominently display a certificate. These are upcoming provisions as of 21 November 2026, not requirements that have already commenced under this amendment. The exact duties depend on your role and business model, so review the Gazette and obtain legal advice before changing policies."
+    },
+    {
+      "type": "link",
+      "text": "Consumer Protection (E-Commerce) (Amendment) Rules, 2026 — Gazette, 9 September 2026",
+      "href": "https://consumeraffairs.gov.in/public/upload/files/E%20Commerce%20Amendment%20Rules%202026_1789128659.pdf"
+    },
+    {
+      "type": "link",
+      "text": "Press Information Bureau: Government amends E-Commerce Rules, 10 September 2026",
+      "href": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2308759&lang=1&reg=48"
+    },
+    {
+      "type": "paragraph",
+      "text": "A separate Legal Metrology update matters if you offer imported packaged products. A notification dated 13 February 2026 originally set a searchable and sortable country-of-origin filter requirement for imported product listings from 1 July 2026. A second amendment dated 27 April 2026 replaced that start date with 1 July 2027. As of this guide's 21 November 2026 review date, the later date is the one to plan against. Check the current Gazette text and confirm whether the rule applies to your product and operating role; do not rely on an old implementation checklist that still shows the superseded July 2026 date."
+    },
+    {
+      "type": "link",
+      "text": "Legal Metrology (Packaged Commodities) Amendment Rules, 2026 — 13 February notification",
+      "href": "https://consumeraffairs.gov.in/public/upload/files/2026.02.13%20PCR%201st%20COO%20Filter%20on%20e-commerce%20websites_1771231030.pdf"
+    },
+    {
+      "type": "link",
+      "text": "Legal Metrology (Packaged Commodities) Second Amendment Rules, 2026 — 27 April notification",
+      "href": "https://consumeraffairs.gov.in/public/upload/files/2026.4.27%20PCR%202nd%20COO%20from%201.7.2027_1777348487.pdf"
+    },
+    {
       "type": "heading",
       "text": "8. Present payment and cash-on-delivery options honestly"
     },
