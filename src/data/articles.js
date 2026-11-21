@@ -1,5 +1,450 @@
 const articles = [
 {
+  "category": "ECOMMERCE / CONVERSION",
+  "filter": "GROWTH",
+  "title": "Ecommerce Product Page Checklist for Indian D2C Brands: Build Trust Before Checkout",
+  "slug": "ecommerce-product-page-checklist-india-d2c",
+  "description": "Improve an Indian D2C product page with clearer product details, pricing, variants, delivery, returns, mobile UX, structured data and measurement.",
+  "date": "21 NOV 2026",
+  "publishedAt": "2026-11-21",
+  "read": "17 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A product page has one important job: help a shopper decide whether this is the right product, from the right seller, at a price and delivery promise they understand. A beautiful photograph or a large Buy Now button cannot do that alone. Customers may still need to understand the fit, dimensions, ingredients, compatibility, what is included, whether their pin code is serviceable, how returns work and what the final amount will be. If those answers are scattered across banners, policy pages and chat messages, the shopper has to do the work."
+    },
+    {
+      "type": "paragraph",
+      "text": "For an Indian direct-to-consumer (D2C) brand, the product page is also where the website, catalogue, advertising, customer support and fulfilment operation meet. A size or colour selector must reflect real inventory. A promotion must agree with the cart. Delivery information must match the actual serviceable area. Product structured data and Merchant Center feeds must describe what the page visibly offers. This guide is a practical checklist for improving that whole experience. It is not a promise of a particular conversion rate or a substitute for legal review."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: remove uncertainty before asking for the order"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful product page should make six things easy to understand without forcing a shopper to hunt: what the product is; what makes this version different; how much it costs; whether it is available; when and where it can be delivered; and what happens if it does not meet expectations. Put the most decision-critical information near the product title and purchase controls. Put deeper specifications, care instructions, FAQs and policies lower on the page, but keep them easy to find."
+    },
+    {
+      "type": "quote",
+      "text": "Do not design a product page around everything the brand wants to say. Design it around the questions a customer needs answered before buying."
+    },
+    {
+      "type": "heading",
+      "text": "1. Start with the buyer's questions and the product's real attributes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before changing the layout, list the questions customers ask before and after purchase. Review support chats, returns, exchange requests, product reviews, sales calls and search queries. Group the questions by theme: fit, quality, use, compatibility, delivery, payment, warranty, authenticity or care. These are not just content ideas. They show where the current page may be leaving a decision unanswered."
+    },
+    {
+      "type": "paragraph",
+      "text": "The right information depends on the product. An apparel page may need garment measurements, model height, fit notes, fabric composition and washing instructions. A skincare page may need ingredients, directions, suitability notes, warnings and pack size. An electronics page may need compatibility, dimensions, included accessories, power requirements and warranty terms. A packaged food page may need ingredients, allergen information, net quantity, storage guidance and relevant date information. Do not copy a generic template if the category has different buying risks."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a product information sheet before writing copy. Give each SKU or product family a consistent source of truth for product name, identifier, material or ingredients, dimensions, variant options, price, stock, warranty, images and delivery restrictions. Assign an owner to update it. This makes the product page, catalogue export, customer support answers and advertising data less likely to contradict one another."
+    },
+    {
+      "type": "heading",
+      "text": "2. Make the first screen useful on a phone"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the first screen, a shopper should be able to identify the product, understand the current price, see the selected variant, check availability and find the primary purchase action. Keep the title specific rather than decorative. Show the actual selling price and make any comparison price or discount understandable. If shipping is calculated later, say so clearly and provide a quick way to estimate it. Avoid letting a newsletter pop-up or sticky promotion cover the title, price, selector or purchase button."
+    },
+    {
+      "type": "paragraph",
+      "text": "A strong mobile layout does not mean shrinking the desktop page. Check the order of information, tap targets, selector behaviour, image gallery, sticky add-to-cart bar and the space left for browser controls. Test with a narrow screen, a longer product name, a sale price, an out-of-stock variant and an error message. The purchase button should not move unexpectedly or become hidden when a customer selects a size or opens a delivery checker."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use action labels that describe what happens next. Add to Cart is different from Buy Now, Request a Quote or Notify Me. If the item requires a consultation or customisation before purchase, do not imitate a standard retail checkout. Make the next step and the expected response clear."
+    },
+    {
+      "type": "heading",
+      "text": "3. Use product images to answer practical questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show the item from more than one useful angle. Depending on the category, include a front view, back view, close-up, scale reference, packaging or a real-use image. A short demonstration video can explain movement, assembly, texture or operation when a still image cannot. Keep the main image recognisable and make sure the images load at an appropriate size for the device."
+    },
+    {
+      "type": "paragraph",
+      "text": "Images should represent the product actually being sold. Do not use a colour grade that changes the apparent shade, a model image that hides the fit, or a lifestyle scene that makes an accessory look included when it is not. If a photograph is illustrative, label it. If colour may vary between screens or batches, explain that carefully without using the disclaimer to excuse inaccurate photography."
+    },
+    {
+      "type": "paragraph",
+      "text": "For apparel, show how the garment falls on a person and give the model's height and worn size where that information is reliable. For furniture, include dimensions and a scale reference. For electronics, show ports, controls and included accessories. For cosmetics, use clear packaging and texture views without making unsupported performance claims. Add meaningful alternative text for informative images; decorative images should not create repetitive screen-reader noise."
+    },
+    {
+      "type": "heading",
+      "text": "4. Write descriptions that help someone choose"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lead with the product's purpose and the buyer it suits. Then explain the material, construction, dimensions, ingredients, capacity, compatibility, care, what is included and any limitations that matter. Prefer concrete details over strings of adjectives. \"Cotton blend, relaxed fit, ribbed neckline and machine-wash care\" gives a shopper more to work with than \"premium quality, best comfort, must-have style\"—provided those specifications are accurate."
+    },
+    {
+      "type": "paragraph",
+      "text": "Structure longer information so people can scan it. A short summary can sit near the purchase area, followed by sections for specifications, fit or usage, care, warranty, shipping and FAQs. Do not hide a material limitation, subscription condition or compatibility restriction in a distant paragraph. If the product needs assembly, installation or professional advice, explain that before the shopper pays."
+    },
+    {
+      "type": "paragraph",
+      "text": "Answer questions in the language your customers use. A brand selling across India may need English and one or more Indian-language experiences, depending on its audience and support capacity. Translate the product information accurately rather than machine-translating technical terms without review. Keep units, size labels, care instructions and warranty wording consistent across the page, cart and customer messages."
+    },
+    {
+      "type": "heading",
+      "text": "5. Treat size, colour and other variants as separate buying decisions"
+    },
+    {
+      "type": "paragraph",
+      "text": "A variant is not just a coloured button. Selecting it may change the image, price, SKU, stock, delivery eligibility or product specifications. Make the selected option obvious and keep the displayed details in sync. Disable unavailable choices or explain that they are unavailable. Do not allow a customer to select a size that is out of stock and discover the problem only after entering an address."
+    },
+    {
+      "type": "paragraph",
+      "text": "For clothing, explain whether a size chart describes body measurements or garment measurements. Include the unit, measurement method and fit guidance. For footwear, explain how to measure foot length and what to do if someone is between sizes. For electronics, identify the exact storage, colour, model or compatibility option. For bundles, state exactly which items and quantities are included."
+    },
+    {
+      "type": "paragraph",
+      "text": "If variants have distinct URLs, make each URL open the correct variant with its image, price and availability already selected. This is useful for customers sharing a link and for product data systems that inspect landing pages. Google's product-variant guidance describes how ProductGroup and Product structured data can represent variant relationships; implementation needs to match the actual page and URL design."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Product variant structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-variants"
+    },
+    {
+      "type": "heading",
+      "text": "6. Make price, offers and stock unambiguous"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show the current selling price close to the purchase action. If a crossed-out price is used, make sure it represents a genuine reference price and that the promotion is valid. State whether a coupon must be entered, whether a bundle price requires multiple items and whether a subscription renews. Avoid presenting a low starting price as if it applies to every variant."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep the product page, cart, checkout, feed and structured data aligned. A page that shows one price while the cart adds an unexplained fee creates a trust problem. Where shipping, taxes or other charges depend on the destination or order, explain when the amount is calculated and show the payable total before the customer confirms the order. Confirm the exact disclosure obligations for your business model with qualified legal or tax advisers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stock status should describe the selected variant, not merely the parent product. If an item is made to order, pre-order or back-ordered, explain the expected dispatch or availability date. If stock changes quickly, connect the product page to the inventory source rather than relying on a manually edited label. A customer should not pay for a variant that the business cannot fulfil."
+    },
+    {
+      "type": "heading",
+      "text": "7. Explain delivery, serviceability, returns and support before checkout"
+    },
+    {
+      "type": "paragraph",
+      "text": "For Indian shoppers, delivery expectations can vary by pin code, courier coverage, product type and fulfilment location. Offer a pin-code checker where it is practical. Show an estimated delivery range or dispatch estimate only when the operation can support it. Distinguish dispatch time from delivery time. If an item is made to order, fragile, bulky, temperature-sensitive or restricted to selected locations, explain the constraint before the purchase action."
+    },
+    {
+      "type": "paragraph",
+      "text": "Write a short, plain-language summary of shipping and returns near the product decision area, then link to the complete policy. State who pays return shipping, which products have exceptions, the time window for requesting a return or exchange, the condition required and how refunds are handled. If a product is non-returnable for a valid category-specific reason, do not conceal that condition until after payment. Make sure the policy matches the process customer support actually follows."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Consumer Protection (E-Commerce) Rules, 2020 and subsequent amendments are part of India's e-commerce framework. The rules cover goods and services offered over digital or electronic networks and distinguish roles such as e-commerce entities, inventory entities, marketplace entities and sellers. Which duties apply depends on the operating model and role. Treat the product page as an operational disclosure surface, but have a qualified adviser review the current rules and your specific obligations rather than treating this checklist as legal advice."
+    },
+    {
+      "type": "link",
+      "text": "Department of Consumer Affairs: Consumer Protection Acts, Rules and amendments",
+      "href": "https://consumeraffairs.gov.in/pages/consumer-protection-acts"
+    },
+    {
+      "type": "link",
+      "text": "Consumer Protection (E-Commerce) Rules, 2020 — Gazette notification",
+      "href": "https://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
+    },
+    {
+      "type": "heading",
+      "text": "8. Present payment and cash-on-delivery options honestly"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you offer UPI, cards, net banking, wallets or cash on delivery, make the available options easy to understand. Do not display a payment method that is unavailable for the selected pin code or order value. If cash on delivery has a fee, a limit or a verification step, explain it before the customer reaches the final confirmation. If prepaid orders receive a discount, show the actual conditions and the final amount for each option."
+    },
+    {
+      "type": "paragraph",
+      "text": "COD can introduce operational considerations such as confirmation, address quality, courier attempts and refused deliveries. Track those outcomes separately from payment failures. Do not assume every COD order is fraudulent or every prepaid order is genuine. Use your own fulfilment evidence to decide whether confirmation calls, WhatsApp messages, address validation or order limits are appropriate, and make sure those checks do not create unnecessary friction for genuine customers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep payment status and order status separate in your system. A payment gateway callback, an order confirmation page and a warehouse fulfilment event are not the same thing. Test successful payment, failed payment, pending payment, duplicate callback, cancelled order and refund paths. Give the customer a clear confirmation and a reference they can use when contacting support."
+    },
+    {
+      "type": "heading",
+      "text": "9. Build trust with real evidence, not decorative badges"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use trust information that a customer can verify: the brand's real contact details, seller identity where relevant, warranty terms, product certifications where applicable, secure payment options, a clear return policy and genuine customer feedback. If you show reviews, keep them connected to actual customer experiences. Do not invent a rating, copy testimonials from another product or imply that every review is independently verified if it is not."
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid fake scarcity counters, fabricated countdown timers, preselected add-ons, hidden fees and confusing opt-outs. The Central Consumer Protection Authority's 2025 advisory reminded e-commerce platforms about the requirement for explicit affirmative consent under Rule 4(9) of the E-Commerce Rules and encouraged self-audits for dark patterns. The practical lesson for a brand is straightforward: make choices clear and let customers actively select optional extras."
+    },
+    {
+      "type": "link",
+      "text": "CCPA advisory dated 5 June 2025 on e-commerce dark-pattern self-audits",
+      "href": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/CCPA_Advisory_in_terms_of_Consumer_Protection_Act%2C_2019_on_Self-Audit_by_E-Commerce_Platforms_for_detecting_the_Dark_Patterns_on_their_platforms_to_create_a_fair%2C_ethical%2C_and_consumer-centric_digital_ecosystem_dated_05.06.2025_whatsnews.pdf"
+    },
+    {
+      "type": "paragraph",
+      "text": "A customer should be able to compare the product and make a decision without being pressured by interface tricks. If you use a low-stock message, it should come from a real inventory rule. If you display delivery urgency, it should be based on a genuine fulfilment cut-off. If an offer ends at a particular time, it should actually end then. Honest urgency can communicate a real constraint; invented urgency damages confidence."
+    },
+    {
+      "type": "heading",
+      "text": "10. Make the transition from product page to checkout predictable"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cart should preserve the selected product, variant, quantity, price and promotion. If a variant becomes unavailable between selection and checkout, explain the issue and offer a clear next step. Do not silently substitute another size or colour. Let shoppers review the order before payment, including shipping, taxes, discounts and any additional charges that apply."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask only for information needed to fulfil the order, communicate with the customer or meet a legitimate requirement. Make field labels visible, explain validation errors beside the relevant field and preserve entered information when possible. If guest checkout is feasible for your business, consider offering it rather than forcing account creation before the customer can understand the order. Do not preselect marketing consent as part of the purchase flow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test the checkout on the devices and browsers your customers actually use. Complete a real low-value test order if your payment and fulfilment setup allows it, then verify the confirmation message, email or WhatsApp notification, inventory adjustment, analytics event and order record. A page that looks finished in a design file is not ready until the complete purchase journey works."
+    },
+    {
+      "type": "heading",
+      "text": "11. Give search engines accurate product information"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each product page should have a descriptive title, a useful meta description, a stable URL, crawlable images, relevant internal links and content that focuses on one product or one product family. Avoid copying the same description across every colour or size. If the variants have meaningful differences, explain those differences. Keep canonical URLs intentional and make sure the page is indexable when you want it to appear in search."
+    },
+    {
+      "type": "paragraph",
+      "text": "Product structured data can help search engines understand product names, images, offers, price, currency, availability and other supported details. Google's merchant listing documentation describes the Product and Offer properties used for merchant listing experiences. Product snippet documentation has its own eligibility requirements. Structured data does not guarantee a rich result, and it must describe information that is genuinely present on the page."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Merchant listing structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Product snippet structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a variant catalogue, use stable identifiers such as SKU or GTIN where available and keep each variant's product information accurate. Do not invent identifiers or ratings to complete a schema template. If a page is rendered heavily with JavaScript, test the rendered HTML and make sure important product details are available to crawlers. Validate structured data with Google's Rich Results Test and monitor the relevant Search Console reports."
+    },
+    {
+      "type": "heading",
+      "text": "12. Keep Merchant Center data and the product page in sync"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use Google Merchant Center, the product feed and the linked landing page must describe the same item. Check title, image, price, currency, availability and selected variant. The landing page should make the submitted product easy to identify and should not hide important information behind an obstructive overlay. A product feed is not a substitute for a clear customer-facing page; both need to agree."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a price or stock value changes, update the catalogue source and the systems that consume it. Avoid a workflow where a marketer edits a feed export while the website continues to show an old price. Use a sample audit across regular-price, sale, variant and out-of-stock products. Record the product ID, feed value, page value, evidence, owner and correction date so recurring mismatches can be traced to their source."
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center: About landing page requirements",
+      "href": "https://support.google.com/merchants/answer/4752265"
+    },
+    {
+      "type": "link",
+      "text": "Read: Google Merchant Center setup for Indian D2C brands",
+      "href": "/insights/google-merchant-center-india-d2c-setup-guide"
+    },
+    {
+      "type": "heading",
+      "text": "13. Design for mobile performance and stability"
+    },
+    {
+      "type": "paragraph",
+      "text": "A product page can be visually polished and still feel difficult to use if the main image takes too long to appear, variant controls lag, or a review widget shifts the purchase button after loading. Compress and correctly size images, avoid loading every gallery asset at full resolution at once, defer non-essential scripts and keep third-party widgets under review. Measure real user experience as well as running a one-off lab test."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's Core Web Vitals currently describe loading, interactivity and visual stability through LCP, INP and CLS. The published good thresholds are LCP within 2.5 seconds, INP at or below 200 milliseconds and CLS at or below 0.1, evaluated at the 75th percentile. Treat these as experience diagnostics, not a promise that meeting a score will create sales. Prioritise the pages and devices that matter to your actual customers."
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Web Vitals and Core Web Vitals thresholds",
+      "href": "https://web.dev/articles/vitals"
+    },
+    {
+      "type": "paragraph",
+      "text": "Check the product page with a slow mobile connection and a mid-range device, not only a powerful office laptop on fast Wi-Fi. Scroll through the entire page, open the gallery, change variants, expand accordions, use the pin-code checker and add an item to the cart. Confirm that sticky elements do not cover content, tap targets are comfortable and the page remains usable when a third-party script is delayed."
+    },
+    {
+      "type": "heading",
+      "text": "14. Measure the product page as a journey"
+    },
+    {
+      "type": "paragraph",
+      "text": "Page views alone cannot explain where shoppers stop. Track product detail views, item selections, add-to-cart actions, cart views, checkout starts, purchases and refunds. Include stable item identifiers, item names, variant, quantity, price, currency and transaction details where appropriate. Google Analytics 4 documents recommended ecommerce events and the item data that can be sent with them. Configure events from actual user actions and confirm that purchase events are not duplicated."
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics: Measure ecommerce with GA4",
+      "href": "https://developers.google.com/analytics/devguides/collection/ga4/ecommerce"
+    },
+    {
+      "type": "paragraph",
+      "text": "Build a simple report by product, device, traffic source and selected variant. Compare product views with add-to-cart activity, checkout starts with completed purchases, and orders with cancellations, returns or refunds. A high add-to-cart rate followed by a weak checkout completion rate points to a different problem from a page that receives relevant visits but few cart additions. Review the customer journey before changing the creative or increasing ad spend."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not optimise only for the cheapest purchase or the highest reported revenue. Include contribution after discounts, shipping, payment fees, fulfilment and returns where those costs are available. Separate new and returning customers when the data supports it. Use a consistent time window and cohort, and annotate major changes such as a price update, sale, stock shortage or shipping-policy change."
+    },
+    {
+      "type": "heading",
+      "text": "15. Common product-page mistakes to remove"
+    },
+    {
+      "type": "paragraph",
+      "text": "Common problems include a generic title, one low-resolution image, missing dimensions, unclear fit, a hidden return policy, a price that changes in the cart, variants that do not update stock, a delivery estimate without a serviceability check, fake review counts, a preselected add-on and a product feed that describes a different item. These issues are fixable, but they often sit across teams rather than inside the design alone."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another mistake is treating every product as if it needs the same amount of information. A simple accessory may need a concise page. A high-consideration appliance may need compatibility, installation, warranty and technical support details. A size-sensitive garment may need a detailed fit guide. Use customer questions, returns and support conversations to decide what belongs on each page."
+    },
+    {
+      "type": "heading",
+      "text": "An illustrative example: an Indian apparel D2C product page"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a D2C brand selling an oversized cotton T-shirt. The page opens with a clear product name, current price, available colours and sizes, a fit note and a visible Add to Cart action. The gallery shows front, back, fabric detail and the T-shirt on a model whose height and worn size are stated. A size guide explains garment measurements in centimetres and how to measure a similar T-shirt at home."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below the purchase area, the page explains fabric composition, care, what the customer receives, pin-code delivery estimates, COD availability and the return or exchange process. Selecting a colour updates the image; selecting a size updates availability and SKU. The cart repeats the chosen variant and total amount. GA4 records view_item, add_to_cart, begin_checkout and purchase with consistent item data. This is a workflow illustration, not a real client result or a promised outcome."
+    },
+    {
+      "type": "heading",
+      "text": "A practical 30-day product-page improvement plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "Week 1 — Audit: select a representative group of products, including a bestseller, a low-traffic item, a sale item, a product with variants and an item with a return or delivery constraint. Review support questions, search queries, analytics, catalogue data and current policies. Record missing information and inconsistencies before changing the design."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week 2 — Fix the information: create or clean the product data sheet, rewrite titles and descriptions, improve images, complete specifications, verify size or compatibility guidance and make price, stock, delivery and returns clear. Assign owners for inventory, catalogue, content, customer support and fulfilment data."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week 3 — Improve the experience: update the mobile layout, variant selector, image gallery, delivery checker, cart and checkout messages. Review accessibility of labels and controls. Validate product structured data and Merchant Center landing-page consistency. Test payment, COD, out-of-stock and refund scenarios."
+    },
+    {
+      "type": "paragraph",
+      "text": "Week 4 — Measure and learn: verify ecommerce events, build a product-level funnel report and compare the updated experience with a consistent baseline. Review add-to-cart, checkout completion, purchase, cancellation and return signals. Change one major element at a time where possible, document what changed and keep the test running long enough to gather useful evidence."
+    },
+    {
+      "type": "heading",
+      "text": "Product-page launch checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Product identity: accurate name, brand, SKU or identifier, description and category. 2. Images: clear main image, useful angles, real colours, variant-specific imagery and meaningful alternative text. 3. Decision details: material, dimensions, fit, compatibility, ingredients, care, warranty and included items as relevant."
+    },
+    {
+      "type": "paragraph",
+      "text": "4. Purchase details: visible price, valid offer, selected variant, variant-level stock, delivery estimate, serviceability and clear payment options. 5. Policies and trust: accessible shipping, return, exchange, refund, seller and support information; genuine reviews; no misleading urgency or preselected extras. 6. Technical checks: mobile usability, page performance, canonical URL, indexability, product structured data, feed consistency and working analytics."
+    },
+    {
+      "type": "paragraph",
+      "text": "7. End-to-end test: add the correct variant to cart, change quantity, apply a valid coupon, calculate delivery, complete a test payment, verify the order record and confirmation, and check the refund or cancellation path. Save the evidence and assign an owner to each unresolved issue. A checklist is only useful when someone is responsible for closing the gaps."
+    },
+    {
+      "type": "heading",
+      "text": "Related Kardengey guides"
+    },
+    {
+      "type": "link",
+      "text": "Read: Google Merchant Center in India — D2C setup guide",
+      "href": "/insights/google-merchant-center-india-d2c-setup-guide"
+    },
+    {
+      "type": "link",
+      "text": "Read: Website design brief for Indian businesses",
+      "href": "/insights/website-design-brief-india"
+    },
+    {
+      "type": "link",
+      "text": "Read: Website accessibility checklist for Indian businesses",
+      "href": "/insights/website-accessibility-checklist-india"
+    },
+    {
+      "type": "link",
+      "text": "Read: Google Ads conversion tracking for lead generation",
+      "href": "/insights/google-ads-lead-conversion-tracking-india"
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey's website, SEO and performance marketing services",
+      "href": "/services"
+    },
+    {
+      "type": "heading",
+      "text": "References and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Merchant listing structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/merchant-listing"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Product snippet structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Product variant structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-variants"
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center: Landing page requirements",
+      "href": "https://support.google.com/merchants/answer/4752265"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics: Measure ecommerce",
+      "href": "https://developers.google.com/analytics/devguides/collection/ga4/ecommerce"
+    },
+    {
+      "type": "link",
+      "text": "Department of Consumer Affairs: Consumer Protection Acts and Rules",
+      "href": "https://consumeraffairs.gov.in/pages/consumer-protection-acts"
+    },
+    {
+      "type": "link",
+      "text": "Consumer Protection (E-Commerce) Rules, 2020 — Gazette",
+      "href": "https://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
+    },
+    {
+      "type": "link",
+      "text": "CCPA: Dark-pattern self-audit advisory, 5 June 2025",
+      "href": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/CCPA_Advisory_in_terms_of_Consumer_Protection_Act%2C_2019_on_Self-Audit_by_E-Commerce_Platforms_for_detecting_the_Dark_Patterns_on_their_platforms_to_create_a_fair%2C_ethical%2C_and_consumer-centric_digital_ecosystem_dated_05.06.2025_whatsnews.pdf"
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Web Vitals",
+      "href": "https://web.dev/articles/vitals"
+    },
+    {
+      "type": "paragraph",
+      "text": "A product page is not finished when the design is approved. It is finished when the information is accurate, the selected product can be purchased as described, the checkout behaves as expected and the business can measure what happens after the visit. Improve the page from real customer questions and fulfilment evidence. Make the next decision easier, keep the promise honest and review the experience as the catalogue changes."
+    }
+  ]
+},
+{
   "category": "WEBSITE / DATA PRIVACY",
   "filter": "TECH",
   "title": "DPDP Act for Indian Business Websites: Lead Forms, Marketing Consent and Analytics Checklist",
