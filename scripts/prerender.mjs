@@ -99,7 +99,9 @@ function pageContent(inner) {
   return `${style}<div class="seo-content"><header class="seo-header"><div class="seo-wrap"><a class="seo-brand" href="/">kardengey<span>.</span></a></div></header><main class="seo-wrap seo-main">${inner}</main><footer class="seo-footer"><div class="seo-wrap">© kardengey · <a href="/about-editorial-standards">Editorial standards</a> · <a href="/privacy-policy">Privacy policy</a> · <a href="/insights">Insights</a></div></footer></div>`;
 }
 
-const validArticles = articles.filter((article) => article && typeof article.slug === "string" && article.slug.trim() && typeof article.title === "string");
+const validArticles = articles
+  .filter((article) => article && typeof article.slug === "string" && article.slug.trim() && typeof article.title === "string")
+  .sort((a, b) => new Date(b.publishedAt || b.date).getTime() - new Date(a.publishedAt || a.date).getTime());
 
 const articleIndex = validArticles.map((article) => `
   <article class="seo-list">
