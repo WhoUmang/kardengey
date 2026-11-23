@@ -6804,6 +6804,600 @@ const articles = [
     }
   ]
 }
+,
+{
+  "category": "LOCAL SEO / DISCOVERY",
+  "filter": "GROWTH",
+  "title": "Google Business Profile for Indian Local Businesses: A Practical Local SEO Checklist",
+  "slug": "google-business-profile-local-seo-india-checklist",
+  "description": "A practical guide for Indian local businesses to improve Google Business Profile accuracy, local relevance, reviews, photos, service areas and enquiry tracking.",
+  "date": "14 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "10 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "For a neighbourhood clinic, restaurant, salon, repair service, consultant or retail shop, the first website visit may not happen on the website at all. A customer may search on Google Maps, compare nearby options, check opening hours, read reviews and call directly. That makes the Google Business Profile an important part of the customer journey—not a substitute for a good website, but a discovery and trust surface that needs regular maintenance."
+    },
+    {
+      "type": "heading",
+      "text": "Start with the basics customers rely on"
+    },
+    {
+      "type": "paragraph",
+      "text": "Claim and verify the profile using an account controlled by the business. Use the real-world business name customers see on signage and invoices. Choose the most accurate primary category, then add only relevant secondary categories. Keep the address, phone number, website, opening hours and special holiday hours accurate. If customers visit your premises, use the correct address. If you travel to customers, configure the service area and follow Google's eligibility rules rather than publishing a residential address that should not be public."
+    },
+    {
+      "type": "paragraph",
+      "text": "Write a concise description that explains what the business does, whom it serves and where it operates. Avoid keyword stuffing, promotional claims and unnatural lists of neighbourhoods. Add the services or products the profile supports, with plain-language descriptions and current information. Upload genuine, recent photographs of the premises, team, products, work and customer experience. Do not use stock imagery to imply a location or facility that does not exist."
+    },
+    {
+      "type": "heading",
+      "text": "Understand what local ranking can and cannot be controlled"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google says local results are mainly based on relevance, distance and prominence. Relevance is how well a profile matches a search; distance is how far the business is from the searcher; prominence reflects how well-known the business is and can draw on signals such as links and reviews. This means there is no legitimate switch that guarantees a top position. A business cannot change its physical distance from a searcher, and Google says there is no way to request or pay for a better local ranking."
+    },
+    {
+      "type": "quote",
+      "text": "The goal is not to add more keywords to a profile. It is to make the business information complete, accurate and genuinely useful."
+    },
+    {
+      "type": "heading",
+      "text": "Build a review process, not a review shortcut"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask real customers for honest feedback after a completed purchase or service. Make the request easy to act on, but do not offer money, discounts or gifts in exchange for a positive review. Never buy reviews, ask staff to pose as customers or selectively pressure only happy customers. Reply to reviews professionally: thank the reviewer, address the issue without exposing private information and invite a detailed conversation offline when needed. A calm response to criticism can demonstrate how the business handles problems."
+    },
+    {
+      "type": "heading",
+      "text": "Keep the profile active and consistent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assign one person to check the profile at least monthly and after any change to hours, location, phone number, services or website. Review suggested edits, check that map directions lead to the correct entrance and make sure calls and website links work on a phone. Publish updates only when they add useful information—such as a seasonal service, event or operational change—not just to create activity. Keep the business name, address and phone details consistent across the website and important directories."
+    },
+    {
+      "type": "heading",
+      "text": "Measure enquiries that become business"
+    },
+    {
+      "type": "paragraph",
+      "text": "Track profile website visits with a tagged URL, use a dedicated call-tracking approach where appropriate and record how enquiries arrive in the CRM or a simple spreadsheet. Ask new customers how they found the business. Measure qualified calls, appointment bookings, store visits where they can be reliably recorded and sales—not just profile views. Compare trends over time and note seasonal or operational changes before attributing growth to one edit."
+    },
+    {
+      "type": "heading",
+      "text": "A 30-minute monthly checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Verify hours and contact details; check the website and directions links; review new photos and profile suggestions; respond to reviews; confirm services and categories remain accurate; inspect enquiry quality; and note one improvement for the next month. This small routine is more valuable than a one-time profile setup that becomes outdated."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Business Profile works best when it reflects the real business behind it. Pair it with a fast, mobile-friendly website, clear service pages, useful local information and a reliable process for answering enquiries. Local visibility can bring attention; the experience after the click or call is what helps turn that attention into a customer."
+    },
+    {
+      "type": "link",
+      "text": "Google Business Profile Help: Tips to improve your local ranking",
+      "href": "https://support.google.com/business/answer/7091/"
+    },
+    {
+      "type": "link",
+      "text": "Google Business Profile Help: Guidelines for representing your business",
+      "href": "https://support.google.com/business/answer/3038177"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: SEO Starter Guide",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    }
+  ]
+},
+{
+  "category": "PAID MEDIA / CONVERSION",
+  "filter": "GROWTH",
+  "title": "Google Ads Landing Pages in India: How to Turn Paid Clicks into Qualified Enquiries",
+  "slug": "google-ads-landing-page-checklist-india",
+  "description": "A practical landing-page framework for Indian businesses running Google Ads: message match, mobile usability, trust, forms, speed and lead-quality measurement.",
+  "date": "15 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "11 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A paid click is only the beginning of a decision. Someone searches, sees an ad, clicks it and arrives with an expectation: the page should answer the question that prompted the click. If the ad promises a service in Noida but the landing page opens with a generic company introduction, the visitor has to work to understand whether they are in the right place. That gap can waste budget even when the campaign is reaching relevant people."
+    },
+    {
+      "type": "heading",
+      "text": "Build one page around one audience and one action"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by writing down the search intent, audience, offer and next action. A page for a person searching for emergency AC repair should not be identical to a page for a facilities manager comparing annual maintenance contracts. A page for a software demo should not mix several unrelated products and audiences. Give each important campaign theme a relevant destination, but avoid creating dozens of thin pages that repeat the same copy with only a city name changed."
+    },
+    {
+      "type": "heading",
+      "text": "Match the ad promise above the fold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Repeat the service, product or problem in the page headline using natural language. Make the offer, geography, key qualification and primary call to action easy to see. If the ad names a starting price, consultation, delivery promise or limited condition, the page must explain it accurately. Google recommends aligning ad text, keywords and landing-page content so visitors find what they expected. Do not use a headline that promises something the business cannot consistently deliver."
+    },
+    {
+      "type": "quote",
+      "text": "A landing page should continue the conversation started by the search—not restart it with a company brochure."
+    },
+    {
+      "type": "heading",
+      "text": "Remove friction from mobile enquiries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Test the complete journey on a real phone, not only in a desktop preview. Keep the first screen focused, use readable type, make buttons easy to tap and ensure the page does not jump when images or banners load. If the main action is a call, make the number tappable. If it is a form, ask only for information needed to qualify and respond. A simple B2B enquiry might need name, work email, company, requirement and an optional message; a home-service request may need location and service type. Explain why a phone number is required and what happens after submission."
+    },
+    {
+      "type": "paragraph",
+      "text": "Show validation errors beside the relevant field, preserve completed answers when an error occurs and provide a clear success message. Test the form with invalid email addresses, missing required fields, slow connections and duplicate submissions. Make sure the enquiry reaches the correct inbox or CRM, and that someone owns the follow-up."
+    },
+    {
+      "type": "heading",
+      "text": "Earn trust before asking for personal information"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show the details that help a buyer assess risk: real business address or service coverage, working phone number, relevant credentials, genuine testimonials with permission, case studies with context, product specifications, transparent pricing or a clear explanation of how pricing is determined. Do not invent client logos, review counts, awards or performance figures. Link to a privacy notice and explain how submitted information will be used."
+    },
+    {
+      "type": "heading",
+      "text": "Make speed and relevance part of the offer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compress and size images appropriately, remove unnecessary scripts, defer non-critical widgets and avoid autoplay media that blocks the main content. Google Ads guidance highlights mobile friendliness, useful unique content, easy navigation and making important information easy to find. Check the page on a mid-range phone and an ordinary mobile connection. A visually impressive page that delays the headline or form is not doing its job."
+    },
+    {
+      "type": "heading",
+      "text": "Measure lead quality, not just form fills"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set up conversion events for successful form submissions, qualified calls or booked appointments—not clicks on the submit button. Test that each event fires once, excludes spam and is attributed to the correct page and campaign. Where practical, pass lead status from the CRM back into the advertising platform so optimisation can distinguish a genuine opportunity from an unqualified enquiry. Review search terms, device, location, landing-page engagement and sales outcomes together."
+    },
+    {
+      "type": "heading",
+      "text": "A simple pre-launch test"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open the ad and page side by side. Can a visitor recognise the same offer? Is the next step obvious? Does the page work on a phone? Are prices and conditions clear? Does the form submit? Does the right person receive the lead? Is the conversion event recorded correctly? Can the sales team respond promptly? Fix any failure before increasing spend."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not judge a landing page by design preference alone. Run a controlled test with one meaningful change at a time, allow enough traffic for a useful comparison and assess qualified outcomes. The best page is the one that helps the right customer take the right next step with less uncertainty."
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Optimise your ads and landing pages",
+      "href": "https://support.google.com/google-ads/answer/6238826"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads Help: Evaluate the performance of your landing pages",
+      "href": "https://support.google.com/google-ads/answer/7543502"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Core Web Vitals",
+      "href": "https://developers.google.com/search/docs/appearance/core-web-vitals"
+    }
+  ]
+},
+{
+  "category": "WEBSITE PERFORMANCE / SEO",
+  "filter": "GROWTH",
+  "title": "Core Web Vitals for Indian Business Websites: A Practical Speed and UX Improvement Plan",
+  "slug": "core-web-vitals-indian-business-websites-guide",
+  "description": "Understand LCP, INP and CLS, find the real bottlenecks on your website and prioritise practical performance fixes for mobile visitors in India.",
+  "date": "16 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "11 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A website can look fast on the developer's laptop and still feel slow to a customer using a mid-range phone on a variable mobile connection. The first image may take too long to appear, a menu may ignore a tap, or the page may shift just as someone tries to select a service. These are not merely technical imperfections. They interrupt the customer's task."
+    },
+    {
+      "type": "heading",
+      "text": "What Core Web Vitals measure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's Core Web Vitals focus on real-world loading performance, interactivity and visual stability. The three current metrics are Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). Google's good-experience targets are LCP within 2.5 seconds, INP below 200 milliseconds and CLS below 0.1. These are useful targets, not a guarantee of rankings, sales or a perfect experience."
+    },
+    {
+      "type": "heading",
+      "text": "Start with field data, then reproduce the problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open the Core Web Vitals report in Search Console to identify URL groups with issues. Use PageSpeed Insights to compare field data, when available, with lab diagnostics. Field data reflects real users and devices; lab tests help reproduce and investigate a page under controlled conditions. Test key templates separately: homepage, service page, blog article, product page, contact form and checkout. A site-wide average can hide a slow template or a broken interaction."
+    },
+    {
+      "type": "heading",
+      "text": "Improve LCP: show the main content sooner"
+    },
+    {
+      "type": "paragraph",
+      "text": "The largest visible element is often a hero image, product image or large text block. Use a correctly sized modern image format, avoid serving a huge desktop asset to a small phone and do not lazy-load the main above-the-fold image. Preload only genuinely critical resources. Reduce server response time, cache static assets and remove render-blocking scripts or styles that delay the first meaningful content. Check whether a third-party widget or an oversized web font is holding up the page."
+    },
+    {
+      "type": "heading",
+      "text": "Improve INP: make interactions respond"
+    },
+    {
+      "type": "paragraph",
+      "text": "INP measures responsiveness across a visit, not only the first button click. Long JavaScript tasks can delay menus, filters, accordions, forms and cart actions. Profile the page, split expensive work into smaller tasks, avoid unnecessary re-renders and load non-essential scripts only when needed. Keep form validation lightweight and ensure that a button gives immediate feedback while a request is processing. Test keyboard navigation and touch interactions as well as mouse clicks."
+    },
+    {
+      "type": "heading",
+      "text": "Improve CLS: stop the page from jumping"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reserve space for images, video, embeds and ad slots using known dimensions or aspect ratios. Avoid inserting banners above content after the page has loaded. Use stable font loading strategies and check whether late-loading cookie notices, chat widgets or recommendation panels push important controls around. A layout shift near a call button or checkout control can cause an accidental action or make a visitor lose their place."
+    },
+    {
+      "type": "quote",
+      "text": "Optimise the page customers use, not just the score shown in a one-off test."
+    },
+    {
+      "type": "heading",
+      "text": "Prioritise fixes by business impact"
+    },
+    {
+      "type": "paragraph",
+      "text": "List your highest-value pages and the actions visitors take on them. Fix problems that affect the first screen, navigation, enquiry forms, product selection and checkout before polishing a low-traffic decorative section. Compare mobile and desktop separately. Record a baseline, change one group of issues, retest and monitor field data over time. Performance can regress when new tracking tags, pop-ups, fonts or video backgrounds are added."
+    },
+    {
+      "type": "heading",
+      "text": "A practical 7-day improvement cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Day 1: collect Search Console and PageSpeed evidence for priority templates. Day 2: identify the largest content element and the scripts that delay it. Day 3: resize images and improve delivery. Day 4: profile slow interactions and remove avoidable JavaScript work. Day 5: reserve layout space and fix shifts. Day 6: test forms, navigation and checkout on real phones. Day 7: document results and agree on a monitoring owner. The exact work depends on the site; do not promise a score before measuring the bottleneck."
+    },
+    {
+      "type": "paragraph",
+      "text": "Core Web Vitals are a diagnostic lens for user experience. Combine them with accessibility checks, analytics, customer feedback and conversion data. A fast page that hides the price or confuses the next step is still a weak page. The goal is a website that loads, responds and stays stable while helping a customer complete a real task."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Understanding Core Web Vitals and Google Search results",
+      "href": "https://developers.google.com/search/docs/appearance/core-web-vitals"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Console Help: Core Web Vitals report",
+      "href": "https://support.google.com/webmasters/answer/9205520"
+    },
+    {
+      "type": "link",
+      "text": "PageSpeed Insights",
+      "href": "https://pagespeed.web.dev/"
+    }
+  ]
+},
+{
+  "category": "LEAD MANAGEMENT / SALES",
+  "filter": "GROWTH",
+  "title": "Lead Management for Indian SMEs: Build a Simple CRM Process That Stops Enquiries Going Cold",
+  "slug": "lead-management-crm-process-indian-smes",
+  "description": "A practical lead-management workflow for Indian small businesses: capture every enquiry, assign ownership, qualify fairly, follow up and measure sales outcomes.",
+  "date": "17 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A business can spend on Google Ads, Meta campaigns, referrals and local SEO—and still lose potential customers because nobody knows who should reply to a new enquiry. A form notification sits unread, a WhatsApp message is buried in a personal phone, or two salespeople contact the same prospect with different prices. The issue is not always lead volume. Often it is the absence of a reliable process after the enquiry arrives."
+    },
+    {
+      "type": "heading",
+      "text": "Create one source of truth"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with a shared lead register or CRM that the people responsible for sales can access. Every enquiry should have a record with a unique identifier, date and time, customer name, contact channel, requirement, location, source, campaign where known, owner, current status and next action. Do not rely on one employee's personal inbox or memory. Restrict access to people who need the information and collect only what is necessary to respond."
+    },
+    {
+      "type": "heading",
+      "text": "Define stages that reflect your actual sales process"
+    },
+    {
+      "type": "paragraph",
+      "text": "A small business can begin with a simple pipeline: New, Contact attempted, Connected, Qualified, Proposal sent, Won, Lost and Nurture. Define each stage in one sentence. For example, Qualified might mean the prospect has a relevant need, fits the service area or customer profile, and has agreed to a realistic next step. A stage should describe what has happened—not how optimistic the salesperson feels."
+    },
+    {
+      "type": "heading",
+      "text": "Assign ownership and a next action"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every new lead needs one accountable owner and a next action with a due time. Set a response target that your team can genuinely meet during business hours. If the primary owner is unavailable, define a backup. Use automated acknowledgement only if it is accurate and does not pretend a human has reviewed the enquiry. For urgent categories, publish realistic response hours and a working alternative contact method."
+    },
+    {
+      "type": "heading",
+      "text": "Qualify without turning the first call into an interrogation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a short set of questions relevant to the offer: what problem needs solving, when it needs to happen, where the customer is located, what product or service is being considered and who is involved in the decision. For B2B, ask about the organisation and buying process where appropriate. Explain why you need any sensitive or optional information. Do not ask for personal data simply because a CRM has a field for it."
+    },
+    {
+      "type": "heading",
+      "text": "Make follow-up useful and respectful"
+    },
+    {
+      "type": "paragraph",
+      "text": "A follow-up should move the conversation forward: answer a question, share a relevant case study, clarify scope, offer a suitable appointment or confirm a decision date. Avoid sending the same generic message repeatedly. Record the date, channel and outcome of each contact. Stop or change the approach when someone declines further contact, and respect channel-specific consent and communication requirements."
+    },
+    {
+      "type": "quote",
+      "text": "A lead is not managed because it is in a spreadsheet. It is managed when someone owns the next useful action."
+    },
+    {
+      "type": "heading",
+      "text": "Connect marketing sources to sales outcomes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use consistent source labels such as Google Search Ads, Meta Ads, organic search, referral, walk-in and partner. Use tagged campaign URLs where possible and pass source details into the CRM. Ask customers how they heard about the business as a secondary check. Review not only cost per lead but contact rate, qualified rate, proposal rate, win rate, revenue and time to close. A low-cost lead source can be expensive if most enquiries are irrelevant or never contacted."
+    },
+    {
+      "type": "heading",
+      "text": "Build a weekly 20-minute review"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review new leads without an owner, overdue next actions, enquiries stuck in one stage, lost reasons and outcomes by source. Look for recurring patterns: a location mismatch, unclear offer, poor form question, slow response or a campaign attracting the wrong intent. Choose one process improvement and assign an owner. Keep the review focused on fixing the system rather than blaming individuals for every lost deal."
+    },
+    {
+      "type": "heading",
+      "text": "When should a small business buy CRM software?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A spreadsheet may be enough when enquiry volume is low, ownership is clear and reporting is simple. Move to a CRM when multiple people need shared visibility, follow-up reminders, permissions, integrations or pipeline reporting. Before buying, map the workflow and test whether the tool supports it. Confirm data export, access controls, backups, integrations, training and the total cost. Software cannot compensate for unclear stages or a team that does not update records."
+    },
+    {
+      "type": "paragraph",
+      "text": "The best lead-management system is the simplest one your team will use consistently. Start with ownership, stages, next actions and a weekly review. Automate only after the process works manually, then connect advertising and analytics so marketing decisions are based on qualified opportunities and customers—not just notification counts."
+    },
+    {
+      "type": "link",
+      "text": "Meta for Developers: Lead Ads CRM integration",
+      "href": "https://developers.facebook.com/docs/marketing-api/guides/lead-ads/"
+    },
+    {
+      "type": "link",
+      "text": "Google Analytics Help: Campaign URL builders",
+      "href": "https://support.google.com/analytics/answer/10917952"
+    },
+    {
+      "type": "link",
+      "text": "TRAI: What is Unsolicited Commercial Communication?",
+      "href": "https://www.trai.gov.in/what-spam-or-ucc"
+    }
+  ]
+},
+{
+  "category": "CUSTOMER COMMUNICATION / COMPLIANCE",
+  "filter": "GROWTH",
+  "title": "WhatsApp, SMS and Email Marketing in India: A Consent-First Communication Checklist",
+  "slug": "consent-first-whatsapp-sms-email-marketing-india",
+  "description": "A practical checklist for Indian businesses using WhatsApp, SMS and email: permission, channel expectations, opt-outs, data minimisation and safer campaign operations.",
+  "date": "18 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A customer shares a phone number to receive an order update. A sales team later adds that number to a promotional broadcast. The customer never expected that second message. This is a common operational mistake: treating contact details collected for one purpose as permission for every future campaign. A sustainable communication programme starts by explaining what people are agreeing to, recording the choice and respecting it."
+    },
+    {
+      "type": "heading",
+      "text": "Separate service messages from promotional campaigns"
+    },
+    {
+      "type": "paragraph",
+      "text": "An order confirmation, appointment reminder or support response is different from a discount campaign or product announcement. Define the purpose before collecting a contact detail. Tell the person which channel will be used, what type of communication they can expect and how they can change their preferences. Do not quietly turn a service interaction into a marketing subscription."
+    },
+    {
+      "type": "heading",
+      "text": "Treat consent as a record, not a checkbox decoration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep a record of the source, date, purpose, channel and wording shown when permission was collected. Store the answer and any later withdrawal or preference change. Make the choice clear and affirmative; do not assume that a preselected box, a business card exchange or a past purchase means the person wants recurring promotions. If someone gives a number for delivery coordination, use it for that stated purpose unless a separate valid permission and applicable rules allow more."
+    },
+    {
+      "type": "heading",
+      "text": "Understand India's commercial communication rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "TRAI's guidance on Unsolicited Commercial Communication explains that consent and registered customer preferences matter for commercial calls and messages covered by its framework. Its sender guidance describes registration steps for applicable commercial communication, including principal-entity registration, headers, content templates and customer consent. Businesses planning bulk SMS or voice campaigns should confirm their obligations with their telecom provider and legal adviser; a normal mobile SIM or a marketing platform does not remove regulatory requirements."
+    },
+    {
+      "type": "paragraph",
+      "text": "WhatsApp has its own business messaging policies and permission expectations. Use the appropriate WhatsApp Business product and approved messaging route for the use case, follow template and customer-service-window rules that apply to the account, and honour opt-outs. Do not scrape numbers, buy lists or use unofficial bulk-sending tools that put customer accounts and business continuity at risk."
+    },
+    {
+      "type": "heading",
+      "text": "Make opt-out easy and operational"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every promotional programme should have a clear way to stop messages. Explain how to unsubscribe in the channel and make sure the request reaches every relevant list, CRM segment and sending tool. Maintain a suppression list so a person who opts out is not accidentally re-imported during the next campaign. Train staff to recognise phrases such as stop, unsubscribe or do not contact me, including when the request arrives in a reply rather than a formal form."
+    },
+    {
+      "type": "quote",
+      "text": "Permission is not useful if the business cannot remember what the customer agreed to—or act when they change their mind."
+    },
+    {
+      "type": "heading",
+      "text": "Collect less and protect what you keep"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not ask for date of birth, personal address, identity documents or unrelated profile details just to send a newsletter. Limit access to contact lists, use strong account security, review vendors and integrations, and define retention periods. Avoid exporting customer lists to personal devices or sharing them in open spreadsheets. If a third-party agency or platform processes customer data, understand its role, safeguards and contractual responsibilities."
+    },
+    {
+      "type": "heading",
+      "text": "Segment for relevance, not pressure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Send messages based on a genuine customer need: product category, stated interest, service location, purchase stage or communication preference. Keep frequency reasonable and explain the value of the message. Do not use misleading urgency, fake scarcity or a subject line that disguises a promotion as a personal service update. Monitor complaints, blocks, unsubscribes and negative replies alongside clicks and conversions."
+    },
+    {
+      "type": "heading",
+      "text": "A practical pre-send checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before a campaign, confirm the audience source and permission; check the channel's rules and applicable Indian requirements; verify the message, offer and destination; include sender identity and an opt-out route; test links and personalisation; exclude suppressed contacts; limit access to the list; and assign someone to handle replies. After sending, review complaints and opt-outs and update the records."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide is operational information, not legal advice. The Digital Personal Data Protection Act and its rules, TRAI requirements and platform policies may apply differently depending on the data, channel, sender and message. Get qualified advice for your specific programme. Trust is easier to preserve when customers understand why you are contacting them and can control what happens next."
+    },
+    {
+      "type": "link",
+      "text": "TRAI: What is UCC or Spam?",
+      "href": "https://www.trai.gov.in/what-spam-or-ucc"
+    },
+    {
+      "type": "link",
+      "text": "TRAI: Advice to Senders of Commercial Communication",
+      "href": "https://www.trai.gov.in/advice-senders"
+    },
+    {
+      "type": "link",
+      "text": "WhatsApp Business Messaging Policy",
+      "href": "https://business.whatsapp.com/policy"
+    },
+    {
+      "type": "link",
+      "text": "India Code: Digital Personal Data Protection Act, 2023",
+      "href": "https://www.indiacode.nic.in/bitstream/123456789/22037/2/a2023-22.pdf"
+    }
+  ]
+},
+{
+  "category": "DIGITAL PAYMENTS / CUSTOMER EXPERIENCE",
+  "filter": "GROWTH",
+  "title": "UPI and Digital Payments for Indian Small Businesses: A Checkout and Reconciliation Checklist",
+  "slug": "upi-digital-payments-small-business-india-checklist",
+  "description": "Help customers pay confidently and help your team reconcile sales with a practical UPI and digital-payments checklist for Indian small businesses.",
+  "date": "19 NOV 2026",
+  "publishedAt": "2026-11-23",
+  "read": "10 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "For many Indian customers, paying digitally is an ordinary part of buying online or at a local store. The payment experience still creates friction when a QR code is unclear, the amount is wrong, the customer cannot tell whether a transaction succeeded or the business cannot match a payment to an order. A good payment flow is not simply about displaying a UPI logo. It is about helping the customer pay safely and helping the business confirm, record and reconcile the transaction."
+    },
+    {
+      "type": "heading",
+      "text": "Offer payment choices that fit the business"
+    },
+    {
+      "type": "paragraph",
+      "text": "A neighbourhood store may use a merchant UPI QR and a point-of-sale terminal. An ecommerce business may use a payment gateway that supports UPI, cards and net banking. A service provider may send a payment link after confirming scope. Choose a method that fits the transaction, expected volume, refund process and accounting workflow. Review provider fees, settlement timelines, support, integration requirements and dispute handling before selecting a provider."
+    },
+    {
+      "type": "heading",
+      "text": "Make the amount and recipient easy to verify"
+    },
+    {
+      "type": "paragraph",
+      "text": "Display the correct business name and amount before the customer confirms. Use a merchant QR or payment flow issued by a trusted provider; do not ask customers to scan a personal QR if the transaction belongs to a business account. For online payments, show the order reference, amount, taxes, delivery charges and any applicable fees before redirecting to the payment provider. Avoid asking customers to share UPI PINs, OTPs or banking passwords—legitimate merchants do not need them to receive a payment."
+    },
+    {
+      "type": "heading",
+      "text": "Design for pending, failed and duplicate states"
+    },
+    {
+      "type": "paragraph",
+      "text": "A customer may complete a payment while the browser is still waiting for confirmation. The page should explain what to do if the status is pending and should not encourage an immediate second payment. Use the payment provider's verified status or server-side notification to update the order, rather than trusting a screenshot or a browser message alone. Give each order and payment attempt a unique reference. Make duplicate submissions safe to handle and provide a support route for unresolved transactions."
+    },
+    {
+      "type": "heading",
+      "text": "Reconcile payments every working day"
+    },
+    {
+      "type": "paragraph",
+      "text": "Match the provider settlement report and bank statement against orders, invoices, refunds and fees. Track transaction reference, order ID, amount, date, status, settlement date and any refund or chargeback. Investigate unmatched credits, partial payments, duplicate records and payments that are successful at the bank but not reflected in the order system. Assign an owner and a regular schedule. A simple daily reconciliation prevents small mismatches from becoming month-end mysteries."
+    },
+    {
+      "type": "quote",
+      "text": "A payment is complete for the customer when they know what happened. It is complete for the business when the order and the books agree."
+    },
+    {
+      "type": "heading",
+      "text": "Keep the checkout clear on a mobile phone"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show the total before payment, keep the checkout short and explain delivery, cancellation and refund conditions before the customer commits. Make payment buttons large enough to tap and ensure the page works when a user returns from another app. Do not remove the order summary during the redirect. After a verified success, show a confirmation page and send an appropriate receipt or order update through the channel the customer expects."
+    },
+    {
+      "type": "heading",
+      "text": "Use payment data to improve operations—not to overclaim"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review payment completion rate, pending and failed transactions, refund turnaround, support contacts and reconciliation exceptions. Compare methods only when the transaction mix and customer context are comparable. A rise in digital payment volume does not automatically prove that a specific payment button increased sales. Government figures show the scale of India's digital payment ecosystem: a Ministry of Finance release reported 22,167.90 crore retail digital payment transactions in FY 2024–25, with UPI accounting for 81% of retail digital payments in that year. Use such context to understand the market, not as a forecast for your own business."
+    },
+    {
+      "type": "heading",
+      "text": "A safer payment operations checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a verified merchant account; show the correct recipient and total; never request a PIN or OTP; verify payment status server-side; handle pending and duplicate states; issue receipts; publish clear refund terms; reconcile settlements daily; restrict access to payment data; and maintain a support process for disputed or missing transactions. Test the journey on common phones and networks before launching a new checkout."
+    },
+    {
+      "type": "paragraph",
+      "text": "Digital payments can make it easier for customers to complete a purchase, but only when the process is clear and dependable. Pair the payment method with accurate product or service information, transparent policies, secure implementation and disciplined reconciliation. The result is a better customer experience and cleaner business records."
+    },
+    {
+      "type": "link",
+      "text": "Press Information Bureau: UPI and retail digital payments in FY 2024–25",
+      "href": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2240723&lang=2&reg=3"
+    },
+    {
+      "type": "link",
+      "text": "NPCI: UPI Product Overview",
+      "href": "https://www.npci.org.in/what-we-do/upi/product-overview"
+    },
+    {
+      "type": "link",
+      "text": "RBI: Payment Systems",
+      "href": "https://www.rbi.org.in/Scripts/PaymentSystems.aspx"
+    }
+  ]
+}
 ];
 
 export default articles;
