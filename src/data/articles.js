@@ -6812,7 +6812,7 @@ const articles = [
   "slug": "google-business-profile-local-seo-india-checklist",
   "description": "A practical guide for Indian local businesses to improve Google Business Profile accuracy, local relevance, reviews, photos, service areas and enquiry tracking.",
   "date": "14 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-14",
   "read": "10 MIN READ",
   "author": "Kardengey",
   "content": [
@@ -6904,7 +6904,7 @@ const articles = [
   "slug": "google-ads-landing-page-checklist-india",
   "description": "A practical landing-page framework for Indian businesses running Google Ads: message match, mobile usability, trust, forms, speed and lead-quality measurement.",
   "date": "15 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-15",
   "read": "11 MIN READ",
   "author": "Kardengey",
   "content": [
@@ -7004,7 +7004,7 @@ const articles = [
   "slug": "core-web-vitals-indian-business-websites-guide",
   "description": "Understand LCP, INP and CLS, find the real bottlenecks on your website and prioritise practical performance fixes for mobile visitors in India.",
   "date": "16 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-16",
   "read": "11 MIN READ",
   "author": "Kardengey",
   "content": [
@@ -7100,7 +7100,7 @@ const articles = [
   "slug": "lead-management-crm-process-indian-smes",
   "description": "A practical lead-management workflow for Indian small businesses: capture every enquiry, assign ownership, qualify fairly, follow up and measure sales outcomes.",
   "date": "17 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-17",
   "read": "12 MIN READ",
   "author": "Kardengey",
   "content": [
@@ -7204,7 +7204,7 @@ const articles = [
   "slug": "consent-first-whatsapp-sms-email-marketing-india",
   "description": "A practical checklist for Indian businesses using WhatsApp, SMS and email: permission, channel expectations, opt-outs, data minimisation and safer campaign operations.",
   "date": "18 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-18",
   "read": "12 MIN READ",
   "author": "Kardengey",
   "content": [
@@ -7309,7 +7309,7 @@ const articles = [
   "slug": "upi-digital-payments-small-business-india-checklist",
   "description": "Help customers pay confidently and help your team reconcile sales with a practical UPI and digital-payments checklist for Indian small businesses.",
   "date": "19 NOV 2026",
-  "publishedAt": "2026-11-23",
+  "publishedAt": "2026-11-19",
   "read": "10 MIN READ",
   "author": "Kardengey",
   "content": [
