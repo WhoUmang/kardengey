@@ -65,8 +65,8 @@ export default function ServicesGuide() {
         <div className="mx-auto max-w-6xl">
           <Link to="/" className="text-[10px] uppercase tracking-[0.3em] text-neutral-500 hover:text-white">← kardengey</Link>
           <p className="mt-16 text-[10px] uppercase tracking-[0.4em] text-blue-500">Services / How we work</p>
-          <h1 className="mt-6 max-w-5xl text-[clamp(3rem,8vw,7rem)] font-black uppercase leading-[0.88] tracking-[-0.07em]">Digital work.<br /><span className="text-neutral-600">Clear outcomes.</span></h1>
-          <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-400 md:text-lg">Kardengey is a digital growth studio working across websites, search, paid acquisition, brand identity, packaging and practical automation. This page explains what each service involves, what a sensible engagement should measure and what information helps us scope the work.</p>
+          <h1 className="mt-6 max-w-5xl text-[clamp(3rem,8vw,7rem)] font-black uppercase leading-[0.88] tracking-[-0.07em]">Digital marketing services.<br /><span className="text-neutral-600">Clear outcomes.</span></h1>
+          <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-400 md:text-lg">Kardengey is a digital growth studio working with businesses in India across website development, search engine optimisation, paid acquisition, brand identity, packaging and practical automation. This page explains what each service involves, what a sensible engagement should measure and what information helps us scope the work.</p>
           <div className="mt-12 grid gap-4 border-y border-white/10 py-8 sm:grid-cols-3">
             <div><p className="text-[10px] uppercase tracking-[0.25em] text-neutral-600">Start with</p><p className="mt-2 text-lg font-semibold">The business problem</p></div>
             <div><p className="text-[10px] uppercase tracking-[0.25em] text-neutral-600">Plan around</p><p className="mt-2 text-lg font-semibold">Scope & constraints</p></div>
