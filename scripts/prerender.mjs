@@ -187,17 +187,19 @@ const homeContent = pageContent(`
   <p>Kardengey is a digital marketing and growth studio helping businesses in India strengthen their online presence through search engine optimisation (SEO), website development, performance marketing, branding and conversion-focused creative. Strategy, design and technology work together to attract relevant visitors and turn more of the right opportunities into enquiries.</p>
   <h2>What we help with</h2>
   <ul>
-    <li><strong>Websites and landing pages:</strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
-    <li><strong>Search engine optimisation:</strong> improve technical foundations, site structure and useful content so search engines and people can understand your offer.</li>
-    <li><strong>Performance marketing:</strong> plan and manage paid campaigns with a focus on relevant enquiries, measurement and ongoing testing.</li>
-    <li><strong>Branding and creative:</strong> develop consistent identity systems and campaign assets that make the offer easier to recognise.</li>
+    <li><strong><a href="/services#website-development">Website development:</a></strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
+    <li><strong><a href="/services#seo">SEO services:</a></strong> improve technical foundations, site structure and useful content so search engines and people can understand your offer.</li>
+    <li><strong><a href="/services#performance-marketing">Performance marketing:</a></strong> plan and manage paid campaigns with a focus on relevant enquiries, measurement and ongoing testing.</li>
+    <li><strong><a href="/services#branding">Branding and creative:</a></strong> develop consistent identity systems and campaign assets that make the offer easier to recognise.</li>
+    <li><strong><a href="/services#packaging-design">Packaging design:</a></strong> create production-aware packaging systems that communicate product information and brand identity.</li>
+    <li><strong><a href="/services#ai-automation">AI and workflow automation:</a></strong> identify repetitive processes and build bounded automations with appropriate human review.</li>
   </ul>
   <h2>How we approach projects</h2>
   <p>We start by clarifying the goal, audience, scope and constraints. We then prioritise the work that can make the biggest practical difference, implement it, and use available evidence to guide improvements. Outcomes depend on the market, offer, budget and execution; we do not guarantee rankings or sales.</p>
   <h2>Explore our insights and tools</h2>
   <p>Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
   <h2>Talk to Kardengey</h2>
-  <p>Tell us about your business, what you want to improve and what you have tried so far. Email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a> to start a conversation.</p>
+  <p>Tell us about your business, what you want to improve and what you have tried so far. <a href="/contact">Send a project enquiry</a>, message us on <a href="https://wa.me/7666459165">WhatsApp</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>.</p>
 `);
 
 const home = shell({
@@ -311,8 +313,8 @@ await writeFile(path.join(dist, "tools", "marketing-roi-calculator", "index.html
 
 const servicesContent = pageContent(`
   <p class="seo-kicker">SERVICES / HOW WE WORK</p>
-  <h1>Digital work. Clear outcomes.</h1>
-  <p>Kardengey is a digital growth studio working across websites, search, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
+  <h1>Digital marketing services. Clear outcomes.</h1>
+  <p>Kardengey is a digital growth studio working with businesses in India across website development, search engine optimisation, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
   <h2 id="website-development">Website design and development</h2>
   <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
   <h2 id="seo">Search engine optimisation</h2>
@@ -332,7 +334,7 @@ const servicesContent = pageContent(`
   <h3>How long does a project take?</h3><p>Timelines depend on scope, approvals, access to assets and feedback. Milestones and dependencies should be agreed before work begins.</p>
   <h3>Can you guarantee rankings or sales?</h3><p>No. Search rankings, ad costs and sales depend on competition, the offer, budget, customer behaviour, platform systems and execution. We can define measurable work and report what the data shows, but cannot guarantee a particular ranking or revenue.</p>
   <h3>What should I prepare?</h3><p>Share a short description of your business, the audience, the main problem, your website or social profiles and any deadline or budget constraint. A polished brief is not required to start a conversation.</p>
-  <p>To discuss a project, email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. Final deliverables, fees and timelines are agreed in writing for each project.</p>
+  <p>To discuss a project, <a href="/contact">send Kardengey an enquiry</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. Final deliverables, fees and timelines are agreed in writing for each project.</p>
 `);
 await mkdir(path.join(dist, "services"), { recursive: true });
 await writeFile(path.join(dist, "services", "index.html"), shell({
