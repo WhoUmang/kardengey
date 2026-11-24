@@ -78,3 +78,104 @@ a {
 .text-neutral-600 { color: #a3a3a3 !important; }
 .text-neutral-500 { color: #a3a3a3 !important; }
 section[id], [id="work"], [id="services"], [id="process"], [id="about"], [id="contact"] { scroll-margin-top: 96px; }
+
+
+/* Kardengey branded intro: letters assemble, scatter, and reveal the page. */
+.kardengey-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #050505;
+  color: #fff;
+  opacity: 1;
+  isolation: isolate;
+  pointer-events: auto;
+  animation: kardengey-preloader-reveal 900ms cubic-bezier(.7, 0, .2, 1) 1.55s forwards;
+}
+
+.kardengey-preloader__word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1px, .35vw, 6px);
+  font-family: Inter, Arial, sans-serif;
+  font-size: clamp(2.8rem, 10vw, 7.8rem);
+  font-weight: 800;
+  letter-spacing: -.095em;
+  line-height: 1;
+}
+
+.kardengey-preloader__letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(.82);
+  animation: kardengey-letter-arrive 420ms cubic-bezier(.2, .8, .2, 1) calc(100ms + var(--letter-index) * 85ms) forwards;
+  will-change: transform, opacity;
+}
+
+.kardengey-preloader__tagline {
+  margin: 22px 0 0;
+  color: #a3a3a3;
+  font-size: clamp(.58rem, 1.5vw, .75rem);
+  font-weight: 500;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: kardengey-tagline-arrive 500ms ease 950ms forwards;
+}
+
+.kardengey-preloader__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff 50%, transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: kardengey-progress 1.8s cubic-bezier(.6, 0, .4, 1) 100ms forwards;
+}
+
+.kardengey-preloader.is-scattering .kardengey-preloader__letter {
+  opacity: 0;
+  transform: translate3d(var(--scatter-x), var(--scatter-y), 0) rotate(var(--scatter-rotate)) scale(.72);
+  transition:
+    transform 900ms cubic-bezier(.65, 0, .35, 1),
+    opacity 650ms ease;
+}
+
+.kardengey-preloader.is-scattering .kardengey-preloader__tagline {
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+@keyframes kardengey-letter-arrive {
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@keyframes kardengey-tagline-arrive {
+  to { opacity: 1; }
+}
+
+@keyframes kardengey-progress {
+  to { transform: scaleX(1); }
+}
+
+@keyframes kardengey-preloader-reveal {
+  to { opacity: 0; pointer-events: none; visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kardengey-preloader,
+  .kardengey-preloader__letter,
+  .kardengey-preloader__tagline,
+  .kardengey-preloader__progress {
+    animation: none !important;
+    transition: none !important;
+  }
+}

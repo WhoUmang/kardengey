@@ -7,6 +7,7 @@ import Hero from "./components/hero/Hero";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Footer from "./components/layout/Footer";
 import NotFound from "./components/common/NotFound";
+import Preloader from "./components/common/Preloader";
 
 const FeaturedWork = lazy(() => import("./components/work/FeaturedWork"));
 const Services = lazy(() => import("./components/services/Services"));
@@ -66,6 +67,7 @@ function RouteFallback() {
 function App() {
   return (
     <BrowserRouter>
+      <Preloader />
       <ScrollToTop />
       <Suspense fallback={<RouteFallback />}>
         <Routes>
