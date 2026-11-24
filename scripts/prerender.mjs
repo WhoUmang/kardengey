@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import articles from "../src/data/articles.js";
+import serviceLandingPages from "../src/data/serviceLandingPages.js";
 
 const dist = path.resolve("dist");
 const template = await readFile(path.join(dist, "index.html"), "utf8");
@@ -31,7 +32,7 @@ function textBlock(block) {
   return `<p>${text}</p>`;
 }
 
-function shell({ title, description, canonical, content, type = "website", publishedAt, author }) {
+function shell({ title, description, canonical, content, type = "website", publishedAt, author, structuredData: extraStructuredData }) {
   let html = template;
   const fullTitle = `${title} — kardengey`;
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(fullTitle)}</title>`);
@@ -73,6 +74,11 @@ function shell({ title, description, canonical, content, type = "website", publi
     ];
     const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
     html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
+  }
+
+  if (extraStructuredData) {
+    const jsonLd = JSON.stringify(extraStructuredData).replaceAll("<", "\\u003c");
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\\n</head>');
   }
 
   if (type === "article" && publishedAt) {
@@ -365,6 +371,50 @@ await writeFile(path.join(dist, "tools", "marketing-tools", "index.html"), shell
   content: marketingToolsContent,
 }));
 
+for (const page of serviceLandingPages) {
+  const sections = page.sections.map((section) => `
+    <section>
+      <h2>${escapeHtml(section.heading)}</h2>
+      ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\\n")}
+    </section>`).join("\\n");
+  const process = `<ol>${page.process.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
+  const faqs = page.faqs.map(([question, answer]) => `<h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p>`).join("\\n");
+  const related = page.related.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join(" · ");
+  const inner = `
+    <nav class="seo-meta"><a href="/">Kardengey</a> / <a href="/services">Services</a> / ${escapeHtml(page.eyebrow)}</nav>
+    <p class="seo-kicker">${escapeHtml(page.eyebrow)}</p>
+    <h1>${escapeHtml(page.title)}</h1>
+    <p>${escapeHtml(page.intro)}</p>
+    <h2>Who this is for</h2><p>${escapeHtml(page.audience)}</p>
+    ${sections}
+    <h2>How we work</h2>${process}
+    <h2>Common questions</h2>${faqs}
+    <section class="seo-cta"><h2>Discuss your project</h2><p>Share your business goal, current starting point and the support you are looking for. We will review the scope before proposing the next step.</p><a href="/contact">Send a project enquiry ↗</a></section>
+    <h2>Explore more</h2><p>${related} · <a href="/services">All services</a></p>
+  `;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: page.title,
+    description: page.description,
+    serviceType: page.title,
+    provider: { "@type": "Organization", name: "Kardengey", url: site },
+    areaServed: { "@type": "Country", name: "India" },
+    url: site + page.path,
+  };
+  const pageHtml = pageContent(inner);
+  const html = shell({
+    title: page.metaTitle.replace(/ — Kardengey$/, ""),
+    description: page.description,
+    canonical: site + page.path,
+    content: pageHtml,
+    structuredData,
+  });
+  const output = path.join(dist, page.path.slice(1), "index.html");
+  await mkdir(path.dirname(output), { recursive: true });
+  await writeFile(output, html);
+}
+
 const sitemapEntries = [
   { url: site + "/", priority: "1.0", changefreq: "weekly" },
   { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
@@ -374,6 +424,7 @@ const sitemapEntries = [
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
   { url: site + "/tools/marketing-tools", priority: "0.9", changefreq: "weekly" },
+  ...serviceLandingPages.map((page) => ({ url: site + page.path, priority: "0.85", changefreq: "monthly" })),
   ...validArticles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
 ];
 const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
