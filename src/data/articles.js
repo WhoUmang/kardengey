@@ -4207,9 +4207,9 @@ const articles = [
   {
     "category": "MARKETING BUDGETS",
     "filter": "GROWTH",
-    "title": "How Much Should an Indian Small Business Spend on Google and Meta Ads?",
+    "title": "Google & Meta Ads Cost in India: Budget, Management Fees & ROI",
     "slug": "small-business-google-meta-ads-budget-india",
-    "description": "Build an advertising budget from unit economics, test capacity and lead handling—not generic percentage rules. Includes an illustrative ₹10,000 allocation.",
+    "description": "Understand Google and Meta ad spend versus management fees in India, plan a realistic campaign budget, compare agency scopes and measure qualified leads and ROI.",
     "date": "08 NOV 2026",
     "publishedAt": "2026-11-08",
     "read": "13 MIN READ",
@@ -4230,6 +4230,26 @@ const articles = [
       {
         "type": "paragraph",
         "text": "Your advertising budget is not the same as your total marketing cost. Keep media spend, creative production, landing-page work, agency or staff fees, software, taxes and sales costs separate. When comparing campaign performance, identify which costs are included in the metric. A media-only cost per lead can look lower than the fully loaded cost of acquiring a customer."
+      },
+      {
+        "type": "heading",
+        "text": "What does Meta Ads management cost in India?"
+      },
+      {
+        "type": "paragraph",
+        "text": "There is no single standard Meta Ads management fee in India. The amount depends on what the person or agency is responsible for: campaign setup, audience and offer strategy, creative concepts, ad copy, design or video production, tracking, landing-page work, optimisation, reporting and lead-quality review. Managing one established campaign is a different scope from building the account and producing new creative every week."
+      },
+      {
+        "type": "paragraph",
+        "text": "Separate the costs in every proposal. Media spend is paid to Meta or Google for ad delivery. A management fee pays for planning, execution and optimisation. Creative production, landing-page development, tracking implementation, software and applicable taxes may be included or billed separately. Ask whether the quoted fee includes GST, how many campaigns or creatives are covered, who owns the ad account and what reporting or optimisation work is actually delivered."
+      },
+      {
+        "type": "paragraph",
+        "text": "Common fee structures include a fixed monthly retainer, a percentage of media spend, a one-time setup or project fee, or a hybrid. None is automatically best. A percentage-only fee can reward higher spend without proving better results; a very low flat fee may exclude the work your campaign needs. Compare the deliverables, responsibilities, communication and measurement—not only the headline price."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before hiring an agency, ask how it will measure qualified enquiries, what happens when leads are poor, how often campaigns are reviewed, whether creative testing is included and how the team will connect ad results to actual sales. Do not accept guaranteed lead counts, fixed cost-per-lead promises or a first-page ranking claim as a substitute for a clear scope."
       },
       {
         "type": "heading",
@@ -4352,6 +4372,16 @@ const articles = [
         "type": "link",
         "text": "Related guide: SEO vs Google Ads for small businesses",
         "href": "/insights/seo-vs-google-ads-small-business-india"
+      },
+      {
+        "type": "link",
+        "text": "Explore Kardengey's performance marketing service",
+        "href": "/services#performance-marketing"
+      },
+      {
+        "type": "link",
+        "text": "Discuss a campaign with Kardengey",
+        "href": "/contact"
       }
     ]
   },

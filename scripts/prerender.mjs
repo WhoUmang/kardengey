@@ -53,6 +53,28 @@ function shell({ title, description, canonical, content, type = "website", publi
   if (publishedAt) meta("article:published_time", publishedAt, "property");
   if (author) meta("article:author", author, "property");
 
+  if (canonical === site && type === "website") {
+    const structuredData = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Kardengey",
+        url: site,
+        description,
+        email: "kardengey@gmail.com",
+        founder: { "@type": "Person", name: "Umang Pathak" },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Kardengey",
+        url: site,
+      },
+    ];
+    const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
+  }
+
   if (type === "article" && publishedAt) {
     const structuredData = {
       "@context": "https://schema.org",
@@ -97,6 +119,10 @@ const style = `
   .seo-list a{color:#fff;text-decoration:none}
   .seo-footer{border-top:1px solid #262626;padding:26px 0;color:#929292;font-size:13px}
   .seo-content blockquote{border-left:3px solid #3b82f6;padding-left:20px;margin:24px 0}
+  .seo-cta{margin-top:48px;padding:28px;border:1px solid rgba(59,130,246,.3);border-radius:18px;background:rgba(59,130,246,.06)}
+  .seo-cta h2{margin:0 0 10px}
+  .seo-cta p{margin:0 0 16px}
+  .seo-cta a{display:inline-block;margin:8px 18px 0 0;font-weight:700}
 </style>`;
 
 function pageContent(inner) {
@@ -139,7 +165,7 @@ for (const article of validArticles) {
       <p>${escapeHtml(article.description)}</p>
       <p class="seo-meta">${escapeHtml(article.date)} · ${escapeHtml(article.read)} · By ${escapeHtml(article.author || "Kardengey")}</p>
       <div class="seo-article-body">${(article.content || []).map(textBlock).join("\n")}</div>
-      <p>Need help applying these ideas to your business? <a href="/#contact">Contact Kardengey</a> or explore more <a href="/insights">practical guides</a>.</p>
+      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="/services">Explore services ↗</a> <a href="/contact">Discuss a project ↗</a></section>
     </article>
   `);
   const output = path.join(dist, "insights", article.slug, "index.html");
@@ -157,26 +183,28 @@ for (const article of validArticles) {
 
 const homeContent = pageContent(`
   <p class="seo-kicker">DIGITAL GROWTH STUDIO</p>
-  <h1>Strategy, design and digital execution for business growth.</h1>
-  <p>Kardengey helps businesses improve their digital presence through websites, search engine optimisation, paid advertising, branding and conversion-focused marketing. We connect strategy with practical execution and clear communication.</p>
+  <h1>We turn attention into growth.</h1>
+  <p>Kardengey is a digital marketing and growth studio helping businesses in India strengthen their online presence through search engine optimisation (SEO), website development, performance marketing, branding and conversion-focused creative. Strategy, design and technology work together to attract relevant visitors and turn more of the right opportunities into enquiries.</p>
   <h2>What we help with</h2>
   <ul>
-    <li><strong>Websites and landing pages:</strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
-    <li><strong>Search engine optimisation:</strong> improve technical foundations, site structure and useful content so search engines and people can understand your offer.</li>
-    <li><strong>Performance marketing:</strong> plan and manage paid campaigns with a focus on relevant enquiries, measurement and ongoing testing.</li>
-    <li><strong>Branding and creative:</strong> develop consistent identity systems and campaign assets that make the offer easier to recognise.</li>
+    <li><strong><a href="/services#website-development">Website development:</a></strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
+    <li><strong><a href="/services#seo">SEO services:</a></strong> improve technical foundations, site structure and useful content so search engines and people can understand your offer.</li>
+    <li><strong><a href="/services#performance-marketing">Performance marketing:</a></strong> plan and manage paid campaigns with a focus on relevant enquiries, measurement and ongoing testing.</li>
+    <li><strong><a href="/services#branding">Branding and creative:</a></strong> develop consistent identity systems and campaign assets that make the offer easier to recognise.</li>
+    <li><strong><a href="/services#packaging-design">Packaging design:</a></strong> create production-aware packaging systems that communicate product information and brand identity.</li>
+    <li><strong><a href="/services#ai-automation">AI and workflow automation:</a></strong> identify repetitive processes and build bounded automations with appropriate human review.</li>
   </ul>
   <h2>How we approach projects</h2>
   <p>We start by clarifying the goal, audience, scope and constraints. We then prioritise the work that can make the biggest practical difference, implement it, and use available evidence to guide improvements. Outcomes depend on the market, offer, budget and execution; we do not guarantee rankings or sales.</p>
   <h2>Explore our insights and tools</h2>
   <p>Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
   <h2>Talk to Kardengey</h2>
-  <p>Tell us about your business, what you want to improve and what you have tried so far. Email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a> to start a conversation.</p>
+  <p>Tell us about your business, what you want to improve and what you have tried so far. <a href="/contact">Send a project enquiry</a>, message us on <a href="https://wa.me/7666459165">WhatsApp</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>.</p>
 `);
 
 const home = shell({
-  title: "Digital Growth Studio",
-  description: "Kardengey helps businesses with websites, SEO, performance marketing, branding and conversion-focused digital growth.",
+  title: "Digital Marketing Agency & Growth Studio in India",
+  description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
 });
@@ -285,19 +313,19 @@ await writeFile(path.join(dist, "tools", "marketing-roi-calculator", "index.html
 
 const servicesContent = pageContent(`
   <p class="seo-kicker">SERVICES / HOW WE WORK</p>
-  <h1>Digital work. Clear outcomes.</h1>
-  <p>Kardengey is a digital growth studio working across websites, search, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
-  <h2>Website design and development</h2>
+  <h1>Digital marketing services. Clear outcomes.</h1>
+  <p>Kardengey is a digital growth studio working with businesses in India across website development, search engine optimisation, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
+  <h2 id="website-development">Website design and development</h2>
   <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
-  <h2>Search engine optimisation</h2>
+  <h2 id="seo">Search engine optimisation</h2>
   <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>
-  <h2>Performance marketing</h2>
+  <h2 id="performance-marketing">Performance marketing</h2>
   <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>
-  <h2>Brand identity and creative</h2>
+  <h2 id="branding">Brand identity and creative</h2>
   <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>
-  <h2>Packaging design</h2>
+  <h2 id="packaging-design">Packaging design</h2>
   <p>Packaging must work on a shelf, in transit, in photographs and in a customer's hands. Work can include product and audience context, information hierarchy, visual direction, print-ready artwork and production handoff checks. Confirm legibility, mandatory information, material constraints and print proofs with the production partner.</p>
-  <h2>AI and workflow automation</h2>
+  <h2 id="ai-automation">AI and workflow automation</h2>
   <p>Automation is useful when it removes a defined repetitive task. Begin by mapping the current process, then prototype a bounded workflow with human review and documented failure handling. Compare time per task, error rate and manual review before and after implementation.</p>
   <h2>How a project is scoped</h2>
   <ol><li>Understand the business goal and audience.</li><li>Review the starting point, assets, data and constraints.</li><li>Agree deliverables, exclusions, responsibilities and access.</li><li>Implement, test and use available evidence to plan improvements.</li></ol>
@@ -306,12 +334,12 @@ const servicesContent = pageContent(`
   <h3>How long does a project take?</h3><p>Timelines depend on scope, approvals, access to assets and feedback. Milestones and dependencies should be agreed before work begins.</p>
   <h3>Can you guarantee rankings or sales?</h3><p>No. Search rankings, ad costs and sales depend on competition, the offer, budget, customer behaviour, platform systems and execution. We can define measurable work and report what the data shows, but cannot guarantee a particular ranking or revenue.</p>
   <h3>What should I prepare?</h3><p>Share a short description of your business, the audience, the main problem, your website or social profiles and any deadline or budget constraint. A polished brief is not required to start a conversation.</p>
-  <p>To discuss a project, email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. Final deliverables, fees and timelines are agreed in writing for each project.</p>
+  <p>To discuss a project, <a href="/contact">send Kardengey an enquiry</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>. Final deliverables, fees and timelines are agreed in writing for each project.</p>
 `);
 await mkdir(path.join(dist, "services"), { recursive: true });
 await writeFile(path.join(dist, "services", "index.html"), shell({
-  title: "Digital Marketing, SEO & Website Services",
-  description: "Explore how Kardengey approaches website development, SEO, performance marketing, branding, packaging design and practical AI automation.",
+  title: "Digital Marketing Services in India | SEO, Websites & Ads",
+  description: "Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress.",
   canonical: `${site}/services`,
   content: servicesContent,
 }));
