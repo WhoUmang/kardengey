@@ -1,21 +1,53 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
-import articles from "../../data/articles";
 import SEO from "../../components/SEO";
 import { getArticleSEO } from "../../seo/articleSEO";
 
+const articleModules = import.meta.glob("../../data/generated/articles/*.json", {
+  import: "default",
+});
+
 export default function InsightArticle() {
   const { slug } = useParams();
+  const [article, setArticle] = useState(null);
+  const [notFound, setNotFound] = useState(false);
 
-  const article = articles.find(
-    (item) => item.slug === slug
-  );
+  useEffect(() => {
+    let cancelled = false;
+    setArticle(null);
+    setNotFound(false);
+
+    const loadArticle = articleModules[`../../data/generated/articles/${slug}.json`];
+    if (!loadArticle) {
+      setNotFound(true);
+      return () => { cancelled = true; };
+    }
+
+    loadArticle()
+      .then((loadedArticle) => {
+        if (!cancelled) setArticle(loadedArticle);
+      })
+      .catch(() => {
+        if (!cancelled) setNotFound(true);
+      });
+
+    return () => { cancelled = true; };
+  }, [slug]);
 
   /* =========================================================
      ARTICLE NOT FOUND
   ========================================================= */
 
-  if (!article) {
+  if (!article && !notFound) {
+    return (
+      <section className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white" role="status" aria-live="polite">
+        <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">Loading article…</p>
+      </section>
+    );
+  }
+
+  if (!article && notFound) {
     return (
       <>
         <SEO
