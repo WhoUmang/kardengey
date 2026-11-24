@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import articles from "../../data/articles";
+import articles from "../../data/generated/article-index.json";
 import SEO from "../../components/SEO";
 
 const categories = [
