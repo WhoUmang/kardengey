@@ -375,10 +375,10 @@ for (const page of serviceLandingPages) {
   const sections = page.sections.map((section) => `
     <section>
       <h2>${escapeHtml(section.heading)}</h2>
-      ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\\n")}
-    </section>`).join("\\n");
+      ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n")}
+    </section>`).join("\n");
   const process = `<ol>${page.process.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
-  const faqs = page.faqs.map(([question, answer]) => `<h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p>`).join("\\n");
+  const faqs = page.faqs.map(([question, answer]) => `<h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p>`).join("\n");
   const related = page.related.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join(" · ");
   const inner = `
     <nav class="seo-meta"><a href="/">Kardengey</a> / <a href="/services">Services</a> / ${escapeHtml(page.eyebrow)}</nav>
