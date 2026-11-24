@@ -441,4 +441,4 @@ const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
   '\n</urlset>\n';
 await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
-console.log(`Prerendered homepage, services, marketing tools, insights index, and ${validArticles.length} article pages (from ${articles.length} records).`);
+console.log(`Prerendered homepage, services, ${serviceLandingPages.length} commercial service pages, marketing tools, insights index, and ${validArticles.length} article pages (from ${articles.length} records).`);
