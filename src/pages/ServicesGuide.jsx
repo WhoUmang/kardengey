@@ -63,7 +63,7 @@ export default function ServicesGuide() {
   return (
     <>
       <SEO
-        title="Digital Marketing Services in India | SEO, Websites & Ads"
+        title="Digital Marketing Services in India"
         description="Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress."
         canonical="https://kardengey.com/services"
       />
