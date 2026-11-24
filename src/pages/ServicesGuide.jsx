@@ -3,36 +3,42 @@ import SEO from "../components/SEO";
 
 const services = [
   {
+    id: "website-development",
     title: "Website design & development",
     problem: "A website should help a visitor understand the offer, assess credibility and take the next step. A visually polished page is not enough if the message, navigation or enquiry path is unclear.",
     work: ["Page and navigation planning around visitor intent", "Responsive UI design and development", "Contact forms and WhatsApp enquiry paths", "Core technical checks before launch"],
     measure: "Track qualified enquiries, form completion, WhatsApp clicks, page engagement and the performance of important landing pages."
   },
   {
+    id: "seo",
     title: "Search engine optimisation",
     problem: "SEO is not a one-time metadata exercise. It combines crawlability, useful information, site structure, search intent and a business that deserves to be found.",
     work: ["Technical crawl and indexability review", "Keyword and search-intent mapping", "Page structure, internal links and on-page improvements", "Content briefs grounded in real customer questions"],
     measure: "Review impressions, clicks, query relevance, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed."
   },
   {
+    id: "performance-marketing",
     title: "Performance marketing",
     problem: "Ad platforms can generate clicks without generating profitable customers. Campaign decisions need to connect spend with lead quality and sales outcomes.",
     work: ["Offer, audience and funnel review", "Campaign structure and creative testing plan", "Conversion-event and UTM measurement setup", "Regular review of spend, lead quality and next tests"],
     measure: "Separate raw leads from qualified leads. Compare cost per qualified lead, customer acquisition cost and contribution after marketing—not just clicks."
   },
   {
+    id: "branding",
     title: "Brand identity & creative",
     problem: "Inconsistent visuals and unclear positioning make it harder for customers to recognise a business and understand why its offer is relevant.",
     work: ["Brand discovery and positioning questions", "Logo and visual identity direction", "Typography, colour and usage guidance", "Campaign and social creative systems"],
     measure: "Check consistency across real customer touchpoints and whether the identity communicates the intended offer to the intended audience."
   },
   {
+    id: "packaging-design",
     title: "Packaging design",
     problem: "Packaging has to work in the real world: on a shelf, in transit, in a photograph and in the customer's hands.",
     work: ["Product, audience and competitor context", "Information hierarchy and visual direction", "Artwork preparation for the chosen print process", "Mock-up review and production handoff checks"],
     measure: "Validate legibility, required product information, material constraints and print proofs with the production partner before ordering."
   },
   {
+    id: "ai-automation",
     title: "AI & workflow automation",
     problem: "Automation is useful when it removes a defined repetitive task. Adding AI to a broken process can simply make the same problem happen faster.",
     work: ["Map the existing workflow and handoffs", "Identify repetitive, rules-based steps", "Prototype a bounded automation with human review", "Document failure handling and ownership"],
@@ -51,8 +57,8 @@ export default function ServicesGuide() {
   return (
     <>
       <SEO
-        title="Digital Marketing, SEO & Website Services"
-        description="Explore how Kardengey approaches website development, SEO, performance marketing, branding, packaging design and practical AI automation."
+        title="Digital Marketing Services in India | SEO, Websites & Ads"
+        description="Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress."
         canonical="https://kardengey.com/services"
       />
       <main className="min-h-screen bg-[#050505] px-[6vw] pb-24 pt-32 text-white md:pt-40">
@@ -68,7 +74,7 @@ export default function ServicesGuide() {
           </div>
           <section className="mt-12">
             {services.map((service, index) => (
-              <article key={service.title} className="border-b border-white/10 py-10 md:py-14">
+              <article id={service.id} key={service.title} className="scroll-mt-28 border-b border-white/10 py-10 md:py-14">
                 <div className="grid gap-6 md:grid-cols-[0.7fr_1.3fr] md:gap-12">
                   <div><p className="text-[10px] uppercase tracking-[0.3em] text-blue-500">0{index + 1} / Service</p><h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">{service.title}</h2></div>
                   <div>
