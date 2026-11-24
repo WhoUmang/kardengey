@@ -413,7 +413,7 @@ for (const page of serviceLandingPages) {
   };
   const pageHtml = pageContent(inner);
   const html = shell({
-    title: page.metaTitle.replace(/(?: — | \\| )Kardengey$/, ""),
+    title: page.metaTitle.replace(/(?: — | \| )Kardengey$/, ""),
     description: page.description,
     canonical: site + page.path,
     content: pageHtml,
