@@ -16,7 +16,7 @@ export default function ServiceLandingPage({ pageKey }) {
   return (
     <>
       <SEO
-        title={page.metaTitle.replace(/ — Kardengey$/, "")}
+        title={page.metaTitle.replace(/(?: — | \\| )Kardengey$/, "")}
         description={page.description}
         canonical={`https://kardengey.com${page.path}`}
       />
