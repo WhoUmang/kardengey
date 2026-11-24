@@ -16,6 +16,14 @@ function escapeHtml(value = "") {
     .replaceAll("'", "&#39;");
 }
 
+function relatedServiceForArticle(article) {
+  const slug = article.slug.toLowerCase();
+  if (/seo|search|google-business-profile|negative-keywords/.test(slug)) return { href: "/seo-services-india", label: "Explore SEO services" };
+  if (/website|ecommerce|e-commerce|dpdp|accessibility|merchant-center|landing-page/.test(slug)) return { href: "/website-development", label: "Explore website development" };
+  if (/ads|marketing|lead|roi|acquisition|b2b/.test(slug)) return { href: "/performance-marketing", label: "Explore performance marketing" };
+  if (/brand|packaging/.test(slug)) return { href: "/branding-and-packaging-design", label: "Explore branding and packaging" };
+  return { href: "/services", label: "Explore all services" };
+}
 function textBlock(block) {
   const text = escapeHtml(block.text || "");
   if (block.type === "heading") return `<h2>${text}</h2>`;
@@ -163,6 +171,7 @@ await writeFile(path.join(dist, "insights", "index.html"), shell({
 }));
 
 for (const article of validArticles) {
+  const relatedService = relatedServiceForArticle(article);
   const content = pageContent(`
     <nav class="seo-meta"><a href="/insights">Kardengey / Insights</a> / ${escapeHtml(article.category)}</nav>
     <article>
@@ -171,7 +180,7 @@ for (const article of validArticles) {
       <p>${escapeHtml(article.description)}</p>
       <p class="seo-meta">${escapeHtml(article.date)} · ${escapeHtml(article.read)} · By ${escapeHtml(article.author || "Kardengey")}</p>
       <div class="seo-article-body">${(article.content || []).map(textBlock).join("\n")}</div>
-      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="/services">Explore services ↗</a> <a href="/contact">Discuss a project ↗</a></section>
+      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="${escapeHtml(relatedService.href)}">${escapeHtml(relatedService.label)} ↗</a> <a href="/contact">Discuss a project ↗</a></section>
     </article>
   `);
   const output = path.join(dist, "insights", article.slug, "index.html");
