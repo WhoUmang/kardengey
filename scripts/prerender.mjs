@@ -139,7 +139,7 @@ for (const article of validArticles) {
       <p>${escapeHtml(article.description)}</p>
       <p class="seo-meta">${escapeHtml(article.date)} · ${escapeHtml(article.read)} · By ${escapeHtml(article.author || "Kardengey")}</p>
       <div class="seo-article-body">${(article.content || []).map(textBlock).join("\n")}</div>
-      <p>Need help applying these ideas to your business? <a href="/#contact">Contact Kardengey</a> or explore more <a href="/insights">practical guides</a>.</p>
+      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="/services">Explore services ↗</a> <a href="/contact">Discuss a project ↗</a></section>
     </article>
   `);
   const output = path.join(dist, "insights", article.slug, "index.html");
@@ -157,8 +157,8 @@ for (const article of validArticles) {
 
 const homeContent = pageContent(`
   <p class="seo-kicker">DIGITAL GROWTH STUDIO</p>
-  <h1>Strategy, design and digital execution for business growth.</h1>
-  <p>Kardengey helps businesses improve their digital presence through websites, search engine optimisation, paid advertising, branding and conversion-focused marketing. We connect strategy with practical execution and clear communication.</p>
+  <h1>We turn attention into growth.</h1>
+  <p>Kardengey is a digital marketing and growth studio helping businesses in India strengthen their online presence through search engine optimisation (SEO), website development, performance marketing, branding and conversion-focused creative. Strategy, design and technology work together to attract relevant visitors and turn more of the right opportunities into enquiries.</p>
   <h2>What we help with</h2>
   <ul>
     <li><strong>Websites and landing pages:</strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
@@ -175,8 +175,8 @@ const homeContent = pageContent(`
 `);
 
 const home = shell({
-  title: "Digital Growth Studio",
-  description: "Kardengey helps businesses with websites, SEO, performance marketing, branding and conversion-focused digital growth.",
+  title: "Digital Marketing Agency in India for Business Growth",
+  description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
 });
@@ -287,17 +287,17 @@ const servicesContent = pageContent(`
   <p class="seo-kicker">SERVICES / HOW WE WORK</p>
   <h1>Digital work. Clear outcomes.</h1>
   <p>Kardengey is a digital growth studio working across websites, search, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
-  <h2>Website design and development</h2>
+  <h2 id="website-development">Website design and development</h2>
   <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
-  <h2>Search engine optimisation</h2>
+  <h2 id="seo">Search engine optimisation</h2>
   <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>
-  <h2>Performance marketing</h2>
+  <h2 id="performance-marketing">Performance marketing</h2>
   <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>
-  <h2>Brand identity and creative</h2>
+  <h2 id="branding">Brand identity and creative</h2>
   <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>
-  <h2>Packaging design</h2>
+  <h2 id="packaging-design">Packaging design</h2>
   <p>Packaging must work on a shelf, in transit, in photographs and in a customer's hands. Work can include product and audience context, information hierarchy, visual direction, print-ready artwork and production handoff checks. Confirm legibility, mandatory information, material constraints and print proofs with the production partner.</p>
-  <h2>AI and workflow automation</h2>
+  <h2 id="ai-automation">AI and workflow automation</h2>
   <p>Automation is useful when it removes a defined repetitive task. Begin by mapping the current process, then prototype a bounded workflow with human review and documented failure handling. Compare time per task, error rate and manual review before and after implementation.</p>
   <h2>How a project is scoped</h2>
   <ol><li>Understand the business goal and audience.</li><li>Review the starting point, assets, data and constraints.</li><li>Agree deliverables, exclusions, responsibilities and access.</li><li>Implement, test and use available evidence to plan improvements.</li></ol>
@@ -310,8 +310,8 @@ const servicesContent = pageContent(`
 `);
 await mkdir(path.join(dist, "services"), { recursive: true });
 await writeFile(path.join(dist, "services", "index.html"), shell({
-  title: "Digital Marketing, SEO & Website Services",
-  description: "Explore how Kardengey approaches website development, SEO, performance marketing, branding, packaging design and practical AI automation.",
+  title: "Digital Marketing Services in India | SEO, Websites & Ads",
+  description: "Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress.",
   canonical: `${site}/services`,
   content: servicesContent,
 }));
