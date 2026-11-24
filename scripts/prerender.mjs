@@ -218,7 +218,7 @@ const homeContent = pageContent(`
 `);
 
 const home = shell({
-  title: "Digital Marketing Agency & Growth Studio in India",
+  title: "Digital Marketing Agency in India",
   description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
@@ -353,7 +353,7 @@ const servicesContent = pageContent(`
 `);
 await mkdir(path.join(dist, "services"), { recursive: true });
 await writeFile(path.join(dist, "services", "index.html"), shell({
-  title: "Digital Marketing Services in India | SEO, Websites & Ads",
+  title: "Digital Marketing Services in India",
   description: "Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress.",
   canonical: `${site}/services`,
   content: servicesContent,
