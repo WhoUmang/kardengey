@@ -10,30 +10,36 @@ const articleModules = import.meta.glob("../../data/generated/articles/*.json", 
 
 export default function InsightArticle() {
   const { slug } = useParams();
-  const [article, setArticle] = useState(null);
-  const [notFound, setNotFound] = useState(false);
+  const [articleResult, setArticleResult] = useState({
+    slug: null,
+    article: null,
+    notFound: false,
+  });
 
   useEffect(() => {
     let cancelled = false;
-    setArticle(null);
-    setNotFound(false);
-
     const loadArticle = articleModules[`../../data/generated/articles/${slug}.json`];
+
+    const handleMissingArticle = () => {
+      if (!cancelled) setArticleResult({ slug, article: null, notFound: true });
+    };
+
     if (!loadArticle) {
-      setNotFound(true);
+      Promise.resolve().then(handleMissingArticle);
       return () => { cancelled = true; };
     }
 
     loadArticle()
       .then((loadedArticle) => {
-        if (!cancelled) setArticle(loadedArticle);
+        if (!cancelled) setArticleResult({ slug, article: loadedArticle, notFound: false });
       })
-      .catch(() => {
-        if (!cancelled) setNotFound(true);
-      });
+      .catch(handleMissingArticle);
 
     return () => { cancelled = true; };
   }, [slug]);
+
+  const article = articleResult.slug === slug ? articleResult.article : null;
+  const notFound = articleResult.slug === slug && articleResult.notFound;
 
   /* =========================================================
      ARTICLE NOT FOUND
