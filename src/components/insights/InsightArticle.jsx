@@ -337,6 +337,27 @@ export default function InsightArticle() {
               }
 
               /* =================================================
+                 LIST
+              ================================================= */
+
+              if (block.type === "list" && Array.isArray(block.items)) {
+                return (
+                  <motion.ul
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7 }}
+                    className="mb-8 ml-6 list-disc space-y-3 text-base leading-8 text-neutral-400 marker:text-blue-500 md:text-lg md:leading-9"
+                  >
+                    {block.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="pl-2">{item}</li>
+                    ))}
+                  </motion.ul>
+                );
+              }
+
+              /* =================================================
                  PARAGRAPH
               ================================================= */
 
