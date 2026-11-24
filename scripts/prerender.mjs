@@ -24,6 +24,10 @@ function textBlock(block) {
     const external = /^https:\/\//i.test(block.href || "");
     return `<p><a href="${href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${text}</a></p>`;
   }
+  if (block.type === "list" && Array.isArray(block.items)) {
+    const items = block.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    return `<ul>${items}</ul>`;
+  }
   return `<p>${text}</p>`;
 }
 
