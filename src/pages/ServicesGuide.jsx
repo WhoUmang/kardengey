@@ -4,6 +4,7 @@ import SEO from "../components/SEO";
 const services = [
   {
     id: "website-development",
+    href: "/website-development",
     title: "Website design & development",
     problem: "A website should help a visitor understand the offer, assess credibility and take the next step. A visually polished page is not enough if the message, navigation or enquiry path is unclear.",
     work: ["Page and navigation planning around visitor intent", "Responsive UI design and development", "Contact forms and WhatsApp enquiry paths", "Core technical checks before launch"],
@@ -11,6 +12,7 @@ const services = [
   },
   {
     id: "seo",
+    href: "/seo-services-india",
     title: "Search engine optimisation",
     problem: "SEO is not a one-time metadata exercise. It combines crawlability, useful information, site structure, search intent and a business that deserves to be found.",
     work: ["Technical crawl and indexability review", "Keyword and search-intent mapping", "Page structure, internal links and on-page improvements", "Content briefs grounded in real customer questions"],
@@ -18,6 +20,7 @@ const services = [
   },
   {
     id: "performance-marketing",
+    href: "/performance-marketing",
     title: "Performance marketing",
     problem: "Ad platforms can generate clicks without generating profitable customers. Campaign decisions need to connect spend with lead quality and sales outcomes.",
     work: ["Offer, audience and funnel review", "Campaign structure and creative testing plan", "Conversion-event and UTM measurement setup", "Regular review of spend, lead quality and next tests"],
@@ -25,6 +28,7 @@ const services = [
   },
   {
     id: "branding",
+    href: "/branding-and-packaging-design",
     title: "Brand identity & creative",
     problem: "Inconsistent visuals and unclear positioning make it harder for customers to recognise a business and understand why its offer is relevant.",
     work: ["Brand discovery and positioning questions", "Logo and visual identity direction", "Typography, colour and usage guidance", "Campaign and social creative systems"],
@@ -32,6 +36,7 @@ const services = [
   },
   {
     id: "packaging-design",
+    href: "/branding-and-packaging-design",
     title: "Packaging design",
     problem: "Packaging has to work in the real world: on a shelf, in transit, in a photograph and in the customer's hands.",
     work: ["Product, audience and competitor context", "Information hierarchy and visual direction", "Artwork preparation for the chosen print process", "Mock-up review and production handoff checks"],
@@ -39,6 +44,7 @@ const services = [
   },
   {
     id: "ai-automation",
+    href: "/contact",
     title: "AI & workflow automation",
     problem: "Automation is useful when it removes a defined repetitive task. Adding AI to a broken process can simply make the same problem happen faster.",
     work: ["Map the existing workflow and handoffs", "Identify repetitive, rules-based steps", "Prototype a bounded automation with human review", "Document failure handling and ownership"],
@@ -57,7 +63,7 @@ export default function ServicesGuide() {
   return (
     <>
       <SEO
-        title="Digital Marketing Services in India | SEO, Websites & Ads"
+        title="Digital Marketing Services in India"
         description="Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress."
         canonical="https://kardengey.com/services"
       />
@@ -83,6 +89,7 @@ export default function ServicesGuide() {
                     <ul className="mt-4 grid gap-3 sm:grid-cols-2">{service.work.map((item) => <li key={item} className="border-l border-blue-500/60 pl-4 text-sm leading-6 text-neutral-400">{item}</li>)}</ul>
                     <h3 className="mt-7 text-[10px] font-semibold uppercase tracking-[0.25em] text-neutral-500">What to measure or validate</h3>
                     <p className="mt-3 text-sm leading-7 text-neutral-400">{service.measure}</p>
+                    <Link to={service.href} className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-blue-400 transition-colors hover:text-white">Explore this service <span aria-hidden="true">↗</span></Link>
                   </div>
                 </div>
               </article>
@@ -109,6 +116,9 @@ export default function ServicesGuide() {
             <p className="mt-3 max-w-2xl text-sm leading-7 text-neutral-400">Share what you are trying to improve, what you have already tried and any constraints. We can use that information to decide whether the work is a good fit and define a realistic scope.</p>
             <a href="mailto:kardengey@gmail.com?subject=Project%20enquiry%20for%20Kardengey" className="mt-6 inline-flex rounded-full bg-blue-600 px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-white hover:bg-blue-500">Discuss a project ↗</a>
           </section>
+          <div className="mt-10 border-t border-white/10 pt-8">
+            <p className="text-sm leading-7 text-neutral-400">Comparing providers or planning a budget? Read our <Link to="/digital-marketing-pricing" className="text-blue-400 hover:text-white">digital marketing pricing guide</Link> before requesting a written scope.</p>
+          </div>
           <p className="mt-10 text-xs leading-6 text-neutral-600">Service descriptions are general explanations, not a promise of specific results. Final deliverables, fees and timelines are agreed in writing for each project.</p>
         </div>
       </main>

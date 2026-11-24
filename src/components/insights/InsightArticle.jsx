@@ -1,21 +1,59 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
-import articles from "../../data/articles";
 import SEO from "../../components/SEO";
 import { getArticleSEO } from "../../seo/articleSEO";
 
+const articleModules = import.meta.glob("../../data/generated/articles/*.json", {
+  import: "default",
+});
+
 export default function InsightArticle() {
   const { slug } = useParams();
+  const [articleResult, setArticleResult] = useState({
+    slug: null,
+    article: null,
+    notFound: false,
+  });
 
-  const article = articles.find(
-    (item) => item.slug === slug
-  );
+  useEffect(() => {
+    let cancelled = false;
+    const loadArticle = articleModules[`../../data/generated/articles/${slug}.json`];
+
+    const handleMissingArticle = () => {
+      if (!cancelled) setArticleResult({ slug, article: null, notFound: true });
+    };
+
+    if (!loadArticle) {
+      Promise.resolve().then(handleMissingArticle);
+      return () => { cancelled = true; };
+    }
+
+    loadArticle()
+      .then((loadedArticle) => {
+        if (!cancelled) setArticleResult({ slug, article: loadedArticle, notFound: false });
+      })
+      .catch(handleMissingArticle);
+
+    return () => { cancelled = true; };
+  }, [slug]);
+
+  const article = articleResult.slug === slug ? articleResult.article : null;
+  const notFound = articleResult.slug === slug && articleResult.notFound;
 
   /* =========================================================
      ARTICLE NOT FOUND
   ========================================================= */
 
-  if (!article) {
+  if (!article && !notFound) {
+    return (
+      <section className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white" role="status" aria-live="polite">
+        <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">Loading article…</p>
+      </section>
+    );
+  }
+
+  if (!article && notFound) {
     return (
       <>
         <SEO

@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import articles from "../src/data/articles.js";
+import serviceLandingPages from "../src/data/serviceLandingPages.js";
 
 const dist = path.resolve("dist");
 const template = await readFile(path.join(dist, "index.html"), "utf8");
@@ -15,6 +16,14 @@ function escapeHtml(value = "") {
     .replaceAll("'", "&#39;");
 }
 
+function relatedServiceForArticle(article) {
+  const slug = article.slug.toLowerCase();
+  if (/seo|search|google-business-profile|negative-keywords/.test(slug)) return { href: "/seo-services-india", label: "Explore SEO services" };
+  if (/website|ecommerce|e-commerce|dpdp|accessibility|merchant-center|landing-page/.test(slug)) return { href: "/website-development", label: "Explore website development" };
+  if (/ads|marketing|lead|roi|acquisition|b2b/.test(slug)) return { href: "/performance-marketing", label: "Explore performance marketing" };
+  if (/brand|packaging/.test(slug)) return { href: "/branding-and-packaging-design", label: "Explore branding and packaging" };
+  return { href: "/services", label: "Explore all services" };
+}
 function textBlock(block) {
   const text = escapeHtml(block.text || "");
   if (block.type === "heading") return `<h2>${text}</h2>`;
@@ -31,7 +40,7 @@ function textBlock(block) {
   return `<p>${text}</p>`;
 }
 
-function shell({ title, description, canonical, content, type = "website", publishedAt, author }) {
+function shell({ title, description, canonical, content, type = "website", publishedAt, author, structuredData: extraStructuredData }) {
   let html = template;
   const fullTitle = `${title} — kardengey`;
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(fullTitle)}</title>`);
@@ -72,6 +81,11 @@ function shell({ title, description, canonical, content, type = "website", publi
       },
     ];
     const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
+  }
+
+  if (extraStructuredData) {
+    const jsonLd = JSON.stringify(extraStructuredData).replaceAll("<", "\\u003c");
     html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
   }
 
@@ -157,6 +171,7 @@ await writeFile(path.join(dist, "insights", "index.html"), shell({
 }));
 
 for (const article of validArticles) {
+  const relatedService = relatedServiceForArticle(article);
   const content = pageContent(`
     <nav class="seo-meta"><a href="/insights">Kardengey / Insights</a> / ${escapeHtml(article.category)}</nav>
     <article>
@@ -165,7 +180,7 @@ for (const article of validArticles) {
       <p>${escapeHtml(article.description)}</p>
       <p class="seo-meta">${escapeHtml(article.date)} · ${escapeHtml(article.read)} · By ${escapeHtml(article.author || "Kardengey")}</p>
       <div class="seo-article-body">${(article.content || []).map(textBlock).join("\n")}</div>
-      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="/services">Explore services ↗</a> <a href="/contact">Discuss a project ↗</a></section>
+      <section class="seo-cta"><h2>Put the next step into action.</h2><p>Explore how Kardengey approaches SEO, websites, performance marketing and brand work—or tell us what your business needs to improve.</p><a href="${escapeHtml(relatedService.href)}">${escapeHtml(relatedService.label)} ↗</a> <a href="/contact">Discuss a project ↗</a></section>
     </article>
   `);
   const output = path.join(dist, "insights", article.slug, "index.html");
@@ -197,13 +212,13 @@ const homeContent = pageContent(`
   <h2>How we approach projects</h2>
   <p>We start by clarifying the goal, audience, scope and constraints. We then prioritise the work that can make the biggest practical difference, implement it, and use available evidence to guide improvements. Outcomes depend on the market, offer, budget and execution; we do not guarantee rankings or sales.</p>
   <h2>Explore our insights and tools</h2>
-  <p>Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
+  <p>Explore our dedicated <a href="/seo-services-india">SEO services</a>, <a href="/website-development">website development</a>, <a href="/performance-marketing">performance marketing</a>, <a href="/branding-and-packaging-design">branding and packaging design</a>, and <a href="/digital-marketing-pricing">digital marketing pricing guide</a>. Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
   <h2>Talk to Kardengey</h2>
   <p>Tell us about your business, what you want to improve and what you have tried so far. <a href="/contact">Send a project enquiry</a>, message us on <a href="https://wa.me/7666459165">WhatsApp</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>.</p>
 `);
 
 const home = shell({
-  title: "Digital Marketing Agency & Growth Studio in India",
+  title: "Digital Marketing Agency in India",
   description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
@@ -316,13 +331,13 @@ const servicesContent = pageContent(`
   <h1>Digital marketing services. Clear outcomes.</h1>
   <p>Kardengey is a digital growth studio working with businesses in India across website development, search engine optimisation, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
   <h2 id="website-development">Website design and development</h2>
-  <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
+  <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>\n  <p><a href="/website-development">Explore our website development approach</a>.</p>
   <h2 id="seo">Search engine optimisation</h2>
-  <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>
+  <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>\n  <p><a href="/seo-services-india">Explore our SEO services in India</a>.</p>
   <h2 id="performance-marketing">Performance marketing</h2>
-  <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>
+  <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>\n  <p><a href="/performance-marketing">Explore performance marketing services</a> and our <a href="/digital-marketing-pricing">pricing guide</a>.</p>
   <h2 id="branding">Brand identity and creative</h2>
-  <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>
+  <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>\n  <p><a href="/branding-and-packaging-design">Explore branding and packaging design</a>.</p>
   <h2 id="packaging-design">Packaging design</h2>
   <p>Packaging must work on a shelf, in transit, in photographs and in a customer's hands. Work can include product and audience context, information hierarchy, visual direction, print-ready artwork and production handoff checks. Confirm legibility, mandatory information, material constraints and print proofs with the production partner.</p>
   <h2 id="ai-automation">AI and workflow automation</h2>
@@ -338,7 +353,7 @@ const servicesContent = pageContent(`
 `);
 await mkdir(path.join(dist, "services"), { recursive: true });
 await writeFile(path.join(dist, "services", "index.html"), shell({
-  title: "Digital Marketing Services in India | SEO, Websites & Ads",
+  title: "Digital Marketing Services in India",
   description: "Explore Kardengey’s SEO, website development, performance marketing, branding and packaging services for businesses in India. See scope, process and ways to measure progress.",
   canonical: `${site}/services`,
   content: servicesContent,
@@ -365,6 +380,50 @@ await writeFile(path.join(dist, "tools", "marketing-tools", "index.html"), shell
   content: marketingToolsContent,
 }));
 
+for (const page of serviceLandingPages) {
+  const sections = page.sections.map((section) => `
+    <section>
+      <h2>${escapeHtml(section.heading)}</h2>
+      ${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n")}
+    </section>`).join("\n");
+  const process = `<ol>${page.process.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
+  const faqs = page.faqs.map(([question, answer]) => `<h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p>`).join("\n");
+  const related = page.related.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join(" · ");
+  const inner = `
+    <nav class="seo-meta"><a href="/">Kardengey</a> / <a href="/services">Services</a> / ${escapeHtml(page.eyebrow)}</nav>
+    <p class="seo-kicker">${escapeHtml(page.eyebrow)}</p>
+    <h1>${escapeHtml(page.title)}</h1>
+    <p>${escapeHtml(page.intro)}</p>
+    <h2>Who this is for</h2><p>${escapeHtml(page.audience)}</p>
+    ${sections}
+    <h2>How we work</h2>${process}
+    <h2>Common questions</h2>${faqs}
+    <section class="seo-cta"><h2>Discuss your project</h2><p>Share your business goal, current starting point and the support you are looking for. We will review the scope before proposing the next step.</p><a href="/contact">Send a project enquiry ↗</a></section>
+    <h2>Explore more</h2><p>${related} · <a href="/services">All services</a></p>
+  `;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: page.title,
+    description: page.description,
+    serviceType: page.title,
+    provider: { "@type": "Organization", name: "Kardengey", url: site },
+    areaServed: { "@type": "Country", name: "India" },
+    url: site + page.path,
+  };
+  const pageHtml = pageContent(inner);
+  const html = shell({
+    title: page.metaTitle.replace(/(?: — | \| )Kardengey$/, ""),
+    description: page.description,
+    canonical: site + page.path,
+    content: pageHtml,
+    structuredData,
+  });
+  const output = path.join(dist, page.path.slice(1), "index.html");
+  await mkdir(path.dirname(output), { recursive: true });
+  await writeFile(output, html);
+}
+
 const sitemapEntries = [
   { url: site + "/", priority: "1.0", changefreq: "weekly" },
   { url: site + "/insights", priority: "0.8", changefreq: "weekly" },
@@ -374,6 +433,7 @@ const sitemapEntries = [
   { url: site + "/privacy-policy", priority: "0.3", changefreq: "yearly" },
   { url: site + "/tools/marketing-roi-calculator", priority: "0.9", changefreq: "weekly" },
   { url: site + "/tools/marketing-tools", priority: "0.9", changefreq: "weekly" },
+  ...serviceLandingPages.map((page) => ({ url: site + page.path, priority: "0.85", changefreq: "monthly" })),
   ...validArticles.map((article) => ({ url: site + "/insights/" + article.slug, priority: "0.8", changefreq: "monthly" })),
 ];
 const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
@@ -381,4 +441,4 @@ const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   sitemapEntries.map((entry) => '  <url><loc>' + entry.url + '</loc><changefreq>' + entry.changefreq + '</changefreq><priority>' + entry.priority + '</priority></url>').join("\n") +
   '\n</urlset>\n';
 await writeFile(path.join(dist, "sitemap.xml"), sitemapXml);
-console.log(`Prerendered homepage, services, marketing tools, insights index, and ${validArticles.length} article pages (from ${articles.length} records).`);
+console.log(`Prerendered homepage, services, ${serviceLandingPages.length} commercial service pages, marketing tools, insights index, and ${validArticles.length} article pages (from ${articles.length} records).`);

@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Generated from the source article records before dev/build
+src/data/generated/

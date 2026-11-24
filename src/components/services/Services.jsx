@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -328,6 +329,17 @@ export default function Services() {
             Discuss a project <span aria-hidden="true">↗</span>
           </button>
         </motion.div>
+
+        <div className="mt-8 border-t border-white/10 pt-7">
+          <p className="text-[9px] uppercase tracking-[0.3em] text-neutral-600">Explore service guides</p>
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3">
+            <Link to="/seo-services-india" className="text-xs text-neutral-400 transition-colors hover:text-blue-400">SEO services ↗</Link>
+            <Link to="/website-development" className="text-xs text-neutral-400 transition-colors hover:text-blue-400">Website development ↗</Link>
+            <Link to="/performance-marketing" className="text-xs text-neutral-400 transition-colors hover:text-blue-400">Performance marketing ↗</Link>
+            <Link to="/branding-and-packaging-design" className="text-xs text-neutral-400 transition-colors hover:text-blue-400">Branding & packaging ↗</Link>
+            <Link to="/digital-marketing-pricing" className="text-xs text-neutral-400 transition-colors hover:text-blue-400">Pricing guide ↗</Link>
+          </div>
+        </div>
 
         {/* BOTTOM NOTE */}
 

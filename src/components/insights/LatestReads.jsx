@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import articles from "../../data/articles";
+import articles from "../../data/generated/article-index.json";
 
 export default function LatestReads() {
   const latestArticles = [...articles]
