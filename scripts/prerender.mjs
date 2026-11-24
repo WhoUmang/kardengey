@@ -53,6 +53,28 @@ function shell({ title, description, canonical, content, type = "website", publi
   if (publishedAt) meta("article:published_time", publishedAt, "property");
   if (author) meta("article:author", author, "property");
 
+  if (canonical === site && type === "website") {
+    const structuredData = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Kardengey",
+        url: site,
+        description,
+        email: "kardengey@gmail.com",
+        founder: { "@type": "Person", name: "Umang Pathak" },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Kardengey",
+        url: site,
+      },
+    ];
+    const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\\n</head>');
+  }
+
   if (type === "article" && publishedAt) {
     const structuredData = {
       "@context": "https://schema.org",
@@ -97,6 +119,10 @@ const style = `
   .seo-list a{color:#fff;text-decoration:none}
   .seo-footer{border-top:1px solid #262626;padding:26px 0;color:#929292;font-size:13px}
   .seo-content blockquote{border-left:3px solid #3b82f6;padding-left:20px;margin:24px 0}
+  .seo-cta{margin-top:48px;padding:28px;border:1px solid rgba(59,130,246,.3);border-radius:18px;background:rgba(59,130,246,.06)}
+  .seo-cta h2{margin:0 0 10px}
+  .seo-cta p{margin:0 0 16px}
+  .seo-cta a{display:inline-block;margin:8px 18px 0 0;font-weight:700}
 </style>`;
 
 function pageContent(inner) {
@@ -175,7 +201,7 @@ const homeContent = pageContent(`
 `);
 
 const home = shell({
-  title: "Digital Marketing Agency in India for Business Growth",
+  title: "Digital Marketing Agency & Growth Studio in India",
   description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
