@@ -1,9 +1,17 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import HeroContent from "./HeroContent";
 
 const HeroScene = lazy(() => import("./HeroScene"));
 
 export default function Hero() {
+  const [showScene, setShowScene] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+    const timeout = window.setTimeout(() => setShowScene(true), 900);
+    return () => window.clearTimeout(timeout);
+  }, []);
+
   return (
     <section
       id="home"
@@ -26,7 +34,7 @@ export default function Hero() {
       />
 
       <Suspense fallback={<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_65%_45%,rgba(37,99,235,0.12),transparent_38%)]" />}>
-        <HeroScene />
+        {showScene && <HeroScene />}
       </Suspense>
 
       <HeroContent />
