@@ -78,7 +78,7 @@ function shell({ title, description, canonical, content, type = "website", publi
 
   if (extraStructuredData) {
     const jsonLd = JSON.stringify(extraStructuredData).replaceAll("<", "\\u003c");
-    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\\n</head>');
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
   }
 
   if (type === "article" && publishedAt) {
@@ -203,7 +203,7 @@ const homeContent = pageContent(`
   <h2>How we approach projects</h2>
   <p>We start by clarifying the goal, audience, scope and constraints. We then prioritise the work that can make the biggest practical difference, implement it, and use available evidence to guide improvements. Outcomes depend on the market, offer, budget and execution; we do not guarantee rankings or sales.</p>
   <h2>Explore our insights and tools</h2>
-  <p>Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
+  <p>Explore our dedicated <a href="/seo-services-india">SEO services</a>, <a href="/website-development">website development</a>, <a href="/performance-marketing">performance marketing</a>, <a href="/branding-and-packaging-design">branding and packaging design</a>, and <a href="/digital-marketing-pricing">digital marketing pricing guide</a>. Read our <a href="/insights">digital marketing and SEO guides</a>, or use the <a href="/tools/marketing-roi-calculator">free marketing ROI calculator</a> to estimate return on marketing spend using your own assumptions.</p>
   <h2>Talk to Kardengey</h2>
   <p>Tell us about your business, what you want to improve and what you have tried so far. <a href="/contact">Send a project enquiry</a>, message us on <a href="https://wa.me/7666459165">WhatsApp</a> or email <a href="mailto:kardengey@gmail.com">kardengey@gmail.com</a>.</p>
 `);
@@ -322,13 +322,13 @@ const servicesContent = pageContent(`
   <h1>Digital marketing services. Clear outcomes.</h1>
   <p>Kardengey is a digital growth studio working with businesses in India across website development, search engine optimisation, paid acquisition, brand identity, packaging and practical automation. This guide explains what each service involves, what a sensible engagement should measure and what information helps scope the work.</p>
   <h2 id="website-development">Website design and development</h2>
-  <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>
+  <p>A website should help visitors understand the offer, assess credibility and take the next step. Work can include page planning, responsive design and development, enquiry paths, forms and technical checks. Review qualified enquiries, form completion, WhatsApp clicks and the performance of important landing pages.</p>\n  <p><a href="/website-development">Explore our website development approach</a>.</p>
   <h2 id="seo">Search engine optimisation</h2>
-  <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>
+  <p>SEO combines crawlability, useful information, site structure, search intent and a business that deserves to be found. Work can include technical reviews, keyword and intent mapping, internal links and content improvements. Review relevant impressions, clicks, landing-page engagement and enquiries. Rankings fluctuate and are never guaranteed.</p>\n  <p><a href="/seo-services-india">Explore our SEO services in India</a>.</p>
   <h2 id="performance-marketing">Performance marketing</h2>
-  <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>
+  <p>Paid campaigns should connect spend with lead quality and sales outcomes. Work can include offer and funnel review, audience and creative testing, conversion measurement and ongoing optimisation. Separate raw leads from qualified leads and compare cost per qualified lead, customer acquisition cost and contribution after marketing.</p>\n  <p><a href="/performance-marketing">Explore performance marketing services</a> and our <a href="/digital-marketing-pricing">pricing guide</a>.</p>
   <h2 id="branding">Brand identity and creative</h2>
-  <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>
+  <p>Brand work can include discovery, positioning, logo direction, visual identity, typography, colour guidance and campaign creative systems. Validate the system across real customer touchpoints and check whether it communicates the intended offer clearly.</p>\n  <p><a href="/branding-and-packaging-design">Explore branding and packaging design</a>.</p>
   <h2 id="packaging-design">Packaging design</h2>
   <p>Packaging must work on a shelf, in transit, in photographs and in a customer's hands. Work can include product and audience context, information hierarchy, visual direction, print-ready artwork and production handoff checks. Confirm legibility, mandatory information, material constraints and print proofs with the production partner.</p>
   <h2 id="ai-automation">AI and workflow automation</h2>
