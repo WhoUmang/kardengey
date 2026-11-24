@@ -29,7 +29,7 @@ export default function Preloader() {
     }
 
     const scatter = window.setTimeout(() => setScattering(true), 1550);
-    const finish = window.setTimeout(() => setVisible(false), 2450);
+    const finish = window.setTimeout(() => setVisible(false), 2700);
 
     return () => {
       window.cancelAnimationFrame(frame);

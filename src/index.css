@@ -93,8 +93,7 @@ section[id], [id="work"], [id="services"], [id="process"], [id="about"], [id="co
   background: #050505;
   color: #fff;
   opacity: 1;
-  isolation: isolate;
-  pointer-events: auto;
+  pointer-events: none;
   animation: kardengey-preloader-reveal 900ms cubic-bezier(.7, 0, .2, 1) 1.55s forwards;
 }
 
@@ -167,7 +166,7 @@ section[id], [id="work"], [id="services"], [id="process"], [id="about"], [id="co
 }
 
 @keyframes kardengey-preloader-reveal {
-  to { opacity: 0; pointer-events: none; visibility: hidden; }
+  to { opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
