@@ -26,6 +26,7 @@ const AboutEditorialStandards = lazy(() => import("./pages/AboutEditorialStandar
 const ServicesGuide = lazy(() => import("./pages/ServicesGuide"));
 const MarketingTools = lazy(() => import("./pages/MarketingTools"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const ServiceLandingPage = lazy(() => import("./pages/ServiceLandingPage"));
 
 function DeferredSection({ children }) {
   return (
@@ -77,6 +78,11 @@ function App() {
           <Route path="/contact" element={<><Navbar /><ContactPage /><WhatsAppButton /><Footer /></>} />
           <Route path="/tools/marketing-tools" element={<><Navbar /><MarketingTools /><WhatsAppButton /><Footer /></>} />
           <Route path="/services" element={<><Navbar /><ServicesGuide /><WhatsAppButton /><Footer /></>} />
+          <Route path="/seo-services-india" element={<><Navbar /><ServiceLandingPage pageKey="seo" /><WhatsAppButton /><Footer /></>} />
+          <Route path="/website-development" element={<><Navbar /><ServiceLandingPage pageKey="website" /><WhatsAppButton /><Footer /></>} />
+          <Route path="/performance-marketing" element={<><Navbar /><ServiceLandingPage pageKey="performance" /><WhatsAppButton /><Footer /></>} />
+          <Route path="/branding-and-packaging-design" element={<><Navbar /><ServiceLandingPage pageKey="branding" /><WhatsAppButton /><Footer /></>} />
+          <Route path="/digital-marketing-pricing" element={<><Navbar /><ServiceLandingPage pageKey="pricing" /><WhatsAppButton /><Footer /></>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
