@@ -72,7 +72,7 @@ function shell({ title, description, canonical, content, type = "website", publi
       },
     ];
     const jsonLd = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
-    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\\n</head>');
+    html = html.replace("</head>", '  <script type="application/ld+json">' + jsonLd + '</script>\n</head>');
   }
 
   if (type === "article" && publishedAt) {
