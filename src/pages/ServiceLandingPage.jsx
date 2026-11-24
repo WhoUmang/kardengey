@@ -76,7 +76,7 @@ export default function ServiceLandingPage({ pageKey }) {
             <p className="text-[10px] uppercase tracking-[0.3em] text-blue-400">Discuss your project</p>
             <h2 className="mt-4 max-w-3xl text-3xl font-black uppercase leading-tight tracking-[-0.05em] md:text-5xl">Tell us what needs to move forward.</h2>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-neutral-400 md:text-base">Share your business goal, current starting point and the support you are looking for. We will review the scope before proposing the next step.</p>
-            <Link to="/contact" className="mt-8 inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-blue-500">Discuss a project <span aria-hidden="true">↗</span></Link>
+            <Link to="/contact" onClick={() => window.gtag?.("event", "service_enquiry_click", { service: page.key, page_path: page.path })} className="mt-8 inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-blue-500">Discuss a project <span aria-hidden="true">↗</span></Link>
           </section>
 
           <section className="mt-14">
