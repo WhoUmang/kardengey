@@ -7398,6 +7398,336 @@ const articles = [
     }
   ]
 }
+,
+{
+  "category": "EMAIL / DOMAIN SECURITY",
+  "filter": "TECH",
+  "title": "SPF, DKIM and DMARC for Indian Business Email: A Practical Setup Checklist",
+  "slug": "spf-dkim-dmarc-email-authentication-india",
+  "description": "Set up SPF, DKIM and DMARC for your business domain in India. Inventory senders, publish DNS records, test alignment and monitor email authentication safely.",
+  "date": "24 NOV 2026",
+  "publishedAt": "2026-11-24",
+  "read": "14 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A business email address such as hello@yourcompany.in is part of your brand. Customers use it for enquiries, invoices, order updates, proposals and support. But the address alone does not prove that a message was genuinely sent by your business. If your domain's email authentication is incomplete, legitimate messages may be treated with suspicion, while attackers may find it easier to impersonate your domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "SPF, DKIM and DMARC are three DNS-based controls that help receiving mail systems check who is authorised to send using your domain and whether the visible sender identity is aligned with the authenticated message. They matter whether you use Google Workspace, Microsoft 365, a website contact form, an email marketing platform, a CRM or an invoicing system. This guide explains how to plan and verify the setup without copying random DNS records or risking a mail outage."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: inventory first, authenticate every sender, then enforce gradually"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a business domain, the safe sequence is: list every service that sends email using your domain; publish one correct SPF record for each sending domain; enable DKIM signing with each provider; publish a DMARC record in monitoring mode; send test messages and check authentication and alignment; review reports; then consider a stricter DMARC policy only after legitimate senders are accounted for. Do not begin by pasting a strict reject policy into DNS."
+    },
+    {
+      "type": "quote",
+      "text": "The most common setup mistake is not a missing DNS record. It is forgetting one legitimate system that sends mail for the business."
+    },
+    {
+      "type": "heading",
+      "text": "1. What SPF, DKIM and DMARC actually check"
+    },
+    {
+      "type": "paragraph",
+      "text": "SPF (Sender Policy Framework) tells receiving systems which sending hosts are authorised for a domain used in the email transport envelope, commonly the MAIL FROM identity. It is published as a DNS TXT record. SPF is useful, but a passing SPF result by itself does not prove that the visible From address shown to the customer belongs to the same domain. That is why SPF needs to be considered alongside DMARC alignment."
+    },
+    {
+      "type": "paragraph",
+      "text": "DKIM (DomainKeys Identified Mail) adds a cryptographic signature to an outgoing message. The sending service signs the message with a private key, and receiving systems use a public key published in DNS to verify the signature. A valid signature helps show that the message was authorised by the signing domain and that signed parts of the message were not changed in transit. Your email provider normally supplies the selector and DNS value; you enable signing in that provider's admin console after the record is visible."
+    },
+    {
+      "type": "paragraph",
+      "text": "DMARC (Domain-based Message Authentication, Reporting and Conformance) connects those checks to the domain a person sees in the From field. It asks whether SPF or DKIM passes and whether at least one passing authentication domain aligns with the visible From domain. It also lets a domain owner publish a policy for messages that fail DMARC and request aggregate reports. In practical terms, DMARC helps a business see which systems are sending as its domain and gives receiving providers a policy to follow for unauthenticated mail."
+    },
+    {
+      "type": "paragraph",
+      "text": "A DMARC pass does not require both SPF and DKIM to align: either a passing, aligned SPF result or a passing, aligned DKIM result can satisfy the alignment test. Still, configure both wherever possible. Forwarding can affect SPF, while message modification can affect DKIM, so having both mechanisms gives a legitimate message more than one route to authenticate."
+    },
+    {
+      "type": "link",
+      "text": "Microsoft Learn: How DMARC alignment works",
+      "href": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dmarc-configure"
+    },
+    {
+      "type": "heading",
+      "text": "2. Inventory every service that sends email as your domain"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before editing DNS, write down every system that sends messages with an address at your domain or uses your domain in its sending identity. Start with your main mailbox provider, such as Google Workspace or Microsoft 365. Then check website contact forms, ecommerce order notifications, CRM automations, helpdesk tickets, newsletter tools, appointment software, billing and invoicing systems, payment notifications, hosting control panels and any custom application that sends email through SMTP or an API."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask each provider three questions: which domain appears in the visible From address; which SPF mechanism or include value should be authorised; and how do you enable DKIM using your own domain? Also ask whether the service supports a custom return-path or bounce domain and whether it can align the DKIM signing domain with your visible From domain. Save the exact record name, record type and value supplied by the provider. Do not guess a selector or copy another company's DNS configuration."
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple inventory can be a spreadsheet with these columns: service name; message type; From address; sending domain or subdomain; SPF instructions; DKIM selector and record; owner; and test result. Mark the business owner for each system. If nobody recognises a sender in your inventory, investigate it before tightening DMARC. An old website plugin, abandoned CRM or former email platform can still be sending messages."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also identify the authoritative DNS host. Your domain may be registered with one company while its nameservers point to another provider. DNS changes must be made where the active nameservers are managed, not automatically at the company where you paid for the domain. Check the nameserver delegation first, then make a backup of the current relevant TXT, MX and CNAME records before changing anything."
+    },
+    {
+      "type": "heading",
+      "text": "3. Publish SPF without creating duplicate records"
+    },
+    {
+      "type": "paragraph",
+      "text": "An SPF record is a TXT record at the domain that a service uses for its envelope sender. Your email provider will give you the exact value. If several services send using the same domain, their authorised mechanisms generally need to be combined into one SPF record for that domain. Do not publish a second TXT record that also begins with v=spf1 at the same DNS name. Multiple SPF records for one owner name are not permitted by the SPF standard and can cause evaluation errors."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is especially important when a business adds an email marketing platform after setting up Google Workspace or Microsoft 365. The correct action is not to paste a second provider's SPF string beside the first. Compare the provider instructions, confirm which services actually send from the domain, and combine the approved mechanisms into a single record. If a provider uses a dedicated sending subdomain, that subdomain can have its own SPF record; it is a separate DNS name and must be configured according to that provider's instructions."
+    },
+    {
+      "type": "paragraph",
+      "text": "SPF also has a DNS lookup limit. The SPF specification limits the total number of DNS-querying terms used during evaluation to 10. Terms such as include, a, mx, ptr, exists and redirect count towards that limit; nested includes can use lookups too. Adding every suggested include without checking the total can push a record over the limit. Ask your provider whether it offers a simpler domain-specific setup, and review nested lookups rather than relying only on the length of the TXT string."
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative only — not a record to publish: if two approved services each provide an SPF include, the final record is conceptually one value beginning with v=spf1 and containing both provider-approved mechanisms before one ending qualifier. A placeholder might look like v=spf1 include:provider-a.example include:provider-b.example ~all. Replace every placeholder with the exact values from your providers and confirm the complete record before publishing it."
+    },
+    {
+      "type": "quote",
+      "text": "Never add an SPF record just because a dashboard says SPF is missing. First check whether a record already exists and whether it needs to be updated instead."
+    },
+    {
+      "type": "link",
+      "text": "IETF RFC 7208: SPF record format, duplicate-record rule and DNS lookup limit",
+      "href": "https://datatracker.ietf.org/doc/html/rfc7208"
+    },
+    {
+      "type": "link",
+      "text": "Microsoft Learn: Set up SPF for Microsoft 365",
+      "href": "https://learn.microsoft.com/en-in/defender-office-365/email-authentication-spf-configure"
+    },
+    {
+      "type": "heading",
+      "text": "4. Enable DKIM for each sending service"
+    },
+    {
+      "type": "paragraph",
+      "text": "DKIM is normally configured separately inside each email platform. In the provider's admin console, generate or request a DKIM key for the domain you use in the From address. The provider will give you a selector and a DNS record, often a TXT or CNAME record. Add it exactly as supplied, wait for it to become visible in public DNS, and return to the provider's console to turn on DKIM signing. A published key alone does not mean the service is signing your messages."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use more than one sending platform, each may use a different selector. That is normal. Keep a record of which selector belongs to which service, and do not remove an old selector until you have confirmed that the service no longer signs messages with it. If a platform supports a custom DKIM domain, use that option so the signature can align with your business domain rather than relying only on the provider's shared signing domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a 2048-bit DKIM key where your provider supports it. Google's sender guidance says personal Gmail delivery requires a DKIM key of at least 1024 bits and recommends 2048 bits for stronger security when supported. Yahoo also recommends 2048-bit keys where possible. If your provider offers only a different key size or record type, follow its current supported configuration and confirm the resulting signature passes."
+    },
+    {
+      "type": "link",
+      "text": "Google Workspace Admin Help: Set up DKIM",
+      "href": "https://support.google.com/a/answer/174124"
+    },
+    {
+      "type": "heading",
+      "text": "5. Start DMARC in monitoring mode"
+    },
+    {
+      "type": "paragraph",
+      "text": "DMARC is published as a TXT record at _dmarc.yourdomain.in. The record begins with v=DMARC1 and includes a policy. For a first rollout, many domain owners use p=none so receiving systems do not quarantine or reject messages solely because they fail DMARC. Add an aggregate-report destination with the rua tag if you have a mailbox or reporting service ready to receive and process the reports."
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative starting pattern only: v=DMARC1; p=none; rua=mailto:dmarc-reports@example.com. This example uses a reserved example domain and is not a ready-to-use record. Replace the reporting address with a mailbox or service you control, confirm that it can receive reports, and follow the instructions from your DNS and reporting providers. Do not publish a rua address that nobody monitors."
+    },
+    {
+      "type": "paragraph",
+      "text": "The visible From domain and the authenticated domain must align for DMARC to pass. With relaxed alignment, related organisational domains can align; strict alignment requires an exact match. Your provider may offer a custom return-path or DKIM signing domain to make this work. Check the actual message headers rather than assuming that a green SPF or DKIM indicator automatically means DMARC passes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aggregate DMARC reports are usually machine-readable XML. They can show sending sources, authentication results and policy outcomes over time. They are not a customer-level email activity report and should not be treated as proof that every individual message reached the inbox. Use a DMARC reporting service or a controlled process to interpret them; do not expect a normal mailbox to make raw XML easy to review."
+    },
+    {
+      "type": "paragraph",
+      "text": "After you have observed representative business mail and confirmed that legitimate services authenticate and align, consider moving from p=none to p=quarantine and eventually p=reject. Make that decision in stages, with a review of every known sender and any unexplained source. The right pace depends on the number of systems, how often they send, the quality of the reports and how quickly you can fix failures. A strict policy applied before the inventory is complete can disrupt invoices, password resets, customer updates or enquiry notifications."
+    },
+    {
+      "type": "link",
+      "text": "Microsoft Learn: Configure DMARC for Microsoft 365",
+      "href": "https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dmarc-configure"
+    },
+    {
+      "type": "heading",
+      "text": "6. What Gmail and Yahoo expect from senders in 2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's published guidance applies to email sent to personal Gmail accounts. All senders must use SPF or DKIM authentication, maintain valid forward and reverse DNS for sending domains or IPs, use TLS, format messages according to RFC 5322 and keep the spam rate reported in Postmaster Tools below 0.3%. Senders who send more than 5,000 messages a day to Gmail accounts have additional requirements, including both SPF and DKIM, a DMARC record, alignment of the visible From domain with SPF or DKIM, and one-click unsubscribe for marketing and subscribed messages."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's FAQ describes a bulk sender as one sending close to 5,000 or more messages to personal Gmail accounts within a 24-hour period. Messages from subdomains of the same primary domain count together, and once a domain is classified as a bulk sender, that classification does not expire. This is not a reason to wait until you approach the threshold: the baseline authentication and reputation requirements apply to all senders, and the full setup is easier to maintain when introduced before a campaign grows."
+    },
+    {
+      "type": "paragraph",
+      "text": "Yahoo's Sender Hub also requires all senders to authenticate at least with SPF or DKIM, keep complaint rates below 0.3%, maintain valid forward and reverse DNS for sending IPs and comply with the relevant email format standards. Its bulk-sender requirements add both SPF and DKIM, a valid DMARC policy of at least p=none that passes and aligns, and an easy unsubscribe process for marketing and subscribed messages. Yahoo does not publish a numeric bulk-volume threshold, so do not assume that staying below Gmail's figure means Yahoo will classify you as a non-bulk sender."
+    },
+    {
+      "type": "paragraph",
+      "text": "For Yahoo bulk marketing mail, the Sender Hub calls for a functioning List-Unsubscribe header, a clearly visible unsubscribe link in the message body and unsubscribe requests honoured within two days. Gmail also requires one-click unsubscribe for bulk marketing and subscribed messages. These are mailbox-provider sending requirements; they do not replace the need to follow applicable Indian privacy, consumer and telecom rules for your specific communications. Keep promotional mail separate from transactional messages such as order confirmations and password resets, and use the right unsubscribe behaviour for each stream."
+    },
+    {
+      "type": "link",
+      "text": "Google: Email sender guidelines",
+      "href": "https://support.google.com/mail/answer/81126?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Google: Email sender guidelines FAQ and bulk-sender definition",
+      "href": "https://support.google.com/mail/answer/14229414?hl=en"
+    },
+    {
+      "type": "link",
+      "text": "Yahoo Sender Hub: Sender best practices and bulk requirements",
+      "href": "https://senders.yahooinc.com/best-practices/"
+    },
+    {
+      "type": "link",
+      "text": "Yahoo Sender Hub: Frequently asked questions and volume threshold",
+      "href": "https://senders.yahooinc.com/faqs/"
+    },
+    {
+      "type": "heading",
+      "text": "7. Fix website forms and automated messages too"
+    },
+    {
+      "type": "paragraph",
+      "text": "A business can configure its mailbox correctly and still have website notifications fail authentication. This often happens when a contact form or ecommerce plugin sends through the web host's default mail server without being authorised in the domain's SPF record or configured to sign with DKIM. Use a reputable authenticated mail service or your business email provider's supported sending method, and configure the website to send from an address on your own domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a contact form, do not set the visitor's email address as the message's From address. That visitor has not authorised your server to send mail on behalf of their domain, so the message can fail authentication or look like spoofing. Use a verified address such as website@yourdomain.in as the From address and place the visitor's address in Reply-To. Your team can still reply to the enquiry, while the message is sent under a domain your system is authorised to use."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check automated messages individually: form submissions, order receipts, shipping notifications, appointment reminders, password resets and CRM alerts may use different providers or sending domains. A test of one mailbox does not prove that all these streams are authenticated. If a provider offers a dedicated subdomain for transactional or marketing email, document it and configure its SPF, DKIM and DMARC behaviour deliberately."
+    },
+    {
+      "type": "heading",
+      "text": "8. Test the actual message, not just the DNS dashboard"
+    },
+    {
+      "type": "paragraph",
+      "text": "After DNS changes have propagated and each provider reports that authentication is enabled, send a fresh test from every service to a Gmail account and, where practical, to an Outlook or Yahoo account. In Gmail, open the message details or original source and inspect the Authentication-Results header. Look for SPF, DKIM and DMARC results, then check which domains were evaluated. A message can show spf=pass while DMARC fails because the SPF domain is not aligned with the visible From domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep a small test log with the sending service, From address, recipient mailbox, date, SPF result, DKIM result, DMARC result and any alignment issue. Repeat the test after changing a selector, return-path, sending provider, website plugin or DNS record. Test both routine messages and marketing campaigns, because different systems may use different signing domains and infrastructure."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a provider's dashboard says a record is missing, compare the exact hostname it expects with the record you published. Check for an extra domain suffix added by the DNS interface, a typo in the selector, a CNAME entered as TXT, or a record published at the registrar instead of the active DNS host. Wait for the record's TTL and query public DNS before repeatedly changing values. If you are unsure, ask the provider to confirm the exact record name and expected result."
+    },
+    {
+      "type": "heading",
+      "text": "9. Monitor reputation and tighten policy carefully"
+    },
+    {
+      "type": "paragraph",
+      "text": "For Gmail, use Postmaster Tools when your sending volume and domain activity make data available. Google's current FAQ also describes a compliance-status dashboard for checking requirements such as SPF, DKIM, DMARC, alignment, TLS, spam rate and unsubscribe support. For Yahoo, consider enrolling DKIM-signed mail in its Complaint Feedback Loop so you can identify and suppress recipients who report messages as spam. These tools provide different views; neither is a universal inbox-placement guarantee."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep recipient lists clean, send to people who asked to hear from you, honour the frequency they expected and remove hard bounces. Sudden volume spikes, stale lists, misleading sender names and irrelevant campaigns can damage reputation even when DNS authentication is correct. Authentication proves something about the sender; it does not make unwanted content welcome."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before changing DMARC to quarantine or reject, check reports for unknown sources, forgotten systems and legitimate services that are failing alignment. Make one change at a time and keep a rollback plan. If the organisation uses multiple brands, subdomains, acquired domains or external agencies, agree who owns the DNS and who is responsible for authorising each sender."
+    },
+    {
+      "type": "link",
+      "text": "Google Postmaster Tools: Compliance status API reference",
+      "href": "https://developers.google.com/workspace/gmail/postmaster/reference/rest/v2/domains/getComplianceStatus"
+    },
+    {
+      "type": "link",
+      "text": "Yahoo Sender Hub: Complaint Feedback Loop",
+      "href": "https://senders.yahooinc.com/complaint-feedback-loop/"
+    },
+    {
+      "type": "heading",
+      "text": "10. Common mistakes that cause avoidable email problems"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, publishing multiple SPF records at the same DNS name instead of merging the authorised mechanisms into one. Second, forgetting a CRM, website form, invoice platform or legacy server that still sends as the domain. Third, adding too many SPF includes and exceeding the DNS lookup limit. Fourth, publishing a DKIM key but never enabling signing in the provider's admin console. Fifth, checking only whether SPF or DKIM passes and ignoring alignment with the visible From domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sixth, moving straight to p=reject before understanding DMARC reports. Seventh, adding records in the wrong DNS control panel because the registrar and authoritative nameserver provider are different. Eighth, using the website visitor's email address as the From address on a contact form. Ninth, assuming authentication guarantees inbox placement or that a message marked delivered was read. Tenth, forgetting to revisit DNS after changing email providers, website hosting, CRM software or marketing tools."
+    },
+    {
+      "type": "heading",
+      "text": "An illustrative setup for a small Indian business"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine a company using Google Workspace for employee mail, a hosted website form for enquiries and a separate platform for monthly newsletters. The owner first records all three sending paths. The Workspace administrator supplies the domain's SPF and DKIM instructions; the website developer configures form notifications through an authenticated service; and the marketing platform supplies a custom DKIM selector and its approved SPF mechanism. The DNS administrator combines the authorised SPF mechanisms into one record for the relevant domain and publishes the separate DKIM records supplied by each service."
+    },
+    {
+      "type": "paragraph",
+      "text": "The company then publishes a DMARC monitoring record with an aggregate-report destination, sends test messages from all three systems and checks the authentication results. The first report reveals that the website form is still using the hosting provider's default mail server. The developer changes it to the authenticated service and repeats the test. Only after the legitimate sources are accounted for does the owner review whether a stricter DMARC policy is appropriate. This is an illustrative workflow, not a claim about a real Kardengey client or a guaranteed result."
+    },
+    {
+      "type": "heading",
+      "text": "Your implementation checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before launch, confirm that you have: identified the active DNS host; backed up current DNS records; listed every mailbox, website, CRM, ecommerce, billing and campaign sender; collected exact provider instructions; published only one SPF record per sending domain; stayed within the SPF lookup limit; enabled DKIM signing for each service; published DMARC in monitoring mode with a working report destination; tested SPF, DKIM, DMARC and alignment from every sender; checked Gmail and Yahoo requirements relevant to your volume; documented record ownership; and agreed who reviews reports and approves policy changes."
+    },
+    {
+      "type": "heading",
+      "text": "When to ask for technical help"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get an email administrator or experienced DNS specialist involved if several vendors send from the same domain, your SPF record is already close to the lookup limit, DMARC reports show unknown systems, your website sends mail directly from a hosting server, or messages stop arriving after a DNS change. Ask the specialist to document the current records, list each sending source, explain alignment and test the actual messages. A DNS screenshot alone is not a complete handover."
+    },
+    {
+      "type": "paragraph",
+      "text": "SPF, DKIM and DMARC are foundational controls for protecting a business email domain and improving the trust signals receiving systems can verify. They cannot guarantee inbox placement: sender reputation, recipient expectations, message quality, list hygiene and provider policies still matter. Treat authentication as an ongoing part of your website and marketing infrastructure, not a one-time checkbox."
+    },
+    {
+      "type": "link",
+      "text": "Related guide: Consent-first WhatsApp, SMS and email marketing in India",
+      "href": "/insights/consent-first-whatsapp-sms-email-marketing-india"
+    },
+    {
+      "type": "link",
+      "text": "Related guide: DPDP Act checklist for Indian business websites and lead forms",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "link",
+      "text": "Related guide: Website design brief for Indian businesses",
+      "href": "/insights/website-design-brief-india"
+    },
+    {
+      "type": "link",
+      "text": "Explore Kardengey services",
+      "href": "/services"
+    },
+    {
+      "type": "link",
+      "text": "Contact Kardengey about your website or email setup",
+      "href": "/contact"
+    }
+  ]
+}
 ];
 
 export default articles;
