@@ -1,5 +1,333 @@
 const articles = [
 {
+  "category": "WEBSITE / OPERATIONS",
+  "filter": "TECH",
+  "title": "Website Maintenance Checklist for Indian Small Businesses: Monthly, Quarterly & Annual Tasks",
+  "slug": "website-maintenance-checklist-india-small-business",
+  "description": "A practical website maintenance checklist for Indian small businesses covering backups, security, forms, speed, SEO, domains and routine checks.",
+  "date": "25 NOV 2026",
+  "publishedAt": "2026-11-25",
+  "read": "13 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A business website can look perfectly fine on launch day and still become unreliable a few months later. A contact form may stop sending enquiries. A plugin update may conflict with another component. A domain renewal may be missed. A phone number, service area or price may become outdated. Search engines may keep finding an old URL after a page has moved. None of these problems requires a dramatic redesign to become expensive."
+    },
+    {
+      "type": "paragraph",
+      "text": "For an Indian small business, the website may be the first place a prospect checks before calling, requesting a quotation, booking an appointment or placing an order. Maintenance is the routine work that keeps that journey dependable: software and security checks, backups, working forms, accurate business information, usable mobile pages and healthy search visibility."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide gives owners a practical starting schedule. It applies to WordPress sites and custom-built websites, but the exact steps depend on the platform, integrations, transaction volume and risk of downtime. Treat the cadence as a baseline to adapt, not a universal technical standard."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: give the website an owner, a checklist and a recovery plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "A maintained website has three things that are often missing after launch: someone accountable for checking it, a written record of what was checked, and a tested way to recover if something breaks. The owner does not need to perform every technical task. They do need to know who is responsible, where the important accounts are held and how a failure will be escalated."
+    },
+    {
+      "type": "quote",
+      "text": "A backup that has never been restored is only a hope, not a recovery plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by recording the basics in a secure internal document. Do not keep passwords in a public spreadsheet or a shared chat. Store credentials in an appropriate password manager and give each person only the access they need."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Domain registrar, renewal date, billing owner and the account that controls DNS",
+        "Hosting provider, support route, renewal date and backup or restore options",
+        "Website platform, theme, plugins, custom code repository and the person who can deploy changes",
+        "SSL/TLS certificate status and how renewal is handled",
+        "Contact forms, WhatsApp links, call buttons, booking tools, payment gateways and CRM connections",
+        "Analytics, Google Search Console, advertising accounts and the business email addresses receiving enquiries",
+        "The latest known-good backup, where it is stored and who is authorised to restore it"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "1. Monthly: test the pages and actions that bring in business"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not limit a monthly review to opening the homepage. Visit the pages a customer is most likely to use: the main service or product page, contact page, quotation form, location page, booking flow and any campaign landing page. Check them on a phone as well as a desktop browser. A page can load while an important button or embedded form remains broken."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Submit a clearly labelled test enquiry and confirm it reaches the correct inbox or CRM.",
+        "Tap every important phone and WhatsApp link on a mobile device and confirm it opens the intended destination.",
+        "Complete a test booking or checkout using the platform's safe test process, where available.",
+        "Check that confirmation messages, thank-you pages and internal notifications still work.",
+        "Open key pages in a private browser window and check for broken images, missing sections, pop-ups that cover content or unexpected redirects.",
+        "Review a small sample of important links and fix obvious 404 errors or outdated contact details.",
+        "Confirm that analytics still records the actions you rely on, without treating every button click as a qualified lead."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a test name and test contact details that your team can recognise. Remove the test record safely afterwards. For a real customer journey, check the full chain: the visitor submits the form, the site confirms receipt, the correct employee receives the notification, and the enquiry is recorded in the system used for follow-up."
+    },
+    {
+      "type": "heading",
+      "text": "2. Back up the complete website and prove that it can be restored"
+    },
+    {
+      "type": "paragraph",
+      "text": "A backup should cover the parts required to rebuild the site, not just the visible pages. For a typical WordPress installation, the files and the database are separate components. The files include the application, themes, plugins and uploads; the database holds content, settings and other records. A copy of only one side may not be enough for a complete recovery."
+    },
+    {
+      "type": "link",
+      "text": "WordPress Developer Resources: Backups and the difference between files and database",
+      "href": "https://developer.wordpress.org/advanced-administration/security/backup/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose a schedule based on how often the site changes and how much recent information the business can afford to lose. A brochure site that changes occasionally may need a different schedule from an ecommerce store receiving orders throughout the day. Keep a copy away from the production server, protect access to it and define how long backups are retained. Ask the hosting provider what its backup covers; do not assume that a server snapshot is the same as a tested, independently accessible recovery copy."
+    },
+    {
+      "type": "paragraph",
+      "text": "The important test is restoration. Restore a recent backup to a staging or isolated environment and check that pages, media, forms, user access and essential integrations work. Record the date and result. Do not experiment with restoration on the live site. If nobody on the team can perform this safely, agree the recovery procedure with the host or developer before an emergency."
+    },
+    {
+      "type": "heading",
+      "text": "3. Update software with a rollback plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "For WordPress, review core, plugin and theme updates instead of allowing the update dashboard to become a permanent warning. Updates can contain security fixes, compatibility changes and bug fixes, but a combination of components can behave differently after an upgrade. Read the release notes, check compatibility information and understand what changed before applying a major update."
+    },
+    {
+      "type": "paragraph",
+      "text": "WordPress's own update guidance recommends backing up first, checking plugin and theme compatibility, and visiting the website after the update to make sure it still works. That is a useful minimum process even for a small site."
+    },
+    {
+      "type": "link",
+      "text": "WordPress.org: Updating WordPress",
+      "href": "https://wordpress.org/documentation/article/updating-wordpress/"
+    },
+    {
+      "type": "link",
+      "text": "WordPress.org: Plugin and theme auto-updates",
+      "href": "https://wordpress.org/documentation/article/plugins-themes-auto-updates/"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Confirm that a recent backup exists and that the restore route is known.",
+        "Review the update notes and check whether the host, theme or another plugin has a compatibility warning.",
+        "Apply higher-risk updates on a staging copy first when the site supports staging.",
+        "Update in a controlled sequence rather than changing many unrelated components at once.",
+        "After updating, test the homepage, navigation, forms, checkout or booking flow, login and important integrations.",
+        "Keep a rollback option and record what changed if the site behaves differently."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For a custom React, Laravel or other coded website, the equivalent process is a reviewed code change, a successful build, a staging check, a production deployment and a known rollback path. Version control is useful only when the team knows which commit is live and how to return to a stable version. Do not edit production files manually without recording the change."
+    },
+    {
+      "type": "heading",
+      "text": "4. Review security, user access and renewals"
+    },
+    {
+      "type": "paragraph",
+      "text": "Check who can access the website, hosting panel, domain registrar, DNS, analytics and payment tools. Remove access for people who no longer work on the project. Use separate accounts instead of sharing one administrator login, enable multi-factor authentication where available, and avoid giving every contributor full administrator privileges."
+    },
+    {
+      "type": "paragraph",
+      "text": "Review security alerts from the host and platform. Remove unused plugins, themes, extensions and test accounts rather than leaving abandoned components installed. Make sure the website uses HTTPS and that certificate renewal is being handled. A certificate warning, expired domain or incorrect DNS record can make a healthy application unreachable to customers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep a renewal calendar for the domain, hosting, premium themes or plugins, email service, payment tools and any third-party integration that the website depends on. Set reminders before the renewal date and ensure the billing email belongs to the business, not only to a former agency or individual developer."
+    },
+    {
+      "type": "heading",
+      "text": "5. Check speed and usability using real mobile experience"
+    },
+    {
+      "type": "paragraph",
+      "text": "A maintenance review should ask whether the website remains comfortable to use, not simply whether it opens. Check a representative set of pages on a mid-range phone and an ordinary mobile connection. Look for oversized images, delayed fonts, heavy scripts, layout shifts, slow menus and buttons that respond late. A single desktop test cannot describe every visitor's experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's current Core Web Vitals use three user-experience measures: Largest Contentful Paint for loading, Interaction to Next Paint for responsiveness, and Cumulative Layout Shift for visual stability. The published good thresholds are LCP at or below 2.5 seconds, INP at or below 200 milliseconds, and CLS at or below 0.1, assessed at the 75th percentile of page visits. These are diagnostic targets, not a promise of rankings or conversions."
+    },
+    {
+      "type": "link",
+      "text": "web.dev: Core Web Vitals thresholds and how they are assessed (last updated 7 May 2025)",
+      "href": "https://web.dev/articles/defining-core-web-vitals-thresholds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use field data where it is available, then investigate individual templates and page elements. Compress images, load only the scripts a page needs, reserve space for media and embeds, and avoid adding a new pop-up or tracking tag without checking its effect. For a deeper diagnostic workflow, read our guide to"
+    },
+    {
+      "type": "link",
+      "text": "Core Web Vitals for Indian business websites",
+      "href": "/insights/core-web-vitals-indian-business-websites-guide"
+    },
+    {
+      "type": "heading",
+      "text": "6. Keep search visibility technically healthy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Once a month, review Google Search Console for indexing issues, security problems and changes in search performance. Check again after a significant page update, migration, URL change or redesign. Google says owners do not need to sign in every day, but suggests checking periodically and when site content changes. Use the reports to find problems; do not assume every warning means a penalty or every indexed page will receive traffic."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Get started with Search Console",
+      "href": "https://developers.google.com/search/docs/monitor-debug/search-console-start"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure important pages can be reached through internal links, use the intended canonical URL, and keep the XML sitemap aligned with the pages you want search engines to discover. If a URL changes, map the old page to its most relevant replacement and test the redirect. Do not redirect every removed page to the homepage just to make a 404 disappear."
+    },
+    {
+      "type": "paragraph",
+      "text": "A sitemap helps search engines discover URLs, but submitting one does not guarantee that every URL will be crawled or indexed. Treat it as a discovery aid and verify that it lists the preferred canonical pages rather than temporary, duplicate or redirected URLs."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Learn about sitemaps",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a redesign or migration is planned, maintenance should include a URL inventory, redirect map, content review and post-launch checks. Our"
+    },
+    {
+      "type": "link",
+      "text": "website redesign SEO checklist for Indian businesses",
+      "href": "/insights/website-redesign-seo-checklist-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "explains how to protect important pages and monitor search changes during that process."
+    },
+    {
+      "type": "heading",
+      "text": "7. Follow the enquiry from the website to the person responsible"
+    },
+    {
+      "type": "paragraph",
+      "text": "A working form is not enough if nobody sees the enquiry. Check the notification address, spam filtering, CRM connection, lead assignment and reply process. Test the full path using a controlled enquiry. If a business relies on WhatsApp or phone calls, confirm that the links still point to the correct number and that the team knows where those conversations are recorded."
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate technical events from business outcomes. A form submission, a WhatsApp click, a qualified opportunity and a sale are different events. If you run paid campaigns, make sure the website still records the conversions you use for decisions and that the sales team can connect a lead to its source where practical. See our guide to"
+    },
+    {
+      "type": "link",
+      "text": "lead management for Indian SMEs",
+      "href": "/insights/lead-management-crm-process-indian-smes"
+    },
+    {
+      "type": "paragraph",
+      "text": "for a simple process to assign, follow up and review enquiries. If website emails are not reaching customers or staff, also review domain authentication with the person responsible for your mail service; our"
+    },
+    {
+      "type": "link",
+      "text": "SPF, DKIM and DMARC setup checklist",
+      "href": "/insights/spf-dkim-dmarc-email-authentication-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "covers the email side of that system."
+    },
+    {
+      "type": "heading",
+      "text": "8. Quarterly and annual checks: review the parts that slowly go stale"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every quarter, review the site as a business document. Check service descriptions, prices, product availability, team details, locations, opening hours, contact information, case-study permissions, policy links and calls to action. Remove obsolete campaign banners and old announcements. Review important pages for broken links and outdated screenshots. If a service has changed, update the page and any campaign that sends visitors to it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the same review to check unused user accounts, inactive plugins, integration permissions, backup retention, hosting resource limits and recurring errors. If the website is growing, check whether the current hosting and support arrangement still fits the site's traffic, content and business-critical functions."
+    },
+    {
+      "type": "paragraph",
+      "text": "At least once a year, confirm that the business controls its domain, hosting, DNS, website source files, analytics and key third-party accounts. Review renewal dates, payment methods, emergency contacts and who can approve a restore or migration. This is also a sensible time to review whether the website's structure still matches the business's services and customers."
+    },
+    {
+      "type": "heading",
+      "text": "A simple maintenance rhythm to start with"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Weekly: review uptime or hosting alerts, urgent security notices and whether new enquiries are reaching the team.",
+        "Monthly: test key pages and forms, verify a recent backup, review updates, check mobile usability and scan Search Console.",
+        "Quarterly: review content accuracy, user access, unused software, broken links, integrations and the recovery procedure.",
+        "Annually: confirm domain and hosting ownership, renewals, vendor access, business continuity contacts and the overall website plan."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a starting rhythm, not a fixed rule. An ecommerce store, appointment system or website collecting high-value enquiries may need more frequent checks than a small brochure site. Increase the frequency when the site changes often, depends on several integrations or would create a serious business interruption if it failed."
+    },
+    {
+      "type": "heading",
+      "text": "Illustrative example: a small B2B manufacturer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a small manufacturer in Pune that uses its website to receive product and quotation enquiries. The homepage loads, but the quotation form sends notifications to an employee who left the company. The website appears online, yet a core business process is not working. A monthly test enquiry would reveal the problem. The maintenance record would then identify the correct inbox, confirm that the CRM receives the lead, and record who owns the next follow-up. No redesign is required to fix this operational gap."
+    },
+    {
+      "type": "heading",
+      "text": "What to do when a website suddenly breaks"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Record the affected URL, approximate start time, device, browser and visible error. Take a screenshot before changing anything.",
+        "Check whether the domain, DNS, hosting and certificate are active. A website outage is not always an application-code problem.",
+        "Identify the last change: deployment, plugin update, DNS edit, form change or third-party outage.",
+        "Avoid making several untracked changes at once. Ask the host or developer to isolate the cause and use staging where possible.",
+        "Restore a known-good backup or roll back a deployment only through the agreed recovery process.",
+        "After recovery, test the main customer journey and monitor it before closing the incident. Record what failed and how to prevent a repeat."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the site may have been compromised, preserve relevant logs and involve the hosting provider or a qualified security professional. Do not simply reinstall a theme or delete unfamiliar files without understanding what happened; that can destroy evidence or leave the original access path open."
+    },
+    {
+      "type": "heading",
+      "text": "When to bring in a developer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask for technical support when backups cannot be restored, updates repeatedly break the site, forms or payments fail intermittently, the website has been compromised, or nobody can explain how a production change is deployed. A professional maintenance arrangement should state what is monitored, what is included, how quickly incidents are acknowledged, how backups are retained, who approves changes and what counts as out-of-scope work. Avoid paying for a vague promise of unlimited maintenance without a clear task list."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the website needs a stronger technical foundation, clearer customer journeys or a planned rebuild, explore"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey's website development services",
+      "href": "/website-development"
+    },
+    {
+      "type": "paragraph",
+      "text": "or contact the team to discuss the actual issue. The goal is not to change a website every month. It is to make sure the one your customers already use remains accurate, secure, discoverable and dependable."
+    }
+  ]
+},
+
+{
   "category": "ECOMMERCE / CONVERSION",
   "filter": "GROWTH",
   "title": "Ecommerce Product Page Checklist for Indian D2C Brands: Build Trust Before Checkout",
