@@ -8085,6 +8085,334 @@ const articles = [
       "href": "/contact"
     }
   ]
+},
+{
+  "category": "AI / CONTENT OPERATIONS",
+  "filter": "AI",
+  "title": "AI-Generated Marketing Content for Indian Businesses: A Human Review Checklist",
+  "slug": "ai-generated-marketing-content-review-checklist-india",
+  "description": "A practical AI content review checklist for Indian businesses covering fact-checking, brand voice, privacy, image rights, ad claims and publishing controls.",
+  "date": "26 NOV 2026",
+  "publishedAt": "2026-11-26",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A small business owner asks an AI tool to write a festive offer for Instagram. The draft sounds polished, but it quietly changes the discount, invents a delivery promise and describes the product as \"India's most trusted\" without evidence. The language is fluent. The facts are not necessarily true. This is an illustrative scenario, but it captures the risk of publishing a draft simply because it reads well."
+    },
+    {
+      "type": "paragraph",
+      "text": "AI can help an Indian business move from a blank page to a useful first draft. It can suggest content angles, organise a brief, produce headline options, summarise approved material and help adapt a message for different channels. It cannot take responsibility for your prices, product details, customer promises, advertising claims or reputation. A person who understands the business still needs to review the work before it reaches customers."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: use AI to accelerate production, not to approve the message"
+    },
+    {
+      "type": "paragraph",
+      "text": "Treat every AI-generated caption, blog, product description, email, WhatsApp message, ad or image as a draft. Give the tool accurate source material, ask it to flag missing information, verify every factual statement, check the Indian context, review rights and privacy, and require a named person to approve the final version. The more a piece can influence a purchase, payment, health, safety or legal decision, the more careful the review should be."
+    },
+    {
+      "type": "quote",
+      "text": "If the business cannot show where a claim came from, the draft is not ready to publish."
+    },
+    {
+      "type": "heading",
+      "text": "What AI is useful for—and what it should not decide"
+    },
+    {
+      "type": "paragraph",
+      "text": "AI tools are useful for bounded production tasks: brainstorming campaign angles, turning a product brief into a first draft, outlining an article, creating alternate subject lines, simplifying approved copy, or preparing a first translation for a human reviewer. They can also help a team compare versions or turn a long internal document into a checklist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not ask a model to invent your differentiators, customer testimonials, product certifications, market share, performance results, delivery commitments, legal wording or competitor comparisons. Do not treat a plausible answer as a source. If a detail is not in the approved brief or a reliable reference, the tool should mark it as a question—not fill the gap with a guess."
+    },
+    {
+      "type": "heading",
+      "text": "1. Start with a one-page source-of-truth brief"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before prompting, prepare a short fact sheet that a new employee could use to understand the business. This prevents the tool from relying on vague assumptions about the product, customer or offer. Keep the brief current and identify who is allowed to change it."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Business and brand name, approved spelling, website and official contact details",
+        "Products or services, what is included, exclusions and the customer problem being addressed",
+        "Prices, taxes, offer dates, stock or capacity limits, delivery areas and payment conditions",
+        "Target customer, buying situation, service geography and the language the audience actually uses",
+        "Verified differentiators, certifications, awards, reviews and evidence that may be quoted",
+        "Approved tone, words to use, words to avoid and examples of on-brand communication",
+        "Claims that require approval, subjects that must not be discussed and the person who approves exceptions"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate confirmed facts from positioning language. \"We offer installation in Jaipur\" is a checkable service statement. \"The easiest installation experience in India\" is a comparative claim that needs a defined basis and evidence. The brief should make that difference visible."
+    },
+    {
+      "type": "heading",
+      "text": "2. Decide whether the content deserves to exist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not publish an article merely because a tool can produce one quickly. Ask what a customer will learn, what decision the page helps them make and what useful information your business can add. A strong page might include a local process, a real product specification, a clear comparison, original instructions, a practical checklist or an answer to a question your sales team hears repeatedly."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's guidance says generative AI can help with research and structure, but creating many pages with little added value may fall under its scaled-content-abuse policy. Its May 2026 resource for AI features in Search also emphasises valuable, unique, non-commodity content and says established SEO fundamentals remain relevant. The practical lesson is not to avoid AI; it is to avoid using it as a substitute for useful information."
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Guidance on using generative AI content on your website",
+      "href": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: A new resource for optimising for generative AI in Google Search (15 May 2026)",
+      "href": "https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing"
+    },
+    {
+      "type": "heading",
+      "text": "3. Verify every number, promise and factual claim"
+    },
+    {
+      "type": "paragraph",
+      "text": "Read the draft line by line and mark every statement that a customer could reasonably interpret as fact. This includes prices, percentages, timelines, product specifications, service areas, guarantees, comparisons, customer outcomes, certifications and statements about what a platform or regulation requires."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Find the original source for every statistic, date, price, specification or technical instruction.",
+        "Check that the source is current and actually supports the wording used.",
+        "Confirm that comparisons use the same period, scope and definition on both sides.",
+        "Remove invented rankings, superlatives, testimonials and performance claims.",
+        "Ask the responsible product, sales or technical person to approve claims in their area.",
+        "Keep a short claim record: wording, evidence link, date checked and approver."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For advertising in India, the ASCI Code says objectively ascertainable factual descriptions, claims and comparisons should be capable of substantiation. Where an advertisement says a claim is based on independent research or assessment, the source and date should be indicated. This is a useful editorial standard even before a campaign reaches a media platform. Check the current code and any category-specific requirements relevant to your business."
+    },
+    {
+      "type": "link",
+      "text": "Advertising Standards Council of India: The ASCI Code",
+      "href": "https://www.ascionline.in/the-asci-code/"
+    },
+    {
+      "type": "heading",
+      "text": "4. Check the Indian customer context"
+    },
+    {
+      "type": "paragraph",
+      "text": "A draft can be grammatically correct and still be wrong for the market. Review details that matter in the customer's actual buying journey: whether a price includes applicable taxes, whether cash on delivery is available, which PIN codes can be served, how long dispatch normally takes, what the return or cancellation terms say, when support is available and which payment methods the business accepts. Confirm each detail against the current business policy; do not let the model fill it in."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check language and cultural context too. A direct translation may sound unnatural, change the level of formality or use a phrase that has a different meaning in a regional market. Review dates, currency, units, festival references, local place names and transliterated product terms. If the content is intended for a specific language community, ask a fluent reviewer who understands the audience—not just someone who can compare two versions word for word."
+    },
+    {
+      "type": "heading",
+      "text": "5. Protect customer information and confidential business material"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not paste customer names, phone numbers, email addresses, order details, CRM exports, support conversations, payment information, passwords, API keys, unreleased product plans or supplier terms into a public AI prompt by default. Use synthetic examples, aggregated information or a redacted brief when the task does not require identifiable data. If an approved business tool is being used, check the organisation's policy, the vendor's data settings and the permitted purpose before sharing information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Make the rule practical for the team: tell people which tools are approved, what information may be entered, who can review outputs and how to report an accidental disclosure. Do not assume that a prompt is harmless because it is not visible on the final website. For a broader review of website forms, analytics and marketing consent, read our"
+    },
+    {
+      "type": "link",
+      "text": "DPDP Act checklist for Indian business websites and lead forms",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "heading",
+      "text": "6. Review images, video and product accuracy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Generated visuals can be useful for mood boards, concepts and campaign exploration, but they can also create a misleading picture of what a customer will receive. For product marketing, compare the final asset with the real product: colour, shape, ingredients, quantity, packaging, accessories, scale and included features. Do not let an attractive generated image quietly add a feature or remove a limitation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check the rights and permissions for every visual element used in the final asset. That includes source photographs, stock images, logos, fonts, music, voice recordings, customer likenesses and any third-party brand material. A tool generating an image does not automatically establish that every reference asset or requested imitation is cleared for your intended use. Keep licence details and approvals with the campaign files."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the content supports an online product listing, make sure the image and product information still follow the requirements of the sales channel. Our"
+    },
+    {
+      "type": "link",
+      "text": "Google Merchant Center setup guide for Indian D2C brands",
+      "href": "/insights/google-merchant-center-india-d2c-setup-guide"
+    },
+    {
+      "type": "paragraph",
+      "text": "covers the product-feed checks that should sit alongside creative review."
+    },
+    {
+      "type": "heading",
+      "text": "7. Adapt the draft to the channel and the customer's next step"
+    },
+    {
+      "type": "paragraph",
+      "text": "A blog article, search ad, Instagram caption, LinkedIn post and WhatsApp follow-up do not have the same job. A blog should answer a question in enough depth to be useful. A search ad should match the searcher's intent and the landing page. A WhatsApp message should be relevant to the conversation and respect the customer's preferences. A LinkedIn post should sound like a person sharing a useful point, not a generic press release."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Blog or guide: check search intent, originality, source links, headings and internal links.",
+        "Search or social ad: check offer accuracy, destination page, audience, required disclosures and claim evidence.",
+        "WhatsApp or email: check why the recipient is receiving it, the approved list or trigger, contact details and opt-out handling.",
+        "Product page: check specifications, variants, availability, delivery, returns, images and structured product data.",
+        "LinkedIn or founder content: check voice, first-hand experience, attribution and whether the post implies an unsupported result."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not copy one AI-generated paragraph across every channel and call it a content strategy. Rework the message around the format, audience, context and next action. Our"
+    },
+    {
+      "type": "link",
+      "text": "consent-first WhatsApp, SMS and email marketing checklist",
+      "href": "/insights/consent-first-whatsapp-sms-email-marketing-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "is a useful companion when the content is being sent directly to customers."
+    },
+    {
+      "type": "heading",
+      "text": "8. Build a human approval step into the workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "Decide who drafts, who checks and who approves. In a small business, one person may hold more than one role, but the approval responsibility should still be explicit. A product owner checks specifications and price. A marketer checks the audience, channel and campaign objective. A business owner or authorised reviewer approves sensitive claims, offers and final publication."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Draft owner: supplies the brief and identifies what the AI tool produced.",
+        "Fact reviewer: checks claims, links, numbers, product details and local context.",
+        "Brand reviewer: checks tone, positioning, design and customer expectations.",
+        "Approver: confirms that the final version is ready for the intended channel.",
+        "Publisher: uploads the approved version and checks the live result."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For low-risk internal brainstorming, a lightweight check may be enough. For paid campaigns, regulated categories, financial or health-related claims, product safety, public announcements or sensitive customer communication, use the appropriate subject-matter and compliance review before release. If the reviewer cannot verify a claim, remove it or rewrite it in a narrower, supportable way."
+    },
+    {
+      "type": "heading",
+      "text": "9. Keep a simple source and version trail"
+    },
+    {
+      "type": "paragraph",
+      "text": "Save the final approved copy, the brief or source material, external references, asset licences, the approval name and the publication date. Keep the version that actually went live—not only the first AI draft. This makes it easier to correct a wrong price, update an old offer, answer a customer question or understand why a particular claim appeared in a campaign."
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple shared folder or content register is enough for many small teams. Use sensible access controls, avoid storing credentials in the register and agree how long working drafts and customer information should be retained. The objective is traceability, not paperwork for its own sake."
+    },
+    {
+      "type": "heading",
+      "text": "10. Measure whether the content helped the business"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not judge an AI content workflow by the number of drafts it produces. Choose a measure that matches the content's purpose. For a guide, review relevant search visibility, useful engagement and enquiries assisted by the page. For an ad, separate clicks and raw form submissions from qualified enquiries and sales. For an email or WhatsApp campaign, review the response and opt-out signals as well as the next business action."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare like with like and allow for the sales cycle. A high click count does not prove that the message attracted the right customer, and a single sale does not prove that one post caused it. Use the evidence to improve the brief, offer, landing page and follow-up process. Our"
+    },
+    {
+      "type": "link",
+      "text": "lead management guide for Indian SMEs",
+      "href": "/insights/lead-management-crm-process-indian-smes"
+    },
+    {
+      "type": "paragraph",
+      "text": "explains how to connect incoming enquiries with ownership and follow-up."
+    },
+    {
+      "type": "heading",
+      "text": "A reusable AI content brief for a small business"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can adapt this instruction for an approved AI tool. Attach only information that your business is permitted to share. Replace the bracketed fields with confirmed facts and ask the tool to leave unknown details blank."
+    },
+    {
+      "type": "quote",
+      "text": "Create a first draft for [channel] aimed at [customer and situation]. Use only the facts in the approved brief below. Do not invent prices, statistics, certifications, testimonials, guarantees, delivery promises or comparisons. If a detail is missing, write [NEEDS CONFIRMATION] and list the question. Keep the tone [brand voice], use [language and location context], and make the next step clear. After the draft, provide a separate checklist of factual claims, source material needed and items a human reviewer must approve."
+    },
+    {
+      "type": "paragraph",
+      "text": "The prompt is a starting point, not a substitute for the review. Read the output as a customer would, check every claim and remove the bracketed questions before publication."
+    },
+    {
+      "type": "heading",
+      "text": "Illustrative example: a D2C food brand preparing a festive campaign"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: a small Indian food brand gives an AI tool its approved product list, current prices, dispatch cut-off and return policy. The first draft adds an \"organic\" claim and says every order ships the same day. The owner checks the product documents and fulfilment policy, finds that neither statement is approved, and removes both. The final copy describes the actual ingredients and dispatch window, links to the current product page and is checked against the real packaging. The tool helped with the first draft; the business remained responsible for the promise."
+    },
+    {
+      "type": "heading",
+      "text": "A 10-minute pre-publication checklist"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Does the content answer a real customer question or support a defined campaign objective?",
+        "Are the product, price, dates, locations, links and contact details correct?",
+        "Can every factual claim be supported by a current source or approved business record?",
+        "Have unsupported superlatives, invented statistics and unapproved testimonials been removed?",
+        "Does the wording fit Indian customers, the relevant language and the actual service area?",
+        "Have privacy, confidentiality, image rights, licences and permissions been checked?",
+        "Does the content match the channel and the page or action it sends people to?",
+        "Has the right person approved the final version and is the approved copy saved?",
+        "Have the live page, ad or message been checked after publishing?",
+        "Is there a way to correct or withdraw the content if a material error is found?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "When to get specialist help"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bring in a marketer, developer, designer or subject-matter reviewer when the workflow involves complex product claims, multiple languages, paid campaigns, ecommerce feeds, analytics, customer data or high-impact website content. A useful content system connects strategy, accurate source material, brand design, publishing controls and measurement. If you need help building that system, explore"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey's services",
+      "href": "/services"
+    },
+    {
+      "type": "paragraph",
+      "text": "or discuss a specific content, SEO, website or performance-marketing requirement through the"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey contact page",
+      "href": "/contact"
+    },
+    {
+      "type": "paragraph",
+      "text": "The aim is not to remove people from marketing. It is to give people a faster first draft while keeping accuracy, judgement and customer trust where they belong: with the business."
+    }
+  ]
 }
 ];
 
