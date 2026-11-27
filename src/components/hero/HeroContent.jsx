@@ -49,7 +49,7 @@ export default function HeroContent() {
           }}
           className="mt-10 max-w-xl text-base leading-7 text-neutral-400 md:text-lg"
         >
-          Kardengey helps businesses in India grow through SEO, website
+          Kardengey helps businesses in Delhi NCR and across India grow through SEO, website
           development, performance marketing and brand design—connecting
           strategy, creativity and technology to attract relevant enquiries.
         </motion.p>
