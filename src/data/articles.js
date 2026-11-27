@@ -1,5 +1,474 @@
 const articles = [
 {
+  "category": "WEBSITE / B2B",
+  "filter": "TECH",
+  "title": "B2B Manufacturer Website Checklist for India: Product Pages, RFQs and Technical Enquiries",
+  "slug": "b2b-manufacturer-website-checklist-india",
+  "description": "A practical website checklist for Indian manufacturers and industrial suppliers covering product pages, technical downloads, RFQ forms, SEO and enquiry routing.",
+  "date": "27 NOV 2026",
+  "publishedAt": "2026-11-27",
+  "read": "12 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A manufacturer’s website has a different job from a typical online store. A procurement manager, plant engineer, OEM buyer or distributor may need to confirm a specification, compare a product family, understand manufacturing capability, check documentation and then request a quotation. If the website only says what the company makes and provides one generic Contact Us form, the buyer still has to do too much work."
+    },
+    {
+      "type": "paragraph",
+      "text": "For Indian manufacturers and industrial suppliers, a useful website should make four things easy to understand: what you make, where and how it is used, what evidence supports your claims, and what the buyer should do next. This checklist focuses on the website itself—its structure, product information, technical resources, RFQ journey and measurement. It complements a broader B2B marketing plan rather than replacing one."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: build around products, applications and the next buying decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before choosing a design or writing homepage copy, decide which buyer journeys the website must support. A plant engineer looking for a replacement component may need a model number and compatibility information. A procurement team may need a specification sheet, approved vendor documents and a quotation. A distributor may want territory details, product training and commercial contact information. These are different questions, so they should not all be forced into the same page or form."
+    },
+    {
+      "type": "list",
+      "items": [
+        "List the main buyer groups: procurement, engineering, plant maintenance, project or EPC teams, OEMs, contractors, dealers and distributors.",
+        "Choose the primary action for each group: request a quotation, ask a technical question, download a datasheet, book a product discussion or enquire about distribution.",
+        "Identify the product families, applications and regions that matter most to the business.",
+        "Agree who owns product facts, technical documents, pricing guidance and incoming enquiries."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are still deciding the overall audience, positioning and channel mix, start with our broader guide to"
+    },
+    {
+      "type": "link",
+      "text": "B2B marketing strategy in India",
+      "href": "/insights/b2b-marketing-strategy-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "and use this checklist to translate that strategy into a website that supports real buying tasks."
+    },
+    {
+      "type": "heading",
+      "text": "1. Create a website structure that buyers can navigate"
+    },
+    {
+      "type": "paragraph",
+      "text": "A large product range does not need to become a maze of nested menus. Use a structure that reflects how customers search and how your sales team explains the business. A practical starting point for a manufacturer may include:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Home: a clear statement of what the company manufactures, the industries it serves and the main enquiry action.",
+        "Products: product families first, then a dedicated page for each important product or model.",
+        "Applications or industries: explain the problems, operating environments and use cases the products are designed for.",
+        "Manufacturing capabilities: processes, materials, plant capabilities and services that the company can verify and support.",
+        "Quality and compliance: relevant certificates, inspection processes, test capabilities and their scope or validity.",
+        "Technical resources: datasheets, manuals, drawings, catalogues, installation notes and FAQs.",
+        "Company and contact: legal or trading identity, locations, service coverage, phone, email and named enquiry routes where appropriate.",
+        "Dealer or distributor information: partner requirements, regions served and a separate channel enquiry path if the business uses one."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep product pages, application pages and capability pages distinct. A product page answers what the item is and what its verified specifications are. An application page explains where a solution is used and what a buyer should consider. A capability page explains what the factory or team can actually produce, test, customise or support. Repeating the same generic paragraph across all three makes comparison harder."
+    },
+    {
+      "type": "heading",
+      "text": "2. Give every priority product a useful page"
+    },
+    {
+      "type": "paragraph",
+      "text": "A PDF catalogue is useful, but it should not be the only place where product information exists. Create an HTML page for each important product or product family and make the core facts readable without downloading a file. Use the page to answer the questions that sales engineers repeatedly receive."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Product name, model or part number, category and a clear one-sentence description.",
+        "Materials, grades, dimensions, capacity, operating range, tolerances or other relevant technical specifications.",
+        "Applicable standards, compatibility, certifications and test information—only where the business has current evidence.",
+        "Common applications, operating conditions, limitations and any important selection guidance.",
+        "Available variants, finishes, configurations, accessories or customisation options.",
+        "Minimum order quantity, indicative lead-time guidance, packaging, warranty or after-sales information where the business can publish it accurately.",
+        "Downloadable datasheets, drawings, manuals and related product links.",
+        "A clear next action, such as Request a quotation or Ask an application engineer."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not publish a specification because it appears in an old brochure or a competitor’s listing. Confirm each value with the responsible technical or product owner. If a detail depends on configuration, say so and ask the buyer to share the required operating conditions. A technically confident but inaccurate page can create expensive misunderstandings later."
+    },
+    {
+      "type": "quote",
+      "text": "A product page should help a qualified buyer decide whether to ask the next question—not make the product sound suitable for every possible use."
+    },
+    {
+      "type": "heading",
+      "text": "3. Make technical documents easy to find and keep current"
+    },
+    {
+      "type": "paragraph",
+      "text": "Technical buyers often need more than a marketing brochure. Depending on the product, useful resources may include dimensional drawings, CAD files, material certificates, test reports, installation manuals, maintenance instructions, safety data sheets, wiring diagrams or a product selection guide. Publish only documents the business is authorised to share."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use descriptive file names that include the product or model and document type.",
+        "Show the document title, language, revision or version, and issue date where applicable.",
+        "Keep a named owner and source file for every public document so an outdated file can be replaced deliberately.",
+        "Make the important information available as page text as well as in a downloadable PDF where practical.",
+        "Check that downloads work on mobile, open in common PDF readers and do not require an unnecessary account.",
+        "Remove superseded files or clearly mark archived versions so a buyer does not mistake them for current instructions."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A download button should tell the visitor what they will receive. Track meaningful downloads if they help sales follow-up, but do not treat every download as a qualified opportunity. A student, existing customer, supplier and procurement manager may all download the same datasheet for different reasons."
+    },
+    {
+      "type": "heading",
+      "text": "4. Design RFQ forms around the information sales actually needs"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Request for Quotation form is often the most important conversion point on a manufacturer website. A short form can reduce friction, but a form that captures no product context creates extra work for the sales team. Ask for enough information to route the request and understand what is being quoted; collect the rest during follow-up."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Contact name and business email or phone number.",
+        "Company name, role and city or delivery location.",
+        "Product name, model or part number, preferably selected from the page the visitor is viewing.",
+        "Required quantity, configuration or specification, where known.",
+        "Application or operating environment if it changes product suitability.",
+        "Expected purchase or project timeline, if relevant.",
+        "Optional drawing or specification upload when technical review genuinely requires it.",
+        "A clear privacy notice and an explanation of how the business will use the enquiry details."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use sensible conditional fields. A distributor application may need territory and channel experience; a spare-parts enquiry may need the existing model or serial number; a project RFQ may need a drawing or bill of quantities. Do not ask every visitor for every possible detail. If the buyer does not know a model number, provide a way to describe the application or request help identifying the correct product."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the form accepts drawings or documents, treat uploads as untrusted files. Define the allowed file types and size limits, validate the actual file rather than relying only on the browser-provided type, generate safe storage names, restrict access and use malware scanning or content sanitisation where appropriate. Do not store customer drawings in a publicly browsable folder. OWASP’s"
+    },
+    {
+      "type": "link",
+      "text": "File Upload Cheat Sheet",
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "sets out practical defence-in-depth controls for upload functionality. If the form collects personal information, review the purpose, notice, access and retention approach with the appropriate owner. Our"
+    },
+    {
+      "type": "link",
+      "text": "DPDP Act website checklist for Indian businesses",
+      "href": "/insights/dpdp-act-website-lead-forms-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "covers the website-side questions to review; it is general information, not legal advice."
+    },
+    {
+      "type": "heading",
+      "text": "5. Show proof without exaggerating"
+    },
+    {
+      "type": "paragraph",
+      "text": "Industrial buyers may need to understand whether the supplier can meet a specification, maintain consistency and support the product after dispatch. Build confidence with evidence that the company can verify and keep current."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Real photographs of the facility, equipment, production process, inspection setup and products, with permission to publish.",
+        "A concise explanation of manufacturing processes, material capabilities and inspection steps.",
+        "Certifications with the issuing body, scope, site or product covered, and current validity where relevant.",
+        "Named standards or test methods only when the business actually follows them and can substantiate the claim.",
+        "Service locations, installation or maintenance coverage, spare-parts support and escalation contacts.",
+        "Customer references or project examples only when genuine, approved for publication and accurately described."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid generic claims such as best quality, world-class, largest or number one unless the business has a clear, defensible basis and the wording is approved. Do not display a certification logo simply because a supplier or partner has one. Make it clear whose certification it is, what it covers and whether it applies to the product, facility or management system."
+    },
+    {
+      "type": "heading",
+      "text": "6. Use product photography that helps people identify the item"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show the product from useful angles and include scale or context when it helps a buyer understand size, connection points, finish or installation. Use real product and facility photographs where possible. If a diagram is illustrative rather than dimensionally accurate, label it as such. A polished stock image that looks unlike the supplied product can create more doubt than confidence."
+    },
+    {
+      "type": "paragraph",
+      "text": "Give image files descriptive names and useful alternative text. Google’s image guidance explains that crawlers can discover images through standard HTML image elements and that descriptive alt text helps communicate the image’s subject and context. See"
+    },
+    {
+      "type": "link",
+      "text": "Google image SEO best practices",
+      "href": "https://developers.google.com/search/docs/appearance/google-images"
+    },
+    {
+      "type": "paragraph",
+      "text": "for the technical guidance. Compress large files, provide responsive versions and keep the image close to the relevant product description."
+    },
+    {
+      "type": "heading",
+      "text": "7. Build search visibility around products and applications"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not expect one homepage to rank for every product, material, industry and application. Give important product families and high-value applications their own useful destinations. A buyer searching for a particular component or process should land on a page that answers that specific question, not a broad company introduction."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use a unique, descriptive page title and a concise description that accurately reflects the page.",
+        "Use readable URLs that identify the product or application without unnecessary codes or tracking parameters.",
+        "Write original product and application copy based on approved technical knowledge; do not copy a supplier catalogue word for word.",
+        "Link related products, applications, technical resources and relevant service pages using descriptive anchor text.",
+        "Use canonical URLs consistently and include the preferred, indexable page URLs in the sitemap.",
+        "Keep product information consistent across the website, downloadable catalogue and any external product feeds or marketplaces."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Google’s"
+    },
+    {
+      "type": "link",
+      "text": "SEO Starter Guide",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "type": "paragraph",
+      "text": "recommends useful, original content, logical site organisation, descriptive URLs and meaningful link text. These are practical foundations; no page structure or keyword placement guarantees a ranking."
+    },
+    {
+      "type": "paragraph",
+      "text": "Be careful with Product structured data. Google’s product-snippet guidance focuses on pages about an individual product rather than broad category or catalogue pages, and product snippets require a product name plus a qualifying review, aggregate rating or offer. Do not invent public prices, ratings or reviews to make a page eligible. Check the current"
+    },
+    {
+      "type": "link",
+      "text": "Google Product snippet structured data requirements",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet"
+    },
+    {
+      "type": "paragraph",
+      "text": "before implementing markup, and only describe information that is visible and accurate on the page."
+    },
+    {
+      "type": "heading",
+      "text": "8. Make the website usable on a phone and accessible to more buyers"
+    },
+    {
+      "type": "paragraph",
+      "text": "A buyer may open a product page from a WhatsApp message, an email, a search result or a trade-show QR code while standing on a factory floor. Check the full journey on a phone: navigation, product specifications, PDF downloads, call and email links, RFQ fields, validation messages and the confirmation screen. Tables should not force visitors to scroll sideways without context, and important actions should not be hidden behind tiny controls."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Keep product names, key specifications and the main enquiry action near the top of the page.",
+        "Make phone, email and WhatsApp actions easy to tap and ensure each opens the intended destination.",
+        "Use labels and clear error messages for form fields; do not rely on placeholder text alone.",
+        "Check text contrast, keyboard access, focus visibility and meaningful headings.",
+        "Compress images and defer non-essential scripts so the product information remains usable on ordinary mobile connections.",
+        "Test downloads and forms on more than one browser and device size."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For a deeper performance review, use our"
+    },
+    {
+      "type": "link",
+      "text": "Core Web Vitals guide for Indian business websites",
+      "href": "/insights/core-web-vitals-indian-business-websites-guide"
+    },
+    {
+      "type": "paragraph",
+      "text": "alongside real device testing. A fast score is useful, but it does not replace checking whether a buyer can understand the product and complete the enquiry."
+    },
+    {
+      "type": "heading",
+      "text": "9. Connect every enquiry to a person and a next step"
+    },
+    {
+      "type": "paragraph",
+      "text": "A website conversion is only the beginning of a B2B sales process. Decide where each enquiry goes, who owns it and what happens if that person is unavailable. Route by product family, region, customer type or urgency if those differences affect the response. Send an acknowledgement that confirms receipt without promising a delivery date or quotation turnaround the team cannot meet."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Send the enquiry to a monitored mailbox or CRM queue, not only to one employee’s personal inbox.",
+        "Capture the landing page, campaign source, product or model, region and any stated requirement.",
+        "Assign an owner and a backup owner for every enquiry category.",
+        "Give sales or application engineering a simple status: new, reviewing, clarification needed, quoted, won, lost or not a fit.",
+        "Record why a request could not be quoted, such as missing specifications, unsupported region or unavailable capability.",
+        "Test the full chain regularly: submission, notification, CRM record, acknowledgement and assignment."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A CRM does not need to be complicated to be useful. Start with a consistent record and follow-up owner. Our"
+    },
+    {
+      "type": "link",
+      "text": "lead management guide for Indian SMEs",
+      "href": "/insights/lead-management-crm-process-indian-smes"
+    },
+    {
+      "type": "paragraph",
+      "text": "explains a practical process for keeping incoming enquiries from going cold. For broader qualification principles, see"
+    },
+    {
+      "type": "link",
+      "text": "B2B lead generation in India",
+      "href": "/insights/b2b-lead-generation-india-qualified-sales"
+    },
+    {
+      "type": "heading",
+      "text": "10. Measure buying intent, not just website traffic"
+    },
+    {
+      "type": "paragraph",
+      "text": "A manufacturer website can attract students, job seekers, suppliers, existing customers and potential buyers. Total sessions alone will not tell you whether the site is helping sales. Track actions that indicate a meaningful next step and connect them to the eventual sales outcome where your systems allow it."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Product-page visits by product family and application.",
+        "Datasheet, catalogue and technical-document downloads.",
+        "Clicks on phone, email, WhatsApp and distributor enquiry links.",
+        "RFQ form starts, successful submissions and validation failures.",
+        "Qualified enquiries by product, region, source and customer type.",
+        "Quotations issued, opportunities progressed and orders won, using the same definitions in marketing and sales."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Check that analytics events fire once and represent the action they claim to measure. A form success event should occur after a valid submission has been accepted, not merely when someone presses the button. Keep personal information out of analytics event labels and URLs. Use campaign parameters consistently, and review attribution alongside the CRM rather than treating one platform report as the full truth."
+    },
+    {
+      "type": "heading",
+      "text": "An illustrative example: a pump manufacturer serving several industries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only: imagine a pump manufacturer in Ahmedabad serving food processing, water treatment and general industrial customers. The old website has one catalogue PDF, a few factory photographs and a single contact form. A buyer must email the sales team to discover which model fits a particular flow requirement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The company reorganises its site into product families and application pages. Each priority pump page lists verified operating ranges, materials, model variants and downloadable documentation. The RFQ form carries the product model into the enquiry and asks for the application, quantity and delivery city. Distributor enquiries go to a separate route. Sales receives the source and product context in its CRM. No performance result is assumed here; the improvement is a clearer, testable buying journey."
+    },
+    {
+      "type": "heading",
+      "text": "A practical 30-day website improvement sequence"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Days 1–5 — Audit: list the priority products, buyer groups, existing documents, enquiry routes and recurring questions from sales and engineering.",
+        "Days 6–10 — Organise: agree the site map, product-page template, application pages, technical resource structure and primary actions.",
+        "Days 11–18 — Prepare content: verify product specifications, select approved photographs, update documents and write original page copy.",
+        "Days 19–24 — Build and connect: implement the page templates, RFQ forms, secure upload controls if required, CRM routing and analytics events.",
+        "Days 25–30 — Test and release: review pages on mobile, validate forms and downloads, check internal links and metadata, inspect redirects and canonical URLs, then monitor real enquiries after launch."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The order matters. Do not begin by commissioning a visual redesign while product information, document ownership and enquiry routing remain unresolved. A cleaner interface cannot compensate for missing or contradictory technical facts."
+    },
+    {
+      "type": "heading",
+      "text": "Final checklist before you commission or rebuild the site"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Can a first-time buyer understand what the company makes and which industries it serves?",
+        "Can a visitor reach a useful product page in a few clear steps?",
+        "Does every priority product page contain verified specifications and a relevant next action?",
+        "Are current datasheets, drawings and certificates easy to find and clearly versioned?",
+        "Does the RFQ form capture enough context without demanding unnecessary information?",
+        "Are document uploads restricted, validated and stored safely?",
+        "Are certifications, customer references and capability claims accurate and approved?",
+        "Do product pages work on phones and assistive technologies?",
+        "Are preferred URLs canonical, internally linked and included in the sitemap?",
+        "Does every enquiry reach an accountable owner and appear in the sales process?",
+        "Can marketing and sales distinguish a raw form submission from a qualified opportunity?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "When to bring in a website or growth partner"
+    },
+    {
+      "type": "paragraph",
+      "text": "A manufacturer may need help when product information is scattered across spreadsheets and PDFs, the website has no clear enquiry journey, technical content is difficult to maintain, or paid campaigns are sending visitors to generic pages. A useful project should connect discovery, information architecture, responsive development, SEO, enquiry tracking and a maintainable handover—not stop at a new visual design."
+    },
+    {
+      "type": "paragraph",
+      "text": "Explore Kardengey’s"
+    },
+    {
+      "type": "link",
+      "text": "website development services",
+      "href": "/website-development"
+    },
+    {
+      "type": "paragraph",
+      "text": "and"
+    },
+    {
+      "type": "link",
+      "text": "SEO services in India",
+      "href": "/seo-services-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "if you need support with the site structure, product pages or search foundations. For a project discussion, use the"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey contact page",
+      "href": "/contact"
+    },
+    {
+      "type": "paragraph",
+      "text": "A strong manufacturer website does not try to turn every visitor into an immediate buyer. It gives the right people enough accurate information to take the next sensible step—and gives your team a reliable process for responding."
+    },
+    {
+      "type": "heading",
+      "text": "Sources and further reading"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: SEO Starter Guide",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Product snippet structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet"
+    },
+    {
+      "type": "link",
+      "text": "Google Search Central: Google image SEO best practices",
+      "href": "https://developers.google.com/search/docs/appearance/google-images"
+    },
+    {
+      "type": "link",
+      "text": "OWASP Cheat Sheet Series: File Upload Cheat Sheet",
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+    }
+  ]
+},
+{
   "category": "WEBSITE / OPERATIONS",
   "filter": "TECH",
   "title": "Website Maintenance Checklist for Indian Small Businesses: Monthly, Quarterly & Annual Tasks",
