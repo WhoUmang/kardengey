@@ -199,7 +199,7 @@ for (const article of validArticles) {
 const homeContent = pageContent(`
   <p class="seo-kicker">DIGITAL GROWTH STUDIO</p>
   <h1>We turn attention into growth.</h1>
-  <p>Kardengey is a digital marketing and growth studio helping businesses in India strengthen their online presence through search engine optimisation (SEO), website development, performance marketing, branding and conversion-focused creative. Strategy, design and technology work together to attract relevant visitors and turn more of the right opportunities into enquiries.</p>
+  <p>Kardengey is a digital marketing and growth studio helping businesses in Delhi NCR and across India strengthen their online presence through search engine optimisation (SEO), website development, performance marketing, branding and conversion-focused creative. Strategy, design and technology work together to attract relevant visitors and turn more of the right opportunities into enquiries.</p>
   <h2>What we help with</h2>
   <ul>
     <li><strong><a href="/services#website-development">Website development:</a></strong> plan and build clear, responsive experiences around customer needs and business goals.</li>
@@ -219,7 +219,7 @@ const homeContent = pageContent(`
 
 const home = shell({
   title: "Digital Marketing Agency in India",
-  description: "Kardengey helps businesses in India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
+  description: "Kardengey helps businesses in Delhi NCR and across India grow with SEO, website development, performance marketing and branding—focused on relevant traffic and qualified enquiries.",
   canonical: site,
   content: homeContent,
 });
