@@ -2,15 +2,16 @@ const serviceLandingPages = [
   {
     key: "seo",
     path: "/seo-services-india",
-    title: "SEO Services in India",
-    metaTitle: "SEO Services in India | Kardengey",
-    description: "Practical SEO services for Indian businesses: technical checks, search-intent mapping, on-page improvements, content planning and measurement tied to enquiries.",
+    title: "SEO Services in Delhi NCR & India",
+    metaTitle: "SEO Services in Delhi NCR & India | Kardengey",
+    description: "Practical SEO for businesses in Delhi NCR and across India: technical SEO, local search, keyword mapping, service-page improvements and enquiry measurement.",
     eyebrow: "SEO / ORGANIC SEARCH",
-    intro: "Search visibility is useful when it brings the right people to pages that answer their questions and make the next step clear. Kardengey approaches SEO as ongoing work across technical foundations, useful content, site structure and conversion—not a promise of instant rankings.",
-    audience: "Businesses with a website that needs stronger organic discovery, clearer service pages or a more useful path from search visit to enquiry.",
+    intro: "Kardengey helps businesses in Delhi NCR and across India improve organic search visibility through technical SEO, useful content, local search foundations and clearer service pages. The goal is relevant discovery and qualified enquiries—not a promise of instant rankings.",
+    audience: "Small and growing businesses in Delhi NCR and across India that need stronger organic discovery, better local visibility, clearer service pages or a more useful path from search visit to enquiry.",
     sections: [
       { heading: "Start with crawlability and indexability", paragraphs: ["We review the technical basics that can prevent important pages from being discovered or understood: index directives, canonical URLs, redirects, sitemap coverage, internal links, page status and mobile usability. A page being present in a sitemap does not by itself guarantee that Google will index it.", "We prioritise issues by their likely impact and the pages they affect. The goal is to remove avoidable technical barriers before investing heavily in new content."] },
       { heading: "Map searches to the right page", paragraphs: ["Keyword research should distinguish what a searcher wants to learn, compare or buy. We map commercial searches to service pages, informational questions to genuinely useful guides, and local intent to accurate location information where the business really serves customers.", "This helps reduce page overlap. Several pages targeting the same phrase with near-identical copy can confuse visitors and dilute the purpose of the site."] },
+      { heading: "Local SEO for businesses serving Delhi NCR", paragraphs: ["For a business that genuinely serves customers in Delhi NCR, local SEO starts with accurate business information and a useful local customer journey. Depending on eligibility and the business model, work may include reviewing the Google Business Profile, choosing accurate categories and services, keeping contact details and opening hours consistent, earning genuine customer reviews, and making service-area information clear.", "We do not create fake addresses, virtual-office listings or near-duplicate pages for every neighbourhood. A location page should exist only when the business has a real service connection and useful information for people in that place. Businesses without an eligible in-person or service-area presence should not be pushed into a misleading local listing."] },
       { heading: "Improve pages people can act on", paragraphs: ["On-page work can include clearer titles and descriptions, descriptive headings, useful explanations, internal links, image context and a direct enquiry path. Search snippets are selected by Google and may differ from the description supplied, so we write accurate metadata without treating it as a guaranteed display.", "Content briefs should answer real customer questions, explain trade-offs and show what a business should do next. We avoid keyword stuffing, copied competitor copy and pages created only to capture a phrase."] },
       { heading: "Measure search visibility and business value", paragraphs: ["We review impressions, clicks, click-through rate, query relevance, landing pages and qualified enquiries together. Position is an average that can vary by location, device and search context; it should not be reported as a fixed ranking.", "Where tracking is available, we connect organic landing pages to enquiry events and lead quality. More traffic is not a win if it is unrelated to the service or does not help the business."] }
     ],
@@ -18,10 +19,11 @@ const serviceLandingPages = [
     faqs: [
       ["How long does SEO take?", "SEO is cumulative and timing varies with the site's history, competition, technical condition, content quality and how quickly changes are implemented. We report progress using observed data rather than promise a fixed ranking date."],
       ["Can you guarantee first-page rankings?", "No. Search results are controlled by Google and change with competition, location, device and search context. We can agree the work, measurement and review cadence, but cannot guarantee a position."],
+      ["Can you help with local SEO in Delhi NCR?", "Yes, for businesses that genuinely serve customers in the area. We can review local search eligibility, business profile accuracy, service-area information, relevant location content and the path from local discovery to enquiry. We will not invent an address or create doorway pages for places the business does not serve."],
       ["Do you only write blogs?", "No. SEO can involve technical fixes, page structure, service-page content, internal links, local search information and measurement. Publishing articles is only one part of the work."],
       ["What access is needed?", "Typically the website or CMS, Google Search Console and analytics access where available. Access should be granted to the business-owned accounts with appropriate permissions."]
     ],
-    related: [{ label: "Digital marketing services", href: "/services" }, { label: "SEO vs Google Ads", href: "/insights/seo-vs-google-ads-small-business-india" }, { label: "Website audit before ads", href: "/insights/website-audit-before-running-ads" }]
+    related: [{ label: "Digital marketing services", href: "/services" }, { label: "Local SEO and Google Business Profile checklist", href: "/insights/google-business-profile-local-seo-india" }, { label: "SEO vs Google Ads", href: "/insights/seo-vs-google-ads-small-business-india" }, { label: "Website audit before ads", href: "/insights/website-audit-before-running-ads" }]
   },
   {
     key: "website",
