@@ -7,7 +7,7 @@ const articles = [
   "description": "Learn how Indian businesses can review digital marketing reports, track qualified leads, compare channels and calculate customer acquisition cost.",
   "date": "28 NOV 2026",
   "publishedAt": "2026-11-28",
-  "read": "11 MIN READ",
+  "read": "12 MIN READ",
   "author": "Kardengey",
   "content": [
     {
