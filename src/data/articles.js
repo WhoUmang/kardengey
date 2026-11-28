@@ -1,5 +1,447 @@
 const articles = [
 {
+  "category": "MARKETING / ANALYTICS",
+  "filter": "MARKETING",
+  "title": "How to Review a Digital Marketing Report: A Guide for Indian Businesses",
+  "slug": "review-digital-marketing-report-india",
+  "description": "Learn how Indian businesses can review digital marketing reports, track qualified leads, compare channels and calculate customer acquisition cost.",
+  "date": "28 NOV 2026",
+  "publishedAt": "2026-11-28",
+  "read": "11 MIN READ",
+  "author": "Kardengey",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A digital marketing report can look impressive and still leave a business owner with the most important questions unanswered. There may be graphs for reach, clicks, impressions, followers and website sessions, but can you tell how many genuine enquiries arrived, how many were suitable for your business, how many became customers and what it cost to acquire them?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose of a monthly report is not to prove that an agency or marketing team was busy. It is to help the business decide what to continue, what to fix and what to stop. This guide gives Indian business owners a practical way to review SEO, Google Ads, Meta Ads, website and lead-generation reports without needing to become analytics specialists."
+    },
+    {
+      "type": "heading",
+      "text": "The short answer: connect every marketing number to a business decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful report should connect five things: money invested, people reached or visits generated, enquiries received, qualified opportunities created and customers or revenue won. It should also explain how each number was defined, where the data came from and what the team recommends doing next. If a report only lists platform activity, ask for the missing connection to sales."
+    },
+    {
+      "type": "quote",
+      "text": "A click is an action on a screen. A qualified enquiry is a business opportunity. A sale is an outcome. Do not let a report treat them as interchangeable."
+    },
+    {
+      "type": "heading",
+      "text": "1. Agree on the business outcome before reviewing the dashboard"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start by writing down what the campaign or engagement is meant to achieve. A local service business may want booked appointments in a defined service area. A manufacturer may want RFQs from procurement teams. A D2C brand may want profitable completed orders. A B2B company may care more about sales-qualified opportunities than the raw number of form submissions."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Primary outcome: the business result the activity is intended to create, such as qualified enquiries, booked consultations, completed purchases or sales-qualified opportunities.",
+        "Supporting indicators: the earlier actions that help explain progress, such as relevant visits, calls, WhatsApp conversations, form submissions or product enquiries.",
+        "Quality rules: what makes an enquiry valid, in-scope and worth a sales follow-up.",
+        "Reporting window: the exact start and end dates, timezone and any known delay before sales outcomes are recorded.",
+        "Exclusions: spam, duplicate enquiries, existing customers, test submissions, cancelled orders or other records that should not be counted as new opportunities."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Write these definitions down before the next reporting period. Otherwise, one month may count every WhatsApp click as a lead while the next counts only people who replied. The numbers will appear to change even if the underlying business result has not."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your team needs a simple way to assign, qualify and follow up every enquiry, use our guide to"
+    },
+    {
+      "type": "link",
+      "text": "lead management and CRM processes for Indian SMEs",
+      "href": "/insights/lead-management-crm-process-indian-smes"
+    },
+    {
+      "type": "paragraph",
+      "text": "as a companion to the marketing report."
+    },
+    {
+      "type": "heading",
+      "text": "2. Put a business scorecard above the channel metrics"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first page of the report should show the business numbers before it shows platform screenshots. For a lead-generation business, a useful monthly scorecard can include:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Total marketing cost, with media spend, agency or management fees, production costs and other agreed costs shown separately.",
+        "Total enquiries received, after removing obvious spam and duplicate records.",
+        "Qualified leads, using the agreed definition of a suitable opportunity.",
+        "New customers or closed-won deals linked to the reporting cohort.",
+        "Revenue collected or booked, clearly labelled so the team does not confuse an invoice, pipeline value and cash received.",
+        "Gross contribution or gross profit estimate, using the business's own margin data and stated assumptions.",
+        "Cost per enquiry, cost per qualified lead and customer acquisition cost."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Keep advertising spend separate from the agency fee. A report that combines the two into one number can hide whether a change came from media investment, service fees or creative and production work. Also state whether figures include or exclude GST, refunds, discounts and other costs. Use the same treatment each month."
+    },
+    {
+      "type": "heading",
+      "text": "3. Follow the full journey from visit to customer"
+    },
+    {
+      "type": "paragraph",
+      "text": "A channel report is only one part of the journey. For most enquiry-led businesses, map the process in stages: relevant visit or ad interaction → enquiry action → contact reached → qualified lead → proposal or appointment → sale → payment or collected revenue. Ecommerce businesses can adapt the stages to product view, add to cart, checkout, purchase, fulfilment and refund."
+    },
+    {
+      "type": "paragraph",
+      "text": "This makes it easier to find the actual bottleneck. If traffic rises but enquiries do not, review the landing page, offer and call to action. If enquiries rise but qualification falls, inspect targeting, location, pricing expectations and the form questions. If qualified leads do not become customers, the issue may be follow-up speed, sales conversations, availability, pricing or product fit—not necessarily the ad."
+    },
+    {
+      "type": "paragraph",
+      "text": "Treat a click on a phone number or WhatsApp button as an intent signal, not proof that a conversation happened. Treat a form submission as an enquiry, not automatically as a qualified lead. Confirm outcomes in the CRM, enquiry register, call log or sales system. Our guide to"
+    },
+    {
+      "type": "link",
+      "text": "tracking WhatsApp leads for small businesses",
+      "href": "/insights/how-to-track-whatsapp-leads-small-business-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "explains how to record source information when a conversation moves outside the website."
+    },
+    {
+      "type": "heading",
+      "text": "4. Read each channel using the metrics that actually describe it"
+    },
+    {
+      "type": "heading",
+      "text": "SEO and organic search"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use Google Search Console to understand how often pages appeared in Google Search, how many clicks they received, the click-through rate and the queries or pages associated with that visibility. Review the report by page, query, country and device rather than relying on one site-wide position number. Average position is a complex average, not a promise that every visitor sees the page at one fixed rank."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then compare organic-search activity with website analytics and the enquiries recorded by the business. Search Console clicks and analytics sessions are different measurements, so do not expect them to match exactly. Look for useful patterns: which pages are attracting relevant searches, whether visitors take the next step and whether the enquiries fit the service or product you sell."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's documentation explains the"
+    },
+    {
+      "type": "link",
+      "text": "Search Console Performance report and its clicks, impressions and CTR metrics",
+      "href": "https://support.google.com/webmasters/answer/10268906"
+    },
+    {
+      "type": "paragraph",
+      "text": "and the"
+    },
+    {
+      "type": "link",
+      "text": "meaning and limitations of average position",
+      "href": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the website side, review the GA4 Traffic acquisition report using session source, medium and channel grouping. Google documents this in its"
+    },
+    {
+      "type": "link",
+      "text": "GA4 Traffic acquisition report guide",
+      "href": "https://support.google.com/analytics/answer/12923437"
+    },
+    {
+      "type": "paragraph",
+      "text": "If SEO is a priority, also compare the report with the pages and search intent in your"
+    },
+    {
+      "type": "link",
+      "text": "SEO versus Google Ads planning guide",
+      "href": "/insights/seo-vs-google-ads-small-business-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "rather than judging organic search only by month-to-month traffic."
+    },
+    {
+      "type": "heading",
+      "text": "Google Ads"
+    },
+    {
+      "type": "paragraph",
+      "text": "Review spend, clicks, search terms, landing pages, conversion actions and the quality of the enquiries that followed. Ask which actions are included in the main Conversions column and which appear only in All conversions. Google Ads distinguishes primary actions, which can be used for reporting and bidding when the relevant goal is selected, from secondary actions that are generally for observation. A phone-button click, a page view and a completed sale should not automatically carry the same importance."
+    },
+    {
+      "type": "paragraph",
+      "text": "For lead forms, check that repeated page refreshes or duplicate submissions are not inflating the count. Google Ads provides conversion-count settings, including counting one conversion for leads where that is appropriate and every conversion for purchases where each transaction matters. The correct choice depends on the business action being measured. Review the settings with the person responsible for the account."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the official guidance on"
+    },
+    {
+      "type": "link",
+      "text": "understanding Google Ads conversion tracking data",
+      "href": "https://support.google.com/google-ads/answer/6270625"
+    },
+    {
+      "type": "paragraph",
+      "text": "and"
+    },
+    {
+      "type": "link",
+      "text": "primary and secondary conversion actions",
+      "href": "https://support.google.com/google-ads/answer/3419678"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the platform reports many leads but sales teams cannot contact or qualify them, investigate the gap before increasing budget. Our"
+    },
+    {
+      "type": "link",
+      "text": "Google Ads lead conversion tracking guide",
+      "href": "/insights/google-ads-lead-conversion-tracking-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "covers the measurement questions to check."
+    },
+    {
+      "type": "heading",
+      "text": "Meta Ads and paid social"
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate delivery metrics such as reach, impressions, frequency and clicks from outcomes such as instant-form submissions, messaging conversations, qualified leads and purchases. The platform's reported result is useful for understanding delivery, but your own lead register or sales system is needed to confirm whether the person was contactable, in the right location, interested in the offer and eventually converted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask for a breakdown by campaign, audience, creative and placement only when it helps explain a decision. Do not accept a large reach figure as proof of commercial impact. If lead volume is strong but quality is weak, review the offer, audience, form friction, follow-up process and sales feedback together. See our practical"
+    },
+    {
+      "type": "link",
+      "text": "diagnosis guide for Meta Ads leads that do not become customers",
+      "href": "/insights/meta-ads-leads-not-customers-diagnosis"
+    },
+    {
+      "type": "heading",
+      "text": "WhatsApp, calls, referrals and offline sales"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some Indian businesses close sales through phone calls, WhatsApp, store visits, distributor conversations or referrals. These outcomes may not appear as a completed website conversion. Give each enquiry a simple source field and ask the person handling it to record the first known source, campaign or referral where possible. If the source is unknown, record it as unknown rather than guessing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use consistent campaign tags on links where practical, keep a record of missed and answered calls, and reconcile website or ad enquiries with the sales register. A click event can tell you that someone tried to open a channel; only a conversation or a later business record can tell you what happened next."
+    },
+    {
+      "type": "heading",
+      "text": "5. Check the maths before accepting a cost or return figure"
+    },
+    {
+      "type": "paragraph",
+      "text": "A few simple formulas help make reports comparable. Use the same cost definition and the same lead or customer cohort in both the numerator and denominator."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cost per enquiry = agreed acquisition cost ÷ valid enquiries.",
+        "Cost per qualified lead = agreed acquisition cost ÷ qualified leads.",
+        "Customer acquisition cost (CAC) = agreed acquisition cost ÷ new customers acquired.",
+        "Lead-to-customer rate = new customers ÷ valid enquiries × 100.",
+        "Revenue-to-ad-spend ratio (ROAS) = attributed revenue ÷ advertising spend."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "State whether a metric uses media spend only or blended acquisition cost. If the business wants a blended CAC, include the costs it has agreed to count—such as media, agency fees and creative production—and say what is excluded. ROAS is a revenue-to-ad-spend ratio, not profit. It does not automatically include product cost, fulfilment, refunds, taxes, sales salaries or agency fees."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a deeper breakdown, read our guide to"
+    },
+    {
+      "type": "link",
+      "text": "calculating the real cost of acquiring a customer",
+      "href": "/insights/calculate-real-customer-acquisition-cost-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "and use the"
+    },
+    {
+      "type": "link",
+      "text": "free marketing ROI calculator",
+      "href": "/tools/marketing-roi-calculator"
+    },
+    {
+      "type": "paragraph",
+      "text": "with your own verified figures. A cost per lead is useful only when it is considered alongside lead quality and the economics of a sale; our"
+    },
+    {
+      "type": "link",
+      "text": "cost-per-lead guide for India",
+      "href": "/insights/good-cost-per-lead-india-2026"
+    },
+    {
+      "type": "paragraph",
+      "text": "explains why one universal benchmark cannot decide whether a campaign is healthy."
+    },
+    {
+      "type": "heading",
+      "text": "6. Use an illustrative example to see why lead quality changes the story"
+    },
+    {
+      "type": "paragraph",
+      "text": "Illustrative example only — these are sample numbers to explain the calculations, not Kardengey client results, an industry benchmark or a forecast. Suppose a business records 100 valid enquiries in a month, of which 30 meet its qualification rules and 5 become new customers. Advertising spend is ₹30,000 and the agency fee is ₹10,000, so the agreed acquisition cost for this example is ₹40,000. If the five customers generate ₹2,00,000 in revenue and the business's gross margin is 50%, estimated gross contribution is ₹1,00,000 before marketing."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cost per enquiry using media spend only: ₹30,000 ÷ 100 = ₹300.",
+        "Cost per qualified lead using media spend only: ₹30,000 ÷ 30 = ₹1,000.",
+        "Blended CAC including the stated agency fee: ₹40,000 ÷ 5 = ₹8,000.",
+        "Estimated gross contribution after the stated acquisition cost: ₹1,00,000 − ₹40,000 = ₹60,000."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The ₹60,000 is not net profit. It is an estimate before any other costs not already included, such as fulfilment, sales salaries, rent, tax, returns or overhead. The example also assumes the five sales belong to the measured cohort and that the revenue and margin figures are accurate. If those assumptions are not true, the result changes. This is why a report should show the source data and assumptions alongside the headline number."
+    },
+    {
+      "type": "heading",
+      "text": "7. Compare like with like and be honest about attribution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compare the same number of days, the same channel definitions and similar business conditions. Note changes in budget, pricing, stock, service availability, geography, landing pages, sales capacity, holidays and campaign settings. A month with a major promotion should not be treated as directly equivalent to a normal month without explaining the difference."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask which attribution model or platform reporting window is being used and whether the report is based on first interaction, last interaction, a platform's own attribution or a CRM record. Different systems may give credit to the same customer journey in different ways. Do not add channel-reported conversions together and call the sum unique customers unless the records have been deduplicated."
+    },
+    {
+      "type": "paragraph",
+      "text": "For SEO, distinguish search visibility from website visits and from sales. For paid media, distinguish the platform's conversion count from validated leads and closed sales. For offline businesses, record what is known and show the unknown share. Honest measurement is more useful than a precise-looking number built on assumptions."
+    },
+    {
+      "type": "heading",
+      "text": "8. Ask these questions in the monthly review"
+    },
+    {
+      "type": "list",
+      "items": [
+        "What was the business outcome we agreed to improve, and what happened against it?",
+        "How many enquiries were valid, qualified, contacted and converted into customers?",
+        "Which campaign, page, query or creative contributed to the strongest qualified opportunities?",
+        "What is included in the spend figure, and are agency fees and production costs separate?",
+        "Which conversion actions are counted, and are any clicks or duplicate events being mistaken for leads?",
+        "What changed during the period that could explain the result?",
+        "Where is the largest drop-off in the customer journey?",
+        "What will we change next month, why, and how will we know whether it worked?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A good review produces a short decision log: the issue, the evidence, the action owner, the due date and the measure that will be checked next time. Avoid changing several major variables at once unless there is a clear operational reason; otherwise, it becomes difficult to understand what caused the result."
+    },
+    {
+      "type": "heading",
+      "text": "9. Red flags that deserve a closer look"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The report highlights impressions, followers or clicks but does not show valid enquiries or sales outcomes.",
+        "The word lead is used without explaining whether it means a click, a form submission, a conversation or a qualified opportunity.",
+        "Spend, management fees, taxes and production costs are combined without a breakdown.",
+        "The reporting period, attribution window or conversion definitions change without explanation.",
+        "The agency cannot show where the data came from or provide access to the underlying accounts and records.",
+        "The report promises a fixed Google ranking or guaranteed revenue. Google explicitly says no one can guarantee a number-one ranking.",
+        "There is no explanation of what did not work, what was learned or what will change next."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Google's guidance for businesses considering SEO help recommends asking what work will be done and warns against ranking guarantees. Read"
+    },
+    {
+      "type": "link",
+      "text": "Google's guide to hiring an SEO",
+      "href": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+    },
+    {
+      "type": "paragraph",
+      "text": "and compare an agency's explanation with the actual work, access and evidence you can inspect. Our"
+    },
+    {
+      "type": "link",
+      "text": "checklist for choosing a digital marketing agency in India",
+      "href": "/insights/how-to-choose-digital-marketing-agency-india"
+    },
+    {
+      "type": "paragraph",
+      "text": "can help you assess the relationship before and during an engagement."
+    },
+    {
+      "type": "heading",
+      "text": "10. A simple 30-minute monthly review agenda"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Minutes 0–5: confirm the reporting period, costs, definitions and any data gaps.",
+        "Minutes 5–12: review enquiries, qualified leads, customers, revenue and acquisition costs.",
+        "Minutes 12–20: inspect channel and funnel performance to find the largest opportunity or bottleneck.",
+        "Minutes 20–27: agree the next tests, fixes, budget changes or items to stop.",
+        "Minutes 27–30: record owners, deadlines and the measures to review next month."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The exact dashboard can be simple. A spreadsheet with a source column, campaign, spend, valid enquiries, qualified leads, customers, revenue and notes is better than an expensive dashboard that nobody trusts. Add automation only after the definitions and source records are reliable."
+    },
+    {
+      "type": "heading",
+      "text": "What a good marketing report should leave you with"
+    },
+    {
+      "type": "paragraph",
+      "text": "By the end of the review, you should know where the money went, what business outcomes followed, which numbers are reliable, where the customer journey is leaking and what the team will do next. You do not need every available metric. You need a small set of clearly defined measures that connect marketing activity with the economics and operating reality of your business."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want help improving campaign measurement, landing pages or lead quality, explore"
+    },
+    {
+      "type": "link",
+      "text": "Kardengey's performance marketing approach",
+      "href": "/performance-marketing"
+    },
+    {
+      "type": "paragraph",
+      "text": "or"
+    },
+    {
+      "type": "link",
+      "text": "send us a project enquiry",
+      "href": "/contact"
+    },
+    {
+      "type": "paragraph",
+      "text": "with the business outcome you want to measure. We will start with the goal and the available evidence—not a promise of a particular number."
+    }
+  ]
+},
+{
   "category": "WEBSITE / B2B",
   "filter": "TECH",
   "title": "B2B Manufacturer Website Checklist for India: Product Pages, RFQs and Technical Enquiries",
